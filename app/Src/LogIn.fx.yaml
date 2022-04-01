@@ -1,0 +1,121 @@
+LogIn As screen:
+    BackgroundImage: =
+    Fill: =RGBA(204, 231, 246, 1)
+
+    Label4 As label:
+        Align: =Align.Center
+        Color: =RGBA(56, 96, 178, 1)
+        FontWeight: =Bold
+        Height: =70
+        Size: =40
+        Text: ="Welcome "
+        Width: =640
+        Y: =347
+        ZIndex: =1
+
+    Button1 As button:
+        BorderColor: =ColorFade(Button1.Fill, -15%)
+        Height: =70
+        HoverBorderColor: =ColorFade(Button1.BorderColor, 20%)
+        OnSelect: =If(TextInput1.Text in Login.Username && TextInput2.Text in Login.Password, Navigate('Daily Check In - Face'),Navigate(Start))
+        PressedBorderColor: =Button1.Fill
+        PressedColor: =Button1.Fill
+        PressedFill: =Button1.Color
+        Size: =24
+        Text: ="Log In"
+        Width: =280
+        X: =180
+        Y: =807
+        ZIndex: =2
+
+    Label8 As label:
+        Height: =70
+        Size: =21
+        Text: |-
+            ="Class (Student and Teacher):"
+        Width: =560
+        X: =48
+        Y: =913
+        ZIndex: =3
+
+    DropDown_Class As dropdown:
+        Default: =""
+        Height: =70
+        HoverBorderColor: =ColorFade(DropDown_Class.BorderColor, 15%)
+        Items: =Distinct(ClassDetail, Class)
+        PressedBorderColor: =DropDown_Class.HoverBorderColor
+        Size: =21
+        Width: =575
+        X: =48
+        Y: =1002
+        ZIndex: =4
+
+    TextInput1 As text:
+        BorderColor: =RGBA(56, 96, 178, 1)
+        Default: =""
+        Height: =70
+        HintText: ="Username "
+        PressedBorderColor: =TextInput1.HoverBorderColor
+        PressedColor: =TextInput1.Color
+        PressedFill: =TextInput1.Fill
+        RadiusBottomLeft: =25
+        RadiusBottomRight: =25
+        RadiusTopLeft: =25
+        RadiusTopRight: =25
+        Size: =21
+        Width: =560
+        X: =48
+        Y: =552
+        ZIndex: =5
+
+    TextInput2 As text:
+        BorderColor: =RGBA(56, 96, 178, 1)
+        Default: =""
+        Height: =70
+        HintText: ="Password"
+        Mode: =TextMode.Password
+        PressedBorderColor: =TextInput2.HoverBorderColor
+        PressedColor: =TextInput2.Color
+        PressedFill: =TextInput2.Fill
+        RadiusBottomLeft: =25
+        RadiusBottomRight: =25
+        RadiusTopLeft: =25
+        RadiusTopRight: =25
+        Size: =21
+        Width: =560
+        X: =48
+        Y: =672
+        ZIndex: =6
+
+    Image9 As image:
+        Height: =320
+        HoverBorderColor: =ColorFade(Image9.BorderColor, 20%)
+        HoverFill: =ColorFade(Image9.Fill, 20%)
+        Image: =default
+        ImagePosition: =ImagePosition.Fill
+        PressedBorderColor: =ColorFade(Image9.BorderColor, -20%)
+        PressedFill: =ColorFade(Image9.Fill, -20%)
+        Width: =640
+        ZIndex: =7
+
+    Image2 As image:
+        Height: =134
+        HoverBorderColor: =ColorFade(Image2.BorderColor, 20%)
+        HoverFill: =ColorFade(Image2.Fill, 20%)
+        Image: =Picture1
+        PressedBorderColor: =ColorFade(Image2.BorderColor, -20%)
+        PressedFill: =ColorFade(Image2.Fill, -20%)
+        Width: =120
+        X: =520
+        Y: =78
+        ZIndex: =8
+
+    Label6 As label:
+        Align: =Align.Center
+        Height: =60
+        Size: =20
+        Text: ="SIGN IN TO CONTINUE"
+        Width: =640
+        Y: =412
+        ZIndex: =9
+

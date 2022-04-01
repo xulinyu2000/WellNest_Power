@@ -1,0 +1,134 @@
+"'Daily Check In - Face' As screen.'phoneLayout_HeaderAndForm_ver3.0'":
+
+    RectQuickActionBar1 As rectangle:
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =1
+
+    IconCancel1 As icon.Cancel:
+        AccessibleLabel: =Self.Tooltip
+        Height: =88
+        Icon: =Icon.Cancel
+        PaddingBottom: =22
+        PaddingLeft: =22
+        PaddingRight: =22
+        PaddingTop: =22
+        TabIndex: =0
+        Tooltip: ="Cancel item"
+        Width: =88
+        ZIndex: =2
+
+    IconAccept1 As icon.Check:
+        AccessibleLabel: =Self.Tooltip
+        Height: =88
+        Icon: =Icon.Check
+        OnSelect: =SubmitForm(EditForm1)
+        PaddingBottom: =22
+        PaddingLeft: =22
+        PaddingRight: =22
+        PaddingTop: =22
+        TabIndex: =0
+        Tooltip: ="Submit item"
+        Width: =88
+        X: =Parent.Width - Self.Width
+        ZIndex: =3
+
+    LblAppName1 As label:
+        Height: =88
+        Size: =27
+        Text: ="Check In"
+        Width: =Parent.Width - IconCancel1.Width - IconAccept1.Width
+        Wrap: =false
+        X: =IconCancel1.X + IconCancel1.Width
+        ZIndex: =4
+
+    EditForm1 As form:
+        Height: =408
+        Width: =Parent.Width
+        Y: =728
+        ZIndex: =5
+
+    Icon2 As icon.Add:
+        Color: =RGBA(255, 191, 0, 1)
+        DisabledFill: =Icon2.Fill
+        HoverBorderColor: =ColorFade(Icon2.BorderColor, 20%)
+        HoverColor: =ColorFade(Icon2.Color, 20%)
+        HoverFill: =Icon2.Fill
+        Icon: =Icon.EmojiNeutral
+        OnSelect: =Navigate('Daily Check In - Word')
+        PressedBorderColor: =ColorFade(Icon2.BorderColor, -20%)
+        PressedColor: =ColorFade(Icon2.Color, -20%)
+        PressedFill: =Icon2.Fill
+        X: =287
+        Y: =370
+        ZIndex: =6
+
+    Icon2_1 As icon.Add:
+        Color: =RGBA(250, 155, 112, 1)
+        DisabledFill: =Icon2_1.Fill
+        HoverBorderColor: =ColorFade(Icon2_1.BorderColor, 20%)
+        HoverColor: =ColorFade(Icon2_1.Color, 20%)
+        HoverFill: =Icon2_1.Fill
+        Icon: =Icon.EmojiFrown
+        OnSelect: =Navigate('Daily Check In - Word')
+        PressedBorderColor: =ColorFade(Icon2_1.BorderColor, -20%)
+        PressedColor: =ColorFade(Icon2_1.Color, -20%)
+        PressedFill: =Icon2_1.Fill
+        X: =187
+        Y: =403
+        ZIndex: =7
+
+    Icon2_2 As icon.Add:
+        Color: =RGBA(152, 208, 70, 1)
+        DisabledFill: =Icon2_2.Fill
+        HoverBorderColor: =ColorFade(Icon2_2.BorderColor, 20%)
+        HoverColor: =ColorFade(Icon2_2.Color, 20%)
+        HoverFill: =Icon2_2.Fill
+        Icon: =Icon.EmojiSmile
+        OnSelect: =Navigate('Daily Check In - Word')
+        PressedBorderColor: =ColorFade(Icon2_2.BorderColor, -20%)
+        PressedColor: =ColorFade(Icon2_2.Color, -20%)
+        PressedFill: =Icon2_2.Fill
+        X: =386
+        Y: =403
+        ZIndex: =8
+
+    Icon2_3 As icon.Add:
+        Color: =RGBA(221, 79, 14, 1)
+        DisabledFill: =Icon2_3.Fill
+        HoverBorderColor: =ColorFade(Icon2_3.BorderColor, 20%)
+        HoverColor: =ColorFade(Icon2_3.Color, 20%)
+        HoverFill: =Icon2_3.Fill
+        Icon: =Icon.EmojiSad
+        OnSelect: =Navigate('Daily Check In - Word')
+        PressedBorderColor: =ColorFade(Icon2_3.BorderColor, -20%)
+        PressedColor: =ColorFade(Icon2_3.Color, -20%)
+        PressedFill: =Icon2_3.Fill
+        X: =88
+        Y: =434
+        ZIndex: =9
+
+    Icon2_4 As icon.Add:
+        Color: =RGBA(54, 176, 75, 1)
+        DisabledFill: =Icon2_4.Fill
+        HoverBorderColor: =ColorFade(Icon2_4.BorderColor, 20%)
+        HoverColor: =ColorFade(Icon2_4.Color, 20%)
+        HoverFill: =Icon2_4.Fill
+        Icon: =Icon.EmojiHappy
+        OnSelect: =Navigate('Daily Check In - Word')
+        PressedBorderColor: =ColorFade(Icon2_4.BorderColor, -20%)
+        PressedColor: =ColorFade(Icon2_4.Color, -20%)
+        PressedFill: =Icon2_4.Fill
+        X: =488
+        Y: =434
+        ZIndex: =10
+
+    Label1 As label:
+        Height: =68
+        Size: =21
+        Text: ="What's your mood?"
+        Width: =271
+        X: =187
+        Y: =258
+        ZIndex: =11
+

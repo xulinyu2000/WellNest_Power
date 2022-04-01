@@ -1,0 +1,13 @@
+App As appinfo:
+    BackEnabled: =false
+    MinScreenHeight: =320
+    MinScreenWidth: =320
+    OnStart: |-
+        =Location.Latitude;
+        Location.Longitude;
+        ClearCollect(ColResources,'Resources by Topic Area');
+        Set(FirstName,Office365Users.MyProfile().GivenName);
+        Navigate([@Welcome], Fade);
+        Set(ThirdPartyContact,"111111");
+        Set(OccHealthContact,"111111")
+
