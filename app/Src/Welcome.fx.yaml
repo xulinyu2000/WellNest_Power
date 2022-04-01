@@ -89,3 +89,15 @@ Welcome As screen:
         Y: =136
         ZIndex: =5
 
+    Logo_1 As image:
+        Height: =105
+        HoverBorderColor: =ColorFade(Logo_1.BorderColor, 20%)
+        HoverFill: =ColorFade(Logo_1.Fill, 20%)
+        Image: =Picture1
+        PressedBorderColor: =ColorFade(Logo_1.BorderColor, -20%)
+        PressedFill: =ColorFade(Logo_1.Fill, -20%)
+        Width: =134
+        X: =178
+        Y: =136
+        ZIndex: =6
+
