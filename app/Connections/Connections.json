@@ -1,4 +1,22 @@
 {
+  "11b65d48-0864-4651-9eb0-039e1b2730f2": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/shared-excelonlinebu-28f77802-cb6b-48a7-bd64-0c79be4599aa",
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "Excel Online (Business)",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1554/1.0.1554.2707/excelonlinebusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "5e8a3a6f-0bdf-4803-9fb1-d3f4cae116d1"
+    ],
+    "id": "11b65d48-0864-4651-9eb0-039e1b2730f2"
+  },
   "5690f524-f336-4b6c-a1b4-ca6c9b9e1068": {
     "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_office365users/connections/4120cba909c44126802c886b5b71a867",
     "connectionParameters": {
@@ -41,25 +59,7 @@
     ],
     "id": "5782a3ec-b73a-47b1-9d58-ff4d2a2d8d68"
   },
-  "59d55439-259d-4231-872f-c3f8ee24cf86": {
-    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/shared-excelonlinebu-28f77802-cb6b-48a7-bd64-0c79be4599aa",
-    "connectionParameters": {
-      "sku": "Enterprise"
-    },
-    "connectionRef": {
-      "displayName": "Excel Online (Business)",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1554/1.0.1554.2707/excelonlinebusiness/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness"
-    },
-    "datasets": {},
-    "dataSources": [],
-    "dependencies": {},
-    "dependents": [
-      "6c4fc697-32de-434a-a638-04cf98cbc1b2"
-    ],
-    "id": "59d55439-259d-4231-872f-c3f8ee24cf86"
-  },
-  "6c4fc697-32de-434a-a638-04cf98cbc1b2": {
+  "5e8a3a6f-0bdf-4803-9fb1-d3f4cae116d1": {
     "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_logicflows/connections/8038d423d903479cbf95e4c18ff90d0f-55c9532b2c614cf2",
     "connectionParameters": {
       "workFlowCallbackUri": "https://prod-29.australiasoutheast.logic.azure.com:443/workflows/69984100e5784b349a3268fb2d8a7b35/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=LCldXyKWXjfcNIvCMOEx9QDpLgiNznRadsB_OgSVyHc",
@@ -86,22 +86,28 @@
     },
     "datasets": {},
     "dataSources": [
-      "PowerAppsbutton_6",
-      "PowerAppsbutton_7",
-      "PowerAppsbutton",
-      "PowerAppsbutton_1",
-      "PowerAppsbutton_2",
-      "PowerAppsbutton_3",
-      "PowerAppsbutton_4",
-      "PowerAppsbutton_5",
-      "PowerAppsbutton_8",
-      "PowerAppsbutton_9"
+      "face_checkin_click",
+      "face_checkin_click_1",
+      "face_checkin_click_2",
+      "face_checkin_click_3",
+      "face_checkin_click_4",
+      "face_checkin_click_5",
+      "face_checkin_click_6",
+      "face_checkin_click_7",
+      "face_checkin_click_8",
+      "face_checkin_click_9",
+      "face_checkin_click_10",
+      "face_checkin_click_11",
+      "face_checkin_click_12",
+      "face_checkin_click_13",
+      "face_checkin_click_14",
+      "face_checkin_click_15"
     ],
     "dependencies": {
-      "shared_excelonlinebusiness": "59d55439-259d-4231-872f-c3f8ee24cf86"
+      "shared_excelonlinebusiness": "11b65d48-0864-4651-9eb0-039e1b2730f2"
     },
     "dependents": [],
-    "id": "6c4fc697-32de-434a-a638-04cf98cbc1b2"
+    "id": "5e8a3a6f-0bdf-4803-9fb1-d3f4cae116d1"
   },
   "94a545d3-08e2-4fe7-969b-ba56bfa6118d": {
     "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_office365users/connections/4120cba909c44126802c886b5b71a867",

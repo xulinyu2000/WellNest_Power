@@ -49,7 +49,7 @@
         HoverColor: =ColorFade(Icon2.Color, 20%)
         HoverFill: =Icon2.Fill
         Icon: =Icon.EmojiNeutral
-        OnSelect: =PowerAppsbutton_9.Run(3, 3)
+        OnSelect: =face_checkin_click_15.Run(3,3)
         PressedBorderColor: =ColorFade(Icon2.BorderColor, -20%)
         PressedColor: =ColorFade(Icon2.Color, -20%)
         PressedFill: =Icon2.Fill
