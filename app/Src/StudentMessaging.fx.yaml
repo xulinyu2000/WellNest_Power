@@ -1,13 +1,26 @@
-"Screen2 As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+"StudentMessaging As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
-    Canvas2 As fluidGrid.fluidGridWithBlankCard:
+    RectQuickActionBar4 As rectangle:
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =1
+
+    LblAppName3 As label:
+        Align: =Align.Center
+        Height: =88
+        Size: =27
+        Text: ="[Title]"
+        Width: =Parent.Width
+        ZIndex: =2
+
+    Canvas3 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
         Height: =Parent.Height - Self.Y
         Width: =Parent.Width
         Y: =RectQuickActionBar4.Y + RectQuickActionBar4.Height
         ZIndex: =3
 
-        DataCard5 As dataCard:
+        DataCard8 As dataCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             BorderThickness: =0

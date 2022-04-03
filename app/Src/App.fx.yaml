@@ -4,8 +4,26 @@ App As appinfo:
     MinScreenWidth: =320
     OnStart: |-
         =ClearCollect(
-            NavAdminView,
+            colMenu,
             {
-                Title:
-            
+                MenuItem: "Dashboard",
+                IconName: Icon.EmojiSmile,
+                ScreenName: 'Students Dashboard'
+            },
+            {
+                MenuItem: "Community",
+                IconName: Icon.Add,
+                ScreenName: StudentCommunity
+            },
+            {
+                MenuItem: "Messaging",
+                IconName: Icon.EmojiFrown,
+                ScreenName: StudentMessaging
+            },
+            {
+                MenuItem: "Knowledge",
+                IconName: Icon.EmojiNeutral,
+                ScreenName: StudentKnowledge
+            }
+        )
 
