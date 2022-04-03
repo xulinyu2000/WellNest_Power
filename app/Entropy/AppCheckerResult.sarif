@@ -1334,47 +1334,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Daily Check In - Face.Icon2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Daily Check In - Face.Icon2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 30,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "face_checkin_click_15.Run(3,3)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Daily Check In - Face",
-                "type": "Daily Check In - Face.Icon2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "2",
-              "1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadArity",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Teachers Dashboard.ShowDate.Text"
                 }
               ],
@@ -2159,6 +2118,66 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Daily Check In - Face.Icon2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Daily Check In - Face.Icon2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Daily Check In - Face",
+                "type": "Daily Check In - Face.Icon2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Daily Check In - Face.Icon2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Daily Check In - Face.Icon2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Daily Check In - Face",
+                "type": "Daily Check In - Face.Icon2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 8
         },
         {
           "locations": [
