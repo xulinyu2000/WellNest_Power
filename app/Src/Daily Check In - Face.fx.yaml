@@ -50,7 +50,7 @@
         HoverFill: =Icon2.Fill
         Icon: =Icon.EmojiNeutral
         OnSelect: |
-            =face_checkin_click_9.Run(3, 3, 3)
+            =face_checkin_click_9.Run(User().FullName, 3, 3)
         PressedBorderColor: =ColorFade(Icon2.BorderColor, -20%)
         PressedColor: =ColorFade(Icon2.Color, -20%)
         PressedFill: =Icon2.Fill
@@ -65,7 +65,7 @@
         HoverColor: =ColorFade(Icon2_1.Color, 20%)
         HoverFill: =Icon2_1.Fill
         Icon: =Icon.EmojiFrown
-        OnSelect: =face_checkin_click_9.Run(3,3,2)
+        OnSelect: =face_checkin_click_9.Run(User().FullName,3,2)
         PressedBorderColor: =ColorFade(Icon2_1.BorderColor, -20%)
         PressedColor: =ColorFade(Icon2_1.Color, -20%)
         PressedFill: =Icon2_1.Fill
@@ -80,7 +80,8 @@
         HoverColor: =ColorFade(Icon2_2.Color, 20%)
         HoverFill: =Icon2_2.Fill
         Icon: =Icon.EmojiSmile
-        OnSelect: =Navigate('Daily Check In - Word')
+        OnSelect: |
+            =face_checkin_click_9.Run(User().FullName, 3, 4)
         PressedBorderColor: =ColorFade(Icon2_2.BorderColor, -20%)
         PressedColor: =ColorFade(Icon2_2.Color, -20%)
         PressedFill: =Icon2_2.Fill
@@ -95,7 +96,8 @@
         HoverColor: =ColorFade(Icon2_3.Color, 20%)
         HoverFill: =Icon2_3.Fill
         Icon: =Icon.EmojiSad
-        OnSelect: =Navigate('Daily Check In - Word')
+        OnSelect: |
+            =face_checkin_click_9.Run(User().FullName, 3, 1)
         PressedBorderColor: =ColorFade(Icon2_3.BorderColor, -20%)
         PressedColor: =ColorFade(Icon2_3.Color, -20%)
         PressedFill: =Icon2_3.Fill
@@ -110,7 +112,8 @@
         HoverColor: =ColorFade(Icon2_4.Color, 20%)
         HoverFill: =Icon2_4.Fill
         Icon: =Icon.EmojiHappy
-        OnSelect: =Navigate('Daily Check In - Word')
+        OnSelect: |
+            =face_checkin_click_9.Run(User().FullName, 3, 5)
         PressedBorderColor: =ColorFade(Icon2_4.BorderColor, -20%)
         PressedColor: =ColorFade(Icon2_4.Color, -20%)
         PressedFill: =Icon2_4.Fill
