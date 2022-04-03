@@ -1,15 +1,8 @@
 {
-  "comMenu_H": {
+  "Component1": {
     "AllowAccessToGlobals": false,
     "ControlPropertyState": [
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "RGBA(0, 0, 0, 0)",
-        "InvariantPropertyName": "Fill",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      },
+      "Fill",
       {
         "AFDDataSourceName": "",
         "AutoRuleBindingEnabled": false,
@@ -29,26 +22,12 @@
       "X",
       "Y",
       "ZIndex",
+      "SelectColor",
+      "UnselectedColor",
       {
         "AFDDataSourceName": "",
         "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "RGBA(0, 0, 0, 1)",
-        "InvariantPropertyName": "SelectColor",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      },
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "RGBA(0, 0, 0, 1)",
-        "InvariantPropertyName": "UnselectedColor",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      },
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "Table({MenuItem: \"Sample Menu Item 1\", IconName: Icon.EmojiSmile, ScreenName: App.ActiveScreen}, {MenuItem: \"Sample Menu Item 2\", IconName: Icon.Add, ScreenName: App.ActiveScreen}, {MenuItem: \"Sample Menu Item 3\", IconName: Icon.EmojiFrown, ScreenName: App.ActiveScreen}, {MenuItem: \"Sample Menu Item 4\", IconName: Icon.EmojiNeutral, ScreenName: App.ActiveScreen})",
+        "AutoRuleBindingString": "Table({})",
         "InvariantPropertyName": "MenuItems",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
@@ -62,7 +41,7 @@
     "IsLocked": false,
     "LayoutName": "",
     "MetaDataIDKey": "",
-    "Name": "comMenu_H",
+    "Name": "Component1",
     "ParentIndex": 0,
     "PersistMetaDataIDKey": false,
     "Properties": [
@@ -78,9 +57,8 @@
       },
       {
         "Category": "Data",
-        "NameMap": "{\"IconName\":\"MenuItem\",\"MenuItem\":\"MenuItem\",\"ScreenName\":\"ScreenName\"}",
         "PropertyName": "MenuItems",
-        "RuleProviderType": "System"
+        "RuleProviderType": "Unknown"
       },
       {
         "Category": "Design",
@@ -90,7 +68,7 @@
       {
         "Category": "Design",
         "PropertyName": "Height",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Design",
@@ -100,49 +78,29 @@
       {
         "Category": "Design",
         "PropertyName": "X",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Design",
         "PropertyName": "Y",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Design",
         "PropertyName": "ZIndex",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       }
     ],
     "StyleName": "",
     "Type": "ControlInfo"
   },
-  "Gallery1": {
+  "Gallery3": {
     "AllowAccessToGlobals": true,
     "ControlPropertyState": [
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "CustomGallerySample",
-        "InvariantPropertyName": "Items",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      },
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "",
-        "InvariantPropertyName": "TemplateSize",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      },
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "",
-        "InvariantPropertyName": "TemplatePadding",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      },
+      "Items",
+      "WrapCount",
+      "TemplateSize",
+      "TemplatePadding",
       "Layout",
       "Transition",
       "LoadingSpinner",
@@ -160,33 +118,11 @@
       "HoverFill",
       "X",
       "Y",
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "640",
-        "InvariantPropertyName": "Width",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      },
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "150",
-        "InvariantPropertyName": "Height",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      },
-      "ZIndex",
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "",
-        "InvariantPropertyName": "WrapCount",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      }
+      "Width",
+      "Height",
+      "ZIndex"
     ],
-    "GalleryTemplateChildName": "galleryTemplate2",
+    "GalleryTemplateChildName": "galleryTemplate4",
     "HasDynamicProperties": false,
     "IsAutoGenerated": false,
     "IsComponentDefinition": false,
@@ -196,7 +132,7 @@
     "IsLocked": false,
     "LayoutName": "",
     "MetaDataIDKey": "",
-    "Name": "Gallery1",
+    "Name": "Gallery3",
     "ParentIndex": 0,
     "PersistMetaDataIDKey": false,
     "Properties": [
@@ -324,18 +260,10 @@
     "StyleName": "defaultGalleryStyle",
     "Type": "ControlInfo"
   },
-  "galleryTemplate2": {
+  "galleryTemplate4": {
     "AllowAccessToGlobals": true,
     "ControlPropertyState": [
-      "TemplateFill",
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "false",
-        "InvariantPropertyName": "OnSelect",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      }
+      "TemplateFill"
     ],
     "HasDynamicProperties": false,
     "IsAutoGenerated": false,
@@ -346,7 +274,7 @@
     "IsLocked": false,
     "LayoutName": "",
     "MetaDataIDKey": "",
-    "Name": "galleryTemplate2",
+    "Name": "galleryTemplate4",
     "ParentIndex": 0,
     "PersistMetaDataIDKey": false,
     "Properties": [
@@ -354,64 +282,52 @@
         "Category": "Design",
         "PropertyName": "TemplateFill",
         "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Behavior",
-        "PropertyName": "OnSelect",
-        "RuleProviderType": "Unknown"
       }
     ],
     "StyleName": "",
     "Type": "ControlInfo"
   },
-  "Icon6": {
+  "Image2": {
     "AllowAccessToGlobals": true,
     "ControlPropertyState": [
       {
         "AFDDataSourceName": "",
         "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "Icon.CancelBadge",
-        "InvariantPropertyName": "Icon",
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "Image",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       },
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "RGBA(0, 18, 107, 1)",
-        "InvariantPropertyName": "Color",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      },
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "RGBA(244, 244, 244, 1)",
-        "InvariantPropertyName": "DisabledColor",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      },
-      "PressedColor",
-      "HoverColor",
-      "Fill",
-      "DisabledFill",
-      "PressedFill",
-      "HoverFill",
-      "DisplayMode",
+      "ImagePosition",
+      "ImageRotation",
       "X",
       "Y",
       "Width",
       "Height",
-      "BorderStyle",
+      "Fill",
+      "DisabledFill",
+      "PressedFill",
+      "HoverFill",
       "BorderColor",
       "DisabledBorderColor",
       "PressedBorderColor",
       "HoverBorderColor",
       "FocusedBorderColor",
+      "BorderStyle",
+      "DisplayMode",
       "OnSelect",
       "ZIndex",
+      "RadiusTopLeft",
+      "RadiusTopRight",
+      "RadiusBottomLeft",
+      "RadiusBottomRight",
       "BorderThickness",
-      "FocusedBorderThickness"
+      "FocusedBorderThickness",
+      "PaddingTop",
+      "PaddingRight",
+      "PaddingBottom",
+      "PaddingLeft",
+      "TabIndex"
     ],
     "HasDynamicProperties": false,
     "IsAutoGenerated": false,
@@ -421,59 +337,24 @@
     "IsGroupControl": false,
     "IsLocked": false,
     "LayoutName": "",
-    "MetaDataIDKey": "",
-    "Name": "Icon6",
+    "MetaDataIDKey": "%TemplateBrowseGalleryImage.ID%",
+    "Name": "Image2",
     "ParentIndex": 1,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
-        "Category": "Design",
-        "PropertyName": "Icon",
+        "Category": "Data",
+        "PropertyName": "Image",
         "RuleProviderType": "Unknown"
       },
       {
         "Category": "Design",
-        "PropertyName": "Color",
+        "PropertyName": "ImagePosition",
         "RuleProviderType": "Unknown"
       },
       {
         "Category": "Design",
-        "PropertyName": "DisabledColor",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "PropertyName": "PressedColor",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "PropertyName": "HoverColor",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "PropertyName": "Fill",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "PropertyName": "DisabledFill",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "PropertyName": "PressedFill",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "PropertyName": "HoverFill",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "PropertyName": "DisplayMode",
+        "PropertyName": "ImageRotation",
         "RuleProviderType": "Unknown"
       },
       {
@@ -498,7 +379,22 @@
       },
       {
         "Category": "Design",
-        "PropertyName": "BorderStyle",
+        "PropertyName": "Fill",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "DisabledFill",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "PressedFill",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "HoverFill",
         "RuleProviderType": "Unknown"
       },
       {
@@ -528,7 +424,37 @@
       },
       {
         "Category": "Design",
+        "PropertyName": "BorderStyle",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "DisplayMode",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
         "PropertyName": "ZIndex",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "RadiusTopLeft",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "RadiusTopRight",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "RadiusBottomLeft",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "RadiusBottomRight",
         "RuleProviderType": "Unknown"
       },
       {
@@ -542,36 +468,47 @@
         "RuleProviderType": "Unknown"
       },
       {
+        "Category": "Design",
+        "PropertyName": "PaddingTop",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "PaddingRight",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "PaddingBottom",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "PaddingLeft",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "TabIndex",
+        "RuleProviderType": "Unknown"
+      },
+      {
         "Category": "Behavior",
         "PropertyName": "OnSelect",
         "RuleProviderType": "Unknown"
       }
     ],
-    "StyleName": "defaultIconStyle",
+    "StyleName": "defaultImageStyle",
     "Type": "ControlInfo"
   },
-  "Label2": {
+  "Title3": {
     "AllowAccessToGlobals": true,
     "ControlPropertyState": [
       "Live",
       "Overflow",
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "ThisItem.IconName",
-        "InvariantPropertyName": "Text",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      },
+      "Text",
       "Role",
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "RGBA(0, 0, 0, 1)",
-        "InvariantPropertyName": "Color",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      },
+      "Color",
       "DisabledColor",
       "PressedColor",
       "HoverColor",
@@ -587,14 +524,7 @@
       "HoverFill",
       "Font",
       "FontWeight",
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "",
-        "InvariantPropertyName": "Align",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      },
+      "Align",
       "VerticalAlign",
       "X",
       "Y",
@@ -603,9 +533,11 @@
       "DisplayMode",
       "OnSelect",
       "ZIndex",
-      "LineHeight",
-      "BorderThickness",
-      "FocusedBorderThickness",
+      "PaddingTop",
+      "PaddingRight",
+      "PaddingBottom",
+      "PaddingLeft",
+      "TabIndex",
       {
         "AFDDataSourceName": "",
         "AutoRuleBindingEnabled": false,
@@ -613,14 +545,7 @@
         "InvariantPropertyName": "Size",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
-      },
-      "Italic",
-      "Underline",
-      "Strikethrough",
-      "PaddingTop",
-      "PaddingRight",
-      "PaddingBottom",
-      "PaddingLeft"
+      }
     ],
     "HasDynamicProperties": false,
     "IsAutoGenerated": false,
@@ -630,8 +555,8 @@
     "IsGroupControl": false,
     "IsLocked": false,
     "LayoutName": "",
-    "MetaDataIDKey": "",
-    "Name": "Label2",
+    "MetaDataIDKey": "%TemplateBrowseGalleryTitle.ID%",
+    "Name": "Title3",
     "ParentIndex": 2,
     "PersistMetaDataIDKey": false,
     "Properties": [
@@ -777,41 +702,6 @@
       },
       {
         "Category": "Design",
-        "PropertyName": "LineHeight",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "PropertyName": "BorderThickness",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "PropertyName": "FocusedBorderThickness",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "PropertyName": "Size",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "PropertyName": "Italic",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "PropertyName": "Underline",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "PropertyName": "Strikethrough",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
         "PropertyName": "PaddingTop",
         "RuleProviderType": "Unknown"
       },
@@ -831,12 +721,22 @@
         "RuleProviderType": "Unknown"
       },
       {
+        "Category": "Design",
+        "PropertyName": "TabIndex",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Size",
+        "RuleProviderType": "Unknown"
+      },
+      {
         "Category": "Behavior",
         "PropertyName": "OnSelect",
         "RuleProviderType": "Unknown"
       }
     ],
-    "StyleName": "defaultLabelStyle",
+    "StyleName": "titleLabelStyle",
     "Type": "ControlInfo"
   }
 }
