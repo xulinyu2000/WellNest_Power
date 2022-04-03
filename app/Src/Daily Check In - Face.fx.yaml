@@ -65,7 +65,7 @@
         HoverColor: =ColorFade(Icon2_1.Color, 20%)
         HoverFill: =Icon2_1.Fill
         Icon: =Icon.EmojiFrown
-        OnSelect: =face_checkin_click_9.Run(3,2,2)
+        OnSelect: =face_checkin_click_9.Run(3,3,2)
         PressedBorderColor: =ColorFade(Icon2_1.BorderColor, -20%)
         PressedColor: =ColorFade(Icon2_1.Color, -20%)
         PressedFill: =Icon2_1.Fill
