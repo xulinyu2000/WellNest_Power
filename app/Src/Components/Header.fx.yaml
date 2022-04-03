@@ -1,0 +1,41 @@
+Header As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =Max(App.Height, App.MinScreenHeight)/10
+    Width: =Max(App.Width, App.MinScreenWidth)
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Container3_1 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(153, 207, 236, 1)
+        Height: =Header.Height
+        Width: =640
+        X: |
+            =0
+        Y: |
+            =0
+        ZIndex: =1
+
+    Container3 As groupContainer.manualLayoutContainer:
+        Height: =Header.Height
+        Width: =344
+        X: =296
+        ZIndex: =2
+
+        Image1 As image:
+            Height: =113
+            HoverBorderColor: =ColorFade(Image1.BorderColor, 20%)
+            HoverFill: =ColorFade(Image1.Fill, 20%)
+            PressedBorderColor: =ColorFade(Image1.BorderColor, -20%)
+            PressedFill: =ColorFade(Image1.Fill, -20%)
+            Width: =90
+            ZIndex: =1
+
+        Label3 As label:
+            Height: =113.6
+            Size: =21
+            Text: ="Username"
+            Width: =193
+            X: =150
+            ZIndex: =2
+

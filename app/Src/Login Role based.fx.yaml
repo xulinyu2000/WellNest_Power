@@ -24,9 +24,23 @@
         PressedColor: =Button4.Fill
         PressedFill: =Button4.Color
         Size: =24
-        Text: ="Admin Login"
+        Text: ="Teacher Login"
         Width: =280
         X: =174
         Y: =624
         ZIndex: =2
+
+    Button1 As button:
+        BorderColor: =ColorFade(Button1.Fill, -15%)
+        Height: =78
+        HoverBorderColor: =ColorFade(Button1.BorderColor, 20%)
+        PressedBorderColor: =Button1.Fill
+        PressedColor: =Button1.Fill
+        PressedFill: =Button1.Color
+        Size: =16
+        Text: ="Admin Button"
+        Width: =218
+        X: =205
+        Y: =886
+        ZIndex: =3
 
