@@ -4,5 +4,8 @@ App As appinfo:
     MinScreenWidth: =320
     OnStart: |-
         =ClearCollect(
+            NavAdminView,
+            {
+                Title:
             
 
