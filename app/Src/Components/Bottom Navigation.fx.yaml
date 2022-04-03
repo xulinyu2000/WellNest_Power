@@ -1,7 +1,7 @@
 "'Bottom Navigation' As CanvasComponent":
     Fill: =RGBA(0, 0, 0, 0)
-    Height: =640
-    Width: =640
+    Height: =Max(App.Height, App.MinScreenHeight)/10
+    Width: =Max(App.Width, App.MinScreenWidth)
     X: =0
     Y: =0
     ZIndex: =1
