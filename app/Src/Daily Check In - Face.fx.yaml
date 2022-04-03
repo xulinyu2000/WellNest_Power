@@ -49,8 +49,7 @@
         HoverColor: =ColorFade(Icon2.Color, 20%)
         HoverFill: =Icon2.Fill
         Icon: =Icon.EmojiNeutral
-        OnSelect: |
-            =face_checkin_click_9.Run(User().FullName, 3, 3)
+        OnSelect: =check_in_face.Run(User().FullName, 3); Navigate('Daily Check In - Word')
         PressedBorderColor: =ColorFade(Icon2.BorderColor, -20%)
         PressedColor: =ColorFade(Icon2.Color, -20%)
         PressedFill: =Icon2.Fill
@@ -65,7 +64,7 @@
         HoverColor: =ColorFade(Icon2_1.Color, 20%)
         HoverFill: =Icon2_1.Fill
         Icon: =Icon.EmojiFrown
-        OnSelect: =face_checkin_click_9.Run(User().FullName,3,2)
+        OnSelect: =check_in_face.Run(User().FullName, 2)
         PressedBorderColor: =ColorFade(Icon2_1.BorderColor, -20%)
         PressedColor: =ColorFade(Icon2_1.Color, -20%)
         PressedFill: =Icon2_1.Fill
@@ -80,8 +79,7 @@
         HoverColor: =ColorFade(Icon2_2.Color, 20%)
         HoverFill: =Icon2_2.Fill
         Icon: =Icon.EmojiSmile
-        OnSelect: |
-            =face_checkin_click_9.Run(User().FullName, 3, 4)
+        OnSelect: =check_in_face.Run(User().FullName, 4)
         PressedBorderColor: =ColorFade(Icon2_2.BorderColor, -20%)
         PressedColor: =ColorFade(Icon2_2.Color, -20%)
         PressedFill: =Icon2_2.Fill
@@ -96,8 +94,7 @@
         HoverColor: =ColorFade(Icon2_3.Color, 20%)
         HoverFill: =Icon2_3.Fill
         Icon: =Icon.EmojiSad
-        OnSelect: |
-            =face_checkin_click_9.Run(User().FullName, 3, 1)
+        OnSelect: =check_in_face.Run(User().FullName, 1)
         PressedBorderColor: =ColorFade(Icon2_3.BorderColor, -20%)
         PressedColor: =ColorFade(Icon2_3.Color, -20%)
         PressedFill: =Icon2_3.Fill
@@ -112,8 +109,7 @@
         HoverColor: =ColorFade(Icon2_4.Color, 20%)
         HoverFill: =Icon2_4.Fill
         Icon: =Icon.EmojiHappy
-        OnSelect: |
-            =face_checkin_click_9.Run(User().FullName, 3, 5)
+        OnSelect: =check_in_face.Run(User().FullName, 5)
         PressedBorderColor: =ColorFade(Icon2_4.BorderColor, -20%)
         PressedColor: =ColorFade(Icon2_4.Color, -20%)
         PressedFill: =Icon2_4.Fill
