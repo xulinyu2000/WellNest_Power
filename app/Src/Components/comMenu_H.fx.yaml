@@ -3,8 +3,10 @@ comMenu_H As CanvasComponent:
     Height: =150
     MenuItems: |-
         =Table({MenuItem: "Sample Menu Item 1", IconName: Icon.EmojiSmile, ScreenName: App.ActiveScreen}, {MenuItem: "Sample Menu Item 2", IconName: Icon.Add, ScreenName: App.ActiveScreen}, {MenuItem: "Sample Menu Item 3", IconName: Icon.EmojiFrown, ScreenName: App.ActiveScreen}, {MenuItem: "Sample Menu Item 4", IconName: Icon.EmojiNeutral, ScreenName: App.ActiveScreen})
-    SelectColor: =RGBA(0, 0, 0, 1)
-    UnselectedColor: =RGBA(0, 0, 0, 1)
+    SelectColor: |-
+        =ColorValue("#48A1FF")
+    UnselectedColor: |-
+        =ColorValue("#CBCBCB")
     Width: =App.Width*1
     X: =0
     Y: =0
