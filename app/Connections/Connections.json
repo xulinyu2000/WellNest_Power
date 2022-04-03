@@ -168,12 +168,20 @@
             "tableName": "Response"
           }
         }
+      },
+      "b!xhzlx4cH6UKzfvdIs_mCMfGcHNFQiwZJvo3KsbpgDGmqq5NwAHUtS5Yt_uOO0mDm.01ZA4JGQV4SFUOXQ2CQBFLIWRPLLT26K4E": {
+        "dataSources": {
+          "Table1": {
+            "tableName": "Table1"
+          }
+        }
       }
     },
     "dataSources": [
       "ClassDetail",
       "Response",
-      "Login"
+      "Login",
+      "Table1"
     ],
     "dependencies": {
       "fileSource": "5782a3ec-b73a-47b1-9d58-ff4d2a2d8d68"
