@@ -29,8 +29,8 @@ Header As CanvasComponent:
         Label4 As label:
             Height: =70
             Size: =10
-            Text: ="Date + Time"
-            Width: =98
+            Text: =Now()
+            Width: =146
             Y: =43
             ZIndex: =2
 
