@@ -49,7 +49,7 @@
         HoverColor: =ColorFade(Icon2.Color, 20%)
         HoverFill: =Icon2.Fill
         Icon: =Icon.EmojiNeutral
-        OnSelect: =s
+        OnSelect: =
         PressedBorderColor: =ColorFade(Icon2.BorderColor, -20%)
         PressedColor: =ColorFade(Icon2.Color, -20%)
         PressedFill: =Icon2.Fill
@@ -136,6 +136,6 @@
         PressedColor: =ColorFade(Icon5.Color, -20%)
         PressedFill: =Icon5.Fill
         X: =286
-        Y: =620
+        Y: =713
         ZIndex: =12
 
