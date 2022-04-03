@@ -16,10 +16,28 @@ Header As CanvasComponent:
             =0
         ZIndex: =1
 
+        Logo_2 As image:
+            Height: =49
+            HoverBorderColor: =ColorFade(Logo_2.BorderColor, 20%)
+            HoverFill: =ColorFade(Logo_2.Fill, 20%)
+            Image: =Picture1
+            PressedBorderColor: =ColorFade(Logo_2.BorderColor, -20%)
+            PressedFill: =ColorFade(Logo_2.Fill, -20%)
+            Width: =61
+            ZIndex: =1
+
+        Label4 As label:
+            Height: =70
+            Size: =10
+            Text: ="Date + Time"
+            Width: =98
+            Y: =43
+            ZIndex: =2
+
     Container3 As groupContainer.manualLayoutContainer:
         Height: =Header.Height
-        Width: =344
-        X: =296
+        Width: =306
+        X: =334
         ZIndex: =2
 
         Image1 As image:
@@ -32,10 +50,11 @@ Header As CanvasComponent:
             ZIndex: =1
 
         Label3 As label:
+            Align: =Align.Center
             Height: =113.6
-            Size: =21
+            Size: =20
             Text: ="Username"
-            Width: =193
-            X: =150
+            Width: =175
+            X: =131
             ZIndex: =2
 
