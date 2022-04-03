@@ -1,0 +1,49 @@
+comMenu_H As CanvasComponent:
+    Fill: =
+    Height: =150
+    MenuItems: |-
+        =Table({MenuItem: "Sample Menu Item 1", IconName: Icon.EmojiSmile, ScreenName: App.ActiveScreen}, {MenuItem: "Sample Menu Item 2", IconName: Icon.Add, ScreenName: App.ActiveScreen}, {MenuItem: "Sample Menu Item 3", IconName: Icon.EmojiFrown, ScreenName: App.ActiveScreen}, {MenuItem: "Sample Menu Item 4", IconName: Icon.EmojiNeutral, ScreenName: App.ActiveScreen})
+    SelectColor: =RGBA(0, 0, 0, 1)
+    UnselectedColor: =RGBA(0, 0, 0, 1)
+    Width: =App.Width*1
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Gallery1 As gallery.galleryHorizontal:
+        Height: =Parent.Height
+        Items: =comMenu_H.MenuItems
+        OnSelect: =Navigate(ThisItem.ScreenName,ScreenTransition.Fade)
+        TemplateSize: =154
+        Width: =Parent.Width
+        WrapCount: =0
+        ZIndex: =1
+
+        Label2 As label:
+            Align: =Center
+            Color: =If(ThisItem.ScreenName = App.ActiveScreen, comMenu_H.SelectColor, comMenu_H.UnselectedColor)
+            Height: =39
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: =ThisItem.MenuItem
+            Width: =154
+            Y: =92
+            ZIndex: =1
+
+        Icon6 As icon.CancelBadge:
+            Color: =If(ThisItem.ScreenName = App.ActiveScreen, comMenu_H.SelectColor, comMenu_H.UnselectedColor)
+            DisabledColor: |-
+                =ColorValue("#48A1FF")
+            DisabledFill: =Icon6.Fill
+            HoverBorderColor: =ColorFade(Icon6.BorderColor, 20%)
+            HoverColor: =ColorFade(Icon6.Color, 20%)
+            HoverFill: =Icon6.Fill
+            Icon: =ThisItem.IconName
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =ColorFade(Icon6.BorderColor, -20%)
+            PressedColor: =ColorFade(Icon6.Color, -20%)
+            PressedFill: =Icon6.Fill
+            X: =45
+            Y: =28
+            ZIndex: =2
+
