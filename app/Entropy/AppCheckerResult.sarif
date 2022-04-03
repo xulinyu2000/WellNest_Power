@@ -1297,6 +1297,80 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Daily Check In - Face.IconAccept1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Daily Check In - Face.IconAccept1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 9,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "EditForm1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Daily Check In - Face",
+                "type": "Daily Check In - Face.IconAccept1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Daily Check In - Face.Icon2.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Daily Check In - Face.Icon2.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "s"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Daily Check In - Face",
+                "type": "Daily Check In - Face.Icon2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Teachers Dashboard.ShowDate.Text"
                 }
               ],
@@ -2070,66 +2144,6 @@
                 "member": "TabIndex",
                 "module": "Start",
                 "type": "Start.BottomNavigation_1.forum_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Daily Check In - Face.Icon2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Daily Check In - Face.Icon2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Daily Check In - Face",
-                "type": "Daily Check In - Face.Icon2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Daily Check In - Face.Icon2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Daily Check In - Face.Icon2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Daily Check In - Face",
-                "type": "Daily Check In - Face.Icon2"
               }
             }
           ],
