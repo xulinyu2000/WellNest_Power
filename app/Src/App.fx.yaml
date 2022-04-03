@@ -7,22 +7,22 @@ App As appinfo:
             colMenu,
             {
                 MenuItem: "Dashboard",
-                IconName: Icon.EmojiSmile,
+                IconName: Icon.Items,
                 ScreenName: 'Students Dashboard'
             },
             {
                 MenuItem: "Community",
-                IconName: Icon.Add,
+                IconName: Icon.People,
                 ScreenName: StudentCommunity
             },
             {
                 MenuItem: "Messaging",
-                IconName: Icon.EmojiFrown,
+                IconName: Icon.Message,
                 ScreenName: StudentMessaging
             },
             {
                 MenuItem: "Knowledge",
-                IconName: Icon.EmojiNeutral,
+                IconName: Icon.DocumentWithContent,
                 ScreenName: StudentKnowledge
             }
         )

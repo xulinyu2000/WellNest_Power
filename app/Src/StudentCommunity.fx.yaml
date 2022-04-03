@@ -23,3 +23,16 @@
         Y: =986
         ZIndex: =4
 
+    Icon1 As icon.Add:
+        DisabledFill: =Icon1.Fill
+        HoverBorderColor: =ColorFade(Icon1.BorderColor, 20%)
+        HoverColor: =ColorFade(Icon1.Color, 20%)
+        HoverFill: =Icon1.Fill
+        Icon: =Icon.Add
+        PressedBorderColor: =ColorFade(Icon1.BorderColor, -20%)
+        PressedColor: =ColorFade(Icon1.Color, -20%)
+        PressedFill: =Icon1.Fill
+        X: =40
+        Y: =40
+        ZIndex: =5
+
