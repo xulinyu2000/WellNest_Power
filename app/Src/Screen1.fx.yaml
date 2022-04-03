@@ -88,7 +88,7 @@
             HoverColor: =ColorFade(forum_2.Color, 20%)
             HoverFill: =forum_2.Fill
             Icon: =Icon.DocumentWithContent
-            OnSelect: =Navigate([@LogIn], Fade)
+            OnSelect: =Navigate([@'LogIn-will be cancelled'], Fade)
             PressedBorderColor: =ColorFade(forum_2.BorderColor, -20%)
             PressedColor: =ColorFade(forum_2.Color, -20%)
             PressedFill: =forum_2.Fill
