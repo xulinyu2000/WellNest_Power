@@ -8,9 +8,9 @@
 
     Canvas1_2 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
-        Height: =1022
+        Height: =956
         Width: =Parent.Width
-        Y: =113
+        Y: =179
         ZIndex: =3
 
         DataCard7_1 As dataCard.blankCard:
@@ -112,4 +112,12 @@
         MenuItems: =colMenu
         Y: =980
         ZIndex: =12
+
+    Label5 As label:
+        Height: =70
+        Size: =21
+        Text: ="Your Question Sets"
+        Width: =560
+        Y: =113
+        ZIndex: =13
 
