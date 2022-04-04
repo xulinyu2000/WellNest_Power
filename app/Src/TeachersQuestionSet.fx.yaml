@@ -13,85 +13,50 @@
         Y: =179
         ZIndex: =3
 
-        DataCard7_1 As dataCard.blankCard:
+        DataCard14 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =322
+            Height: =382
             Width: =640
             X: =0
             Y: =0
-            ZIndex: =8
+            ZIndex: =1
 
-            Container4 As groupContainer.manualLayoutContainer:
-                Height: =257
-                Width: =266
+            Dropdown1 As dropdown:
+                Default: ="Select a Question Set"
+                Height: =70
+                HoverBorderColor: =ColorFade(Dropdown1.BorderColor, 15%)
+                Items: =DropDownSample
+                PressedBorderColor: =Dropdown1.HoverBorderColor
+                Size: =21
+                Width: =575
                 X: =33
-                Y: =39
+                Y: =30
                 ZIndex: =1
 
-                Image3 As image:
-                    Height: =269
-                    HoverBorderColor: =ColorFade(Image3.BorderColor, 20%)
-                    HoverFill: =ColorFade(Image3.Fill, 20%)
-                    Image: =Questions
-                    PressedBorderColor: =ColorFade(Image3.BorderColor, -20%)
-                    PressedFill: =ColorFade(Image3.Fill, -20%)
-                    Width: =258
-                    ZIndex: =1
-
-            Container4_1 As groupContainer.manualLayoutContainer:
-                Height: =257
-                Width: =266
-                X: =338
-                Y: =39
-                ZIndex: =2
-
-                Image3_1 As image:
-                    Height: =257
-                    HoverBorderColor: =ColorFade(Image3_1.BorderColor, 20%)
-                    HoverFill: =ColorFade(Image3_1.Fill, 20%)
-                    Image: =Questions
-                    PressedBorderColor: =ColorFade(Image3_1.BorderColor, -20%)
-                    PressedFill: =ColorFade(Image3_1.Fill, -20%)
-                    Width: =258
-                    ZIndex: =1
-
-        DataCard11 As dataCard.blankCard:
+        DataCard15 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =336
+            Height: =100
             Width: =640
             X: =0
             Y: =1
-            ZIndex: =9
+            ZIndex: =2
 
-            Image3_2 As image:
-                Height: =269
-                HoverBorderColor: =ColorFade(Image3_2.BorderColor, 20%)
-                HoverFill: =ColorFade(Image3_2.Fill, 20%)
-                Image: =Questions
-                PressedBorderColor: =ColorFade(Image3_2.BorderColor, -20%)
-                PressedFill: =ColorFade(Image3_2.Fill, -20%)
-                Width: =258
-                X: =36
-                Y: =36
-                ZIndex: =1
-
-            Image3_3 As image:
-                Height: =269
-                HoverBorderColor: =ColorFade(Image3_3.BorderColor, 20%)
-                HoverFill: =ColorFade(Image3_3.Fill, 20%)
-                Image: =Questions
-                PressedBorderColor: =ColorFade(Image3_3.BorderColor, -20%)
-                PressedFill: =ColorFade(Image3_3.Fill, -20%)
-                Width: =258
-                X: =334
-                Y: =36
-                ZIndex: =2
+        DataCard17 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =100
+            Width: =640
+            X: =0
+            Y: =2
+            ZIndex: =3
 
     DashboardLogo_2 As image:
         Height: =98
@@ -120,4 +85,18 @@
         Width: =560
         Y: =113
         ZIndex: =13
+
+    Button5 As button:
+        BorderColor: =ColorFade(Button5.Fill, -15%)
+        Height: =66
+        HoverBorderColor: =ColorFade(Button5.BorderColor, 20%)
+        PressedBorderColor: =Button5.Fill
+        PressedColor: =Button5.Fill
+        PressedFill: =Button5.Color
+        Size: =24
+        Text: ="Add questions"
+        Width: =552
+        X: =44
+        Y: =461
+        ZIndex: =14
 
