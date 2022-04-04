@@ -53,7 +53,7 @@ Header As CanvasComponent:
             Align: =Align.Center
             Height: =113.6
             Size: =20
-            Text: ="Username"
+            Text: =User().FullName
             Width: =175
             X: =131
             ZIndex: =2
