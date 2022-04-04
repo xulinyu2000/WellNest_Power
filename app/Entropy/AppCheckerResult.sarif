@@ -2674,6 +2674,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.Picture2_2"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Picture2_2",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Picture2_2",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.Picture3"
                 }
               ],
