@@ -1,0 +1,126 @@
+"TeachersQuestionSet As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+
+    RectQuickActionBar3_2 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =113
+        Width: =Parent.Width
+        ZIndex: =1
+
+    Canvas1_2 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =1022
+        Width: =Parent.Width
+        Y: =113
+        ZIndex: =3
+
+        DataCard7_1 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =322
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =8
+
+            Container4 As groupContainer.manualLayoutContainer:
+                Height: =257
+                Width: =266
+                X: =33
+                Y: =39
+                ZIndex: =1
+
+                Image3 As image:
+                    Height: =269
+                    HoverBorderColor: =ColorFade(Image3.BorderColor, 20%)
+                    HoverFill: =ColorFade(Image3.Fill, 20%)
+                    Image: =Questions
+                    PressedBorderColor: =ColorFade(Image3.BorderColor, -20%)
+                    PressedFill: =ColorFade(Image3.Fill, -20%)
+                    Width: =258
+                    ZIndex: =1
+
+            Container4_1 As groupContainer.manualLayoutContainer:
+                Height: =257
+                Width: =266
+                X: =338
+                Y: =39
+                ZIndex: =2
+
+                Image3_1 As image:
+                    Height: =257
+                    HoverBorderColor: =ColorFade(Image3_1.BorderColor, 20%)
+                    HoverFill: =ColorFade(Image3_1.Fill, 20%)
+                    Image: =Questions
+                    PressedBorderColor: =ColorFade(Image3_1.BorderColor, -20%)
+                    PressedFill: =ColorFade(Image3_1.Fill, -20%)
+                    Width: =258
+                    ZIndex: =1
+
+        DataCard11 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =336
+            Width: =640
+            X: =0
+            Y: =1
+            ZIndex: =9
+
+            Image3_2 As image:
+                Height: =269
+                HoverBorderColor: =ColorFade(Image3_2.BorderColor, 20%)
+                HoverFill: =ColorFade(Image3_2.Fill, 20%)
+                Image: =Questions
+                PressedBorderColor: =ColorFade(Image3_2.BorderColor, -20%)
+                PressedFill: =ColorFade(Image3_2.Fill, -20%)
+                Width: =258
+                X: =36
+                Y: =36
+                ZIndex: =1
+
+            Image3_3 As image:
+                Height: =269
+                HoverBorderColor: =ColorFade(Image3_3.BorderColor, 20%)
+                HoverFill: =ColorFade(Image3_3.Fill, 20%)
+                Image: =Questions
+                PressedBorderColor: =ColorFade(Image3_3.BorderColor, -20%)
+                PressedFill: =ColorFade(Image3_3.Fill, -20%)
+                Width: =258
+                X: =334
+                Y: =36
+                ZIndex: =2
+
+        DataCard12 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =100
+            Width: =640
+            X: =0
+            Y: =2
+            ZIndex: =10
+
+    DashboardLogo_2 As image:
+        Height: =98
+        HoverBorderColor: =ColorFade(DashboardLogo_2.BorderColor, 20%)
+        HoverFill: =ColorFade(DashboardLogo_2.Fill, 20%)
+        Image: =Picture1_1
+        PaddingLeft: =10
+        PressedBorderColor: =ColorFade(DashboardLogo_2.BorderColor, -20%)
+        PressedFill: =ColorFade(DashboardLogo_2.Fill, -20%)
+        Width: =68
+        ZIndex: =5
+
+    Header_6 As Header:
+        ZIndex: =11
+
+    comMenu_H_6 As comMenu_H:
+        Height: =156
+        MenuItems: =colMenu
+        Y: =980
+        ZIndex: =12
+

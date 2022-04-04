@@ -1,4 +1,4 @@
-"'Teachers Dashboard' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+"TeachersDashboard As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
     RectQuickActionBar3_1 As rectangle:
         Fill: =RGBA(255, 255, 255, 1)
@@ -206,16 +206,6 @@
         X: =425
         Y: =148
         ZIndex: =8
-
-    ShowDate As label:
-        Height: =70
-        Size: =21
-        Text: |
-            =Day()
-        Width: =140
-        X: =460
-        Y: =40
-        ZIndex: =9
 
     Header_3 As Header:
         ZIndex: =11
