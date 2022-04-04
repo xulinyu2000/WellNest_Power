@@ -93,17 +93,6 @@
                 Y: =36
                 ZIndex: =2
 
-        DataCard12 As dataCard.blankCard:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =100
-            Width: =640
-            X: =0
-            Y: =2
-            ZIndex: =10
-
     DashboardLogo_2 As image:
         Height: =98
         HoverBorderColor: =ColorFade(DashboardLogo_2.BorderColor, 20%)
