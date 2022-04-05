@@ -8,7 +8,8 @@
 
     Gallery4 As gallery.galleryHorizontal:
         Height: =Parent.Height
-        Items: =CustomGallerySample
+        Items: =Table({)
+        TemplatePadding: =0
         TemplateSize: =Self.Width/4
         Width: =Parent.Width
         ZIndex: =1
@@ -23,16 +24,16 @@
             PressedBorderColor: =ColorFade(Icon8.BorderColor, -20%)
             PressedColor: =ColorFade(Icon8.Color, -20%)
             PressedFill: =Icon8.Fill
-            X: =20
-            Y: =20
+            X: =48
+            Y: =5
             ZIndex: =1
 
         Label6 As label:
-            Height: =70
+            Height: =69
             OnSelect: =Select(Parent)
-            Size: =21
+            Size: =16
             Text: =ThisItem.SampleHeading
-            Width: =320
-            Y: =33.599999999999994
+            Width: =160
+            Y: =44
             ZIndex: =2
 

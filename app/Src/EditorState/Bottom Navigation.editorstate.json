@@ -72,7 +72,14 @@
   "Gallery4": {
     "AllowAccessToGlobals": true,
     "ControlPropertyState": [
-      "Items",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "CustomGallerySample",
+        "InvariantPropertyName": "Items",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       {
         "AFDDataSourceName": "",
         "AutoRuleBindingEnabled": false,
@@ -81,7 +88,14 @@
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       },
-      "TemplatePadding",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "TemplatePadding",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "Layout",
       "Transition",
       "LoadingSpinner",
@@ -477,7 +491,14 @@
       "LineHeight",
       "BorderThickness",
       "FocusedBorderThickness",
-      "Size",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "Size",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "Italic",
       "Underline",
       "Strikethrough",
