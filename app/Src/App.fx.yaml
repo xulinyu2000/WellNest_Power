@@ -32,22 +32,22 @@ App As appinfo:
                 {
                     MenuText: "Dashboard",
                     MenuIcon: Icon.Items,
-                    ScreenToGoTo: StudentDashboard
+                    ScreenToGoTo: 'StudentDashboard'
                 },
                 {
                     MenuText: "Community",
                     MenuIcon: Icon.People,
-                    ScreenToGoTo: StudentCommunity
+                    ScreenToGoTo: 'StudentCommunity'
                 },
                 {
                     MenuText: "Message",
                     MenuIcon: Icon.Message,
-                    ScreenToGoTo: StudentMessaging
+                    ScreenToGoTo: 'StudentMessaging'
                 },
                 {
                     MenuText: "Knowledge",
                     MenuIcon: Icon.DocumentWithContent,
-                    ScreenToGoTo: StudentKnowledge
+                    ScreenToGoTo: 'StudentKnowledge'
                 }
             )
         );

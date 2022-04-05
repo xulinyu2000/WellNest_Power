@@ -1,5 +1,5 @@
 compMenu As CanvasComponent:
-    BackgroundColor: =DarkGray
+    BackgroundColor: =White
     Fill: =RGBA(0, 0, 0, 0)
     ForegroundColor: =RGBA(0,134,208,1)
     Height: =Max(App.Height, App.MinScreenHeight)/10
@@ -25,16 +25,6 @@ compMenu As CanvasComponent:
                 MenuIcon: Icon.DocumentWithContent,
                 ScreenToGoTo: App.ActiveScreen
             }
-            /*{
-                MenuText: "Menu Item 5",
-                MenuIcon: Icon.Home,
-                ScreenToGoTo: App.ActiveScreen
-            },
-            {
-                MenuText: "Menu Item 6",
-                MenuIcon: Icon.Home,
-                ScreenToGoTo: App.ActiveScreen
-            }*/
         )
     SelectedItemBackground: =LightBlue
     Width: =Max(App.Width, App.MinScreenWidth)
