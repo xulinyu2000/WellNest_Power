@@ -1,4 +1,6 @@
-"'General Dashboard' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+"'Admin Dashboard' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    OnVisible: |-
+        =Collect(Collection1, {Image: DashboardLogo_1.Image})
 
     RectQuickActionBar3_4 As rectangle:
         Fill: =RGBA(255, 255, 255, 1)

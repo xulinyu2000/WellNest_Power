@@ -48,6 +48,31 @@ App As appinfo:
                     MenuText: "Student Knowledge",
                     MenuIcon: Icon.DocumentWithContent,
                     ScreenToGoTo: 'Student Knowledge'
+                },
+                 {
+                    MenuText: "Teacher Dashboard",
+                    MenuIcon: Icon.Items,
+                    ScreenToGoTo: 'Student Dashboard'
+                },
+                {
+                    MenuText: "Class Management",
+                    MenuIcon: Icon.People,
+                    ScreenToGoTo: 'Teacher Class Management'
+                },  
+                {
+                    MenuText: "Teacher Knowledge",
+                    MenuIcon: Icon.DocumentWithContent,
+                    ScreenToGoTo: 'Teacher Knowledge'
+                },
+                {
+                    MenuText: "Admin Dashboard",
+                    MenuIcon: Icon.Items,
+                    ScreenToGoTo: 'Admin Dashboard'
+                },
+                 {
+                    MenuText: "Admin Message",
+                    MenuIcon: Icon.Message,
+                    ScreenToGoTo: 'Admin Messaging'
                 }
             )
         )
