@@ -104,3 +104,43 @@
         Y: =1023
         ZIndex: =15
 
+    Button6 As button:
+        BorderColor: =ColorFade(Button6.Fill, -15%)
+        Height: =70
+        HoverBorderColor: =ColorFade(Button6.BorderColor, 20%)
+        OnSelect: |-
+            =Set(gblNavItems,
+            Table(
+                {
+                    MenuText: "Dashboard",
+                    MenuIcon: Icon.Items,
+                    ScreenToGoTo: 'StudentDashboard'
+                },
+                {
+                    MenuText: "Community",
+                    MenuIcon: Icon.People,
+                    ScreenToGoTo: 'StudentCommunity'
+                },
+                {
+                    MenuText: "Message",
+                    MenuIcon: Icon.Message,
+                    ScreenToGoTo: 'StudentMessaging'
+                },
+                {
+                    MenuText: "Knowledge",
+                    MenuIcon: Icon.DocumentWithContent,
+                    ScreenToGoTo: 'StudentKnowledge'
+                }
+                
+            )
+            );
+        PressedBorderColor: =Button6.Fill
+        PressedColor: =Button6.Fill
+        PressedFill: =Button6.Color
+        Size: =24
+        Text: ="Create Nav Items"
+        Width: =396
+        X: =122
+        Y: =871
+        ZIndex: =16
+
