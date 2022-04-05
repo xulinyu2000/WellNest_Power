@@ -1,11 +1,11 @@
-"StudentMessaging As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+"'Student Knowledge' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
-    RectQuickActionBar4 As rectangle:
+    RectQuickActionBar5_1 As rectangle:
         Height: =88
         Width: =Parent.Width
         ZIndex: =1
 
-    LblAppName3 As label:
+    LblAppName4_1 As label:
         Align: =Align.Center
         Height: =88
         Size: =27
@@ -13,14 +13,17 @@
         Width: =Parent.Width
         ZIndex: =2
 
-    Canvas3 As fluidGrid.fluidGridWithBlankCard:
+    Header_10 As Header:
+        ZIndex: =3
+
+    Canvas4_1 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
         Height: =Parent.Height - Self.Y
         Width: =Parent.Width
-        Y: =RectQuickActionBar4.Y + RectQuickActionBar4.Height
-        ZIndex: =3
+        Y: =RectQuickActionBar5_1.Y + RectQuickActionBar5_1.Height
+        ZIndex: =4
 
-        DataCard8 As dataCard:
+        DataCard9_1 As dataCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             BorderThickness: =0
@@ -32,20 +35,17 @@
             Y: =0
             ZIndex: =1
 
-            Label13 As label:
+            Label10_1 As label:
                 Height: =70
                 Size: =21
-                Text: ="Message"
+                Text: ="Knowledge"
                 Width: =560
                 X: =80
-                Y: =498
+                Y: =450
                 ZIndex: =1
 
-    Header_2 As Header:
+    compMenu_7 As compMenu:
+        NavigationItems: =gblNavItems
+        Y: =1041
         ZIndex: =5
-
-    compMenu_4 As compMenu:
-        NavigationItem: =gblNavItems
-        Y: =1023
-        ZIndex: =6
 

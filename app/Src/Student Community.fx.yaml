@@ -1,0 +1,38 @@
+"'Student Community' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+
+    Header_8 As Header:
+
+    Canvas2_1 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =Parent.Height - Self.Y
+        Width: =Parent.Width
+        Y: =RectQuickActionBar4.Y + RectQuickActionBar4.Height
+        ZIndex: =3
+
+        DataCard5_1 As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.Height - 100
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            Label12_1 As label:
+                Height: =70
+                Size: =21
+                Text: ="Community "
+                Width: =560
+                X: =80
+                Y: =483
+                ZIndex: =1
+
+    compMenu_1 As compMenu:
+        NavigationItems: |
+            =gblNavItems
+        Y: =1042
+        ZIndex: =4
+

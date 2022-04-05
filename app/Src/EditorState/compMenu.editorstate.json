@@ -56,8 +56,8 @@
       {
         "AFDDataSourceName": "",
         "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "Table(\r\n    {\r\n        MenuText: \"Menu Item 1\",\r\n        MenuIcon: Icon.Items,\r\n        ScreenToGoTo: App.ActiveScreen\r\n    },\r\n    {\r\n        MenuText: \"Menu Item 2\",\r\n        MenuIcon: Icon.People,\r\n        ScreenToGoTo: App.ActiveScreen\r\n    },\r\n    {\r\n        MenuText: \"Menu Item 3\",\r\n        MenuIcon: Icon.Message,\r\n        ScreenToGoTo: App.ActiveScreen\r\n    },\r\n    {\r\n        MenuText: \"Menu Item 4\",\r\n        MenuIcon: Icon.DocumentWithContent,\r\n        ScreenToGoTo: App.ActiveScreen\r\n    }\r\n    /*{\r\n        MenuText: \"Menu Item 5\",\r\n        MenuIcon: Icon.Home,\r\n        ScreenToGoTo: App.ActiveScreen\r\n    },\r\n    {\r\n        MenuText: \"Menu Item 6\",\r\n        MenuIcon: Icon.Home,\r\n        ScreenToGoTo: App.ActiveScreen\r\n    }*/\r\n)",
-        "InvariantPropertyName": "NavigationItem",
+        "AutoRuleBindingString": "Table(\r\n    {\r\n        MenuText: \"Menu Item 1\",\r\n        MenuIcon: Icon.Items,\r\n        ScreenToGoTo: App.ActiveScreen\r\n    },\r\n    {\r\n        MenuText: \"Menu Item 2\",\r\n        MenuIcon: Icon.People,\r\n        ScreenToGoTo: App.ActiveScreen\r\n    },\r\n    {\r\n        MenuText: \"Menu Item 3\",\r\n        MenuIcon: Icon.Message,\r\n        ScreenToGoTo: App.ActiveScreen\r\n    },\r\n    {\r\n        MenuText: \"Menu Item 4\",\r\n        MenuIcon: Icon.DocumentWithContent,\r\n        ScreenToGoTo: App.ActiveScreen\r\n    }\r\n)",
+        "InvariantPropertyName": "NavigationItems",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       }
@@ -92,7 +92,7 @@
       {
         "Category": "Data",
         "NameMap": "{\"MenuIcon\":\"MenuIcon\",\"MenuText\":\"MenuText\",\"ScreenToGoTo\":\"ScreenToGoTo\"}",
-        "PropertyName": "NavigationItem",
+        "PropertyName": "NavigationItems",
         "RuleProviderType": "Unknown"
       },
       {
@@ -447,6 +447,22 @@
         "InvariantPropertyName": "PaddingBottom",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "PaddingLeft",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "PaddingRight",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
       }
     ],
     "HasDynamicProperties": false,
@@ -588,6 +604,16 @@
         "RuleProviderType": "Unknown"
       },
       {
+        "Category": "Design",
+        "PropertyName": "PaddingLeft",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "PaddingRight",
+        "RuleProviderType": "Unknown"
+      },
+      {
         "Category": "Behavior",
         "PropertyName": "OnSelect",
         "RuleProviderType": "Unknown"
@@ -654,14 +680,7 @@
       "PressedBorderColor",
       "HoverBorderColor",
       "FocusedBorderColor",
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "Select(Parent)",
-        "InvariantPropertyName": "OnSelect",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      },
+      "OnSelect",
       "ZIndex",
       "BorderThickness",
       "FocusedBorderThickness",
@@ -870,7 +889,14 @@
       "VerticalAlign",
       "X",
       "Y",
-      "Width",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "160",
+        "InvariantPropertyName": "Width",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "Height",
       "DisplayMode",
       "OnSelect",
