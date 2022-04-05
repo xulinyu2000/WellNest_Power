@@ -30,22 +30,22 @@ App As appinfo:
             gblNavItems,
             Table(
                 {
-                    MenuText: "Dashboard",
+                    MenuText: "Student Dashboard",
                     MenuIcon: Icon.Items,
                     ScreenToGoTo: 'Student Dashboard'
                 },
                 {
-                    MenuText: "Community",
+                    MenuText: "Student Community",
                     MenuIcon: Icon.People,
                     ScreenToGoTo: 'Student Community'
                 },
                 {
-                    MenuText: "Message",
+                    MenuText: "Student Message",
                     MenuIcon: Icon.Message,
                     ScreenToGoTo: 'Student Messaging'
                 },
                 {
-                    MenuText: "Knowledge",
+                    MenuText: "Student Knowledge",
                     MenuIcon: Icon.DocumentWithContent,
                     ScreenToGoTo: 'Student Knowledge'
                 }
