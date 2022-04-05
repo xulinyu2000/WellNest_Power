@@ -25,7 +25,9 @@ App As appinfo:
                 IconName: Icon.DocumentWithContent,
                 ScreenName: StudentKnowledge
             }
-        )*/
+        );*/
+        
+        
         Set(
             gblNavItems,
             Table(
@@ -50,5 +52,5 @@ App As appinfo:
                     ScreenToGoTo: 'StudentKnowledge'
                 }
             )
-        );
+        )
 

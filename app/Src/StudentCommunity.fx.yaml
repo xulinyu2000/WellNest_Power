@@ -5,7 +5,7 @@
         Height: =Parent.Height - Self.Y
         Width: =Parent.Width
         Y: =RectQuickActionBar4.Y + RectQuickActionBar4.Height
-        ZIndex: =3
+        ZIndex: =1
 
         DataCard5 As dataCard:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -39,13 +39,13 @@
         PressedFill: =Icon1.Fill
         X: =40
         Y: =40
-        ZIndex: =5
+        ZIndex: =2
 
     Header_4 As Header:
-        ZIndex: =6
+        ZIndex: =3
 
     compMenu_2 As compMenu:
         NavigationItem: =gblNavItems
         Y: =1023
-        ZIndex: =7
+        ZIndex: =4
 

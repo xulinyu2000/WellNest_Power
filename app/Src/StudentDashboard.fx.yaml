@@ -139,10 +139,7 @@
     Header_1 As Header:
         ZIndex: =10
 
-    compMenu_6 As compMenu:
-        ForegroundColor: =RGBA(0, 134, 208, 1)
-        NavigationItem: |
-            =gblNavItems
+    compMenu_1 As compMenu:
         Y: =1023
         ZIndex: =11
 

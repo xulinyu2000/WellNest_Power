@@ -346,7 +346,7 @@
     "StyleName": "defaultButtonStyle",
     "Type": "ControlInfo"
   },
-  "compMenu_6": {
+  "compMenu_1": {
     "AllowAccessToGlobals": true,
     "ControlPropertyState": [
       {
@@ -379,7 +379,7 @@
       {
         "AFDDataSourceName": "",
         "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "",
+        "AutoRuleBindingString": "RGBA(0, 0, 0, 1)",
         "InvariantPropertyName": "ForegroundColor",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
@@ -423,14 +423,14 @@
       "Description": ""
     },
     "MetaDataIDKey": "",
-    "Name": "compMenu_6",
+    "Name": "compMenu_1",
     "ParentIndex": 7,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
         "Category": "Data",
         "PropertyName": "ForegroundColor",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Data",
