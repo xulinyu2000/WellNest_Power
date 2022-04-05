@@ -5,7 +5,7 @@
     "AllowAccessToGlobals": false,
     "AllowCustomization": true,
     "Description": "",
-    "Name": "Bottom Navigation",
+    "Name": "compMenu",
     "TemplateGuid": "3e5effa7fd394095b1a41fcfb3450efc"
   },
   "ComponentType": "CanvasComponent",
@@ -19,6 +19,24 @@
       "PropertyDataTypeKey": "Color",
       "Tooltip": "A custom property",
       "Type": "{\"Version\":\"1.321\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Background Color",
+      "Hidden": false,
+      "Name": "BackgroundColor",
+      "PropertyDataTypeKey": "Color",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.321\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Selected Item Background",
+      "Hidden": false,
+      "Name": "SelectedItemBackground",
+      "PropertyDataTypeKey": "Color",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.321\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -29,7 +47,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637847520281315210",
+  "LastModifiedTimestamp": "637847531051021954",
   "Name": "3e5effa7fd394095b1a41fcfb3450efc",
   "OverridableProperties": {},
   "Version": "637845801942704888"
