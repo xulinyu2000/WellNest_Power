@@ -346,13 +346,13 @@
     "StyleName": "defaultButtonStyle",
     "Type": "ControlInfo"
   },
-  "comMenu_H_5": {
+  "compMenu_1": {
     "AllowAccessToGlobals": true,
     "ControlPropertyState": [
       {
         "AFDDataSourceName": "",
         "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "RGBA(0, 0, 0, 0)",
+        "AutoRuleBindingString": "",
         "InvariantPropertyName": "Fill",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
@@ -360,12 +360,19 @@
       {
         "AFDDataSourceName": "",
         "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "",
+        "AutoRuleBindingString": "640",
         "InvariantPropertyName": "Height",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       },
-      "Width",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "640",
+        "InvariantPropertyName": "Width",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "X",
       "Y",
       "ZIndex",
@@ -373,7 +380,7 @@
         "AFDDataSourceName": "",
         "AutoRuleBindingEnabled": false,
         "AutoRuleBindingString": "RGBA(0, 0, 0, 1)",
-        "InvariantPropertyName": "SelectColor",
+        "InvariantPropertyName": "ForegroundColor",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       },
@@ -381,15 +388,15 @@
         "AFDDataSourceName": "",
         "AutoRuleBindingEnabled": false,
         "AutoRuleBindingString": "RGBA(0, 0, 0, 1)",
-        "InvariantPropertyName": "UnselectedColor",
+        "InvariantPropertyName": "BackgroundColor",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       },
       {
         "AFDDataSourceName": "",
         "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "Table({MenuItem: \"Sample Menu Item 1\", IconName: Icon.Items, ScreenName: App.ActiveScreen}, {MenuItem: \"Sample Menu Item 2\", IconName: Icon.People, ScreenName: App.ActiveScreen}, {MenuItem: \"Sample Menu Item 3\", IconName: Icon.Message, ScreenName: App.ActiveScreen}, {MenuItem: \"Sample Menu Item 4\", IconName: Icon.DocumentWithContent, ScreenName: App.ActiveScreen})",
-        "InvariantPropertyName": "MenuItems",
+        "AutoRuleBindingString": "RGBA(0, 0, 0, 1)",
+        "InvariantPropertyName": "SelectedItemBackground",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       }
@@ -408,35 +415,24 @@
       "Description": ""
     },
     "MetaDataIDKey": "",
-    "Name": "comMenu_H_5",
+    "Name": "compMenu_1",
     "ParentIndex": 7,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
         "Category": "Data",
-        "PropertyName": "SelectColor",
+        "PropertyName": "ForegroundColor",
         "RuleProviderType": "System"
       },
       {
         "Category": "Data",
-        "PropertyName": "UnselectedColor",
+        "PropertyName": "BackgroundColor",
         "RuleProviderType": "System"
       },
       {
         "Category": "Data",
-        "NameMap": "{\"IconName\":\"IconName\",\"MenuItem\":\"MenuItem\",\"ScreenName\":\"ScreenName\"}",
-        "PropertyName": "MenuItems",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "PropertyName": "Fill",
+        "PropertyName": "SelectedItemBackground",
         "RuleProviderType": "System"
-      },
-      {
-        "Category": "Design",
-        "PropertyName": "Height",
-        "RuleProviderType": "Unknown"
       },
       {
         "Category": "Design",
@@ -446,7 +442,7 @@
       {
         "Category": "Design",
         "PropertyName": "X",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Design",
@@ -457,6 +453,16 @@
         "Category": "Design",
         "PropertyName": "ZIndex",
         "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Height",
+        "RuleProviderType": "System"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Fill",
+        "RuleProviderType": "System"
       }
     ],
     "StyleName": "",
@@ -1194,6 +1200,81 @@
     "MetaDataIDKey": "",
     "Name": "DataCard10",
     "ParentIndex": 3,
+    "PersistMetaDataIDKey": false,
+    "Properties": [
+      {
+        "Category": "Design",
+        "PropertyName": "BorderColor",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "BorderStyle",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Fill",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "X",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Y",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Width",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Height",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "DisplayMode",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "ZIndex",
+        "RuleProviderType": "Unknown"
+      }
+    ],
+    "StyleName": "",
+    "Type": "ControlInfo"
+  },
+  "DataCard2": {
+    "AllowAccessToGlobals": true,
+    "ControlPropertyState": [
+      "BorderColor",
+      "BorderStyle",
+      "Fill",
+      "X",
+      "Y",
+      "Width",
+      "Height",
+      "DisplayMode",
+      "ZIndex"
+    ],
+    "HasDynamicProperties": false,
+    "IsAutoGenerated": false,
+    "IsComponentDefinition": false,
+    "IsDataControl": false,
+    "IsFromScreenLayout": false,
+    "IsGroupControl": false,
+    "IsLocked": false,
+    "LayoutName": "",
+    "MetaDataIDKey": "",
+    "Name": "DataCard2",
+    "ParentIndex": 4,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {

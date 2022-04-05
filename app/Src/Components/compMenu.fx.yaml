@@ -33,8 +33,8 @@ compMenu As CanvasComponent:
                     MenuText: "Menu Item 4",
                     MenuIcon: Icon.DocumentWithContent,
                     ScreenToGoTo: App.ActiveScreen
-                },
-                {
+                }
+                /*{
                     MenuText: "Menu Item 5",
                     MenuIcon: Icon.Home,
                     ScreenToGoTo: App.ActiveScreen
@@ -43,7 +43,7 @@ compMenu As CanvasComponent:
                     MenuText: "Menu Item 6",
                     MenuIcon: Icon.Home,
                     ScreenToGoTo: App.ActiveScreen
-                }
+                }*/
             )
         TemplateFill: =If(ThisItem.IsSelected, compMenu.SelectedItemBackground,compMenu.BackgroundColor)
         TemplatePadding: =0

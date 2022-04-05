@@ -8,7 +8,7 @@
 
     Canvas1_1 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
-        Height: =902
+        Height: =794
         Width: =Parent.Width
         Y: =233
         ZIndex: =3
@@ -154,6 +154,17 @@
                     Y: =56
                     ZIndex: =2
 
+        DataCard2 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =100
+            Width: =640
+            X: =0
+            Y: =4
+            ZIndex: =10
+
     DashboardLogo_1 As image:
         Height: =98
         HoverBorderColor: =ColorFade(DashboardLogo_1.BorderColor, 20%)
@@ -210,9 +221,7 @@
     Header_3 As Header:
         ZIndex: =11
 
-    comMenu_H_5 As comMenu_H:
-        Height: =156
-        MenuItems: =colMenu
-        Y: =980
+    compMenu_1 As compMenu:
+        Y: =1023
         ZIndex: =12
 

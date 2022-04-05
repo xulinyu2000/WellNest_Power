@@ -3,7 +3,7 @@ App As appinfo:
     MinScreenHeight: =320
     MinScreenWidth: =320
     OnStart: |-
-        =/*ClearCollect(
+        =ClearCollect(
             colMenu,
             {
                 MenuItem: "Dashboard",
@@ -25,5 +25,5 @@ App As appinfo:
                 IconName: Icon.DocumentWithContent,
                 ScreenName: StudentKnowledge
             }
-        )*/
+        )
 

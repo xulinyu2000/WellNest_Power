@@ -28,11 +28,6 @@
                 Y: =483
                 ZIndex: =1
 
-    comMenu_H_2 As comMenu_H:
-        MenuItems: =colMenu
-        Y: =986
-        ZIndex: =4
-
     Icon1 As icon.Add:
         DisabledFill: =Icon1.Fill
         HoverBorderColor: =ColorFade(Icon1.BorderColor, 20%)
@@ -48,4 +43,8 @@
 
     Header_4 As Header:
         ZIndex: =6
+
+    compMenu_2 As compMenu:
+        Y: =1023
+        ZIndex: =7
 
