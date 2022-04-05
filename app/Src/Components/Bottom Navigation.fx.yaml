@@ -1,5 +1,7 @@
 "'Bottom Navigation' As CanvasComponent":
     Fill: =RGBA(0, 0, 0, 0)
+    ForegroundColor: |
+        =RGBA(0,134,208,1)
     Height: =Max(App.Height, App.MinScreenHeight)/10
     Width: =Max(App.Width, App.MinScreenWidth)
     X: =0
@@ -8,18 +10,52 @@
 
     Gallery4 As gallery.galleryHorizontal:
         Height: =Parent.Height
-        Items: =Table({)
+        Items: |-
+            =//placeholder
+            Table(
+                {
+                    MenuText: "Menu Item 1",
+                    MenuIcon: Icon.Items,
+                    ScreenToGoTo: App.ActiveScreen
+                },
+                {
+                    MenuText: "Menu Item 2",
+                    MenuIcon: Icon.People,
+                    ScreenToGoTo: App.ActiveScreen
+                },
+                {
+                    MenuText: "Menu Item 3",
+                    MenuIcon: Icon.Message,
+                    ScreenToGoTo: App.ActiveScreen
+                },
+                {
+                    MenuText: "Menu Item 4",
+                    MenuIcon: Icon.DocumentWithContent,
+                    ScreenToGoTo: App.ActiveScreen
+                },
+                {
+                    MenuText: "Menu Item 5",
+                    MenuIcon: Icon.Home,
+                    ScreenToGoTo: App.ActiveScreen
+                },
+                {
+                    MenuText: "Menu Item 6",
+                    MenuIcon: Icon.Home,
+                    ScreenToGoTo: App.ActiveScreen
+                }
+            )
         TemplatePadding: =0
         TemplateSize: =Self.Width/4
         Width: =Parent.Width
         ZIndex: =1
 
         Icon8 As icon.Add:
+            Color: =compMenu.ForegroundColor
             DisabledFill: =Icon8.Fill
             HoverBorderColor: =ColorFade(Icon8.BorderColor, 20%)
             HoverColor: =ColorFade(Icon8.Color, 20%)
             HoverFill: =Icon8.Fill
-            Icon: =Icon.Add
+            Icon: =ThisItem.MenuIcon
             OnSelect: =Select(Parent)
             PressedBorderColor: =ColorFade(Icon8.BorderColor, -20%)
             PressedColor: =ColorFade(Icon8.Color, -20%)
@@ -32,7 +68,7 @@
             Height: =69
             OnSelect: =Select(Parent)
             Size: =16
-            Text: =ThisItem.SampleHeading
+            Text: =ThisItem.MenuText
             Width: =160
             Y: =44
             ZIndex: =2
