@@ -32,31 +32,31 @@
                 BorderColor: =ColorFade(Button8.Fill, -15%)
                 Height: =70
                 HoverBorderColor: =ColorFade(Button8.BorderColor, 20%)
-                OnSelect: |-
-                    =Set(gblNavItems,
-                    Table(
-                        {
-                            MenuText: "Dashboard",
-                            MenuIcon: Icon.Items,
-                            ScreenToGoTo:StudentDashboard
-                        },
-                        {
-                            MenuText: "Community",
-                            MenuIcon: Icon.People,
-                            ScreenToGoTo:StudentCommunity
-                        },
-                        {
-                            MenuText: "Message",
-                            MenuIcon: Icon.Message,
-                            ScreenToGoTo:StudentMessaging
-                        },
-                        {
-                            MenuText: "Knowledge",
-                            MenuIcon: Icon.DocumentWithContent,
-                            ScreenToGoTo:StudentKnowledge
-                        }
-                        
-                    )
+                OnSelect: |
+                    =Set(
+                        gblNavItems,
+                        Table(
+                            {
+                                MenuText: "Dashboard",
+                                MenuIcon: Icon.Items,
+                                ScreenToGoTo: StudentDashboard
+                            },
+                            {
+                                MenuText: "Community",
+                                MenuIcon: Icon.People,
+                                ScreenToGoTo: StudentCommunity
+                            },
+                            {
+                                MenuText: "Message",
+                                MenuIcon: Icon.Message,
+                                ScreenToGoTo: StudentMessaging
+                            },
+                            {
+                                MenuText: "Knowledge",
+                                MenuIcon: Icon.DocumentWithContent,
+                                ScreenToGoTo: StudentKnowledge
+                            }
+                        )
                     );
                 PressedBorderColor: =Button8.Fill
                 PressedColor: =Button8.Fill
@@ -88,4 +88,10 @@
         NavigationItem: =gblNavItems
         Y: =1023
         ZIndex: =7
+
+    compMenu_7 As compMenu:
+        NavigationItem: |
+            =gblNavItems
+        Y: =1023
+        ZIndex: =8
 

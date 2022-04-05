@@ -2,8 +2,8 @@ App As appinfo:
     BackEnabled: =false
     MinScreenHeight: =320
     MinScreenWidth: =320
-    OnStart: |-
-        =ClearCollect(
+    OnStart: |
+        =/*ClearCollect(
             colMenu,
             {
                 MenuItem: "Dashboard",
@@ -25,5 +25,30 @@ App As appinfo:
                 IconName: Icon.DocumentWithContent,
                 ScreenName: StudentKnowledge
             }
-        )
+        )*/
+        Set(
+            gblNavItems,
+            Table(
+                {
+                    MenuText: "Dashboard",
+                    MenuIcon: Icon.Items,
+                    ScreenToGoTo: StudentDashboard
+                },
+                {
+                    MenuText: "Community",
+                    MenuIcon: Icon.People,
+                    ScreenToGoTo: StudentCommunity
+                },
+                {
+                    MenuText: "Message",
+                    MenuIcon: Icon.Message,
+                    ScreenToGoTo: StudentMessaging
+                },
+                {
+                    MenuText: "Knowledge",
+                    MenuIcon: Icon.DocumentWithContent,
+                    ScreenToGoTo: StudentKnowledge
+                }
+            )
+        );
 

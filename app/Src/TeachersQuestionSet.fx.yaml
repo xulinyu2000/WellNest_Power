@@ -83,12 +83,6 @@
     Header_6 As Header:
         ZIndex: =4
 
-    comMenu_H_6 As comMenu_H:
-        Height: =156
-        MenuItems: =colMenu
-        Y: =980
-        ZIndex: =5
-
     Label5 As label:
         Height: =70
         Size: =21
@@ -110,33 +104,4 @@
         X: =44
         Y: =461
         ZIndex: =7
-
-    compMenu_3 As compMenu:
-        NavigationItem: |-
-            =gblNavItems
-            
-            /*Table(
-                {
-                    MenuText: "Menu Item 1",
-                    MenuIcon: Icon.Items,
-                    ScreenToGoTo: App.ActiveScreen
-                },
-                {
-                    MenuText: "Menu Item 2",
-                    MenuIcon: Icon.People,
-                    ScreenToGoTo: App.ActiveScreen
-                },
-                {
-                    MenuText: "Menu Item 3",
-                    MenuIcon: Icon.Message,
-                    ScreenToGoTo: App.ActiveScreen
-                },
-                {
-                    MenuText: "Menu Item 4",
-                    MenuIcon: Icon.DocumentWithContent,
-                    ScreenToGoTo: App.ActiveScreen
-                }
-            )*/
-        Y: =1023
-        ZIndex: =9
 
