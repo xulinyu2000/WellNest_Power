@@ -16,17 +16,12 @@
     Header_9 As Header:
         ZIndex: =3
 
-    compMenu_6 As compMenu:
-        NavigationItems: =gblNavItems
-        Y: =1041
-        ZIndex: =4
-
     Canvas3_1 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
         Height: =Parent.Height - Self.Y
         Width: =Parent.Width
         Y: =RectQuickActionBar4_1.Y + RectQuickActionBar4_1.Height
-        ZIndex: =5
+        ZIndex: =4
 
         DataCard8_1 As dataCard:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -48,4 +43,9 @@
                 X: =80
                 Y: =498
                 ZIndex: =1
+
+    compMenu_6 As compMenu:
+        NavigationItems: =gblNavItems
+        Y: =1041
+        ZIndex: =5
 
