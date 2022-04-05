@@ -6,3 +6,33 @@
     Y: =0
     ZIndex: =1
 
+    Gallery4 As gallery.galleryHorizontal:
+        Height: =Parent.Height
+        Items: =CustomGallerySample
+        TemplateSize: =Self.Width/4
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Icon8 As icon.Add:
+            DisabledFill: =Icon8.Fill
+            HoverBorderColor: =ColorFade(Icon8.BorderColor, 20%)
+            HoverColor: =ColorFade(Icon8.Color, 20%)
+            HoverFill: =Icon8.Fill
+            Icon: =Icon.Add
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =ColorFade(Icon8.BorderColor, -20%)
+            PressedColor: =ColorFade(Icon8.Color, -20%)
+            PressedFill: =Icon8.Fill
+            X: =20
+            Y: =20
+            ZIndex: =1
+
+        Label6 As label:
+            Height: =70
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: =ThisItem.SampleHeading
+            Width: =320
+            Y: =33.599999999999994
+            ZIndex: =2
+
