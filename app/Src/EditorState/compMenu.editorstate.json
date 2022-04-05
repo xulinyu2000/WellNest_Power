@@ -181,7 +181,15 @@
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       },
-      "ZIndex"
+      "ZIndex",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "Default",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      }
     ],
     "GalleryTemplateChildName": "galleryTemplate3",
     "HasDynamicProperties": false,
@@ -200,6 +208,11 @@
       {
         "Category": "Data",
         "PropertyName": "Items",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "Default",
         "RuleProviderType": "Unknown"
       },
       {

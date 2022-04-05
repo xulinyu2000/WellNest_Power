@@ -2161,36 +2161,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.gblNavItems"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.gblNavItems",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "gblNavItems",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.default"
                 }
               ],

@@ -11,7 +11,7 @@
         Height: =956
         Width: =Parent.Width
         Y: =179
-        ZIndex: =3
+        ZIndex: =2
 
         DataCard14 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -58,6 +58,17 @@
             Y: =2
             ZIndex: =3
 
+        DataCard11 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =100
+            Width: =640
+            X: =0
+            Y: =3
+            ZIndex: =4
+
     DashboardLogo_2 As image:
         Height: =98
         HoverBorderColor: =ColorFade(DashboardLogo_2.BorderColor, 20%)
@@ -67,16 +78,16 @@
         PressedBorderColor: =ColorFade(DashboardLogo_2.BorderColor, -20%)
         PressedFill: =ColorFade(DashboardLogo_2.Fill, -20%)
         Width: =68
-        ZIndex: =5
+        ZIndex: =3
 
     Header_6 As Header:
-        ZIndex: =11
+        ZIndex: =4
 
     comMenu_H_6 As comMenu_H:
         Height: =156
         MenuItems: =colMenu
         Y: =980
-        ZIndex: =12
+        ZIndex: =5
 
     Label5 As label:
         Height: =70
@@ -84,7 +95,7 @@
         Text: ="Your Question Sets"
         Width: =560
         Y: =113
-        ZIndex: =13
+        ZIndex: =6
 
     Button5 As button:
         BorderColor: =ColorFade(Button5.Fill, -15%)
@@ -98,11 +109,7 @@
         Width: =552
         X: =44
         Y: =461
-        ZIndex: =14
-
-    compMenu_3 As compMenu:
-        Y: =1023
-        ZIndex: =15
+        ZIndex: =7
 
     Button6 As button:
         BorderColor: =ColorFade(Button6.Fill, -15%)
@@ -142,5 +149,34 @@
         Width: =396
         X: =122
         Y: =871
-        ZIndex: =16
+        ZIndex: =8
+
+    compMenu_3 As compMenu:
+        NavigationItem: |-
+            =gblNavItems
+            
+            /*Table(
+                {
+                    MenuText: "Menu Item 1",
+                    MenuIcon: Icon.Items,
+                    ScreenToGoTo: App.ActiveScreen
+                },
+                {
+                    MenuText: "Menu Item 2",
+                    MenuIcon: Icon.People,
+                    ScreenToGoTo: App.ActiveScreen
+                },
+                {
+                    MenuText: "Menu Item 3",
+                    MenuIcon: Icon.Message,
+                    ScreenToGoTo: App.ActiveScreen
+                },
+                {
+                    MenuText: "Menu Item 4",
+                    MenuIcon: Icon.DocumentWithContent,
+                    ScreenToGoTo: App.ActiveScreen
+                }
+            )*/
+        Y: =1023
+        ZIndex: =9
 

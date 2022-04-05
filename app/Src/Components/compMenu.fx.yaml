@@ -43,6 +43,7 @@ compMenu As CanvasComponent:
     ZIndex: =1
 
     Gallery4 As gallery.galleryHorizontal:
+        Default: =LookUp(compMenu.NavigationItem, ScreenToGoTo.Name = App.ActiveScreen.Name)
         Height: =Parent.Height
         Items: =compMenu.NavigationItem
         OnSelect: =Navigate(ThisItem.ScreenToGoTo, Fade)

@@ -141,6 +141,8 @@
 
     compMenu_6 As compMenu:
         ForegroundColor: =RGBA(0, 134, 208, 1)
+        NavigationItem: |
+            =gblNavItems
         Y: =1023
         ZIndex: =11
 
