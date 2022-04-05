@@ -32,8 +32,20 @@
             Y: =0
             ZIndex: =1
 
+            Label13 As label:
+                Height: =70
+                Size: =21
+                Text: ="Message"
+                Width: =560
+                X: =80
+                Y: =498
+                ZIndex: =1
+
     comMenu_H_3 As comMenu_H:
         MenuItems: =colMenu
         Y: =986
         ZIndex: =4
+
+    Header_2 As Header:
+        ZIndex: =5
 
