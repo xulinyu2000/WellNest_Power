@@ -1513,6 +1513,80 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Bottom Navigation.Gallery4.Label6.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Bottom Navigation.Gallery4.Label6.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "compMenu"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "Bottom Navigation",
+                "type": "Bottom Navigation.Gallery4.Label6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Bottom Navigation.Gallery4.Label6.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Bottom Navigation.Gallery4.Label6.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 16,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".ForegroundColor"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "Bottom Navigation",
+                "type": "Bottom Navigation.Gallery4.Label6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Bottom Navigation.Gallery4.Icon8.Color"
                 }
               ],
