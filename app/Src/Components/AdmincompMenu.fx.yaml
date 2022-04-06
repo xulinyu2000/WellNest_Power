@@ -1,0 +1,93 @@
+AdmincompMenu As CanvasComponent:
+    BackgroundColor: =DarkGray
+    Fill: =RGBA(0, 0, 0, 0)
+    ForegroundColor: =RGBA(0,134,208,1)
+    Height: |
+        =App.DesignHeight/12
+    NavigationItems: |-
+        =Table(
+            {
+                MenuText: "Menu Item Screen 1",
+                MenuIcon: Icon.Items,
+                ScreenToGoTo: App.ActiveScreen
+            },
+            {
+                MenuText: "Menu Item 2",
+                MenuIcon: Icon.Message,
+                ScreenToGoTo: App.ActiveScreen
+            }
+        )
+    SelectedItemBackground: =LightBlue
+    Width: =App.DesignWidth
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Gallery4_1 As gallery.galleryHorizontal:
+        Default: =LookUp(AdmincompMenu.NavigationItems, ScreenToGoTo.Name = App.ActiveScreen.Name)
+        Height: =Parent.Height
+        Items: |+
+            =AdmincompMenu.NavigationItems
+            
+            
+            
+        OnSelect: =Navigate(ThisItem.ScreenToGoTo, Fade)
+        TemplateFill: =If(ThisItem.IsSelected, AdmincompMenu.ForegroundColor, AdmincompMenu.BackgroundColor)
+        TemplatePadding: =0
+        TemplateSize: =Self.Width/2
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Icon8_3 As icon.Add:
+            Color: |-
+                =//compMenu.ForegroundColor
+                If(ThisItem.IsSelected, AdmincompMenu.BackgroundColor, AdmincompMenu.ForegroundColor)
+            DisabledFill: =Icon8_3.Fill
+            Height: =58
+            HoverBorderColor: =ColorFade(Icon8_3.BorderColor, 20%)
+            HoverColor: =ColorFade(Icon8_3.Color, 20%)
+            HoverFill: =Icon8_3.Fill
+            Icon: =ThisItem.MenuIcon
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =2
+            PaddingRight: =2
+            PaddingTop: =10
+            PressedBorderColor: =ColorFade(Icon8_3.BorderColor, -20%)
+            PressedColor: =ColorFade(Icon8_3.Color, -20%)
+            PressedFill: =Icon8_3.Fill
+            Width: =59
+            X: =130
+            Y: =18
+            ZIndex: =1
+
+        Label6_1 As label:
+            Align: =Align.Center
+            Color: |-
+                =//compMenu.ForegroundColor
+                If(ThisItem.IsSelected, AdmincompMenu.BackgroundColor, AdmincompMenu.ForegroundColor)
+            Height: =37
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: =ThisItem.MenuText
+            Width: =Parent.TemplateWidth
+            Y: =57
+            ZIndex: =2
+
+        Icon8_2 As icon.Add:
+            Color: =Transparent
+            DisabledFill: =Icon8_2.Fill
+            Height: =Parent.TemplateHeight
+            HoverBorderColor: =ColorFade(Icon8_2.BorderColor, 20%)
+            HoverColor: =ColorFade(Icon8_2.Color, 20%)
+            HoverFill: =Icon8_2.Fill
+            Icon: =ThisItem.MenuIcon
+            OnSelect: =Select(Parent)
+            PaddingBottom: =6
+            PaddingTop: =6
+            PressedBorderColor: =ColorFade(Icon8_2.BorderColor, -20%)
+            PressedColor: =ColorFade(Icon8_2.Color, -20%)
+            PressedFill: =Icon8_2.Fill
+            Width: =Parent.TemplateWidth
+            ZIndex: =3
+

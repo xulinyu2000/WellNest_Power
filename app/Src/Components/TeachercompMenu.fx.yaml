@@ -1,0 +1,103 @@
+TeachercompMenu As CanvasComponent:
+    BackgroundColor: =DarkGray
+    Fill: =RGBA(0, 0, 0, 0)
+    ForegroundColor: =RGBA(0,134,208,1)
+    Height: |
+        =App.DesignHeight/12
+    NavigationItems: |-
+        =Table(
+            {
+                MenuText: "Menu Item Screen 1",
+                MenuIcon: Icon.Items,
+                ScreenToGoTo: App.ActiveScreen
+            },
+            {
+                MenuText: "Menu Item Screen 2",
+                MenuIcon: Icon.People,
+                ScreenToGoTo: App.ActiveScreen
+            },
+            {
+                MenuText: "Menu Item 3",
+                MenuIcon: Icon.Message,
+                ScreenToGoTo: App.ActiveScreen
+            },
+             {
+                MenuText: "Menu Item 4",
+                MenuIcon: Icon.Settings,
+                ScreenToGoTo: App.ActiveScreen
+            }
+        )
+    SelectedItemBackground: =LightBlue
+    Width: =App.DesignWidth
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Gallery4_2 As gallery.galleryHorizontal:
+        Default: =LookUp(TeachercompMenu.NavigationItems, ScreenToGoTo.Name = App.ActiveScreen.Name)
+        Height: =Parent.Height
+        Items: |+
+            =TeachercompMenu.NavigationItems
+            
+            
+            
+        OnSelect: =Navigate(ThisItem.ScreenToGoTo, Fade)
+        TemplateFill: =If(ThisItem.IsSelected, TeachercompMenu.ForegroundColor, TeachercompMenu.BackgroundColor)
+        TemplatePadding: =0
+        TemplateSize: =Self.Width/4
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Icon8_5 As icon.Add:
+            Color: |-
+                =//compMenu.ForegroundColor
+                If(ThisItem.IsSelected, TeachercompMenu.BackgroundColor, TeachercompMenu.ForegroundColor)
+            DisabledFill: =Icon8_5.Fill
+            Height: =58
+            HoverBorderColor: =ColorFade(Icon8_5.BorderColor, 20%)
+            HoverColor: =ColorFade(Icon8_5.Color, 20%)
+            HoverFill: =Icon8_5.Fill
+            Icon: =ThisItem.MenuIcon
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =2
+            PaddingRight: =2
+            PaddingTop: =10
+            PressedBorderColor: =ColorFade(Icon8_5.BorderColor, -20%)
+            PressedColor: =ColorFade(Icon8_5.Color, -20%)
+            PressedFill: =Icon8_5.Fill
+            Width: =59
+            X: =50
+            Y: =18
+            ZIndex: =1
+
+        Label6_2 As label:
+            Align: =Align.Center
+            Color: |-
+                =//compMenu.ForegroundColor
+                If(ThisItem.IsSelected, TeachercompMenu.BackgroundColor, TeachercompMenu.ForegroundColor)
+            Height: =37
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: =ThisItem.MenuText
+            Width: =Parent.TemplateWidth
+            Y: =57
+            ZIndex: =2
+
+        Icon8_4 As icon.Add:
+            Color: =Transparent
+            DisabledFill: =Icon8_4.Fill
+            Height: =Parent.TemplateHeight
+            HoverBorderColor: =ColorFade(Icon8_4.BorderColor, 20%)
+            HoverColor: =ColorFade(Icon8_4.Color, 20%)
+            HoverFill: =Icon8_4.Fill
+            Icon: =ThisItem.MenuIcon
+            OnSelect: =Select(Parent)
+            PaddingBottom: =6
+            PaddingTop: =6
+            PressedBorderColor: =ColorFade(Icon8_4.BorderColor, -20%)
+            PressedColor: =ColorFade(Icon8_4.Color, -20%)
+            PressedFill: =Icon8_4.Fill
+            Width: =Parent.TemplateWidth
+            ZIndex: =3
+
