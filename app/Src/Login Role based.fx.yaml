@@ -2,7 +2,7 @@
 
     Container4 As groupContainer.manualLayoutContainer:
         Height: =347
-        Visible: =IsUsersStudent
+        Visible: =IsUserStudent
         Width: =526
         X: =65
         Y: =238
@@ -49,6 +49,7 @@
 
     Container8 As groupContainer.manualLayoutContainer:
         Height: =225
+        Visible: =IsUserAdmin
         X: =52
         Y: =842
         ZIndex: =7

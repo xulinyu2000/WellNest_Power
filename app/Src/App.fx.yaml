@@ -2,86 +2,96 @@ App As appinfo:
     BackEnabled: =false
     MinScreenHeight: =320
     MinScreenWidth: =320
-    OnStart: |+
+    OnStart: |-
         =ClearCollect(
             NavStudentView,
-                {
-                    MenuText: "Student Dashboard",
-                    MenuIcon: Icon.Items,
-                    ScreenToGoTo: 'Student Dashboard'
-                },
-                {
-                    MenuText: "Student Community",
-                    MenuIcon: Icon.People,
-                    ScreenToGoTo: 'Student Community'
-                },
-                {
-                    MenuText: "Student Message",
-                    MenuIcon: Icon.Message,
-                    ScreenToGoTo: 'Student Messaging'
-                },
-                {
-                    MenuText: "Student Knowledge",
-                    MenuIcon: Icon.DocumentWithContent,
-                    ScreenToGoTo: 'Student Knowledge'
-                }
+            {
+                MenuText: "Student Dashboard",
+                MenuIcon: Icon.Items,
+                ScreenToGoTo: 'Student Dashboard'
+            },
+            {
+                MenuText: "Student Community",
+                MenuIcon: Icon.People,
+                ScreenToGoTo: 'Student Community'
+            },
+            {
+                MenuText: "Student Message",
+                MenuIcon: Icon.Message,
+                ScreenToGoTo: 'Student Messaging'
+            },
+            {
+                MenuText: "Student Knowledge",
+                MenuIcon: Icon.DocumentWithContent,
+                ScreenToGoTo: 'Student Knowledge'
+            }
         );
         ClearCollect(
             NavTeacherView,
-                 {
-                    MenuText: "Teacher Dashboard",
-                    MenuIcon: Icon.Items,
-                    ScreenToGoTo: 'Teacher Dashboard'
-                },
-                {
-                    MenuText: "Class Management",
-                    MenuIcon: Icon.People,
-                    ScreenToGoTo: 'Teacher Class Management'
-                }, 
-                 {
-                    MenuText: "Teacher Message",
-                    MenuIcon: Icon.Message,
-                    ScreenToGoTo: 'Teacher Messaging'
-                 }, 
-                {
-                    MenuText: "Teacher Knowledge",
-                    MenuIcon: Icon.DocumentWithContent,
-                    ScreenToGoTo: 'Teacher Knowledge'
-                }
+            {
+                MenuText: "Teacher Dashboard",
+                MenuIcon: Icon.Items,
+                ScreenToGoTo: 'Teacher Dashboard'
+            },
+            {
+                MenuText: "Class Management",
+                MenuIcon: Icon.People,
+                ScreenToGoTo: 'Teacher Class Management'
+            },
+            {
+                MenuText: "Teacher Message",
+                MenuIcon: Icon.Message,
+                ScreenToGoTo: 'Teacher Messaging'
+            },
+            {
+                MenuText: "Teacher Knowledge",
+                MenuIcon: Icon.DocumentWithContent,
+                ScreenToGoTo: 'Teacher Knowledge'
+            }
         );
         ClearCollect(
             NavAdminView,
-                {
-                    MenuText: "Admin Dashboard",
-                    MenuIcon: Icon.Items,
-                    ScreenToGoTo: 'Admin Dashboard'
-                },
-                 {
-                    MenuText: "Admin Message",
-                    MenuIcon: Icon.Message,
-                    ScreenToGoTo: 'Admin Messaging'
-                },
-                {
-                    MenuText: "School Managment",
-                    MenuIcon: Icon.DocumentWithContent,
-                    ScreenToGoTo: 'Admin Knowledge'
-                }
+            {
+                MenuText: "Admin Dashboard",
+                MenuIcon: Icon.Items,
+                ScreenToGoTo: 'Admin Dashboard'
+            },
+            {
+                MenuText: "Admin Message",
+                MenuIcon: Icon.Message,
+                ScreenToGoTo: 'Admin Messaging'
+            },
+            {
+                MenuText: "School Managment",
+                MenuIcon: Icon.DocumentWithContent,
+                ScreenToGoTo: 'Admin Knowledge'
+            }
         );
-        
-        Set(IsUserInAzureAdGroup,Office365Users.MyProfile().Mail in Office365Groups.ListGroupMembers("fe28fe16-ca97-4ad0-a195-225ff2e8541d").value.mail);
-        
-        //Student:cfdd9b03-4ecd-418c-8928-6119b9baacbc            UNSW_INFS:fe28fe16-ca97-4ad0-a195-225ff2e8541d
-        
-        
-        //return boolean
-        
-        //Set(IsUserInAdminList, !IsBlank(LookUp(UserAppPermission, User.Email = Office365Users.MyProfile().Mail)))
-        
-        Set(IsUserInAdminList, !IsBlank(LookUp(UserAppPermission, User.Email= Office365Users.MyProfile().Mail));
-        
-        Set(IsUserAdmin, !IsBlank(LookUp(UserAppPermission, Title ="Admin"));
-        Set(IsUsersStudent, !IsBlank(LookUp(UserAppPermission, Title ="Student"));
-        Set(IsUserTeacher, !IsBlank(LookUp(UserAppPermission, Title ="Teacher"))
-        
-        
+        Set(
+            IsUserAdmin,
+            !IsBlank(
+                LookUp(
+                    UserAppPermission,
+                    Title = "Admin"
+                )
+            )
+        );
+        Set(
+            IsUserStudent,
+            !IsBlank(
+                LookUp(
+                    UserAppPermission,
+                    Title = "Student"
+                )
+            )
+        );
+        Set(
+            IsUserTeacher,
+            !IsBlank(
+                LookUp(
+                    UserAppPermission,
+                    Title = "Teacher"
+                )
+            )
+        )
 
