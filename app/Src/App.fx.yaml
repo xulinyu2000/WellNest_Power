@@ -73,8 +73,8 @@ App As appinfo:
         //Student:cfdd9b03-4ecd-418c-8928-6119b9baacbc            UNSW_INFS:fe28fe16-ca97-4ad0-a195-225ff2e8541d
         
         
-        
-        Set(IsUserInAdminList, !IsBlank( LookUp(UserAppPermission, User.Email = Office365Users.MyProfile().Mail)));
+        //return boolean
+        Set(IsUserInAdminList, !IsBlank(LookUp(UserAppPermission, User.Email=Office365Users.MyProfile().Mail))
         
         
 
