@@ -2,7 +2,28 @@ comMenu_H As CanvasComponent:
     Fill: =
     Height: =150
     MenuItems: |-
-        =Table({MenuItem: "Sample Menu Item 1", IconName: Icon.Items, ScreenName: App.ActiveScreen}, {MenuItem: "Sample Menu Item 2", IconName: Icon.People, ScreenName: App.ActiveScreen}, {MenuItem: "Sample Menu Item 3", IconName: Icon.Message, ScreenName: App.ActiveScreen}, {MenuItem: "Sample Menu Item 4", IconName: Icon.DocumentWithContent, ScreenName: App.ActiveScreen})
+        =Table(
+            {
+                MenuItem: "Sample Menu Item 1",
+                IconName: Icon.Items,
+                ScreenName: App.ActiveScreen
+            },
+            {
+                MenuItem: "Sample Menu Item 2",
+                IconName: Icon.People,
+                ScreenName: App.ActiveScreen
+            },
+            {
+                MenuItem: "Sample Menu Item 3",
+                IconName: Icon.Message,
+                ScreenName: App.ActiveScreen
+            },
+            {
+                MenuItem: "Sample Menu Item 4",
+                IconName: Icon.DocumentWithContent,
+                ScreenName: App.ActiveScreen
+            }
+        )
     SelectColor: |-
         =ColorValue("#48A1FF")
     UnselectedColor: |-

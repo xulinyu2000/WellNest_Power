@@ -44,9 +44,10 @@
                 Y: =450
                 ZIndex: =1
 
-    compMenu_7 As compMenu:
+    compMenu_7 As StudentcompMenu:
         NavigationItems: |-
-            = Table(
+            =NavStudentView
+             /*Table(
                     {
                         MenuText: "Student Dashboard",
                         MenuIcon: Icon.Items,
@@ -68,7 +69,8 @@
                         ScreenToGoTo: 'Student Knowledge'
                     }
             
-                )
+                )*/
+            
                 
         Y: =1041
         ZIndex: =5

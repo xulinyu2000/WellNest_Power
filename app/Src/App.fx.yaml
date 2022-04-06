@@ -3,30 +3,7 @@ App As appinfo:
     MinScreenHeight: =320
     MinScreenWidth: =320
     OnStart: |+
-        =/*ClearCollect(
-            colMenu,
-            {
-                MenuItem: "Dashboard",
-                IconName: Icon.Items,
-                ScreenName: StudentDashboard
-            },
-            {
-                MenuItem: "Community",
-                IconName: Icon.People,
-                ScreenName: StudentCommunity
-            },
-            {
-                MenuItem: "Messaging",
-                IconName: Icon.Message,
-                ScreenName: StudentMessaging
-            },
-            {
-                MenuItem: "Knowledge",
-                IconName: Icon.DocumentWithContent,
-                ScreenName: StudentKnowledge
-            }
-        );*/
-        Set(
+        =/*Set(
             gblNavItems,
             Table(
                 {
@@ -75,6 +52,61 @@ App As appinfo:
                     ScreenToGoTo: 'Admin Messaging'
                 }
             )
+        )*/
+        ClearCollect(
+            NavStudentView,
+                {
+                    MenuText: "Student Dashboard",
+                    MenuIcon: Icon.Items,
+                    ScreenToGoTo: 'Student Dashboard'
+                },
+                {
+                    MenuText: "Student Community",
+                    MenuIcon: Icon.People,
+                    ScreenToGoTo: 'Student Community'
+                },
+                {
+                    MenuText: "Student Message",
+                    MenuIcon: Icon.Message,
+                    ScreenToGoTo: 'Student Messaging'
+                },
+                {
+                    MenuText: "Student Knowledge",
+                    MenuIcon: Icon.DocumentWithContent,
+                    ScreenToGoTo: 'Student Knowledge'
+                }
+        );
+        ClearCollect(
+            NavTeacherView,
+                 {
+                    MenuText: "Teacher Dashboard",
+                    MenuIcon: Icon.Items,
+                    ScreenToGoTo: 'Student Dashboard'
+                },
+                {
+                    MenuText: "Class Management",
+                    MenuIcon: Icon.People,
+                    ScreenToGoTo: 'Teacher Class Management'
+                },  
+                {
+                    MenuText: "Teacher Knowledge",
+                    MenuIcon: Icon.DocumentWithContent,
+                    ScreenToGoTo: 'Teacher Knowledge'
+                }
+        );
+        ClearCollect(
+            NavAdminView,
+                {
+                    MenuText: "Admin Dashboard",
+                    MenuIcon: Icon.Items,
+                    ScreenToGoTo: 'Admin Dashboard'
+                },
+                 {
+                    MenuText: "Admin Message",
+                    MenuIcon: Icon.Message,
+                    ScreenToGoTo: 'Admin Messaging'
+                }
         )
+        
         
 

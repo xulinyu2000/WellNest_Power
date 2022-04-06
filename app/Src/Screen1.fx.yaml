@@ -1,0 +1,12 @@
+Screen1 As screen:
+
+    Label8 As label:
+        Height: =874
+        Size: =21
+        Text: |-
+            ="/*ClearCollect(    colMenu,    {        MenuItem: ""Dashboard"",        IconName: Icon.Items,        ScreenName: StudentDashboard    },    {        MenuItem: ""Community"",        IconName: Icon.People,        ScreenName: StudentCommunity    },    {        MenuItem: ""Messaging"",        IconName: Icon.Message,        ScreenName: StudentMessaging    },    {        MenuItem: ""Knowledge"",        IconName: Icon.DocumentWithContent,        ScreenName: StudentKnowledge    });*/"
+        Width: =560
+        X: =39
+        Y: =93
+        ZIndex: =1
+

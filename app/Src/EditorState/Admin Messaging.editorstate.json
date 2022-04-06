@@ -2,7 +2,14 @@
   "Admin Messaging": {
     "AllowAccessToGlobals": true,
     "ControlPropertyState": [
-      "Fill",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "RGBA(255, 255, 255, 1)",
+        "InvariantPropertyName": "Fill",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "ImagePosition",
       "Height",
       "Width",

@@ -2,9 +2,10 @@
 
     Header_8 As Header:
 
-    compMenu_1 As compMenu:
-        NavigationItems: |
-            = Table(
+    compMenu_1 As StudentcompMenu:
+        NavigationItems: |+
+            =NavStudentView
+             /*Table(
                     {
                         MenuText: "Student Dashboard",
                         MenuIcon: Icon.Items,
@@ -26,7 +27,8 @@
                         ScreenToGoTo: 'Student Knowledge'
                     }
             
-                )
+                )*/
+            
         Y: =1042
         ZIndex: =4
 

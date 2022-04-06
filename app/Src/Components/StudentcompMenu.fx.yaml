@@ -1,4 +1,4 @@
-compMenu As CanvasComponent:
+StudentcompMenu As CanvasComponent:
     BackgroundColor: =DarkGray
     Fill: =RGBA(0, 0, 0, 0)
     ForegroundColor: =RGBA(0,134,208,1)
@@ -34,15 +34,15 @@ compMenu As CanvasComponent:
     ZIndex: =1
 
     Gallery4 As gallery.galleryHorizontal:
-        Default: =LookUp(compMenu.NavigationItems, ScreenToGoTo.Name = App.ActiveScreen.Name)
+        Default: =LookUp(StudentcompMenu.NavigationItems, ScreenToGoTo.Name = App.ActiveScreen.Name)
         Height: =Parent.Height
         Items: |+
-            =compMenu.NavigationItems
+            =StudentcompMenu.NavigationItems
             
             
             
         OnSelect: =Navigate(ThisItem.ScreenToGoTo, Fade)
-        TemplateFill: =If(ThisItem.IsSelected, compMenu.ForegroundColor, compMenu.BackgroundColor)
+        TemplateFill: =If(ThisItem.IsSelected, StudentcompMenu.ForegroundColor, StudentcompMenu.BackgroundColor)
         TemplatePadding: =0
         TemplateSize: =Self.Width/4
         Width: =Parent.Width
@@ -51,7 +51,7 @@ compMenu As CanvasComponent:
         Icon8 As icon.Add:
             Color: |-
                 =//compMenu.ForegroundColor
-                If(ThisItem.IsSelected, compMenu.BackgroundColor, compMenu.ForegroundColor)
+                If(ThisItem.IsSelected, StudentcompMenu.BackgroundColor, StudentcompMenu.ForegroundColor)
             DisabledFill: =Icon8.Fill
             Height: =58
             HoverBorderColor: =ColorFade(Icon8.BorderColor, 20%)
@@ -75,7 +75,7 @@ compMenu As CanvasComponent:
             Align: =Align.Center
             Color: |-
                 =//compMenu.ForegroundColor
-                If(ThisItem.IsSelected, compMenu.BackgroundColor, compMenu.ForegroundColor)
+                If(ThisItem.IsSelected, StudentcompMenu.BackgroundColor, StudentcompMenu.ForegroundColor)
             Height: =37
             OnSelect: =Select(Parent)
             Size: =10
