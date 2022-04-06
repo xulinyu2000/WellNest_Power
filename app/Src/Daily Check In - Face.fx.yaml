@@ -122,3 +122,18 @@
         Y: =58
         ZIndex: =14
 
+    IconCancel1_3 As icon.Cancel:
+        AccessibleLabel: =Self.Tooltip
+        Color: =RGBA(50, 86, 160, 1)
+        Height: =88
+        Icon: =Icon.Cancel
+        PaddingBottom: =22
+        PaddingLeft: =22
+        PaddingRight: =22
+        PaddingTop: =22
+        TabIndex: =0
+        Tooltip: ="Cancel"
+        Width: =88
+        X: =552
+        ZIndex: =15
+
