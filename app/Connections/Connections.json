@@ -16,10 +16,10 @@
       "5e8a3a6f-0bdf-4803-9fb1-d3f4cae116d1",
       "911349de-8a14-4b64-b613-d77a0c3b04aa",
       "e588d03d-7ab7-4dd0-9306-f427d579d608",
-      "7bc10985-b2e6-4725-bcb2-7719f49b12ae",
       "b285434a-af19-4e1e-a130-8d4ed550ccb8",
       "7fb27fb0-822c-4b75-9bfb-06ee91c503ac",
-      "dc515157-0cff-4b83-b8dd-0a7eb6fc670d"
+      "dc515157-0cff-4b83-b8dd-0a7eb6fc670d",
+      "6b616fbf-e945-4a81-bc3c-2f6a296bad89"
     ],
     "id": "11b65d48-0864-4651-9eb0-039e1b2730f2"
   },
@@ -138,7 +138,7 @@
     "dependents": [],
     "id": "5e8a3a6f-0bdf-4803-9fb1-d3f4cae116d1"
   },
-  "7bc10985-b2e6-4725-bcb2-7719f49b12ae": {
+  "6b616fbf-e945-4a81-bc3c-2f6a296bad89": {
     "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_logicflows/connections/6ff4483614aa43be8e634651b4de2749-55c9532b2c614cf2",
     "connectionParameters": {
       "workFlowCallbackUri": "https://prod-27.australiasoutheast.logic.azure.com:443/workflows/889bc7eaf8f343838311a957c2cf4bf1/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=2BZhnw3OqBB5hkd8nWNK9RoAcICirHUAVw8se-Bvw3g",
@@ -151,18 +151,12 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
-        "11b65d48-0864-4651-9eb0-039e1b2730f2": {
-          "value": "shared_excelonlinebusiness"
-        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "6ff44836-14aa-43be-8e63-4651b4de2749"
         }
       },
       "parameterHintsV2": {
-        "shared_excelonlinebusiness": {
-          "value": "11b65d48-0864-4651-9eb0-039e1b2730f2"
-        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "6ff44836-14aa-43be-8e63-4651b4de2749"
@@ -177,7 +171,7 @@
       "shared_excelonlinebusiness": "11b65d48-0864-4651-9eb0-039e1b2730f2"
     },
     "dependents": [],
-    "id": "7bc10985-b2e6-4725-bcb2-7719f49b12ae"
+    "id": "6b616fbf-e945-4a81-bc3c-2f6a296bad89"
   },
   "7fb27fb0-822c-4b75-9bfb-06ee91c503ac": {
     "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_logicflows/connections/5b9c1a3f5ce94d1986f6434f2f37fc66-55c9532b2c614cf2",
