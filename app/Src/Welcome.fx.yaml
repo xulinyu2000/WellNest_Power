@@ -1,0 +1,103 @@
+Welcome As screen:
+    BackgroundImage: ='home page'
+    Height: =Max(App.Height, App.DesignHeight)
+    Orientation: =If(Welcome.Width < Welcome.Height, Layout.Vertical, Layout.Horizontal)
+    Size: =1 + CountRows(App.SizeBreakpoints) - CountIf(App.SizeBreakpoints, Value >= Welcome.Width)
+    Width: =Max(App.Width, App.DesignWidth)
+
+    LabelHeader_1 As label:
+        Align: =Align.Center
+        Color: =RGBA(56, 96, 178, 1)
+        FocusedBorderColor: =LabelHeader_1.BorderColor
+        Font: =Font.'Segoe UI'
+        Height: =70
+        HoverBorderColor: =LabelHeader_1.BorderColor
+        HoverColor: =LabelHeader_1.Color
+        HoverFill: =LabelHeader_1.Fill
+        PressedBorderColor: =LabelHeader_1.BorderColor
+        PressedColor: =LabelHeader_1.Color
+        PressedFill: =LabelHeader_1.Fill
+        Size: =30
+        Text: ="Mental Health Check In App"
+        Width: =560
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+    LabelWelcome_1 As label:
+        Align: =Align.Center
+        Color: =RGBA(0, 18, 107, 1)
+        FocusedBorderColor: =LabelWelcome_1.BorderColor
+        Font: =Font.'Segoe UI'
+        Height: =70
+        HoverBorderColor: =LabelWelcome_1.BorderColor
+        HoverColor: =LabelWelcome_1.Color
+        HoverFill: =LabelWelcome_1.Fill
+        LineHeight: =30
+        PressedBorderColor: =LabelWelcome_1.BorderColor
+        PressedColor: =LabelWelcome_1.Color
+        PressedFill: =LabelWelcome_1.Fill
+        Size: =20
+        Text: ="Welcome"
+        Width: =560
+        X: =40
+        Y: =882
+        ZIndex: =2
+
+    IconNextWelcome_1 As icon.Add:
+        DisabledFill: =IconNextWelcome_1.Fill
+        FocusedBorderColor: =IconNextWelcome_1.BorderColor
+        HoverBorderColor: =ColorFade(IconNextWelcome_1.BorderColor, 20%)
+        HoverColor: =ColorFade(IconNextWelcome_1.Color, 20%)
+        HoverFill: =IconNextWelcome_1.Fill
+        Icon: =Icon.NextArrow
+        OnSelect: =Navigate([@Start], Fade)
+        PressedBorderColor: =ColorFade(IconNextWelcome_1.BorderColor, -20%)
+        PressedColor: =ColorFade(IconNextWelcome_1.Color, -20%)
+        PressedFill: =IconNextWelcome_1.Fill
+        X: =288
+        Y: =1000
+        ZIndex: =3
+
+    LabelEnter_1 As label:
+        Color: =RGBA(0, 16, 96, 1)
+        FocusedBorderColor: =LabelEnter_1.BorderColor
+        Font: =Font.'Segoe UI'
+        Height: =72
+        HoverBorderColor: =LabelEnter_1.BorderColor
+        HoverColor: =LabelEnter_1.Color
+        HoverFill: =LabelEnter_1.Fill
+        PressedBorderColor: =LabelEnter_1.BorderColor
+        PressedColor: =LabelEnter_1.Color
+        PressedFill: =LabelEnter_1.Fill
+        Size: =20
+        Text: ="ENTER"
+        Width: =116
+        X: =276
+        Y: =1064
+        ZIndex: =4
+
+    Logo As image:
+        Height: =105
+        HoverBorderColor: =ColorFade(Logo.BorderColor, 20%)
+        HoverFill: =ColorFade(Logo.Fill, 20%)
+        Image: =Picture1
+        PressedBorderColor: =ColorFade(Logo.BorderColor, -20%)
+        PressedFill: =ColorFade(Logo.Fill, -20%)
+        Width: =134
+        X: =412
+        Y: =136
+        ZIndex: =5
+
+    Logo_1 As image:
+        Height: =105
+        HoverBorderColor: =ColorFade(Logo_1.BorderColor, 20%)
+        HoverFill: =ColorFade(Logo_1.Fill, 20%)
+        Image: =Picture1
+        PressedBorderColor: =ColorFade(Logo_1.BorderColor, -20%)
+        PressedFill: =ColorFade(Logo_1.Fill, -20%)
+        Width: =134
+        X: =178
+        Y: =136
+        ZIndex: =6
+

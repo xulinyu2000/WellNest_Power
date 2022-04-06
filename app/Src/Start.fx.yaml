@@ -1,0 +1,84 @@
+Start As screen:
+    BackgroundImage: ='background tree big'
+    Height: =Max(App.Height, App.DesignHeight)
+    Orientation: =If(Start.Width < Start.Height, Layout.Vertical, Layout.Horizontal)
+    Size: =1 + CountRows(App.SizeBreakpoints) - CountIf(App.SizeBreakpoints, Value >= Start.Width)
+    Width: =Max(App.Width, App.DesignWidth)
+
+    LabelText2 As label:
+        Align: =Align.Center
+        FocusedBorderColor: =LabelText2.BorderColor
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =341
+        HoverBorderColor: =LabelText2.BorderColor
+        HoverColor: =LabelText2.Color
+        HoverFill: =LabelText2.Fill
+        PressedBorderColor: =LabelText2.BorderColor
+        PressedColor: =LabelText2.Color
+        PressedFill: =LabelText2.Fill
+        Size: =21
+        Text: |-
+            ="If you have seriously harmed yourself or feeling suicidal 
+            
+            PLEASE CALL 999 for an ambulance 
+            or go straight to A&E.  
+            
+            If you are unable to do this please ask someone else to call 999 or take you to A&E"
+        Width: =605
+        X: =19
+        Y: =632
+        ZIndex: =3
+
+    LabelText1 As label:
+        FocusedBorderColor: =LabelText1.BorderColor
+        Font: =Font.'Segoe UI'
+        Height: =258
+        HoverBorderColor: =LabelText1.BorderColor
+        HoverColor: =LabelText1.Color
+        HoverFill: =LabelText1.Fill
+        PressedBorderColor: =LabelText1.BorderColor
+        PressedColor: =LabelText1.Color
+        PressedFill: =LabelText1.Fill
+        Size: =18
+        Text: |-
+            ="Your name will only be stored if you check the box to allow this app to store that information. 
+            
+            We use this data to understand the general Mental health of our employees. 
+            
+            
+            "
+        Width: =560
+        X: =42
+        Y: =332
+        ZIndex: =7
+
+    Button9 As button:
+        BorderColor: =ColorFade(Button9.Fill, -15%)
+        Height: =70
+        HoverBorderColor: =ColorFade(Button9.BorderColor, 20%)
+        PressedBorderColor: =Button9.Fill
+        PressedColor: =Button9.Fill
+        PressedFill: =Button9.Color
+        Size: =24
+        Text: ="call"
+        Width: =280
+        X: =42
+        Y: =1038
+        ZIndex: =8
+
+    Button10 As button:
+        BorderColor: =ColorFade(Button10.Fill, -15%)
+        Height: =70
+        HoverBorderColor: =ColorFade(Button10.BorderColor, 20%)
+        OnSelect: =Navigate('Login Role based', Fade)
+        PressedBorderColor: =Button10.Fill
+        PressedColor: =Button10.Fill
+        PressedFill: =Button10.Color
+        Size: =24
+        Text: ="Next"
+        Width: =280
+        X: =344
+        Y: =1038
+        ZIndex: =9
+

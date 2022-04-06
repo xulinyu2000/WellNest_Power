@@ -1,0 +1,51 @@
+"'Student Messaging' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+
+    RectQuickActionBar4_1 As rectangle:
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =1
+
+    LblAppName3_1 As label:
+        Align: =Align.Center
+        Height: =88
+        Size: =27
+        Text: ="[Title]"
+        Width: =Parent.Width
+        ZIndex: =2
+
+    Header_9 As Header:
+        ZIndex: =3
+
+    Canvas3_1 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =Parent.Height - Self.Y
+        Width: =Parent.Width
+        Y: =RectQuickActionBar4_1.Y + RectQuickActionBar4_1.Height
+        ZIndex: =4
+
+        DataCard8_1 As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.Height - 100
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            Label13_1 As label:
+                Height: =70
+                Size: =21
+                Text: ="Message"
+                Width: =560
+                X: =80
+                Y: =498
+                ZIndex: =1
+
+    StudentcompMenu_3 As StudentcompMenu:
+        NavigationItems: =NavStudentView
+        Y: =1041.3333333333333
+        ZIndex: =5
+

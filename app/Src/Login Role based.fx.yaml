@@ -1,0 +1,70 @@
+"'Login Role based' As screen":
+
+    Container4 As groupContainer.manualLayoutContainer:
+        Height: =347
+        Visible: =IsUserInAdminList
+        Width: =526
+        X: =65
+        Y: =238
+        ZIndex: =4
+
+        Button6 As button:
+            BorderColor: =ColorFade(Button6.Fill, -15%)
+            Height: =70
+            HoverBorderColor: =ColorFade(Button6.BorderColor, 20%)
+            OnSelect: =Set(StudentView,true);Set(AdminView,false);Set(TeacherView,false);Navigate('Student Dashboard')
+            PressedBorderColor: =Button6.Fill
+            PressedColor: =Button6.Fill
+            PressedFill: =Button6.Color
+            Size: =24
+            Text: ="Student Login "
+            Width: =280
+            X: =135
+            Y: =147
+            ZIndex: =1
+
+    Container6 As groupContainer.manualLayoutContainer:
+        Height: =332
+        Visible: =IsUserInAdminList
+        Width: =526
+        X: =28
+        Y: =527
+        ZIndex: =5
+
+        Button8 As button:
+            BorderColor: =ColorFade(Button8.Fill, -15%)
+            Height: =70
+            HoverBorderColor: =ColorFade(Button8.BorderColor, 20%)
+            OnSelect: =Set(TeacherView,true);Set(AdminView,false);Set(StudentView,false);Navigate('Teacher Dashboard')
+            PressedBorderColor: =Button8.Fill
+            PressedColor: =Button8.Fill
+            PressedFill: =Button8.Color
+            Size: =24
+            Text: ="Teacher Login "
+            Width: =280
+            X: =165
+            Y: =126
+            ZIndex: =1
+
+    Container8 As groupContainer.manualLayoutContainer:
+        Height: =225
+        Visible: =IsUserInAdminList
+        X: =52
+        Y: =842
+        ZIndex: =7
+
+        Button11 As button:
+            BorderColor: =ColorFade(Button11.Fill, -15%)
+            Height: =70
+            HoverBorderColor: =ColorFade(Button11.BorderColor, 20%)
+            OnSelect: =Set(AdminView,true);Set(StudentView,false);Set(TeacherView,false);Navigate('Admin Dashboard')
+            PressedBorderColor: =Button11.Fill
+            PressedColor: =Button11.Fill
+            PressedFill: =Button11.Color
+            Size: =24
+            Text: ="Admin Login"
+            Width: =280
+            X: =128
+            Y: =72
+            ZIndex: =1
+
