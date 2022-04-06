@@ -15,6 +15,11 @@ AdmincompMenu As CanvasComponent:
                 MenuText: "Menu Item 2",
                 MenuIcon: Icon.Message,
                 ScreenToGoTo: App.ActiveScreen
+            },
+            {
+                MenuText: "Menu Item 3",
+                 MenuIcon: Icon.DocumentWithContent,
+                ScreenToGoTo: App.ActiveScreen
             }
         )
     SelectedItemBackground: =LightBlue
@@ -34,7 +39,7 @@ AdmincompMenu As CanvasComponent:
         OnSelect: =Navigate(ThisItem.ScreenToGoTo, Fade)
         TemplateFill: =If(ThisItem.IsSelected, AdmincompMenu.ForegroundColor, AdmincompMenu.BackgroundColor)
         TemplatePadding: =0
-        TemplateSize: =Self.Width/2
+        TemplateSize: =Self.Width/3
         Width: =Parent.Width
         ZIndex: =1
 
@@ -57,8 +62,8 @@ AdmincompMenu As CanvasComponent:
             PressedColor: =ColorFade(Icon8_3.Color, -20%)
             PressedFill: =Icon8_3.Fill
             Width: =59
-            X: =130
-            Y: =18
+            X: =75
+            Y: =20
             ZIndex: =1
 
         Label6_1 As label:

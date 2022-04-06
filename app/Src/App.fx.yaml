@@ -81,13 +81,18 @@ App As appinfo:
                  {
                     MenuText: "Teacher Dashboard",
                     MenuIcon: Icon.Items,
-                    ScreenToGoTo: 'Student Dashboard'
+                    ScreenToGoTo: 'Teacher Dashboard'
                 },
                 {
                     MenuText: "Class Management",
                     MenuIcon: Icon.People,
                     ScreenToGoTo: 'Teacher Class Management'
-                },  
+                }, 
+                 {
+                    MenuText: "Teacher Message",
+                    MenuIcon: Icon.Message,
+                    ScreenToGoTo: 'Teacher Messaging'
+                 }, 
                 {
                     MenuText: "Teacher Knowledge",
                     MenuIcon: Icon.DocumentWithContent,
@@ -105,6 +110,11 @@ App As appinfo:
                     MenuText: "Admin Message",
                     MenuIcon: Icon.Message,
                     ScreenToGoTo: 'Admin Messaging'
+                },
+                {
+                    MenuText: "School Managment",
+                    MenuIcon: Icon.DocumentWithContent,
+                    ScreenToGoTo: 'Admin Knowledge'
                 }
         )
         
