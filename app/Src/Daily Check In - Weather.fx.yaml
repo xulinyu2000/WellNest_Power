@@ -70,50 +70,50 @@
         ZIndex: =17
 
     Image2 As image:
-        Height: =120
+        Height: =136
         HoverBorderColor: =ColorFade(Image2.BorderColor, 20%)
         HoverFill: =ColorFade(Image2.Fill, 20%)
         Image: ='cloudy (1)'
         PressedBorderColor: =ColorFade(Image2.BorderColor, -20%)
         PressedFill: =ColorFade(Image2.Fill, -20%)
-        Width: =188
-        X: =146
-        Y: =438
+        Width: =213
+        X: =101
+        Y: =674
         ZIndex: =18
 
     Image3 As image:
-        Height: =320
+        Height: =144
         HoverBorderColor: =ColorFade(Image3.BorderColor, 20%)
         HoverFill: =ColorFade(Image3.Fill, 20%)
         Image: =cloudy
         PressedBorderColor: =ColorFade(Image3.BorderColor, -20%)
         PressedFill: =ColorFade(Image3.Fill, -20%)
-        Width: =320
-        X: =40
-        Y: =40
+        Width: =203
+        X: =311
+        Y: =530
         ZIndex: =19
 
     Image4 As image:
-        Height: =320
+        Height: =174
         HoverBorderColor: =ColorFade(Image4.BorderColor, 20%)
         HoverFill: =ColorFade(Image4.Fill, 20%)
         Image: =rainy
         PressedBorderColor: =ColorFade(Image4.BorderColor, -20%)
         PressedFill: =ColorFade(Image4.Fill, -20%)
-        Width: =320
-        X: =60
-        Y: =60
+        Width: =152
+        X: =336
+        Y: =719
         ZIndex: =20
 
     Image5 As image:
-        Height: =320
+        Height: =148
         HoverBorderColor: =ColorFade(Image5.BorderColor, 20%)
         HoverFill: =ColorFade(Image5.Fill, 20%)
         Image: =sun
         PressedBorderColor: =ColorFade(Image5.BorderColor, -20%)
         PressedFill: =ColorFade(Image5.Fill, -20%)
-        Width: =320
-        X: =249
-        Y: =393
+        Width: =189
+        X: =125
+        Y: =487
         ZIndex: =21
 
