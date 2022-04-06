@@ -4,7 +4,7 @@
         BorderColor: =ColorFade(Button3.Fill, -15%)
         Height: =70
         HoverBorderColor: =ColorFade(Button3.BorderColor, 20%)
-        OnSelect: =Set(AdminView,false);Set(TeacherView,false);Navigate('Student Dashboard')
+        OnSelect: =Set(StudentView,true);Set(AdminView,false);Set(TeacherView,false);Navigate('Student Dashboard')
         PressedBorderColor: =Button3.Fill
         PressedColor: =Button3.Fill
         PressedFill: =Button3.Color
@@ -19,7 +19,7 @@
         BorderColor: =ColorFade(Button4.Fill, -15%)
         Height: =70
         HoverBorderColor: =ColorFade(Button4.BorderColor, 20%)
-        OnSelect: =Set(AdminView,false);Set(StudentView,false);Navigate('Teacher Dashboard')
+        OnSelect: =Set(TeacherView,true);Set(AdminView,false);Set(StudentView,false);Navigate('Teacher Dashboard')
         PressedBorderColor: =Button4.Fill
         PressedColor: =Button4.Fill
         PressedFill: =Button4.Color
