@@ -2,8 +2,7 @@
 
     Container4 As groupContainer.manualLayoutContainer:
         Height: =347
-        Visible: |
-            =IsUserInAdminList
+        Visible: =IsUserInAdminList
         Width: =526
         X: =65
         Y: =238
@@ -26,8 +25,7 @@
 
     Container6 As groupContainer.manualLayoutContainer:
         Height: =332
-        Visible: |
-            =IsUserInAdminList
+        Visible: =IsUserInAdminList
         Width: =526
         X: =28
         Y: =527
