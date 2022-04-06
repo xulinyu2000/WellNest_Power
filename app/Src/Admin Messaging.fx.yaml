@@ -1,0 +1,53 @@
+"'Admin Messaging' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    Fill: =
+
+    RectQuickActionBar4_2 As rectangle:
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =1
+
+    LblAppName3_2 As label:
+        Align: =Align.Center
+        Height: =88
+        Size: =27
+        Text: ="[Title]"
+        Width: =Parent.Width
+        ZIndex: =2
+
+    Header_12 As Header:
+        ZIndex: =3
+
+    Canvas3_2 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =Parent.Height - Self.Y
+        Width: =Parent.Width
+        Y: =RectQuickActionBar4_2.Y + RectQuickActionBar4_2.Height
+        ZIndex: =4
+
+        DataCard8_2 As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.Height - 100
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            Label13_2 As label:
+                Height: =70
+                Size: =21
+                Text: ="Message"
+                Width: =560
+                X: =80
+                Y: =498
+                ZIndex: =1
+
+    AdmincompMenu_2 As AdmincompMenu:
+        NavigationItems: |
+            =NavAdminView
+        Y: =1041.3333333333333
+        ZIndex: =5
+
