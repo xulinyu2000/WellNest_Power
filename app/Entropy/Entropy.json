@@ -1,50 +1,40 @@
 {
   "ComponentIndexes": {},
   "ControlUniqueIds": {
-    "App": 1
+    "App": 1,
+    "Component1": 3
   },
   "FunctionParamsInvariantScripts": {},
-  "HeaderLastSavedDateTimeUTC": "04/06/2022 08:32:35",
+  "HeaderLastSavedDateTimeUTC": "04/06/2022 08:56:58",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
   "LocalResourceRootPaths": {},
   "OldLogoFileName": "logo.jpg",
-  "OrderComponentMetadata": {},
-  "OrderComponentTemplate": {},
-  "OrderDataSource": {},
+  "OrderComponentMetadata": {
+    "7425d51b00ad4996b61b177f0cb2c5c0": 0
+  },
+  "OrderComponentTemplate": {
+    "7425d51b00ad4996b61b177f0cb2c5c0": 0
+  },
+  "OrderDataSource": {
+    "NavAdminView": 2,
+    "NavStudentView": 0,
+    "NavTeacherView": 1
+  },
   "OrderGroupControls": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {},
   "PublishOrderIndices": {
-    "App": 0
+    "App": 0,
+    "Component1": 0
   },
   "ResourcesJsonIndices": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.9305039,
-    "ControlCount": {
-      "2924002d10ef4e43b50b5d656ee3735f": 1,
-      "3e5effa7fd394095b1a41fcfb3450efc": 5,
-      "49202fb1a47e43bab329824e5acc0c3a": 5,
-      "55e5d1e89528422287eaec6afd3fecd3": 4,
-      "aca5d404483a445aab9ac635139797ea": 13,
-      "button": 27,
-      "circle": 1,
-      "dataCard": 23,
-      "dropdown": 3,
-      "fluidGrid": 11,
-      "gallery": 5,
-      "galleryTemplate": 5,
-      "groupContainer": 13,
-      "icon": 24,
-      "image": 28,
-      "label": 53,
-      "powerbi": 6,
-      "rectangle": 12,
-      "screen": 22
-    },
-    "DeserializationLoadTime": 3.4055113,
-    "ErrorCount": 0
+    "AnalysisLoadTime": 0.0421501,
+    "ControlCount": {},
+    "DeserializationLoadTime": 0.8053093,
+    "ErrorCount": 24
   }
 }
