@@ -110,6 +110,7 @@
         HoverBorderColor: =ColorFade(Image5.BorderColor, 20%)
         HoverFill: =ColorFade(Image5.Fill, 20%)
         Image: =sun
+        OnSelect: ='check_in_weather-2'.Run(User().FullName, "sunny", Today())
         PressedBorderColor: =ColorFade(Image5.BorderColor, -20%)
         PressedFill: =ColorFade(Image5.Fill, -20%)
         Width: =189
