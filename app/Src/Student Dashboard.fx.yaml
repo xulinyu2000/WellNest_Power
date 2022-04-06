@@ -22,6 +22,8 @@
         Fill: =RGBA(72, 161, 255, 1)
         Height: =53
         HoverBorderColor: =ColorFade(CheckInButton_2.BorderColor, 20%)
+        OnSelect: |
+            =Navigate(check_in_face.)
         PressedBorderColor: =CheckInButton_2.Fill
         PressedColor: =CheckInButton_2.Fill
         PressedFill: =CheckInButton_2.Color
