@@ -14,6 +14,376 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Daily Check In - Word.IconAccept1_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Daily Check In - Word.IconAccept1_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 11,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "EditForm1_1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Daily Check In - Word",
+                "type": "Daily Check In - Word.IconAccept1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Login Role based.Button3.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Login Role based.Button3.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 30,
+                  "snippet": {
+                    "text": "'Hi Student'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Login Role based",
+                "type": "Login Role based.Button3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Login Role based.Button4.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Login Role based.Button4.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 29,
+                  "snippet": {
+                    "text": "'Hi Admin'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Login Role based",
+                "type": "Login Role based.Button4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Success.IconHome_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Success.IconHome_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 9,
+                  "charOffset": 36,
+                  "snippet": {
+                    "text": "AnonCheck"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Success",
+                "type": "Success.IconHome_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Success.IconHome_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Success.IconHome_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 11,
+                  "charOffset": 55,
+                  "snippet": {
+                    "text": "FeelingText"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Success",
+                "type": "Success.IconHome_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Success.IconHome_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Success.IconHome_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 76,
+                  "snippet": {
+                    "text": "OccHealthYesNo"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Success",
+                "type": "Success.IconHome_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Success.IconHome_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Success.IconHome_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 100,
+                  "snippet": {
+                    "text": "ChampionYesNo"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Success",
+                "type": "Success.IconHome_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Success.IconHome_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Success.IconHome_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 123,
+                  "snippet": {
+                    "text": "YesCheck"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Success",
+                "type": "Success.IconHome_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Success.IconHome_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Success.IconHome_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 141,
+                  "snippet": {
+                    "text": "NoCheck"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Success",
+                "type": "Success.IconHome_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Daily Check In - Weather.IconAccept1_2.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Daily Check In - Weather.IconAccept1_2.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 11,
+                  "charOffset": 11,
+                  "snippet": {
+                    "text": "EditForm1_1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Daily Check In - Weather",
+                "type": "Daily Check In - Weather.IconAccept1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "FurtherInformation.DropdownTopic.Items"
                 }
               ],
@@ -884,376 +1254,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Daily Check In - Word.IconAccept1_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Daily Check In - Word.IconAccept1_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 11,
-                  "charOffset": 11,
-                  "snippet": {
-                    "text": "EditForm1_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Daily Check In - Word",
-                "type": "Daily Check In - Word.IconAccept1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Login Role based.Button3.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Login Role based.Button3.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 30,
-                  "snippet": {
-                    "text": "'Hi Student'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Login Role based",
-                "type": "Login Role based.Button3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Login Role based.Button4.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Login Role based.Button4.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 10,
-                  "charOffset": 29,
-                  "snippet": {
-                    "text": "'Hi Admin'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Login Role based",
-                "type": "Login Role based.Button4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Success.IconHome_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Success.IconHome_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 36,
-                  "snippet": {
-                    "text": "AnonCheck"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Success",
-                "type": "Success.IconHome_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Success.IconHome_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Success.IconHome_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 11,
-                  "charOffset": 55,
-                  "snippet": {
-                    "text": "FeelingText"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Success",
-                "type": "Success.IconHome_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Success.IconHome_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Success.IconHome_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 14,
-                  "charOffset": 76,
-                  "snippet": {
-                    "text": "OccHealthYesNo"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Success",
-                "type": "Success.IconHome_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Success.IconHome_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Success.IconHome_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 100,
-                  "snippet": {
-                    "text": "ChampionYesNo"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Success",
-                "type": "Success.IconHome_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Success.IconHome_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Success.IconHome_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 123,
-                  "snippet": {
-                    "text": "YesCheck"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Success",
-                "type": "Success.IconHome_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Success.IconHome_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Success.IconHome_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 141,
-                  "snippet": {
-                    "text": "NoCheck"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Success",
-                "type": "Success.IconHome_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Daily Check In - Weather.IconAccept1_2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Daily Check In - Weather.IconAccept1_2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 11,
-                  "charOffset": 11,
-                  "snippet": {
-                    "text": "EditForm1_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Daily Check In - Weather",
-                "type": "Daily Check In - Weather.IconAccept1_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "compMenu.Gallery4.AccessibleLabel"
                 }
               ],
@@ -1314,6 +1314,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "comMenu_H.Gallery1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "comMenu_H.Gallery1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "comMenu_H",
+                "type": "comMenu_H.Gallery1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "comMenu_H.Gallery1.TabIndex"
                 }
               ],
@@ -1344,19 +1374,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "comMenu_H.Gallery1.AccessibleLabel"
+                  "fullyQualifiedName": "Daily Check In - Word.Arrow2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "comMenu_H.Gallery1.AccessibleLabel",
+                  "fullyQualifiedName": "Daily Check In - Word.Arrow2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "comMenu_H",
-                "type": "comMenu_H.Gallery1"
+                "module": "Daily Check In - Word",
+                "type": "Daily Check In - Word.Arrow2"
               }
             }
           ],
@@ -1368,6 +1398,96 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Daily Check In - Word.Arrow2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Daily Check In - Word.Arrow2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Daily Check In - Word",
+                "type": "Daily Check In - Word.Arrow2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Welcome.IconNextWelcome_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Welcome.IconNextWelcome_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Welcome",
+                "type": "Welcome.IconNextWelcome_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Welcome.IconNextWelcome_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Welcome.IconNextWelcome_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Welcome",
+                "type": "Welcome.IconNextWelcome_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1747,126 +1867,6 @@
                 "member": "TabIndex",
                 "module": "Daily Check In - Face",
                 "type": "Daily Check In - Face.Icon2_4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Daily Check In - Word.Arrow2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Daily Check In - Word.Arrow2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Daily Check In - Word",
-                "type": "Daily Check In - Word.Arrow2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Daily Check In - Word.Arrow2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Daily Check In - Word.Arrow2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Daily Check In - Word",
-                "type": "Daily Check In - Word.Arrow2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Welcome.IconNextWelcome_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Welcome.IconNextWelcome_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Welcome",
-                "type": "Welcome.IconNextWelcome_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Welcome.IconNextWelcome_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Welcome.IconNextWelcome_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Welcome",
-                "type": "Welcome.IconNextWelcome_1"
               }
             }
           ],
