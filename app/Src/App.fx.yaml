@@ -74,7 +74,8 @@ App As appinfo:
         
         
         //return boolean
-        Set(IsUserInAdminList, !IsBlank(LookUp(UserAppPermission, User.Email=Office365Users.MyProfile().Mail)))
+        
+        Set(IsUserInAdminList, !IsBlank(LookUp(UserAppPermission, User.Email = Office365Users.MyProfile().Mail)))
         
         //Set(IsUserInAdminList, !IsBlank(LookUp(UserAppPermission, User.Email=Office365Users.MyProfile().Mail))
         

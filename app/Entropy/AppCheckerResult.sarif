@@ -24,7 +24,7 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 2173,
+                  "charOffset": 2177,
                   "snippet": {
                     "text": ".Mail"
                   }
@@ -64,7 +64,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 2146,
+                  "charOffset": 2149,
                   "snippet": {
                     "text": "="
                   }
@@ -88,839 +88,6 @@
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
           "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "FurtherInformation.DropdownTopic.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "FurtherInformation.DropdownTopic.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 14,
-                  "snippet": {
-                    "text": "ColResources"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "FurtherInformation",
-                "type": "FurtherInformation.DropdownTopic"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "FurtherInformation.DropdownTopic.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "FurtherInformation.DropdownTopic.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 35,
-                  "charOffset": 5,
-                  "snippet": {
-                    "text": "Distinct(ColResources,'Topic Name')"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "FurtherInformation",
-                "type": "FurtherInformation.DropdownTopic"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Distinct"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "FurtherInformation.DropdownTopic.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "FurtherInformation.DropdownTopic.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 27,
-                  "snippet": {
-                    "text": "'Topic Name'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "FurtherInformation",
-                "type": "FurtherInformation.DropdownTopic"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "FurtherInformation.DropdownTopic.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "FurtherInformation.DropdownTopic.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 41,
-                  "snippet": {
-                    "text": "Result"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "FurtherInformation",
-                "type": "FurtherInformation.DropdownTopic"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "FurtherInformation.DropdownTopic.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "FurtherInformation.DropdownTopic.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 48,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "Sort(Distinct(ColResources,'Topic Name'),Result)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "FurtherInformation",
-                "type": "FurtherInformation.DropdownTopic"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Sort"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "FurtherInformation.DropdownOrganisation.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "FurtherInformation.DropdownOrganisation.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 7,
-                  "snippet": {
-                    "text": "ColResources"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "FurtherInformation",
-                "type": "FurtherInformation.DropdownOrganisation"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "FurtherInformation.DropdownOrganisation.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "FurtherInformation.DropdownOrganisation.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 63,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "Filter(ColResources,'Topic Name'=DropdownTopic.Selected.Result)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "FurtherInformation",
-                "type": "FurtherInformation.DropdownOrganisation"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "FurtherInformation.DropdownOrganisation.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "FurtherInformation.DropdownOrganisation.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 20,
-                  "snippet": {
-                    "text": "'Topic Name'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "FurtherInformation",
-                "type": "FurtherInformation.DropdownOrganisation"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "FurtherInformation.DropdownOrganisation.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "FurtherInformation.DropdownOrganisation.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 55,
-                  "snippet": {
-                    "text": ".Result"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "FurtherInformation",
-                "type": "FurtherInformation.DropdownOrganisation"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "FurtherInformation.DropdownOrganisation.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "FurtherInformation.DropdownOrganisation.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 32,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "FurtherInformation",
-                "type": "FurtherInformation.DropdownOrganisation"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "FurtherInformation.LabelText6.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "FurtherInformation.LabelText6.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 29,
-                  "snippet": {
-                    "text": ".Description"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "FurtherInformation",
-                "type": "FurtherInformation.LabelText6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "FurtherInformation.LabelCharityWebsiteURL.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "FurtherInformation.LabelCharityWebsiteURL.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 20,
-                  "charOffset": 29,
-                  "snippet": {
-                    "text": ".'Organisation Name'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "FurtherInformation",
-                "type": "FurtherInformation.LabelCharityWebsiteURL"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "FurtherInformation.LabelCharityWebsiteURL.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "FurtherInformation.LabelCharityWebsiteURL.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 36,
-                  "snippet": {
-                    "text": ".Website"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "FurtherInformation",
-                "type": "FurtherInformation.LabelCharityWebsiteURL"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "FurtherInformation.LabelEmailAddress.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "FurtherInformation.LabelEmailAddress.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 16,
-                  "charOffset": 29,
-                  "snippet": {
-                    "text": ".'Email Address'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "FurtherInformation",
-                "type": "FurtherInformation.LabelEmailAddress"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "FurtherInformation.LabelEmailAddress.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "FurtherInformation.LabelEmailAddress.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 16,
-                  "charOffset": 47,
-                  "snippet": {
-                    "text": ".'Email Address'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "FurtherInformation",
-                "type": "FurtherInformation.LabelEmailAddress"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "FurtherInformation.LabelEmailAddress.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "FurtherInformation.LabelEmailAddress.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 87,
-                  "snippet": {
-                    "text": "charityemail"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "FurtherInformation",
-                "type": "FurtherInformation.LabelEmailAddress"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Text, Number, Date, Time, DateTimeNoTimeZone, DateTime, Boolean, OptionSetValue, ViewValue"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadType-ExpectedTypesCSV",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "FurtherInformation.LabelPhoneNumber.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "FurtherInformation.LabelPhoneNumber.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 15,
-                  "charOffset": 30,
-                  "snippet": {
-                    "text": ".'Phone number'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "FurtherInformation",
-                "type": "FurtherInformation.LabelPhoneNumber"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "FurtherInformation.LabelPhoneNumber.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "FurtherInformation.LabelPhoneNumber.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 15,
-                  "charOffset": 43,
-                  "snippet": {
-                    "text": ".'Phone number'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "FurtherInformation",
-                "type": "FurtherInformation.LabelPhoneNumber"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "FurtherInformation.LabelPhoneNumber.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "FurtherInformation.LabelPhoneNumber.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 77,
-                  "snippet": {
-                    "text": "phonenum"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "FurtherInformation",
-                "type": "FurtherInformation.LabelPhoneNumber"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Text, Number, Date, Time, DateTimeNoTimeZone, DateTime, Boolean, OptionSetValue, ViewValue"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadType-ExpectedTypesCSV",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "FurtherInformation.ButtonCallOccHealth.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "FurtherInformation.ButtonCallOccHealth.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 16,
-                  "charOffset": 14,
-                  "snippet": {
-                    "text": "OccHealthContact"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "FurtherInformation",
-                "type": "FurtherInformation.ButtonCallOccHealth"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "FurtherInformation.IconBackFurtherInformation.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "FurtherInformation.IconBackFurtherInformation.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 4,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": "Main"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "FurtherInformation",
-                "type": "FurtherInformation.IconBackFurtherInformation"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "FurtherInformation.ButtonCallHealthAssured.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "FurtherInformation.ButtonCallHealthAssured.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 17,
-                  "charOffset": 14,
-                  "snippet": {
-                    "text": "ThirdPartyContact"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "FurtherInformation",
-                "type": "FurtherInformation.ButtonCallHealthAssured"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
         },
         {
           "locations": [
@@ -1253,7 +420,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1327,7 +494,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1401,7 +568,960 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "FurtherInformation.DropdownTopic.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "FurtherInformation.DropdownTopic.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 14,
+                  "snippet": {
+                    "text": "ColResources"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "FurtherInformation",
+                "type": "FurtherInformation.DropdownTopic"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "FurtherInformation.DropdownTopic.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "FurtherInformation.DropdownTopic.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 35,
+                  "charOffset": 5,
+                  "snippet": {
+                    "text": "Distinct(ColResources,'Topic Name')"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "FurtherInformation",
+                "type": "FurtherInformation.DropdownTopic"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Distinct"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "FurtherInformation.DropdownTopic.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "FurtherInformation.DropdownTopic.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 27,
+                  "snippet": {
+                    "text": "'Topic Name'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "FurtherInformation",
+                "type": "FurtherInformation.DropdownTopic"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "FurtherInformation.DropdownTopic.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "FurtherInformation.DropdownTopic.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 41,
+                  "snippet": {
+                    "text": "Result"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "FurtherInformation",
+                "type": "FurtherInformation.DropdownTopic"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "FurtherInformation.DropdownTopic.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "FurtherInformation.DropdownTopic.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 48,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "Sort(Distinct(ColResources,'Topic Name'),Result)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "FurtherInformation",
+                "type": "FurtherInformation.DropdownTopic"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Sort"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "FurtherInformation.DropdownOrganisation.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "FurtherInformation.DropdownOrganisation.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 7,
+                  "snippet": {
+                    "text": "ColResources"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "FurtherInformation",
+                "type": "FurtherInformation.DropdownOrganisation"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "FurtherInformation.DropdownOrganisation.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "FurtherInformation.DropdownOrganisation.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 63,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "Filter(ColResources,'Topic Name'=DropdownTopic.Selected.Result)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "FurtherInformation",
+                "type": "FurtherInformation.DropdownOrganisation"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "FurtherInformation.DropdownOrganisation.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "FurtherInformation.DropdownOrganisation.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 20,
+                  "snippet": {
+                    "text": "'Topic Name'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "FurtherInformation",
+                "type": "FurtherInformation.DropdownOrganisation"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "FurtherInformation.DropdownOrganisation.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "FurtherInformation.DropdownOrganisation.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 55,
+                  "snippet": {
+                    "text": ".Result"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "FurtherInformation",
+                "type": "FurtherInformation.DropdownOrganisation"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "FurtherInformation.DropdownOrganisation.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "FurtherInformation.DropdownOrganisation.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 32,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "FurtherInformation",
+                "type": "FurtherInformation.DropdownOrganisation"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "FurtherInformation.LabelText6.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "FurtherInformation.LabelText6.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 29,
+                  "snippet": {
+                    "text": ".Description"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "FurtherInformation",
+                "type": "FurtherInformation.LabelText6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "FurtherInformation.LabelCharityWebsiteURL.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "FurtherInformation.LabelCharityWebsiteURL.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 20,
+                  "charOffset": 29,
+                  "snippet": {
+                    "text": ".'Organisation Name'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "FurtherInformation",
+                "type": "FurtherInformation.LabelCharityWebsiteURL"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "FurtherInformation.LabelCharityWebsiteURL.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "FurtherInformation.LabelCharityWebsiteURL.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 36,
+                  "snippet": {
+                    "text": ".Website"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "FurtherInformation",
+                "type": "FurtherInformation.LabelCharityWebsiteURL"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "FurtherInformation.LabelEmailAddress.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "FurtherInformation.LabelEmailAddress.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 16,
+                  "charOffset": 29,
+                  "snippet": {
+                    "text": ".'Email Address'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "FurtherInformation",
+                "type": "FurtherInformation.LabelEmailAddress"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "FurtherInformation.LabelEmailAddress.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "FurtherInformation.LabelEmailAddress.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 16,
+                  "charOffset": 47,
+                  "snippet": {
+                    "text": ".'Email Address'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "FurtherInformation",
+                "type": "FurtherInformation.LabelEmailAddress"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "FurtherInformation.LabelEmailAddress.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "FurtherInformation.LabelEmailAddress.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 87,
+                  "snippet": {
+                    "text": "charityemail"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "FurtherInformation",
+                "type": "FurtherInformation.LabelEmailAddress"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Text, Number, Date, Time, DateTimeNoTimeZone, DateTime, Boolean, OptionSetValue, ViewValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadType-ExpectedTypesCSV",
           "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "FurtherInformation.LabelPhoneNumber.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "FurtherInformation.LabelPhoneNumber.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 15,
+                  "charOffset": 30,
+                  "snippet": {
+                    "text": ".'Phone number'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "FurtherInformation",
+                "type": "FurtherInformation.LabelPhoneNumber"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "FurtherInformation.LabelPhoneNumber.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "FurtherInformation.LabelPhoneNumber.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 15,
+                  "charOffset": 43,
+                  "snippet": {
+                    "text": ".'Phone number'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "FurtherInformation",
+                "type": "FurtherInformation.LabelPhoneNumber"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "FurtherInformation.LabelPhoneNumber.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "FurtherInformation.LabelPhoneNumber.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 77,
+                  "snippet": {
+                    "text": "phonenum"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "FurtherInformation",
+                "type": "FurtherInformation.LabelPhoneNumber"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Text, Number, Date, Time, DateTimeNoTimeZone, DateTime, Boolean, OptionSetValue, ViewValue"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadType-ExpectedTypesCSV",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "FurtherInformation.ButtonCallOccHealth.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "FurtherInformation.ButtonCallOccHealth.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 16,
+                  "charOffset": 14,
+                  "snippet": {
+                    "text": "OccHealthContact"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "FurtherInformation",
+                "type": "FurtherInformation.ButtonCallOccHealth"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "FurtherInformation.IconBackFurtherInformation.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "FurtherInformation.IconBackFurtherInformation.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 4,
+                  "charOffset": 9,
+                  "snippet": {
+                    "text": "Main"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "FurtherInformation",
+                "type": "FurtherInformation.IconBackFurtherInformation"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "FurtherInformation.ButtonCallHealthAssured.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "FurtherInformation.ButtonCallHealthAssured.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 17,
+                  "charOffset": 14,
+                  "snippet": {
+                    "text": "ThirdPartyContact"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "FurtherInformation",
+                "type": "FurtherInformation.ButtonCallHealthAssured"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "AdmincompMenu.Gallery4_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "AdmincompMenu.Gallery4_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "AdmincompMenu",
+                "type": "AdmincompMenu.Gallery4_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "AdmincompMenu.Gallery4_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "AdmincompMenu.Gallery4_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "AdmincompMenu",
+                "type": "AdmincompMenu.Gallery4_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "comMenu_H.Gallery1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "comMenu_H.Gallery1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "comMenu_H",
+                "type": "comMenu_H.Gallery1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "comMenu_H.Gallery1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "comMenu_H.Gallery1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "comMenu_H",
+                "type": "comMenu_H.Gallery1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -1528,19 +1648,48 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AdmincompMenu.Gallery4_1.AccessibleLabel"
+                  "fullyQualifiedName": "Screen1"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AdmincompMenu.Gallery4_1.AccessibleLabel",
+                  "fullyQualifiedName": "Screen1",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "module": "Screen1",
+                "type": "Screen1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Low"
+          },
+          "ruleId": "acc-ReadableScreenNameNeeded",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Teacher Messaging.Canvas3_3.DataCard8_3.Gallery2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Teacher Messaging.Canvas3_3.DataCard8_3.Gallery2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "AdmincompMenu",
-                "type": "AdmincompMenu.Gallery4_1"
+                "module": "Teacher Messaging",
+                "type": "Teacher Messaging.Canvas3_3.DataCard8_3.Gallery2"
               }
             }
           ],
@@ -1558,19 +1707,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AdmincompMenu.Gallery4_1.TabIndex"
+                  "fullyQualifiedName": "Teacher Messaging.Canvas3_3.DataCard8_3.Gallery2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AdmincompMenu.Gallery4_1.TabIndex",
+                  "fullyQualifiedName": "Teacher Messaging.Canvas3_3.DataCard8_3.Gallery2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "AdmincompMenu",
-                "type": "AdmincompMenu.Gallery4_1"
+                "module": "Teacher Messaging",
+                "type": "Teacher Messaging.Canvas3_3.DataCard8_3.Gallery2"
               }
             }
           ],
@@ -1588,19 +1737,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "comMenu_H.Gallery1.AccessibleLabel"
+                  "fullyQualifiedName": "Teacher QuestionSet.Canvas1_2.DataCard14.Dropdown1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "comMenu_H.Gallery1.AccessibleLabel",
+                  "fullyQualifiedName": "Teacher QuestionSet.Canvas1_2.DataCard14.Dropdown1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "comMenu_H",
-                "type": "comMenu_H.Gallery1"
+                "module": "Teacher QuestionSet",
+                "type": "Teacher QuestionSet.Canvas1_2.DataCard14.Dropdown1"
               }
             }
           ],
@@ -1618,19 +1767,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "comMenu_H.Gallery1.TabIndex"
+                  "fullyQualifiedName": "Welcome.IconNextWelcome_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "comMenu_H.Gallery1.TabIndex",
+                  "fullyQualifiedName": "Welcome.IconNextWelcome_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Welcome",
+                "type": "Welcome.IconNextWelcome_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Welcome.IconNextWelcome_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Welcome.IconNextWelcome_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "comMenu_H",
-                "type": "comMenu_H.Gallery1"
+                "module": "Welcome",
+                "type": "Welcome.IconNextWelcome_1"
               }
             }
           ],
@@ -2362,185 +2541,6 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "module": "Screen1",
-                "type": "Screen1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Low"
-          },
-          "ruleId": "acc-ReadableScreenNameNeeded",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Teacher Messaging.Canvas3_3.DataCard8_3.Gallery2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Teacher Messaging.Canvas3_3.DataCard8_3.Gallery2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Teacher Messaging",
-                "type": "Teacher Messaging.Canvas3_3.DataCard8_3.Gallery2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Teacher Messaging.Canvas3_3.DataCard8_3.Gallery2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Teacher Messaging.Canvas3_3.DataCard8_3.Gallery2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Teacher Messaging",
-                "type": "Teacher Messaging.Canvas3_3.DataCard8_3.Gallery2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Teacher QuestionSet.Canvas1_2.DataCard14.Dropdown1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Teacher QuestionSet.Canvas1_2.DataCard14.Dropdown1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Teacher QuestionSet",
-                "type": "Teacher QuestionSet.Canvas1_2.DataCard14.Dropdown1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Welcome.IconNextWelcome_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Welcome.IconNextWelcome_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Welcome",
-                "type": "Welcome.IconNextWelcome_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Welcome.IconNextWelcome_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Welcome.IconNextWelcome_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Welcome",
-                "type": "Welcome.IconNextWelcome_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
         },
         {
           "locations": [
@@ -3305,6 +3305,20 @@
               }
             },
             {
+              "id": "app-ErrInvalidDot",
+              "messageStrings": {
+                "issue": {
+                  "text": "Invalid use of '.'"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
               "id": "app-ErrInvalidArgs-Func",
               "messageStrings": {
                 "issue": {
@@ -3341,20 +3355,6 @@
               "messageStrings": {
                 "issue": {
                   "text": "Invalid argument type. Expecting one of the following: {0}."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrInvalidDot",
-              "messageStrings": {
-                "issue": {
-                  "text": "Invalid use of '.'"
                 }
               },
               "properties": {

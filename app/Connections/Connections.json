@@ -62,27 +62,6 @@
     ],
     "id": "5690f524-f336-4b6c-a1b4-ca6c9b9e1068"
   },
-  "5782a3ec-b73a-47b1-9d58-ff4d2a2d8d68": {
-    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness/connections/0b7a177aa9c44890a0bcd5faffeeb5ea",
-    "connectionParameters": {
-      "sku": "Enterprise"
-    },
-    "connectionRef": {
-      "apiTier": "Standard",
-      "displayName": "OneDrive for Business",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1546/1.0.1546.2665/onedriveforbusiness/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness",
-      "parameterHints": {},
-      "parameterHintsV2": {}
-    },
-    "datasets": {},
-    "dataSources": [],
-    "dependencies": {},
-    "dependents": [
-      "f81f2562-335f-4c91-9936-44ba1ca72881"
-    ],
-    "id": "5782a3ec-b73a-47b1-9d58-ff4d2a2d8d68"
-  },
   "5e8a3a6f-0bdf-4803-9fb1-d3f4cae116d1": {
     "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_logicflows/connections/300a0936694643469e0ce05d91a9e384",
     "connectionParameters": {
@@ -151,12 +130,18 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "11b65d48-0864-4651-9eb0-039e1b2730f2": {
+          "value": "shared_excelonlinebusiness"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "6ff44836-14aa-43be-8e63-4651b4de2749"
         }
       },
       "parameterHintsV2": {
+        "shared_excelonlinebusiness": {
+          "value": "11b65d48-0864-4651-9eb0-039e1b2730f2"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "6ff44836-14aa-43be-8e63-4651b4de2749"
@@ -290,13 +275,6 @@
       "parameterHintsV2": {}
     },
     "datasets": {
-      "https://jondoesflowcom.sharepoint.com/sites/JonDoesFlow": {
-        "dataSources": {
-          "Resources by Topic Area": {
-            "tableName": "8d5e5701-8c37-4c18-b4ca-911011310e6c"
-          }
-        }
-      },
       "https://unswinfs.sharepoint.com/sites/PowerApps": {
         "dataSources": {
           "UserAppPermission": {
@@ -306,7 +284,6 @@
       }
     },
     "dataSources": [
-      "Resources by Topic Area",
       "UserAppPermission"
     ],
     "dependencies": {},
@@ -477,46 +454,5 @@
     },
     "dependents": [],
     "id": "efd8da53-6e0f-48c0-b26e-50966b5df332"
-  },
-  "f81f2562-335f-4c91-9936-44ba1ca72881": {
-    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_excel/connections/eae102a358c941f2844d43f3e7fd87e8",
-    "connectionParameters": {},
-    "connectionRef": {
-      "apiTier": "Standard",
-      "displayName": "Excel",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1563/1.0.1563.2732/excel/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_excel",
-      "parameterHints": {
-        "5782a3ec-b73a-47b1-9d58-ff4d2a2d8d68": {
-          "value": "fileSource"
-        }
-      },
-      "parameterHintsV2": {
-        "fileSource": {
-          "value": "5782a3ec-b73a-47b1-9d58-ff4d2a2d8d68"
-        }
-      }
-    },
-    "datasets": {
-      "b!Cp1h87A-k0efAWnM4O6M1dBKrv4d9U9HlCyTcFsgr3ricjpxuwS5SLaK0la4tLlW.01OA6FFVDTHV5V22PUHZAKSJJFV3ZCNNGT": {
-        "dataSources": {
-          "ClassDetail": {
-            "tableName": "ClassDetail"
-          },
-          "Login": {
-            "tableName": "Login"
-          }
-        }
-      }
-    },
-    "dataSources": [
-      "ClassDetail",
-      "Login"
-    ],
-    "dependencies": {
-      "fileSource": "5782a3ec-b73a-47b1-9d58-ff4d2a2d8d68"
-    },
-    "dependents": [],
-    "id": "f81f2562-335f-4c91-9936-44ba1ca72881"
   }
 }
