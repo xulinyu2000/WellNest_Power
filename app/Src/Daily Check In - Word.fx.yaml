@@ -32,6 +32,8 @@
         Fill: =RGBA(102, 182, 227, 1)
         Height: =69
         HoverBorderColor: =ColorFade(Button2.BorderColor, 20%)
+        OnSelect: |
+            =check_in_word.Run(User().FullName, "relaxed")
         PressedBorderColor: =Button2.Fill
         PressedColor: =Button2.Fill
         PressedFill: =Button2.Color
@@ -52,6 +54,7 @@
         Fill: =RGBA(108, 74, 181, 1)
         Height: =69
         HoverBorderColor: =ColorFade(Button2_1.BorderColor, 20%)
+        OnSelect: =check_in_word.Run(User().FullName, "confused")
         PressedBorderColor: =Button2_1.Fill
         PressedColor: =Button2_1.Fill
         PressedFill: =Button2_1.Color
@@ -72,6 +75,7 @@
         Fill: =RGBA(252, 192, 40, 1)
         Height: =66
         HoverBorderColor: =ColorFade(Button2_2.BorderColor, 20%)
+        OnSelect: =check_in_word.Run(User().FullName, "energetic")
         PressedBorderColor: =Button2_2.Fill
         PressedColor: =Button2_2.Fill
         PressedFill: =Button2_2.Color
@@ -92,6 +96,7 @@
         Fill: =RGBA(127, 178, 57, 1)
         Height: =71
         HoverBorderColor: =ColorFade(Button2_3.BorderColor, 20%)
+        OnSelect: =check_in_word.Run(User().FullName, "sick")
         PressedBorderColor: =Button2_3.Fill
         PressedColor: =Button2_3.Fill
         PressedFill: =Button2_3.Color
@@ -112,6 +117,7 @@
         Fill: =RGBA(221, 79, 14, 1)
         Height: =66
         HoverBorderColor: =ColorFade(Button2_4.BorderColor, 20%)
+        OnSelect: =check_in_word.Run(User().FullName, "hurt")
         PressedBorderColor: =Button2_4.Fill
         PressedColor: =Button2_4.Fill
         PressedFill: =Button2_4.Color
@@ -132,6 +138,7 @@
         Fill: =RGBA(250, 155, 112, 1)
         Height: =71
         HoverBorderColor: =ColorFade(Button2_5.BorderColor, 20%)
+        OnSelect: =check_in_word.Run(User().FullName, "nervous")
         PressedBorderColor: =Button2_5.Fill
         PressedColor: =Button2_5.Fill
         PressedFill: =Button2_5.Color
