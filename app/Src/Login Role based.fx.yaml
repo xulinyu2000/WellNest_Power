@@ -1,47 +1,72 @@
 "'Login Role based' As screen":
 
-    Button3 As button:
-        BorderColor: =ColorFade(Button3.Fill, -15%)
-        Height: =70
-        HoverBorderColor: =ColorFade(Button3.BorderColor, 20%)
-        OnSelect: =Set(StudentView,true);Set(AdminView,false);Set(TeacherView,false);Navigate('Student Dashboard')
-        PressedBorderColor: =Button3.Fill
-        PressedColor: =Button3.Fill
-        PressedFill: =Button3.Color
-        Size: =24
-        Text: ="Student Login"
-        Width: =280
-        X: =174
-        Y: =354
-        ZIndex: =1
+    Container4 As groupContainer.manualLayoutContainer:
+        Height: =347
+        Visible: |
+            =IsUserInAdminList
+        Width: =526
+        X: =65
+        Y: =238
+        ZIndex: =4
 
-    Button4 As button:
-        BorderColor: =ColorFade(Button4.Fill, -15%)
-        Height: =70
-        HoverBorderColor: =ColorFade(Button4.BorderColor, 20%)
-        OnSelect: =Set(TeacherView,true);Set(AdminView,false);Set(StudentView,false);Navigate('Teacher Dashboard')
-        PressedBorderColor: =Button4.Fill
-        PressedColor: =Button4.Fill
-        PressedFill: =Button4.Color
-        Size: =24
-        Text: ="Teacher Login"
-        Width: =280
-        X: =174
-        Y: =624
-        ZIndex: =2
+        Button6 As button:
+            BorderColor: =ColorFade(Button6.Fill, -15%)
+            Height: =70
+            HoverBorderColor: =ColorFade(Button6.BorderColor, 20%)
+            OnSelect: =Set(StudentView,true);Set(AdminView,false);Set(TeacherView,false);Navigate('Student Dashboard')
+            PressedBorderColor: =Button6.Fill
+            PressedColor: =Button6.Fill
+            PressedFill: =Button6.Color
+            Size: =24
+            Text: ="Student Login "
+            Width: =280
+            X: =135
+            Y: =147
+            ZIndex: =1
 
-    Button1 As button:
-        BorderColor: =ColorFade(Button1.Fill, -15%)
-        Height: =78
-        HoverBorderColor: =ColorFade(Button1.BorderColor, 20%)
-        OnSelect: =Set(AdminView,true);Set(StudentView,false);Set(TeacherView,false);Navigate('Admin Dashboard')
-        PressedBorderColor: =Button1.Fill
-        PressedColor: =Button1.Fill
-        PressedFill: =Button1.Color
-        Size: =16
-        Text: ="Admin Button"
-        Width: =218
-        X: =205
-        Y: =886
-        ZIndex: =3
+    Container6 As groupContainer.manualLayoutContainer:
+        Height: =332
+        Visible: |
+            =IsUserInAdminList
+        Width: =526
+        X: =28
+        Y: =527
+        ZIndex: =5
+
+        Button8 As button:
+            BorderColor: =ColorFade(Button8.Fill, -15%)
+            Height: =70
+            HoverBorderColor: =ColorFade(Button8.BorderColor, 20%)
+            OnSelect: =Set(TeacherView,true);Set(AdminView,false);Set(StudentView,false);Navigate('Teacher Dashboard')
+            PressedBorderColor: =Button8.Fill
+            PressedColor: =Button8.Fill
+            PressedFill: =Button8.Color
+            Size: =24
+            Text: ="Teacher Login "
+            Width: =280
+            X: =165
+            Y: =126
+            ZIndex: =1
+
+    Container8 As groupContainer.manualLayoutContainer:
+        Height: =225
+        Visible: =IsUserInAdminList
+        X: =52
+        Y: =842
+        ZIndex: =7
+
+        Button11 As button:
+            BorderColor: =ColorFade(Button11.Fill, -15%)
+            Height: =70
+            HoverBorderColor: =ColorFade(Button11.BorderColor, 20%)
+            OnSelect: =Set(AdminView,true);Set(StudentView,false);Set(TeacherView,false);Navigate('Admin Dashboard')
+            PressedBorderColor: =Button11.Fill
+            PressedColor: =Button11.Fill
+            PressedFill: =Button11.Color
+            Size: =24
+            Text: ="Admin Login"
+            Width: =280
+            X: =128
+            Y: =72
+            ZIndex: =1
 

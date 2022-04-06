@@ -21,6 +21,24 @@
     ],
     "id": "11b65d48-0864-4651-9eb0-039e1b2730f2"
   },
+  "2ffbb580-e9b8-4e9a-8f6d-ba16ca5e599b": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_office365groups/connections/d0c3cd61dfc4438c8ae9acd1843ca790",
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "Office 365 Groups",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1563/1.0.1563.2732/office365groups/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365groups"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Groups"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "2ffbb580-e9b8-4e9a-8f6d-ba16ca5e599b"
+  },
   "5690f524-f336-4b6c-a1b4-ca6c9b9e1068": {
     "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_office365users/connections/6700d095d2c340db9414ce79cada01c7",
     "connectionParameters": {
@@ -241,10 +259,18 @@
             "tableName": "8d5e5701-8c37-4c18-b4ca-911011310e6c"
           }
         }
+      },
+      "https://unswinfs-my.sharepoint.com/personal/linyuxu_unswinfs_onmicrosoft_com": {
+        "dataSources": {
+          "UserAppPermission": {
+            "tableName": "6089dd20-0454-4fb9-8a57-2356e91a03f5"
+          }
+        }
       }
     },
     "dataSources": [
-      "Resources by Topic Area"
+      "Resources by Topic Area",
+      "UserAppPermission"
     ],
     "dependencies": {},
     "dependents": [

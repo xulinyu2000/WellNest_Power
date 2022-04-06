@@ -53,3 +53,32 @@ Start As screen:
         Y: =332
         ZIndex: =7
 
+    Button9 As button:
+        BorderColor: =ColorFade(Button9.Fill, -15%)
+        Height: =70
+        HoverBorderColor: =ColorFade(Button9.BorderColor, 20%)
+        PressedBorderColor: =Button9.Fill
+        PressedColor: =Button9.Fill
+        PressedFill: =Button9.Color
+        Size: =24
+        Text: ="call"
+        Width: =280
+        X: =42
+        Y: =1038
+        ZIndex: =8
+
+    Button10 As button:
+        BorderColor: =ColorFade(Button10.Fill, -15%)
+        Height: =70
+        HoverBorderColor: =ColorFade(Button10.BorderColor, 20%)
+        OnSelect: =Navigate('Login Role based', Fade)
+        PressedBorderColor: =Button10.Fill
+        PressedColor: =Button10.Fill
+        PressedFill: =Button10.Color
+        Size: =24
+        Text: ="Next"
+        Width: =280
+        X: =344
+        Y: =1038
+        ZIndex: =9
+

@@ -3,57 +3,7 @@ App As appinfo:
     MinScreenHeight: =320
     MinScreenWidth: =320
     OnStart: |+
-        =/*Set(
-            gblNavItems,
-            Table(
-                {
-                    MenuText: "Student Dashboard",
-                    MenuIcon: Icon.Items,
-                    ScreenToGoTo: 'Student Dashboard'
-                },
-                {
-                    MenuText: "Student Community",
-                    MenuIcon: Icon.People,
-                    ScreenToGoTo: 'Student Community'
-                },
-                {
-                    MenuText: "Student Message",
-                    MenuIcon: Icon.Message,
-                    ScreenToGoTo: 'Student Messaging'
-                },
-                {
-                    MenuText: "Student Knowledge",
-                    MenuIcon: Icon.DocumentWithContent,
-                    ScreenToGoTo: 'Student Knowledge'
-                },
-                 {
-                    MenuText: "Teacher Dashboard",
-                    MenuIcon: Icon.Items,
-                    ScreenToGoTo: 'Student Dashboard'
-                },
-                {
-                    MenuText: "Class Management",
-                    MenuIcon: Icon.People,
-                    ScreenToGoTo: 'Teacher Class Management'
-                },  
-                {
-                    MenuText: "Teacher Knowledge",
-                    MenuIcon: Icon.DocumentWithContent,
-                    ScreenToGoTo: 'Teacher Knowledge'
-                },
-                {
-                    MenuText: "Admin Dashboard",
-                    MenuIcon: Icon.Items,
-                    ScreenToGoTo: 'Admin Dashboard'
-                },
-                 {
-                    MenuText: "Admin Message",
-                    MenuIcon: Icon.Message,
-                    ScreenToGoTo: 'Admin Messaging'
-                }
-            )
-        )*/
-        ClearCollect(
+        =ClearCollect(
             NavStudentView,
                 {
                     MenuText: "Student Dashboard",
@@ -116,7 +66,15 @@ App As appinfo:
                     MenuIcon: Icon.DocumentWithContent,
                     ScreenToGoTo: 'Admin Knowledge'
                 }
-        )
+        );
+        
+        Set(IsUserInAzureAdGroup,Office365Users.MyProfile().Mail in Office365Groups.ListGroupMembers("fe28fe16-ca97-4ad0-a195-225ff2e8541d").value.mail);
+        
+        //Student:cfdd9b03-4ecd-418c-8928-6119b9baacbc            UNSW_INFS:fe28fe16-ca97-4ad0-a195-225ff2e8541d
+        
+        
+        
+        Set(IsUserInAdminList, !IsBlank( LookUp(UserAppPermission, User.Email = Office365Users.MyProfile().Mail)))
         
         
 
