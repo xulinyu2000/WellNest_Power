@@ -2,36 +2,6 @@
 
     Header_8 As Header:
 
-    compMenu_1 As StudentcompMenu:
-        NavigationItems: |+
-            =NavStudentView
-             /*Table(
-                    {
-                        MenuText: "Student Dashboard",
-                        MenuIcon: Icon.Items,
-                        ScreenToGoTo: 'Student Dashboard'
-                    },
-                    {
-                        MenuText: "Student Community",
-                        MenuIcon: Icon.People,
-                        ScreenToGoTo: 'Student Community'
-                    },
-                    {
-                        MenuText: "Student Message",
-                        MenuIcon: Icon.Message,
-                        ScreenToGoTo: 'Student Messaging'
-                    },
-                    {
-                        MenuText: "Student Knowledge",
-                        MenuIcon: Icon.DocumentWithContent,
-                        ScreenToGoTo: 'Student Knowledge'
-                    }
-            
-                )*/
-            
-        Y: =1042
-        ZIndex: =4
-
     Label13 As label:
         Height: =70
         Size: =21
@@ -40,4 +10,8 @@
         X: =80
         Y: =526
         ZIndex: =5
+
+    StudentcompMenu_2 As StudentcompMenu:
+        Y: =1041.3333333333333
+        ZIndex: =6
 

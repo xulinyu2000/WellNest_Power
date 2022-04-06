@@ -221,7 +221,8 @@
     Header_4 As Header:
         ZIndex: =11
 
-    compMenu_5 As StudentcompMenu:
-        Y: =1042
+    TeachercompMenu_3 As TeachercompMenu:
+        NavigationItems: =NavTeacherView
+        Y: =1041.3333333333333
         ZIndex: =12
 

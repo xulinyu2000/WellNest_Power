@@ -152,8 +152,26 @@
             Y: =3
             ZIndex: =6
 
-    compMenu_4 As StudentcompMenu:
-        NavigationItems: =gblNavItems
+    AdmincompMenu_1 As AdmincompMenu:
+        NavigationItems: |-
+            =/*Table(
+                {
+                    MenuText: "Menu Item Screen 1",
+                    MenuIcon: Icon.Items,
+                    ScreenToGoTo: App.ActiveScreen
+                },
+                {
+                    MenuText: "Menu Item 2",
+                    MenuIcon: Icon.Message,
+                    ScreenToGoTo: App.ActiveScreen
+                },
+                {
+                    MenuText: "Menu Item 3",
+                     MenuIcon: Icon.DocumentWithContent,
+                    ScreenToGoTo: App.ActiveScreen
+                }
+            )*/
+            NavAdminView
         Y: =1042
         ZIndex: =8
 

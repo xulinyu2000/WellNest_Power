@@ -4,7 +4,7 @@ AdmincompMenu As CanvasComponent:
     ForegroundColor: =RGBA(0,134,208,1)
     Height: |
         =App.DesignHeight/12
-    NavigationItems: |-
+    NavigationItems: |
         =Table(
             {
                 MenuText: "Menu Item Screen 1",

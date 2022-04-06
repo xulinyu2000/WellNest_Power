@@ -1,5 +1,5 @@
 "'Admin Messaging' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
-    Fill: =NavAdminView
+    Fill: =
 
     RectQuickActionBar4_2 As rectangle:
         Height: =88
@@ -45,31 +45,9 @@
                 Y: =498
                 ZIndex: =1
 
-    compMenu_8 As StudentcompMenu:
-        NavigationItems: |-
-            = Table(
-                    {
-                        MenuText: "Student Dashboard",
-                        MenuIcon: Icon.Items,
-                        ScreenToGoTo: 'Student Dashboard'
-                    },
-                    {
-                        MenuText: "Student Community",
-                        MenuIcon: Icon.People,
-                        ScreenToGoTo: 'Student Community'
-                    },
-                    {
-                        MenuText: "Student Message",
-                        MenuIcon: Icon.Message,
-                        ScreenToGoTo: 'Admin Messaging'
-                    },
-                    {
-                        MenuText: "Student Knowledge",
-                        MenuIcon: Icon.DocumentWithContent,
-                        ScreenToGoTo: 'Student Knowledge'
-                    }
-            
-                )
-        Y: =1042
+    AdmincompMenu_2 As AdmincompMenu:
+        NavigationItems: |
+            =NavAdminView
+        Y: =1041.3333333333333
         ZIndex: =5
 

@@ -44,34 +44,8 @@
                 Y: =450
                 ZIndex: =1
 
-    compMenu_10 As StudentcompMenu:
-        NavigationItems: |-
-            =NavStudentView
-             /*Table(
-                    {
-                        MenuText: "Student Dashboard",
-                        MenuIcon: Icon.Items,
-                        ScreenToGoTo: 'Student Dashboard'
-                    },
-                    {
-                        MenuText: "Student Community",
-                        MenuIcon: Icon.People,
-                        ScreenToGoTo: 'Student Community'
-                    },
-                    {
-                        MenuText: "Student Message",
-                        MenuIcon: Icon.Message,
-                        ScreenToGoTo: 'Student Messaging'
-                    },
-                    {
-                        MenuText: "Student Knowledge",
-                        MenuIcon: Icon.DocumentWithContent,
-                        ScreenToGoTo: 'Student Knowledge'
-                    }
-            
-                )*/
-            
-                
-        Y: =496
+    AdmincompMenu_3 As AdmincompMenu:
+        NavigationItems: =NavAdminView
+        Y: =1042
         ZIndex: =5
 
