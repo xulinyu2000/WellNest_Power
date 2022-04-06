@@ -1,5 +1,6 @@
 "'Daily Check In - Weather' As screen.'phoneLayout_HeaderAndForm_ver3.0'":
     Fill: =RGBA(241, 244, 249, 1)
+    OnVisible: ='check_in_weather-2'.Run(
 
     Label1_2 As label:
         Align: =Align.Center
