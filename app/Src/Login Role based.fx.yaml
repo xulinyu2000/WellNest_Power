@@ -24,9 +24,8 @@
 
     Container6 As groupContainer.manualLayoutContainer:
         Height: =332
-        Visible: |+
-            =true
-            
+        Visible: |
+            =IsUserTeacher
         Width: =526
         X: =28
         Y: =527
@@ -49,7 +48,6 @@
 
     Container8 As groupContainer.manualLayoutContainer:
         Height: =225
-        Visible: =IsUserInAdminList
         X: =52
         Y: =842
         ZIndex: =7
