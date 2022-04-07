@@ -3,7 +3,14 @@
     "AllowAccessToGlobals": true,
     "ControlPropertyState": [
       "OnSelect",
-      "Text",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "\"Button\"",
+        "InvariantPropertyName": "Text",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "BorderColor",
       "DisabledBorderColor",
       "PressedBorderColor",
@@ -28,10 +35,38 @@
       "Width",
       "Height",
       "ZIndex",
-      "RadiusTopLeft",
-      "RadiusTopRight",
-      "RadiusBottomLeft",
-      "RadiusBottomRight",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "10",
+        "InvariantPropertyName": "RadiusTopLeft",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "10",
+        "InvariantPropertyName": "RadiusTopRight",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "10",
+        "InvariantPropertyName": "RadiusBottomLeft",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "10",
+        "InvariantPropertyName": "RadiusBottomRight",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "BorderThickness",
       "FocusedBorderThickness",
       "Size",
@@ -260,7 +295,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Canvas3_1",
-    "ParentIndex": 4,
+    "ParentIndex": 3,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -401,7 +436,14 @@
   "Gallery3": {
     "AllowAccessToGlobals": true,
     "ControlPropertyState": [
-      "Items",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "CustomGallerySample",
+        "InvariantPropertyName": "Items",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "TemplateSize",
       "TemplatePadding",
       "Layout",
@@ -436,7 +478,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "",
     "Name": "Gallery3",
-    "ParentIndex": 0,
+    "ParentIndex": 4,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -624,7 +666,7 @@
     },
     "MetaDataIDKey": "",
     "Name": "Header_9",
-    "ParentIndex": 3,
+    "ParentIndex": 2,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -973,7 +1015,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "%TemplatePhoneLblAppName.ID%",
     "Name": "LblAppName3_1",
-    "ParentIndex": 2,
+    "ParentIndex": 1,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
@@ -1152,7 +1194,7 @@
     "LayoutName": "",
     "MetaDataIDKey": "%TemplatePhoneRectQuickActionBar.ID%",
     "Name": "RectQuickActionBar4_1",
-    "ParentIndex": 1,
+    "ParentIndex": 0,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {

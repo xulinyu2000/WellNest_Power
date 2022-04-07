@@ -51,22 +51,28 @@
 
     Gallery3 As gallery.galleryHorizontal:
         Height: =106
-        Items: =CustomGallerySample
-        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(320, Self.Width - 60), Min(320, Self.Height - 60))
+        Items: |-
+            =Table({ID:1, Label:"Quick-chat"},{ID:2, Label:"Favourites"},{ID:3, Label:"Book"})
+        TemplateSize: =164
         Y: =113
         ZIndex: =6
 
         Button1 As button:
             BorderColor: =ColorFade(Button1.Fill, -15%)
-            Height: =68
+            Height: =53
             HoverBorderColor: =ColorFade(Button1.BorderColor, 20%)
             OnSelect: =Select(Parent)
             PressedBorderColor: =Button1.Fill
             PressedColor: =Button1.Fill
             PressedFill: =Button1.Color
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
             Size: =24
-            Text: ="Button"
-            Width: =280
+            Text: =ThisItem.Label
+            Width: =137
             X: =40
+            Y: =15
             ZIndex: =1
 
