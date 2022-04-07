@@ -134,15 +134,3 @@
         Y: =340
         ZIndex: =11
 
-    imgTxtQuickChat As image:
-        Height: =79
-        HoverBorderColor: =ColorFade(imgTxtQuickChat.BorderColor, 20%)
-        HoverFill: =ColorFade(imgTxtQuickChat.Fill, 20%)
-        Image: ='txtQuick-chat'
-        PressedBorderColor: =ColorFade(imgTxtQuickChat.BorderColor, -20%)
-        PressedFill: =ColorFade(imgTxtQuickChat.Fill, -20%)
-        Width: =103
-        X: =62
-        Y: =248
-        ZIndex: =12
-
