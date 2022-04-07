@@ -22,7 +22,21 @@
         Fill: =RGBA(72, 161, 255, 1)
         Height: =53
         HoverBorderColor: =ColorFade(CheckInButton_2.BorderColor, 20%)
-        OnSelect: =Navigate('Daily Check In - Face')
+        OnSelect: |-
+            =If(
+                CountRows(
+                    Filter(
+                        checkin,
+                        Student_Date = (Office365Users.MyProfile().Mail & Today())
+                    )
+                ) = 0,
+                Navigate('Daily Check In - Face'),
+                Notify(
+                    "You have already completed today's check in!",
+                    NotificationType.Success,
+                    0
+                )
+            )
         PressedBorderColor: =CheckInButton_2.Fill
         PressedColor: =CheckInButton_2.Fill
         PressedFill: =CheckInButton_2.Color

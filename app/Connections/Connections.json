@@ -9,8 +9,18 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1554/1.0.1554.2707/excelonlinebusiness/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness"
     },
-    "datasets": {},
-    "dataSources": [],
+    "datasets": {
+      "sites%252Funswinfs.sharepoint.com%252C01a556b2-17a1-46a4-aa81-ac807163f263%252C7e3710a0-84d4-4a03-8c2a-36c1b3e4cdf2,b%2521slalAaEXpEaqgayAcWPyY6AQN37UhANKjCo2wbPkzfLCUzGK2G3sRLFxQE33F38r,01KOXOUZB5U3Z3LOFL7BGIPFAJSQ2WTIBR": {
+        "dataSources": {
+          "checkin": {
+            "tableName": "{D7CBED8A-8CAF-454D-94C6-1FFE6B8E475F}"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "checkin"
+    ],
     "dependencies": {},
     "dependents": [
       "5e8a3a6f-0bdf-4803-9fb1-d3f4cae116d1",
@@ -277,6 +287,9 @@
     "datasets": {
       "https://unswinfs.sharepoint.com/sites/PowerApps": {
         "dataSources": {
+          "Documents": {
+            "tableName": "8a3153c2-6dd8-44ec-b171-404df7177f2b"
+          },
           "UserAppPermission": {
             "tableName": "3822ea82-657b-4d4f-894d-b7783891443e"
           }
@@ -284,7 +297,8 @@
       }
     },
     "dataSources": [
-      "UserAppPermission"
+      "UserAppPermission",
+      "Documents"
     ],
     "dependencies": {},
     "dependents": [
