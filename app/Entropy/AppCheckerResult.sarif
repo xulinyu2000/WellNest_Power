@@ -2467,49 +2467,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Student Messaging.galleryQuickChat.TabIndex"
+                  "fullyQualifiedName": "Student Messaging.galleryFavourites.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Student Messaging.galleryQuickChat.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Student Messaging",
-                "type": "Student Messaging.galleryQuickChat"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Student Messaging.galleryQuickChat.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Student Messaging.galleryQuickChat.AccessibleLabel",
+                  "fullyQualifiedName": "Student Messaging.galleryFavourites.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Student Messaging",
-                "type": "Student Messaging.galleryQuickChat"
+                "type": "Student Messaging.galleryFavourites"
               }
             }
           ],
@@ -2521,6 +2491,36 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Student Messaging.galleryFavourites.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Student Messaging.galleryFavourites.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Student Messaging",
+                "type": "Student Messaging.galleryFavourites"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -2587,49 +2587,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Student Messaging.Gallery7.TabIndex"
+                  "fullyQualifiedName": "Student Messaging.galleryQuickChat.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Student Messaging.Gallery7.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Student Messaging",
-                "type": "Student Messaging.Gallery7"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Student Messaging.Gallery7.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Student Messaging.Gallery7.AccessibleLabel",
+                  "fullyQualifiedName": "Student Messaging.galleryQuickChat.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Student Messaging",
-                "type": "Student Messaging.Gallery7"
+                "type": "Student Messaging.galleryQuickChat"
               }
             }
           ],
@@ -2641,6 +2611,36 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Student Messaging.galleryQuickChat.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Student Messaging.galleryQuickChat.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Student Messaging",
+                "type": "Student Messaging.galleryQuickChat"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 6
         },
         {
           "locations": [
