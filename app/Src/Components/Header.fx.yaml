@@ -44,7 +44,7 @@ Header As CanvasComponent:
             Height: =113
             HoverBorderColor: =ColorFade(Image1.BorderColor, 20%)
             HoverFill: =ColorFade(Image1.Fill, 20%)
-            Image: =User().Image
+            Image: =Office365Users.UserPhoto(Office365Users.MyProfile().Id)
             PressedBorderColor: =ColorFade(Image1.BorderColor, -20%)
             PressedFill: =ColorFade(Image1.Fill, -20%)
             Width: =90
