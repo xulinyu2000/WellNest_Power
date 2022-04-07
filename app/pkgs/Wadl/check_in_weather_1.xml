@@ -1,13 +1,11 @@
-<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://australia-001.azure-apim.net/apim/logicflows" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="check_in_weather-2" xmlns="http://wadl.dev.java.net/2009/02">
-  <doc title="check_in_weather - 2" />
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://australia-001.azure-apim.net/apim/logicflows" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="check_in_weather" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="check_in_weather" />
   <grammars>
     <jsonTypes targetNamespace="https://australia-001.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
       <string name="ManualTriggerInput_Updatearow_KeyValue_def" />
-      <string name="ManualTriggerInput_Updatearow_Date_def" />
       <string name="ManualTriggerInput_Updatearow_Weather_def" />
       <object name="ManualTriggerInput">
         <property name="Updatearow_KeyValue" type="string" />
-        <property name="Updatearow_Date" type="string" />
         <property name="Updatearow_Weather" type="string" />
       </object>
     </jsonTypes>
@@ -23,7 +21,6 @@
           </param>
           <representation mediaType="application/json">
             <param style="plain" name="Updatearow_KeyValue" path="/Updatearow_KeyValue" type="xs:string" required="true" />
-            <param style="plain" name="Updatearow_Date" path="/Updatearow_Date" type="xs:string" required="true" />
             <param style="plain" name="Updatearow_Weather" path="/Updatearow_Weather" type="xs:string" required="true" />
           </representation>
         </request>
