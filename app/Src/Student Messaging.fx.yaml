@@ -51,6 +51,42 @@
         Y: =1042
         ZIndex: =5
 
+    Image7 As image:
+        Height: =79
+        HoverBorderColor: =ColorFade(Image7.BorderColor, 20%)
+        HoverFill: =ColorFade(Image7.Fill, 20%)
+        Image: =btnQuickChat
+        PressedBorderColor: =ColorFade(Image7.BorderColor, -20%)
+        PressedFill: =ColorFade(Image7.Fill, -20%)
+        Width: =150
+        X: =39
+        Y: =251
+        ZIndex: =6
+
+    Image7_3 As image:
+        Height: =79
+        HoverBorderColor: =ColorFade(Image7_3.BorderColor, 20%)
+        HoverFill: =ColorFade(Image7_3.Fill, 20%)
+        Image: =btnFavourites
+        PressedBorderColor: =ColorFade(Image7_3.BorderColor, -20%)
+        PressedFill: =ColorFade(Image7_3.Fill, -20%)
+        Width: =150
+        X: =245
+        Y: =251
+        ZIndex: =7
+
+    Image7_4 As image:
+        Height: =79
+        HoverBorderColor: =ColorFade(Image7_4.BorderColor, 20%)
+        HoverFill: =ColorFade(Image7_4.Fill, 20%)
+        Image: =btnFavourites
+        PressedBorderColor: =ColorFade(Image7_4.BorderColor, -20%)
+        PressedFill: =ColorFade(Image7_4.Fill, -20%)
+        Width: =150
+        X: =448
+        Y: =251
+        ZIndex: =8
+
     Image7_5 As image:
         Height: =85
         HoverBorderColor: =ColorFade(Image7_5.BorderColor, 20%)
@@ -62,49 +98,6 @@
         X: =39
         Y: =151
         ZIndex: =9
-
-    Group1 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =9
-
-        Image7 As image:
-            Height: =79
-            HoverBorderColor: =ColorFade(Image7.BorderColor, 20%)
-            HoverFill: =ColorFade(Image7.Fill, 20%)
-            Image: =btnQuickChat
-            PressedBorderColor: =ColorFade(Image7.BorderColor, -20%)
-            PressedFill: =ColorFade(Image7.Fill, -20%)
-            Width: =150
-            X: =39
-            Y: =251
-            ZIndex: =6
-
-        Image7_3 As image:
-            Height: =79
-            HoverBorderColor: =ColorFade(Image7_3.BorderColor, 20%)
-            HoverFill: =ColorFade(Image7_3.Fill, 20%)
-            Image: =btnFavourites
-            PressedBorderColor: =ColorFade(Image7_3.BorderColor, -20%)
-            PressedFill: =ColorFade(Image7_3.Fill, -20%)
-            Width: =150
-            X: =245
-            Y: =251
-            ZIndex: =7
-
-        Image7_4 As image:
-            Height: =79
-            HoverBorderColor: =ColorFade(Image7_4.BorderColor, 20%)
-            HoverFill: =ColorFade(Image7_4.Fill, 20%)
-            Image: =btnFavourites
-            PressedBorderColor: =ColorFade(Image7_4.BorderColor, -20%)
-            PressedFill: =ColorFade(Image7_4.Fill, -20%)
-            Width: =150
-            X: =448
-            Y: =251
-            ZIndex: =8
 
     Gallery5 As gallery.galleryVertical:
         Height: =702
