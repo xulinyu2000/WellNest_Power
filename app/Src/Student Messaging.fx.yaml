@@ -69,10 +69,21 @@
             RadiusBottomRight: =20
             RadiusTopLeft: =20
             RadiusTopRight: =20
-            Size: =24
+            Size: =16
             Text: =ThisItem.Label
             Width: =137
             X: =40
             Y: =15
             ZIndex: =1
+
+        Image7 As image:
+            Height: =96
+            HoverBorderColor: =ColorFade(Image7.BorderColor, 20%)
+            HoverFill: =ColorFade(Image7.Fill, 20%)
+            Image: =Picture22
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =ColorFade(Image7.BorderColor, -20%)
+            PressedFill: =ColorFade(Image7.Fill, -20%)
+            Width: =164
+            ZIndex: =2
 
