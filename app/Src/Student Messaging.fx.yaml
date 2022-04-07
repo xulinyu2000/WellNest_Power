@@ -99,6 +99,29 @@
         Y: =151
         ZIndex: =9
 
+    galleryFavourites As gallery.galleryVertical:
+        Height: =702
+        Items: =CustomGallerySample
+        Layout: =Layout.Vertical
+        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
+        Width: =624
+        WrapCount: =2
+        Y: =345
+        ZIndex: =10
+
+        Image12_1 As image:
+            Height: =256
+            HoverBorderColor: =ColorFade(Image12_1.BorderColor, 20%)
+            HoverFill: =ColorFade(Image12_1.Fill, 20%)
+            Image: =imgKendle
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =ColorFade(Image12_1.BorderColor, -20%)
+            PressedFill: =ColorFade(Image12_1.Fill, -20%)
+            Width: =266.5
+            X: =21
+            Y: =24
+            ZIndex: =1
+
     galleryQuickChat As gallery.galleryVertical:
         Height: =702
         Items: =CustomGallerySample
@@ -107,7 +130,7 @@
         Width: =624
         WrapCount: =2
         Y: =340
-        ZIndex: =10
+        ZIndex: =11
 
         Image12 As image:
             Height: =256
@@ -132,5 +155,5 @@
         PressedFill: =ColorFade(imgSeparatorLine.Fill, -20%)
         Width: =640
         Y: =340
-        ZIndex: =11
+        ZIndex: =12
 
