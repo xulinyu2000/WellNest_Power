@@ -34,7 +34,7 @@
         Height: =69
         HoverBorderColor: =ColorFade(Button2.BorderColor, 20%)
         OnSelect: |
-            =check_in_word.Run(User().FullName, "relaxed"); Navigate('Daily Check In - Weather')
+            =check_in_word.Run(User().FullName & Today(), "relaxed"); Navigate('Daily Check In - Weather')
         PressedBorderColor: =Button2.Fill
         PressedColor: =Button2.Fill
         PressedFill: =Button2.Color
