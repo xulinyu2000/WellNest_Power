@@ -44,6 +44,7 @@ Header As CanvasComponent:
             Height: =113
             HoverBorderColor: =ColorFade(Image1.BorderColor, 20%)
             HoverFill: =ColorFade(Image1.Fill, 20%)
+            Image: =User().Image
             PressedBorderColor: =ColorFade(Image1.BorderColor, -20%)
             PressedFill: =ColorFade(Image1.Fill, -20%)
             Width: =90
@@ -52,25 +53,10 @@ Header As CanvasComponent:
         Label3 As label:
             Align: =Align.Center
             Height: =113.6
+            OnSelect: =
             Size: =20
             Text: =User().FullName
             Width: =175
             X: =131
             ZIndex: =2
-
-        Button7 As button:
-            BorderColor: =ColorFade(Button7.Fill, -15%)
-            BorderStyle: =BorderStyle.None
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =23.599999999999994
-            HoverBorderColor: =ColorFade(Button7.BorderColor, 20%)
-            PressedBorderColor: =Button7.Fill
-            PressedColor: =Button7.Fill
-            PressedFill: =Button7.Color
-            Size: =10
-            Text: ="Logout"
-            Width: =86
-            X: =220
-            Y: =90
-            ZIndex: =3
 
