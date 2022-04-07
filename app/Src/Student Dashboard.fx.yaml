@@ -24,7 +24,7 @@
         HoverBorderColor: =ColorFade(CheckInButton_2.BorderColor, 20%)
         OnSelect: |-
             =If(
-                check_daily_checkin_complete.Run(Office365Users.MyProfile().Mail & Today()),
+                check_daily_checkin_complete.Run(Office365Users.MyProfile().Mail & Today()) ,
                 Notify("no"),
                 Navigate('Daily Check In - Face')
             )
