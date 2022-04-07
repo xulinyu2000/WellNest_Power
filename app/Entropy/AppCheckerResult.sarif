@@ -1657,49 +1657,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Student Messaging.imgBtnFavourites.AccessibleLabel"
+                  "fullyQualifiedName": "Student Messaging.imgTxtBook.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Student Messaging.imgBtnFavourites.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Student Messaging",
-                "type": "Student Messaging.imgBtnFavourites"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Student Messaging.imgBtnFavourites.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Student Messaging.imgBtnFavourites.TabIndex",
+                  "fullyQualifiedName": "Student Messaging.imgTxtBook.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Student Messaging",
-                "type": "Student Messaging.imgBtnFavourites"
+                "type": "Student Messaging.imgTxtBook"
               }
             }
           ],
@@ -1717,19 +1687,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Student Messaging.imgBtnBook.AccessibleLabel"
+                  "fullyQualifiedName": "Student Messaging.imgTxtBook.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Student Messaging.imgBtnBook.AccessibleLabel",
+                  "fullyQualifiedName": "Student Messaging.imgTxtBook.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Student Messaging",
-                "type": "Student Messaging.imgBtnBook"
+                "type": "Student Messaging.imgTxtBook"
               }
             }
           ],
@@ -1741,36 +1711,6 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Student Messaging.imgBtnBook.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Student Messaging.imgBtnBook.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Student Messaging",
-                "type": "Student Messaging.imgBtnBook"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
         },
         {
           "locations": [
@@ -2767,6 +2707,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Student Messaging.imgTxtFavourites.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Student Messaging.imgTxtFavourites.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Student Messaging",
+                "type": "Student Messaging.imgTxtFavourites"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Student Messaging.imgTxtFavourites.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Student Messaging.imgTxtFavourites.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Student Messaging",
+                "type": "Student Messaging.imgTxtFavourites"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.SelectedButton"
                 }
               ],
@@ -3481,96 +3481,6 @@
           },
           "ruleId": "app-UnusedMediaResources",
           "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.txtFavourites"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.txtFavourites",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "txtFavourites",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.txtBook"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.txtBook",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "txtBook",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Student Messaging.isClickedBook"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Student Messaging.isClickedBook",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "isClickedBook",
-                "module": "Student Messaging",
-                "type": "Student Messaging"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 8
         }
       ],
       "tool": {

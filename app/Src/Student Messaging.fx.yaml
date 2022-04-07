@@ -70,10 +70,10 @@
         HoverBorderColor: =ColorFade(imgBtnFavourites.BorderColor, 20%)
         HoverFill: =ColorFade(imgBtnFavourites.Fill, 20%)
         Image: =btnFavourites
-        OnSelect: |-
-            =UpdateContext({isClickedFavourites: true}); UpdateContext({isClickedQC: false}); UpdateContext({isClickedBook: false});
+        OnSelect: =
         PressedBorderColor: =ColorFade(imgBtnFavourites.BorderColor, -20%)
         PressedFill: =ColorFade(imgBtnFavourites.Fill, -20%)
+        Visible: =If(isClickedFavourites=true,false,true)
         Width: =150
         X: =245
         Y: =251
@@ -84,10 +84,10 @@
         HoverBorderColor: =ColorFade(imgBtnBook.BorderColor, 20%)
         HoverFill: =ColorFade(imgBtnBook.Fill, 20%)
         Image: =btnBook
-        OnSelect: |-
-            =UpdateContext({isClickedFavourites: false}); UpdateContext({isClickedQC: false}); UpdateContext({isClickedBook: true});
+        OnSelect: =
         PressedBorderColor: =ColorFade(imgBtnBook.BorderColor, -20%)
         PressedFill: =ColorFade(imgBtnBook.Fill, -20%)
+        Visible: =If(isClickedBook=true,false,true)
         Width: =150
         X: =448
         Y: =251
@@ -164,4 +164,32 @@
         Width: =640
         Y: =340
         ZIndex: =12
+
+    imgTxtFavourites As image:
+        Height: =86
+        HoverBorderColor: =ColorFade(imgTxtFavourites.BorderColor, 20%)
+        HoverFill: =ColorFade(imgTxtFavourites.Fill, 20%)
+        Image: =txtFavourites
+        OnSelect: |-
+            =UpdateContext({isClickedFavourites: true}); UpdateContext({isClickedQC: false}); UpdateContext({isClickedBook: false});
+        PressedBorderColor: =ColorFade(imgTxtFavourites.BorderColor, -20%)
+        PressedFill: =ColorFade(imgTxtFavourites.Fill, -20%)
+        Width: =95
+        X: =272
+        Y: =244
+        ZIndex: =13
+
+    imgTxtBook As image:
+        Height: =15
+        HoverBorderColor: =ColorFade(imgTxtBook.BorderColor, 20%)
+        HoverFill: =ColorFade(imgTxtBook.Fill, 20%)
+        Image: =txtBook
+        OnSelect: |-
+            =UpdateContext({isClickedFavourites: false}); UpdateContext({isClickedQC: false}); UpdateContext({isClickedBook: true});
+        PressedBorderColor: =ColorFade(imgTxtBook.BorderColor, -20%)
+        PressedFill: =ColorFade(imgTxtBook.Fill, -20%)
+        Width: =108
+        X: =470
+        Y: =279
+        ZIndex: =14
 
