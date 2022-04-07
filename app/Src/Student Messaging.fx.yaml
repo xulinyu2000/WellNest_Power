@@ -99,29 +99,6 @@
         Y: =151
         ZIndex: =9
 
-    galleryFavourites As gallery.galleryVertical:
-        Height: =702
-        Items: =CustomGallerySample
-        Layout: =Layout.Vertical
-        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
-        Width: =624
-        WrapCount: =2
-        Y: =345
-        ZIndex: =10
-
-        Image12_1 As image:
-            Height: =256
-            HoverBorderColor: =ColorFade(Image12_1.BorderColor, 20%)
-            HoverFill: =ColorFade(Image12_1.Fill, 20%)
-            Image: =imgKendle
-            OnSelect: =Select(Parent)
-            PressedBorderColor: =ColorFade(Image12_1.BorderColor, -20%)
-            PressedFill: =ColorFade(Image12_1.Fill, -20%)
-            Width: =266.5
-            X: =21
-            Y: =24
-            ZIndex: =1
-
     galleryQuickChat As gallery.galleryVertical:
         Height: =702
         Items: =CustomGallerySample
@@ -156,4 +133,83 @@
         Width: =640
         Y: =340
         ZIndex: =12
+
+    "Gallery7 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Height: =954
+        Items: =CustomGallerySample
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(160, Self.Height - 60)
+        Y: =88
+        ZIndex: =13
+
+        Image16 As image:
+            Height: =128
+            HoverBorderColor: =ColorFade(Image16.BorderColor, 20%)
+            HoverFill: =ColorFade(Image16.Fill, 20%)
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =ColorFade(Image16.BorderColor, -20%)
+            PressedFill: =ColorFade(Image16.Fill, -20%)
+            Width: =128
+            X: =16
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Title4 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.SampleHeading
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - Image16.Width - 104
+            X: =Image16.X + Image16.Width + 24
+            Y: =44
+            ZIndex: =2
+
+        Subtitle4 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.SampleText
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title4.Width
+            X: =Title4.X
+            Y: =Title4.Y + Title4.Height + 4
+            ZIndex: =3
+
+        NextArrow4 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            DisabledFill: =NextArrow4.Fill
+            Height: =60
+            HoverBorderColor: =ColorFade(NextArrow4.BorderColor, 20%)
+            HoverColor: =ColorFade(NextArrow4.Color, 20%)
+            HoverFill: =NextArrow4.Fill
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            PressedBorderColor: =ColorFade(NextArrow4.BorderColor, -20%)
+            PressedColor: =ColorFade(NextArrow4.Color, -20%)
+            PressedFill: =NextArrow4.Fill
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator4 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
 
