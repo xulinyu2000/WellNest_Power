@@ -48,6 +48,7 @@ Header As CanvasComponent:
             PressedBorderColor: =ColorFade(Image1.BorderColor, -20%)
             PressedFill: =ColorFade(Image1.Fill, -20%)
             Width: =90
+            X: =41
             ZIndex: =1
 
         Label3 As label:
