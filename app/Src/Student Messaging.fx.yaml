@@ -29,35 +29,38 @@
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(247, 249, 252, 1)
-            Height: =959
+            Height: =1046
             Width: =Parent.Width
             X: =0
             Y: =0
             ZIndex: =1
 
-            Label13_1 As label:
-                Height: =70
-                Size: =21
-                Text: ="Message"
-                Width: =560
-                X: =51
-                Y: =498
-                ZIndex: =1
+        DataCard4 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =90
+            Width: =640
+            X: =0
+            Y: =1
+            ZIndex: =2
 
     StudentcompMenu_3 As StudentcompMenu:
         NavigationItems: =NavStudentView
-        Y: =1041.3333333333333
+        Y: =1042
         ZIndex: =5
 
     Image7_5 As image:
+        Height: =85
         HoverBorderColor: =ColorFade(Image7_5.BorderColor, 20%)
         HoverFill: =ColorFade(Image7_5.Fill, 20%)
         Image: =txtChatWithEducators
         PressedBorderColor: =ColorFade(Image7_5.BorderColor, -20%)
         PressedFill: =ColorFade(Image7_5.Fill, -20%)
-        Width: =532
-        X: =51
-        Y: =136
+        Width: =559
+        X: =39
+        Y: =151
         ZIndex: =9
 
     Group1 As group:
@@ -102,4 +105,39 @@
             X: =448
             Y: =251
             ZIndex: =8
+
+    Gallery5 As gallery.galleryVertical:
+        Height: =702
+        Items: =CustomGallerySample
+        Layout: =Layout.Vertical
+        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
+        Width: =628
+        WrapCount: =2
+        Y: =340
+        ZIndex: =10
+
+        Image12 As image:
+            Height: =256
+            HoverBorderColor: =ColorFade(Image12.BorderColor, 20%)
+            HoverFill: =ColorFade(Image12.Fill, 20%)
+            Image: =imgKendle
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =ColorFade(Image12.BorderColor, -20%)
+            PressedFill: =ColorFade(Image12.Fill, -20%)
+            Width: =266.5
+            X: =21
+            Y: =24
+            ZIndex: =1
+
+    Image13 As image:
+        Height: =5
+        HoverBorderColor: =ColorFade(Image13.BorderColor, 20%)
+        HoverFill: =ColorFade(Image13.Fill, 20%)
+        Image: =imgSeparator
+        ImagePosition: =ImagePosition.Fill
+        PressedBorderColor: =ColorFade(Image13.BorderColor, -20%)
+        PressedFill: =ColorFade(Image13.Fill, -20%)
+        Width: =640
+        Y: =330
+        ZIndex: =11
 
