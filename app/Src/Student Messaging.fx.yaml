@@ -56,6 +56,8 @@
         HoverBorderColor: =ColorFade(imgBtnQuickChat.BorderColor, 20%)
         HoverFill: =ColorFade(imgBtnQuickChat.Fill, 20%)
         Image: =btnQuickChat
+        OnSelect: |-
+            =UpdateContext({isClickedFavourites: false}); UpdateContext({isClickedQC: true}); UpdateContext({isClickedBook: false});
         PressedBorderColor: =ColorFade(imgBtnQuickChat.BorderColor, -20%)
         PressedFill: =ColorFade(imgBtnQuickChat.Fill, -20%)
         Width: =150
@@ -68,6 +70,8 @@
         HoverBorderColor: =ColorFade(imgBtnFavourites.BorderColor, 20%)
         HoverFill: =ColorFade(imgBtnFavourites.Fill, 20%)
         Image: =btnFavourites
+        OnSelect: |-
+            =UpdateContext({isClickedFavourites: true}); UpdateContext({isClickedQC: false}); UpdateContext({isClickedBook: false});
         PressedBorderColor: =ColorFade(imgBtnFavourites.BorderColor, -20%)
         PressedFill: =ColorFade(imgBtnFavourites.Fill, -20%)
         Width: =150
@@ -80,6 +84,8 @@
         HoverBorderColor: =ColorFade(imgBtnBook.BorderColor, 20%)
         HoverFill: =ColorFade(imgBtnBook.Fill, 20%)
         Image: =btnBook
+        OnSelect: |-
+            =UpdateContext({isClickedFavourites: false}); UpdateContext({isClickedQC: false}); UpdateContext({isClickedBook: true});
         PressedBorderColor: =ColorFade(imgBtnBook.BorderColor, -20%)
         PressedFill: =ColorFade(imgBtnBook.Fill, -20%)
         Width: =150
