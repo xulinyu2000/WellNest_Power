@@ -51,55 +51,55 @@
         Y: =1042
         ZIndex: =5
 
-    Image7 As image:
+    imgBtnQuickChat As image:
         Height: =79
-        HoverBorderColor: =ColorFade(Image7.BorderColor, 20%)
-        HoverFill: =ColorFade(Image7.Fill, 20%)
+        HoverBorderColor: =ColorFade(imgBtnQuickChat.BorderColor, 20%)
+        HoverFill: =ColorFade(imgBtnQuickChat.Fill, 20%)
         Image: =btnQuickChat
-        PressedBorderColor: =ColorFade(Image7.BorderColor, -20%)
-        PressedFill: =ColorFade(Image7.Fill, -20%)
+        PressedBorderColor: =ColorFade(imgBtnQuickChat.BorderColor, -20%)
+        PressedFill: =ColorFade(imgBtnQuickChat.Fill, -20%)
         Width: =150
         X: =39
         Y: =251
         ZIndex: =6
 
-    Image7_3 As image:
+    imgBtnFavourites As image:
         Height: =79
-        HoverBorderColor: =ColorFade(Image7_3.BorderColor, 20%)
-        HoverFill: =ColorFade(Image7_3.Fill, 20%)
+        HoverBorderColor: =ColorFade(imgBtnFavourites.BorderColor, 20%)
+        HoverFill: =ColorFade(imgBtnFavourites.Fill, 20%)
         Image: =btnFavourites
-        PressedBorderColor: =ColorFade(Image7_3.BorderColor, -20%)
-        PressedFill: =ColorFade(Image7_3.Fill, -20%)
+        PressedBorderColor: =ColorFade(imgBtnFavourites.BorderColor, -20%)
+        PressedFill: =ColorFade(imgBtnFavourites.Fill, -20%)
         Width: =150
         X: =245
         Y: =251
         ZIndex: =7
 
-    Image7_4 As image:
+    imgBtnBook As image:
         Height: =79
-        HoverBorderColor: =ColorFade(Image7_4.BorderColor, 20%)
-        HoverFill: =ColorFade(Image7_4.Fill, 20%)
+        HoverBorderColor: =ColorFade(imgBtnBook.BorderColor, 20%)
+        HoverFill: =ColorFade(imgBtnBook.Fill, 20%)
         Image: =btnFavourites
-        PressedBorderColor: =ColorFade(Image7_4.BorderColor, -20%)
-        PressedFill: =ColorFade(Image7_4.Fill, -20%)
+        PressedBorderColor: =ColorFade(imgBtnBook.BorderColor, -20%)
+        PressedFill: =ColorFade(imgBtnBook.Fill, -20%)
         Width: =150
         X: =448
         Y: =251
         ZIndex: =8
 
-    Image7_5 As image:
+    imgTxtChatWithEducators As image:
         Height: =85
-        HoverBorderColor: =ColorFade(Image7_5.BorderColor, 20%)
-        HoverFill: =ColorFade(Image7_5.Fill, 20%)
+        HoverBorderColor: =ColorFade(imgTxtChatWithEducators.BorderColor, 20%)
+        HoverFill: =ColorFade(imgTxtChatWithEducators.Fill, 20%)
         Image: =txtChatWithEducators
-        PressedBorderColor: =ColorFade(Image7_5.BorderColor, -20%)
-        PressedFill: =ColorFade(Image7_5.Fill, -20%)
+        PressedBorderColor: =ColorFade(imgTxtChatWithEducators.BorderColor, -20%)
+        PressedFill: =ColorFade(imgTxtChatWithEducators.Fill, -20%)
         Width: =559
         X: =39
         Y: =151
         ZIndex: =9
 
-    Gallery5 As gallery.galleryVertical:
+    galleryQuickChat As gallery.galleryVertical:
         Height: =702
         Items: =CustomGallerySample
         Layout: =Layout.Vertical
@@ -122,15 +122,27 @@
             Y: =24
             ZIndex: =1
 
-    Image13 As image:
+    imgSeparatorLine As image:
         Height: =5
-        HoverBorderColor: =ColorFade(Image13.BorderColor, 20%)
-        HoverFill: =ColorFade(Image13.Fill, 20%)
+        HoverBorderColor: =ColorFade(imgSeparatorLine.BorderColor, 20%)
+        HoverFill: =ColorFade(imgSeparatorLine.Fill, 20%)
         Image: =imgSeparator
         ImagePosition: =ImagePosition.Fill
-        PressedBorderColor: =ColorFade(Image13.BorderColor, -20%)
-        PressedFill: =ColorFade(Image13.Fill, -20%)
+        PressedBorderColor: =ColorFade(imgSeparatorLine.BorderColor, -20%)
+        PressedFill: =ColorFade(imgSeparatorLine.Fill, -20%)
         Width: =640
         Y: =340
         ZIndex: =11
+
+    imgTxtQuickChat As image:
+        Height: =79
+        HoverBorderColor: =ColorFade(imgTxtQuickChat.BorderColor, 20%)
+        HoverFill: =ColorFade(imgTxtQuickChat.Fill, 20%)
+        Image: ='txtQuick-chat'
+        PressedBorderColor: =ColorFade(imgTxtQuickChat.BorderColor, -20%)
+        PressedFill: =ColorFade(imgTxtQuickChat.Fill, -20%)
+        Width: =103
+        X: =62
+        Y: =248
+        ZIndex: =12
 

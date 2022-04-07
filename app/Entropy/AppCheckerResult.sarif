@@ -2467,19 +2467,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Student Messaging.Gallery5.TabIndex"
+                  "fullyQualifiedName": "Student Messaging.galleryQuickChat.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Student Messaging.Gallery5.TabIndex",
+                  "fullyQualifiedName": "Student Messaging.galleryQuickChat.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Student Messaging",
-                "type": "Student Messaging.Gallery5"
+                "type": "Student Messaging.galleryQuickChat"
               }
             }
           ],
@@ -2497,19 +2497,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Student Messaging.Gallery5.AccessibleLabel"
+                  "fullyQualifiedName": "Student Messaging.galleryQuickChat.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Student Messaging.Gallery5.AccessibleLabel",
+                  "fullyQualifiedName": "Student Messaging.galleryQuickChat.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Student Messaging",
-                "type": "Student Messaging.Gallery5"
+                "type": "Student Messaging.galleryQuickChat"
               }
             }
           ],
@@ -2527,19 +2527,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Student Messaging.Image7.AccessibleLabel"
+                  "fullyQualifiedName": "Student Messaging.imgBtnQuickChat.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Student Messaging.Image7.AccessibleLabel",
+                  "fullyQualifiedName": "Student Messaging.imgBtnQuickChat.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Student Messaging",
-                "type": "Student Messaging.Image7"
+                "type": "Student Messaging.imgBtnQuickChat"
               }
             }
           ],
@@ -2557,19 +2557,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Student Messaging.Image7.TabIndex"
+                  "fullyQualifiedName": "Student Messaging.imgBtnQuickChat.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Student Messaging.Image7.TabIndex",
+                  "fullyQualifiedName": "Student Messaging.imgBtnQuickChat.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Student Messaging",
-                "type": "Student Messaging.Image7"
+                "type": "Student Messaging.imgBtnQuickChat"
               }
             }
           ],
@@ -3258,6 +3258,66 @@
               },
               "properties": {
                 "member": "Yes",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.txtFavourites"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.txtFavourites",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "txtFavourites",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.txtBook"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.txtBook",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "txtBook",
                 "module": "App",
                 "type": "App"
               }
