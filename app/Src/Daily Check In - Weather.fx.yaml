@@ -74,7 +74,7 @@
         HoverBorderColor: =ColorFade(Image2.BorderColor, 20%)
         HoverFill: =ColorFade(Image2.Fill, 20%)
         Image: ='cloudy (1)'
-        OnSelect: =check_in_weather_1.Run(User().FullName & Today(), "cloudy")
+        OnSelect: =check_in_weather_1.Run(User().FullName & Today(), "cloudy"); Navigate('Student Dashboard')
         PressedBorderColor: =ColorFade(Image2.BorderColor, -20%)
         PressedFill: =ColorFade(Image2.Fill, -20%)
         Width: =213
@@ -87,7 +87,7 @@
         HoverBorderColor: =ColorFade(Image3.BorderColor, 20%)
         HoverFill: =ColorFade(Image3.Fill, 20%)
         Image: =cloudy
-        OnSelect: =check_in_weather_1.Run(User().FullName & Today(), "partially sunny")
+        OnSelect: =check_in_weather_1.Run(User().FullName & Today(), "partially sunny"); Navigate('Student Dashboard')
         PressedBorderColor: =ColorFade(Image3.BorderColor, -20%)
         PressedFill: =ColorFade(Image3.Fill, -20%)
         Width: =203
@@ -100,7 +100,7 @@
         HoverBorderColor: =ColorFade(Image4.BorderColor, 20%)
         HoverFill: =ColorFade(Image4.Fill, 20%)
         Image: =rainy
-        OnSelect: =check_in_weather_1.Run(User().FullName & Today(), "rainy")
+        OnSelect: =check_in_weather_1.Run(User().FullName & Today(), "rainy");Navigate('Student Dashboard')
         PressedBorderColor: =ColorFade(Image4.BorderColor, -20%)
         PressedFill: =ColorFade(Image4.Fill, -20%)
         Width: =152
@@ -113,7 +113,7 @@
         HoverBorderColor: =ColorFade(Image5.BorderColor, 20%)
         HoverFill: =ColorFade(Image5.Fill, 20%)
         Image: =sun
-        OnSelect: =check_in_weather_1.Run(User().FullName & Today(), "sunny")
+        OnSelect: =check_in_weather_1.Run(User().FullName & Today(), "sunny"); Navigate('Student Dashboard')
         PressedBorderColor: =ColorFade(Image5.BorderColor, -20%)
         PressedFill: =ColorFade(Image5.Fill, -20%)
         Width: =189
