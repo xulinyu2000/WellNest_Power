@@ -28,7 +28,7 @@
             BorderStyle: =BorderStyle.Solid
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(247, 249, 252, 1)
             Height: =Parent.Height - 100
             Width: =Parent.Width
             X: =0
@@ -49,41 +49,57 @@
         Y: =1041.3333333333333
         ZIndex: =5
 
-    Gallery3 As gallery.galleryHorizontal:
-        Height: =106
-        Items: |-
-            =Table({ID:1, Label:"Quick-chat"},{ID:2, Label:"Favourites"},{ID:3, Label:"Book"})
-        TemplateSize: =164
-        Y: =113
-        ZIndex: =6
+    Image7_5 As image:
+        HoverBorderColor: =ColorFade(Image7_5.BorderColor, 20%)
+        HoverFill: =ColorFade(Image7_5.Fill, 20%)
+        Image: =txtChatWithEducators
+        PressedBorderColor: =ColorFade(Image7_5.BorderColor, -20%)
+        PressedFill: =ColorFade(Image7_5.Fill, -20%)
+        Width: =532
+        X: =51
+        Y: =136
+        ZIndex: =9
 
-        Button1 As button:
-            BorderColor: =ColorFade(Button1.Fill, -15%)
-            Height: =53
-            HoverBorderColor: =ColorFade(Button1.BorderColor, 20%)
-            OnSelect: =Select(Parent)
-            PressedBorderColor: =Button1.Fill
-            PressedColor: =Button1.Fill
-            PressedFill: =Button1.Color
-            RadiusBottomLeft: =20
-            RadiusBottomRight: =20
-            RadiusTopLeft: =20
-            RadiusTopRight: =20
-            Size: =16
-            Text: =ThisItem.Label
-            Width: =137
-            X: =40
-            Y: =15
-            ZIndex: =1
+    Group1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =9
 
         Image7 As image:
-            Height: =96
+            Height: =79
             HoverBorderColor: =ColorFade(Image7.BorderColor, 20%)
             HoverFill: =ColorFade(Image7.Fill, 20%)
-            Image: =Picture22
-            OnSelect: =Select(Parent)
+            Image: =btnQuickChat
             PressedBorderColor: =ColorFade(Image7.BorderColor, -20%)
             PressedFill: =ColorFade(Image7.Fill, -20%)
-            Width: =164
-            ZIndex: =2
+            Width: =150
+            X: =51
+            Y: =251
+            ZIndex: =6
+
+        Image7_3 As image:
+            Height: =79
+            HoverBorderColor: =ColorFade(Image7_3.BorderColor, 20%)
+            HoverFill: =ColorFade(Image7_3.Fill, 20%)
+            Image: =btnFavourites
+            PressedBorderColor: =ColorFade(Image7_3.BorderColor, -20%)
+            PressedFill: =ColorFade(Image7_3.Fill, -20%)
+            Width: =150
+            X: =245
+            Y: =251
+            ZIndex: =7
+
+        Image7_4 As image:
+            Height: =79
+            HoverBorderColor: =ColorFade(Image7_4.BorderColor, 20%)
+            HoverFill: =ColorFade(Image7_4.Fill, 20%)
+            Image: =btnFavourites
+            PressedBorderColor: =ColorFade(Image7_4.BorderColor, -20%)
+            PressedFill: =ColorFade(Image7_4.Fill, -20%)
+            Width: =150
+            X: =448
+            Y: =251
+            ZIndex: =8
 
