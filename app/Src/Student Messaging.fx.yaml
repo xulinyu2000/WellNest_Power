@@ -107,19 +107,34 @@
 
     galleryFavourites As gallery.galleryVertical:
         Height: =702
-        Items: =UserAppPermission
+        Items: =CustomGallerySample
         Layout: =Layout.Vertical
-        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
-        Width: =624
-        WrapCount: =2
-        Y: =345
+        TemplateSize: =96
+        Visible: =If(isClickedFavourites=true, true, false)
+        Y: =340
         ZIndex: =10
+
+        Button3 As button:
+            BorderColor: =ColorFade(Button3.Fill, -15%)
+            Height: =70
+            HoverBorderColor: =ColorFade(Button3.BorderColor, 20%)
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =Button3.Fill
+            PressedColor: =Button3.Fill
+            PressedFill: =Button3.Color
+            Size: =24
+            Text: ="Button"
+            Width: =280
+            X: =40
+            Y: =40
+            ZIndex: =1
 
     galleryQuickChat As gallery.galleryVertical:
         Height: =702
         Items: =CustomGallerySample
         Layout: =Layout.Vertical
         TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
+        Visible: =If(isClickedQC=true, true, false)
         Width: =624
         WrapCount: =2
         Y: =340
