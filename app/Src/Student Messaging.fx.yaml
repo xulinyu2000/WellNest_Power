@@ -40,7 +40,7 @@
                 Size: =21
                 Text: ="Message"
                 Width: =560
-                X: =80
+                X: =51
                 Y: =498
                 ZIndex: =1
 
@@ -48,4 +48,25 @@
         NavigationItems: =NavStudentView
         Y: =1041.3333333333333
         ZIndex: =5
+
+    Gallery3 As gallery.galleryHorizontal:
+        Height: =106
+        Items: =CustomGallerySample
+        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(320, Self.Width - 60), Min(320, Self.Height - 60))
+        Y: =113
+        ZIndex: =6
+
+        Button1 As button:
+            BorderColor: =ColorFade(Button1.Fill, -15%)
+            Height: =68
+            HoverBorderColor: =ColorFade(Button1.BorderColor, 20%)
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =Button1.Fill
+            PressedColor: =Button1.Fill
+            PressedFill: =Button1.Color
+            Size: =24
+            Text: ="Button"
+            Width: =280
+            X: =40
+            ZIndex: =1
 
