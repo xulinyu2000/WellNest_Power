@@ -111,7 +111,7 @@
         Items: =CustomGallerySample
         Layout: =Layout.Vertical
         TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
-        Width: =628
+        Width: =624
         WrapCount: =2
         Y: =340
         ZIndex: =10
