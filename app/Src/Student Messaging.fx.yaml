@@ -109,19 +109,17 @@
         Y: =340
         ZIndex: =10
 
-        Button3 As button:
-            BorderColor: =ColorFade(Button3.Fill, -15%)
-            Height: =135
-            HoverBorderColor: =ColorFade(Button3.BorderColor, 20%)
+        Image12 As image:
+            Height: =256
+            HoverBorderColor: =ColorFade(Image12.BorderColor, 20%)
+            HoverFill: =ColorFade(Image12.Fill, 20%)
+            Image: =imgKendle
             OnSelect: =Select(Parent)
-            PressedBorderColor: =Button3.Fill
-            PressedColor: =Button3.Fill
-            PressedFill: =Button3.Color
-            Size: =24
-            Text: ="Button"
-            Width: =280
-            X: =24.5
-            Y: =40
+            PressedBorderColor: =ColorFade(Image12.BorderColor, -20%)
+            PressedFill: =ColorFade(Image12.Fill, -20%)
+            Width: =266.5
+            X: =21
+            Y: =24
             ZIndex: =1
 
     imgSeparatorLine As image:
