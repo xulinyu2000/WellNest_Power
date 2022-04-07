@@ -1,5 +1,6 @@
 "'Daily Check In - Face' As screen.'phoneLayout_HeaderAndForm_ver3.0'":
     Fill: =RGBA(241, 244, 249, 1)
+    OnVisible: =check_in_face.Run(Office365Users.MyProfile().Mail, 1, Office365Users.MyProfile().Mail & Today(), Today(), User().FullName);
 
     Icon2 As icon.Add:
         Color: =RGBA(255, 191, 0, 1)
@@ -9,7 +10,15 @@
         HoverColor: =ColorFade(Icon2.Color, 20%)
         HoverFill: =Icon2.Fill
         Icon: =Icon.EmojiNeutral
-        OnSelect: =check_in_face.Run(User().FullName, 3, User().FullName & Today(), Today()); Navigate('Daily Check In - Word')
+        OnSelect: |-
+            =check_in_face.Run(
+                Office365Users.MyProfile().Mail,
+                3,
+                Office365Users.MyProfile().Mail & Today(),
+                Today(),
+                User().FullName
+            );
+            Navigate('Daily Check In - Word')
         PressedBorderColor: =ColorFade(Icon2.BorderColor, -20%)
         PressedColor: =ColorFade(Icon2.Color, -20%)
         PressedFill: =Icon2.Fill
@@ -26,7 +35,15 @@
         HoverColor: =ColorFade(Icon2_1.Color, 20%)
         HoverFill: =Icon2_1.Fill
         Icon: =Icon.EmojiFrown
-        OnSelect: =check_in_face.Run(User().FullName, 2, User().FullName & Today(), Today()); Navigate('Daily Check In - Word')
+        OnSelect: |-
+            =check_in_face.Run(
+                Office365Users.MyProfile().Mail,
+                2,
+                Office365Users.MyProfile().Mail & Today(),
+                Today(),
+                User().FullName
+            );
+            Navigate('Daily Check In - Word')
         PressedBorderColor: =ColorFade(Icon2_1.BorderColor, -20%)
         PressedColor: =ColorFade(Icon2_1.Color, -20%)
         PressedFill: =Icon2_1.Fill
@@ -43,7 +60,15 @@
         HoverColor: =ColorFade(Icon2_2.Color, 20%)
         HoverFill: =Icon2_2.Fill
         Icon: =Icon.EmojiSmile
-        OnSelect: =check_in_face.Run(User().FullName, 4, User().FullName & Today(), Today()); Navigate('Daily Check In - Word')
+        OnSelect: |-
+            =check_in_face.Run(
+                Office365Users.MyProfile().Mail,
+                4,
+                Office365Users.MyProfile().Mail & Today(),
+                Today(),
+                User().FullName
+            );
+            Navigate('Daily Check In - Word')
         PressedBorderColor: =ColorFade(Icon2_2.BorderColor, -20%)
         PressedColor: =ColorFade(Icon2_2.Color, -20%)
         PressedFill: =Icon2_2.Fill
@@ -60,7 +85,15 @@
         HoverColor: =ColorFade(Icon2_3.Color, 20%)
         HoverFill: =Icon2_3.Fill
         Icon: =Icon.EmojiSad
-        OnSelect: =check_in_face.Run(User().FullName, 1, User().FullName & Today(), Today()); Navigate('Daily Check In - Word')
+        OnSelect: |-
+            =check_in_face.Run(
+                Office365Users.MyProfile().Mail,
+                1,
+                Office365Users.MyProfile().Mail & Today(),
+                Today(),
+                User().FullName
+            );
+            Navigate('Daily Check In - Word')
         PressedBorderColor: =ColorFade(Icon2_3.BorderColor, -20%)
         PressedColor: =ColorFade(Icon2_3.Color, -20%)
         PressedFill: =Icon2_3.Fill
@@ -77,7 +110,15 @@
         HoverColor: =ColorFade(Icon2_4.Color, 20%)
         HoverFill: =Icon2_4.Fill
         Icon: =Icon.EmojiHappy
-        OnSelect: =check_in_face.Run(User().FullName, 5, User().FullName & Today(), Today()); Navigate('Daily Check In - Word')
+        OnSelect: |-
+            =check_in_face.Run(
+                Office365Users.MyProfile().Mail,
+                5,
+                Office365Users.MyProfile().Mail & Today(),
+                Today(),
+                User().FullName
+            );
+            Navigate('Daily Check In - Word')
         PressedBorderColor: =ColorFade(Icon2_4.BorderColor, -20%)
         PressedColor: =ColorFade(Icon2_4.Color, -20%)
         PressedFill: =Icon2_4.Fill

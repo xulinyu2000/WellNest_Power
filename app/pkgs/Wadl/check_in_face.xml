@@ -6,11 +6,13 @@
       <string name="ManualTriggerInput_Addarowintoatable_Face_def" />
       <string name="ManualTriggerInput_Addarowintoatable_Student_Date_def" />
       <string name="ManualTriggerInput_Addarowintoatable_Date_def" />
+      <string name="ManualTriggerInput_Addarowintoatable_Student_Name_def" />
       <object name="ManualTriggerInput">
         <property name="Addarowintoatable_Student_ID" type="string" />
         <property name="Addarowintoatable_Face" type="string" />
         <property name="Addarowintoatable_Student_Date" type="string" />
         <property name="Addarowintoatable_Date" type="string" />
+        <property name="Addarowintoatable_Student_Name" type="string" />
       </object>
     </jsonTypes>
   </grammars>
@@ -28,6 +30,7 @@
             <param style="plain" name="Addarowintoatable_Face" path="/Addarowintoatable_Face" type="xs:string" required="true" />
             <param style="plain" name="Addarowintoatable_Student_Date" path="/Addarowintoatable_Student_Date" type="xs:string" required="true" />
             <param style="plain" name="Addarowintoatable_Date" path="/Addarowintoatable_Date" type="xs:string" required="true" />
+            <param style="plain" name="Addarowintoatable_Student_Name" path="/Addarowintoatable_Student_Name" type="xs:string" required="true" />
           </representation>
         </request>
       </method>
