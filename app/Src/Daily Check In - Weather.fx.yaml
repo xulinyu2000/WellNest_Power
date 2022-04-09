@@ -121,3 +121,17 @@
         Y: =487
         ZIndex: =21
 
+    Rating1 As rating:
+        Default: =3
+        DisabledFill: =Self.Fill
+        DisplayMode: =DisplayMode.Edit
+        FocusedBorderColor: =Self.BorderColor
+        Height: =77
+        HoverFill: =Self.Fill
+        OnChange: =Notify(Rating1.Value)
+        PressedFill: =Self.Fill
+        Width: =350
+        X: =161
+        Y: =635
+        ZIndex: =22
+
