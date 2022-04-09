@@ -1,4 +1,4 @@
-<widget xmlns="http://openajax.org/metadata" spec="1.0" id="http://microsoft.com/appmagic/fluidGrid" name="fluidGrid" jsClass="AppMagic.Controls.FluidGrid.FluidGridControl" version="2.2.0" runtimeCost="1" xmlns:appMagic="http://schemas.microsoft.com/appMagic">
+<widget xmlns="http://openajax.org/metadata" spec="1.0" id="http://microsoft.com/appmagic/fluidGrid" name="fluidGrid" jsClass="AppMagic.Controls.FluidGrid.FluidGridControl" version="2.3.0" runtimeCost="1" xmlns:appMagic="http://schemas.microsoft.com/appMagic">
   <author name="Microsoft AppMagic" />
   <license type="text/html"><![CDATA[<p>TODO:  Need license text here.</p>]]></license>
   <description><![CDATA[FluidGrid
@@ -7,7 +7,7 @@
     <require type="javascript" src="/ctrllib/common/js/container.js" />
     <require type="javascript" src="js/fluidGrid.js" />
   </requires>
-  <appMagic:capabilities supportsNestedControls="true" replicatesNestedControls="false" contextualViewsEnabled="false" autoBorders="true" autoFill="true" autoPointerViewState="false" autoDisabledViewState="false" isVersionFlexible="true" managesNestedControlBounds="true" replicationLimit="0" />
+  <appMagic:capabilities supportsNestedControls="true" replicatesNestedControls="false" contextualViewsEnabled="false" autoBorders="true" autoFill="true" autoFocusedBorders="true" autoPointerViewState="false" autoDisabledViewState="false" isVersionFlexible="true" managesNestedControlBounds="true" replicationLimit="0" />
   <!-- The children that are supported. All other controls are prohibited as children for this control. -->
   <appMagic:supportedChildren>
     <appMagic:supportedControl name="dataCard" />
@@ -26,6 +26,8 @@
     <appMagic:includeProperty name="BorderColor" />
     <appMagic:includeProperty name="BorderStyle" />
     <appMagic:includeProperty name="BorderThickness" defaultValue="2" />
+    <appMagic:includeProperty name="FocusedBorderColor" defaultValue="Self.BorderColor" isExpr="true" />
+    <appMagic:includeProperty name="FocusedBorderThickness" defaultValue="4" />
     <appMagic:includeProperty name="Fill" />
     <appMagic:includeProperty name="X" />
     <appMagic:includeProperty name="Y" />
@@ -38,13 +40,18 @@
     <appMagic:includeProperty name="NumberOfColumns" defaultValue="1" phoneDefaultValue="1" />
     <appMagic:includeProperty name="SnapToColumns" />
     <appMagic:includeProperty name="Visible" />
+    <appMagic:includeProperty name="AcceptsFocus" />
     <!-- Hidden properties -->
     <appMagic:includeProperty name="minimumWidth" defaultValue="20" />
     <appMagic:includeProperty name="minimumHeight" defaultValue="20" />
     <appMagic:includeProperty name="maximumWidth" defaultValue="600" />
     <appMagic:includeProperty name="maximumHeight" defaultValue="300" />
     <appMagic:includeProperty name="DisplayMode" hidden="true" />
+    <appMagic:includeProperty name="TabIndex" defaultValue="-1" hidden="true" />
   </appMagic:includeProperties>
+  <appMagic:propertyDependencies>
+    <appMagic:propertyDependency input="AcceptsFocus" output="TabIndex" />
+  </appMagic:propertyDependencies>
   <appMagic:controlVariants>
     <appMagic:controlVariant name="fluidGridWithBlankCard" displayName="Canvas">
       <appMagic:controls>
@@ -86,6 +93,7 @@
         <appMagic:property name="BorderThickness" />
         <appMagic:property name="BorderColor" />
       </appMagic:propertyGroup>
+      <appMagic:property name="AcceptsFocus" />
     </appMagic:section>
   </appMagic:displayMetadata>
   <appMagic:conversion from="2.0.0" to="2.1.0">
@@ -99,5 +107,11 @@
   </appMagic:conversion>
   <appMagic:conversion from="2.1.2" to="2.2.0">
     <appMagic:conversionAction type="add" name="ContentLanguage" />
+  </appMagic:conversion>
+  <appMagic:conversion from="2.2.0" to="2.3.0">
+    <appMagic:conversionAction type="add" name="AcceptFocus" />
+    <appMagic:conversionAction type="add" name="FocusedBorderColor" />
+    <appMagic:conversionAction type="add" name="FocusedBorderThickness" />
+    <appMagic:conversionAction type="add" name="TabIndex" />
   </appMagic:conversion>
 </widget>

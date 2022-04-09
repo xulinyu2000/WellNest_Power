@@ -1,6 +1,7 @@
 "'Daily Check In - Face' As screen.'phoneLayout_HeaderAndForm_ver3.0'":
     Fill: =RGBA(241, 244, 249, 1)
-    OnVisible: =check_in_face.Run(Office365Users.MyProfile().Mail, 1, Office365Users.MyProfile().Mail & Today(), Today(), User().FullName);
+    OnVisible: |
+        =
 
     Icon2 As icon.Add:
         Color: =RGBA(255, 191, 0, 1)
