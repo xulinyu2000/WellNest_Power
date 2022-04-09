@@ -45,7 +45,8 @@
 
     Form1 As form:
         DataSource: =teacher_questions
-        DefaultMode: =FormMode.New
+        DefaultMode: |
+            =New
         Height: =221
         Width: =640
         Y: =188
@@ -217,7 +218,7 @@
             DisplayName: =DataSourceInfo([@teacher_questions],DataSourceInfo.DisplayName,"Date")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@teacher_questions], DataSourceInfo.MaxLength, "Date")
+            MaxLength: =
             Required: =false
             Update: =date1.Text
             Visible: =false
@@ -461,7 +462,7 @@
             DisplayName: =DataSourceInfo([@teacher_questions],DataSourceInfo.DisplayName,"Date")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@teacher_questions], DataSourceInfo.MaxLength, "Date")
+            MaxLength: =
             Required: =false
             Update: =date2.Text
             Visible: =false
