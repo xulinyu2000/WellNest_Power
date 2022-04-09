@@ -32,7 +32,7 @@
         BorderColor: =ColorFade(Button5.Fill, -15%)
         Height: =66
         HoverBorderColor: =ColorFade(Button5.BorderColor, 20%)
-        OnSelect: =SubmitForm(Form1); 
+        OnSelect: =SubmitForm(Form1); NewForm(Form1);
         PressedBorderColor: =Button5.Fill
         PressedColor: =Button5.Fill
         PressedFill: =Button5.Color
@@ -45,88 +45,13 @@
 
     Form1 As form:
         DataSource: =teacher_questions
+        DefaultMode: =FormMode.New
         Height: =474
         Width: =640
         Y: =188
         ZIndex: =8
 
-        Questions_DataCard1 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Questions"
-            Default: =ThisItem.Questions
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: ="Question 2"
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@teacher_questions], DataSourceInfo.MaxLength, "Questions")
-            Required: =false
-            Update: =question1.Text
-            Width: =640
-            X: =0
-            Y: =0
-            ZIndex: =1
-
-            DataCardKey1 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =21
-                Text: ="Question 1"
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            question1 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Height: =70
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                PressedBorderColor: =question1.HoverBorderColor
-                PressedColor: =question1.Color
-                PressedFill: =question1.Fill
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =21
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey1.Y + DataCardKey1.Height + 5
-                ZIndex: =2
-
-            ErrorMessage1 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =24
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =question1.Y + question1.Height
-                ZIndex: =3
-
-            StarVisible1 As label:
-                Align: =Align.Center
-                Height: =DataCardKey1.Height
-                Size: =21
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey1.Y
-                ZIndex: =4
-
-        question2 As typedDataCard.textualEditCard:
+        Questions_DataCard2 As typedDataCard.textualMultiLineEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Questions"
             Default: =ThisItem.Questions
@@ -134,37 +59,37 @@
             DisplayName: =DataSourceInfo([@teacher_questions],DataSourceInfo.DisplayName,"Questions")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@teacher_questions], DataSourceInfo.MaxLength, "Questions")
             Required: =false
-            Update: =DataCardValue3.Text
+            Update: =DataCardValue2.Text
+            Visible: =true
             Width: =640
+            WidthFit: =false
             X: =0
-            Y: =1
+            Y: =0
             ZIndex: =1
 
-            DataCardKey3 As label:
+            DataCardKey2 As label:
                 AutoHeight: =true
                 Height: =48
                 Size: =21
-                Text: |
-                    ="Question 2"
+                Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30
+                X: =43
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue3 As text:
+            DataCardValue2 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Height: =70
-                MaxLength: =Parent.MaxLength
+                Height: =140
+                Mode: =TextMode.MultiLine
                 PaddingLeft: =5
-                PressedBorderColor: =DataCardValue3.HoverBorderColor
-                PressedColor: =DataCardValue3.Color
-                PressedFill: =DataCardValue3.Fill
+                PressedBorderColor: =DataCardValue2.HoverBorderColor
+                PressedColor: =DataCardValue2.Color
+                PressedFill: =DataCardValue2.Fill
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -173,10 +98,10 @@
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey3.Y + DataCardKey3.Height + 5
+                Y: =DataCardKey2.Y + DataCardKey2.Height + 5
                 ZIndex: =2
 
-            ErrorMessage3 As label:
+            ErrorMessage2 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -189,17 +114,17 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue3.Y + DataCardValue3.Height
+                Y: =DataCardValue2.Y + DataCardValue2.Height
                 ZIndex: =3
 
-            StarVisible3 As label:
+            StarVisible2 As label:
                 Align: =Align.Center
-                Height: =DataCardKey3.Height
+                Height: =DataCardKey2.Height
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey3.Y
+                Y: =DataCardKey2.Y
                 ZIndex: =4
 
