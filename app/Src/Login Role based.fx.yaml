@@ -33,7 +33,7 @@
             Default: ="0"
             Height: =70
             HoverBorderColor: =ColorFade(Dropdown_Class.BorderColor, 15%)
-            Items: =Sort(Distinct(Class_Table, 'Class'),Result)
+            Items: =Sort(Distinct(Class_Table, Class),Result)
             PressedBorderColor: =Dropdown_Class.HoverBorderColor
             Size: =21
             Width: =526
