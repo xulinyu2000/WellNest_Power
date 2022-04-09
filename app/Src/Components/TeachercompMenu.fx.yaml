@@ -44,7 +44,7 @@ TeachercompMenu As CanvasComponent:
         OnSelect: =Navigate(ThisItem.ScreenToGoTo, Fade)
         TemplateFill: =If(ThisItem.IsSelected, TeachercompMenu.ForegroundColor, TeachercompMenu.BackgroundColor)
         TemplatePadding: =0
-        TemplateSize: =Self.Width/4
+        TemplateSize: =Self.Width/3
         Width: =Parent.Width
         ZIndex: =1
 
