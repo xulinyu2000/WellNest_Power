@@ -22,7 +22,7 @@
 
     Button5 As button:
         BorderColor: =ColorFade(Button5.Fill, -15%)
-        Height: =66
+        Height: =44
         HoverBorderColor: =ColorFade(Button5.BorderColor, 20%)
         OnSelect: =SubmitForm(Form1);SubmitForm(Form2);  NewForm(Form1);NewForm(Form2);
         PressedBorderColor: =Button5.Fill
@@ -30,9 +30,9 @@
         PressedFill: =Button5.Color
         Size: =24
         Text: ="Add questions"
-        Width: =552
-        X: =44
-        Y: =1014
+        Width: =422
+        X: =93
+        Y: =945
         ZIndex: =7
 
     Form1 As form:
@@ -91,7 +91,7 @@
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey2.Y + DataCardKey2.Height + 5
+                Y: =53
                 ZIndex: =2
 
             ErrorMessage2 As label:
@@ -564,6 +564,11 @@
         Text: ="Add new questions"
         Width: =560
         X: =40
-        Y: =432
+        Y: =383
         ZIndex: =11
+
+    TeachercompMenu_5 As TeachercompMenu:
+        NavigationItems: =NavTeacherView
+        Y: =1041
+        ZIndex: =12
 
