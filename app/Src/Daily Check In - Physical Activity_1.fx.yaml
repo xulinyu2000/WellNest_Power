@@ -1,0 +1,84 @@
+"'Daily Check In - Physical Activity_1' As screen.'phoneLayout_HeaderAndForm_ver3.0'":
+    Fill: =RGBA(241, 244, 249, 1)
+
+    Label1_11 As label:
+        Align: =Align.Center
+        Height: =198
+        Size: =38
+        Text: ="How stressed are you by school?"
+        Width: =453
+        X: =96
+        Y: =240
+        ZIndex: =11
+
+    IconCancel1_6 As icon.Cancel:
+        AccessibleLabel: =Self.Tooltip
+        Color: =RGBA(50, 86, 160, 1)
+        Height: =88
+        Icon: =Icon.Cancel
+        OnSelect: =Navigate('Student Dashboard')
+        PaddingBottom: =22
+        PaddingLeft: =22
+        PaddingRight: =22
+        PaddingTop: =22
+        TabIndex: =0
+        Tooltip: ="Cancel"
+        Width: =88
+        X: =552
+        ZIndex: =14
+
+    Logo_8 As image:
+        Height: =85
+        HoverBorderColor: =ColorFade(Logo_8.BorderColor, 20%)
+        HoverFill: =ColorFade(Logo_8.Fill, 20%)
+        Image: =Picture1
+        PressedBorderColor: =ColorFade(Logo_8.BorderColor, -20%)
+        PressedFill: =ColorFade(Logo_8.Fill, -20%)
+        Width: =94
+        X: =27
+        Y: =30
+        ZIndex: =15
+
+    Label1_10 As label:
+        Align: =Align.Center
+        Height: =68
+        Size: =24
+        Text: |-
+            ="Daily 
+            Check-in"
+        Width: =271
+        X: =187
+        Y: =68
+        ZIndex: =16
+
+    Icon1_4 As icon.Add:
+        Color: =RGBA(50, 86, 160, 1)
+        DisabledFill: =Icon1_4.Fill
+        Height: =48
+        HoverBorderColor: =ColorFade(Icon1_4.BorderColor, 20%)
+        HoverColor: =ColorFade(Icon1_4.Color, 20%)
+        HoverFill: =Icon1_4.Fill
+        Icon: =Icon.ArrowLeft
+        OnSelect: =Navigate('Daily Check In - Word')
+        PressedBorderColor: =ColorFade(Icon1_4.BorderColor, -20%)
+        PressedColor: =ColorFade(Icon1_4.Color, -20%)
+        PressedFill: =Icon1_4.Fill
+        Tooltip: ="Go back"
+        Width: =52
+        X: =27
+        Y: =1068
+        ZIndex: =17
+
+    Slider1 As slider:
+        HandleActiveFill: =Slider1.HandleFill
+        HandleHoverFill: =Slider1.HandleFill
+        Height: =70
+        HoverBorderColor: =ColorFade(Slider1.BorderColor, 30%)
+        PressedBorderColor: =ColorFade(Slider1.BorderColor, -30%)
+        RailHoverFill: =ColorFade(Slider1.RailFill, 15%)
+        ValueHoverFill: =ColorFade(Slider1.ValueFill, 15%)
+        Width: =560
+        X: =42
+        Y: =567
+        ZIndex: =18
+

@@ -1,11 +1,11 @@
-"'Daily Check In - Sleep_1' As screen.'phoneLayout_HeaderAndForm_ver3.0'":
+"'Daily Check In - Physical Activity' As screen.'phoneLayout_HeaderAndForm_ver3.0'":
     Fill: =RGBA(241, 244, 249, 1)
 
     Label1_9 As label:
         Align: =Align.Center
         Height: =198
         Size: =38
-        Text: ="Did you get "
+        Text: ="Were you physically active yesterday?"
         Width: =453
         X: =96
         Y: =240
@@ -68,4 +68,32 @@
         X: =27
         Y: =1068
         ZIndex: =17
+
+    Button1 As button:
+        BorderColor: =ColorFade(Button1.Fill, -15%)
+        Height: =70
+        HoverBorderColor: =ColorFade(Button1.BorderColor, 20%)
+        PressedBorderColor: =Button1.Fill
+        PressedColor: =Button1.Fill
+        PressedFill: =Button1.Color
+        Size: =24
+        Text: ="Yes"
+        Width: =280
+        X: =187
+        Y: =543
+        ZIndex: =18
+
+    Button1_1 As button:
+        BorderColor: =ColorFade(Button1_1.Fill, -15%)
+        Height: =70
+        HoverBorderColor: =ColorFade(Button1_1.BorderColor, 20%)
+        PressedBorderColor: =Button1_1.Fill
+        PressedColor: =Button1_1.Fill
+        PressedFill: =Button1_1.Color
+        Size: =24
+        Text: ="No"
+        Width: =280
+        X: =182
+        Y: =643
+        ZIndex: =19
 
