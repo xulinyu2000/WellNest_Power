@@ -23,7 +23,7 @@
     Label5 As label:
         Height: =70
         Size: =21
-        Text: ="Your Question Sets"
+        Text: ="Your Current Questions"
         Width: =560
         Y: =113
         ZIndex: =6
@@ -49,7 +49,7 @@
             =New
         Height: =221
         Width: =640
-        Y: =188
+        Y: =519
         ZIndex: =8
 
         Questions_DataCard2 As typedDataCard.textualMultiLineEditCard:
@@ -60,7 +60,7 @@
             DisplayName: =DataSourceInfo([@teacher_questions],DataSourceInfo.DisplayName,"Questions")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =true
             Update: =question1.Text
             Visible: =true
             Width: =640
@@ -295,9 +295,9 @@
     Form2 As form:
         DataSource: =teacher_questions
         DefaultMode: =New
-        Height: =220
+        Height: =227
         Width: =640
-        Y: =636
+        Y: =740
         ZIndex: =9
 
         Questions_DataCard6 As typedDataCard.textualMultiLineEditCard:
@@ -308,7 +308,7 @@
             DisplayName: ="Question2"
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            Required: =false
+            Required: =true
             Update: =question2.Text
             Width: =640
             X: =0
@@ -322,7 +322,7 @@
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
-                X: =32
+                X: =30
                 ZIndex: =1
 
             question2 As text:
