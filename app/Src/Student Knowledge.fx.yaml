@@ -16,36 +16,89 @@
     Header_10 As Header:
         ZIndex: =3
 
-    Canvas4_1 As fluidGrid.fluidGridWithBlankCard:
-        BorderThickness: =0
-        Height: =Parent.Height - Self.Y
-        Width: =Parent.Width
-        Y: =RectQuickActionBar5_1.Y + RectQuickActionBar5_1.Height
-        ZIndex: =4
-
-        DataCard9_1 As dataCard:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderStyle: =BorderStyle.Solid
-            BorderThickness: =0
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =Parent.Height - 100
-            Width: =Parent.Width
-            X: =0
-            Y: =0
-            ZIndex: =1
-
-            Label10_1 As label:
-                Height: =70
-                Size: =21
-                Text: ="Knowledge"
-                Width: =560
-                X: =80
-                Y: =450
-                ZIndex: =1
-
     StudentcompMenu_4 As StudentcompMenu:
         NavigationItems: =NavStudentView
         Y: =1041.3333333333333
         ZIndex: =5
+
+    Form3 As form:
+        DataSource: =Table2
+        Width: =640
+        Y: =374
+        ZIndex: =6
+
+        Reponse_DataCard2 As typedDataCard.textualMultiLineEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Reponse"
+            Default: =ThisItem.Reponse
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Table2],DataSourceInfo.DisplayName,"Reponse")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue2.Text
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey3 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue2 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =140
+                Mode: =TextMode.MultiLine
+                PaddingLeft: =5
+                PressedBorderColor: =DataCardValue2.HoverBorderColor
+                PressedColor: =DataCardValue2.Color
+                PressedFill: =DataCardValue2.Fill
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey3.Y + DataCardKey3.Height + 5
+                ZIndex: =2
+
+            ErrorMessage3 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue2.Y + DataCardValue2.Height
+                ZIndex: =3
+
+            StarVisible3 As label:
+                Align: =Align.Center
+                Height: =DataCardKey3.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey3.Y
+                ZIndex: =4
 

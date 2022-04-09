@@ -1657,8 +1657,49 @@
                   "relativeAddress": 0
                 },
                 "region": {
+                  "charLength": 1,
+                  "charOffset": 103,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Login Role based",
+                "type": "Login Role based.Container4.Button6"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Text",
+              "Number"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Login Role based.Container4.Button6.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Login Role based.Container4.Button6.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
                   "charLength": 5,
-                  "charOffset": 165,
+                  "charOffset": 249,
                   "snippet": {
                     "text": ".Mail"
                   }
@@ -1698,7 +1739,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 137,
+                  "charOffset": 221,
                   "snippet": {
                     "text": "="
                   }
@@ -3420,6 +3461,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Student Knowledge.Form3.Reponse_DataCard2.DataCardValue2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Student Knowledge.Form3.Reponse_DataCard2.DataCardValue2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Student Knowledge",
+                "type": "Student Knowledge.Form3.Reponse_DataCard2.DataCardValue2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
         },
         {
           "locations": [
