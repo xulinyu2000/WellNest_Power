@@ -1488,6 +1488,166 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Teacher QuestionSet.Form1.Class_DataCard3.class1.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Teacher QuestionSet.Form1.Class_DataCard3.class1.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 87,
+                  "snippet": {
+                    "text": ".Mail"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "Teacher QuestionSet",
+                "type": "Teacher QuestionSet.Form1.Class_DataCard3.class1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "LookUp"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Teacher QuestionSet.Form1.Class_DataCard3.class1.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Teacher QuestionSet.Form1.Class_DataCard3.class1.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 59,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "Teacher QuestionSet",
+                "type": "Teacher QuestionSet.Form1.Class_DataCard3.class1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "LookUp"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Teacher QuestionSet.Form2.Class_DataCard4.class2.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Teacher QuestionSet.Form2.Class_DataCard4.class2.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 87,
+                  "snippet": {
+                    "text": ".Mail"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "Teacher QuestionSet",
+                "type": "Teacher QuestionSet.Form2.Class_DataCard4.class2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "LookUp"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Teacher QuestionSet.Form2.Class_DataCard4.class2.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Teacher QuestionSet.Form2.Class_DataCard4.class2.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 59,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "Teacher QuestionSet",
+                "type": "Teacher QuestionSet.Form2.Class_DataCard4.class2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "LookUp"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "StudentcompMenu.Gallery4.AccessibleLabel"
                 }
               ],
@@ -1788,19 +1948,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Teacher QuestionSet.Form1.Questions_DataCard2.DataCardValue2.AccessibleLabel"
+                  "fullyQualifiedName": "Teacher QuestionSet.Form1.Questions_DataCard2.question1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Teacher QuestionSet.Form1.Questions_DataCard2.DataCardValue2.AccessibleLabel",
+                  "fullyQualifiedName": "Teacher QuestionSet.Form1.Questions_DataCard2.question1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Teacher QuestionSet",
-                "type": "Teacher QuestionSet.Form1.Questions_DataCard2.DataCardValue2"
+                "type": "Teacher QuestionSet.Form1.Questions_DataCard2.question1"
               }
             }
           ],
@@ -2771,6 +2931,156 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Teacher QuestionSet.Form2.Questions_DataCard6.question2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Teacher QuestionSet.Form2.Questions_DataCard6.question2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Teacher QuestionSet",
+                "type": "Teacher QuestionSet.Form2.Questions_DataCard6.question2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Teacher QuestionSet.Form1.Class_DataCard3.class1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Teacher QuestionSet.Form1.Class_DataCard3.class1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Teacher QuestionSet",
+                "type": "Teacher QuestionSet.Form1.Class_DataCard3.class1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Teacher QuestionSet.Form1.Date_DataCard1.date1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Teacher QuestionSet.Form1.Date_DataCard1.date1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Teacher QuestionSet",
+                "type": "Teacher QuestionSet.Form1.Date_DataCard1.date1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Teacher QuestionSet.Form2.Class_DataCard4.class2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Teacher QuestionSet.Form2.Class_DataCard4.class2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Teacher QuestionSet",
+                "type": "Teacher QuestionSet.Form2.Class_DataCard4.class2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Teacher QuestionSet.Form2.Date_DataCard2.date2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Teacher QuestionSet.Form2.Date_DataCard2.date2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Teacher QuestionSet",
+                "type": "Teacher QuestionSet.Form2.Date_DataCard2.date2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
         },
         {
           "locations": [
