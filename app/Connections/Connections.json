@@ -365,6 +365,9 @@
     "datasets": {
       "https://unswinfs.sharepoint.com/sites/PowerApps": {
         "dataSources": {
+          "AppUsers": {
+            "tableName": "3dcdbd79-d524-47a0-a37f-4aa5770f7c1a"
+          },
           "Documents": {
             "tableName": "8a3153c2-6dd8-44ec-b171-404df7177f2b"
           },
@@ -376,7 +379,8 @@
     },
     "dataSources": [
       "UserAppPermission",
-      "Documents"
+      "Documents",
+      "AppUsers"
     ],
     "dependencies": {},
     "dependents": [
