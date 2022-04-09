@@ -14,12 +14,28 @@
         "dataSources": {
           "checkin": {
             "tableName": "{D7CBED8A-8CAF-454D-94C6-1FFE6B8E475F}"
+          },
+          "checkin_1": {
+            "tableName": "{D7CBED8A-8CAF-454D-94C6-1FFE6B8E475F}"
+          },
+          "Class_Table": {
+            "tableName": "{C16EB9D8-8DF6-4DAD-A62B-F62FBBB873EF}"
+          },
+          "Class_Table_1": {
+            "tableName": "{C16EB9D8-8DF6-4DAD-A62B-F62FBBB873EF}"
+          },
+          "student_class": {
+            "tableName": "{82917BBE-D4FF-470E-A5D3-06458D619D2F}"
           }
         }
       }
     },
     "dataSources": [
-      "checkin"
+      "checkin",
+      "Class_Table_1",
+      "Class_Table",
+      "student_class",
+      "checkin_1"
     ],
     "dependencies": {},
     "dependents": [
