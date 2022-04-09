@@ -161,7 +161,7 @@
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: |
                     =If(Form1.Mode=FormMode.New, 
-                    LookUp(Class_Table, 'Teacher'= Office365Users.MyProfile().Mail, 'Class'),
+                    LookUp(Class_Table, Teacher= Office365Users.MyProfile().Mail, Class),
                        Parent.Default
                     )
                 DelayOutput: =true
@@ -405,7 +405,7 @@
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: |-
                     =If(Form2.Mode=FormMode.New, 
-                    LookUp(Class_Table, 'Teacher'= Office365Users.MyProfile().Mail, 'Class'),
+                    LookUp(Class_Table, Teacher= Office365Users.MyProfile().Mail, Class),
                        Parent.Default
                     )
                 DelayOutput: =true
