@@ -12,7 +12,12 @@
             BorderColor: =ColorFade(Button6.Fill, -15%)
             Height: =70
             HoverBorderColor: =ColorFade(Button6.BorderColor, 20%)
-            OnSelect: =Set(StudentView,true);Set(AdminView,false);Set(TeacherView,false);Navigate('Student Dashboard')
+            OnSelect: |
+                =Set(StudentView,true);Set(AdminView,false);Set(TeacherView,false); 
+                If(Dropdown_Class.Selected.Result = LookUp(student_class,Student_ID = Office365Users.MyProfile().Mail, Class), Navigate('Student Dashboard'), Notify("Please select the correct class"));
+                
+                
+                 
             PressedBorderColor: =Button6.Fill
             PressedColor: =Button6.Fill
             PressedFill: =Button6.Color
