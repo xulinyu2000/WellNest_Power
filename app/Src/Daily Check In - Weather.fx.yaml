@@ -110,7 +110,7 @@
 
     Image5 As image:
         Height: =148
-        HoverBorderColor: =ColorFade(Image5.BorderColor, 20%)
+        HoverBorderColor: =
         HoverFill: =ColorFade(Image5.Fill, 20%)
         Image: =sun
         OnSelect: =check_in_weather_1.Run(Office365Users.MyProfile().Mail & Today(), "sunny"); Navigate('Student Dashboard')
