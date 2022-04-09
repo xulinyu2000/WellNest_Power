@@ -70,15 +70,32 @@
         ZIndex: =17
 
     Slider1 As slider:
+        Default: =5
         HandleActiveFill: =Slider1.HandleFill
         HandleHoverFill: =Slider1.HandleFill
         Height: =70
         HoverBorderColor: =ColorFade(Slider1.BorderColor, 30%)
+        Max: =10
         PressedBorderColor: =ColorFade(Slider1.BorderColor, -30%)
         RailHoverFill: =ColorFade(Slider1.RailFill, 15%)
+        ShowValue: =false
         ValueHoverFill: =ColorFade(Slider1.ValueFill, 15%)
         Width: =560
         X: =42
         Y: =567
         ZIndex: =18
+
+    Button3 As button:
+        BorderColor: =ColorFade(Button3.Fill, -15%)
+        Height: =75
+        HoverBorderColor: =ColorFade(Button3.BorderColor, 20%)
+        PressedBorderColor: =Button3.Fill
+        PressedColor: =Button3.Fill
+        PressedFill: =Button3.Color
+        Size: =24
+        Text: ="Complete Check In"
+        Width: =418
+        X: =113
+        Y: =845
+        ZIndex: =19
 
