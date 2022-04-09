@@ -46,7 +46,7 @@
     Form1 As form:
         DataSource: =teacher_questions
         DefaultMode: =FormMode.New
-        Height: =474
+        Height: =221
         Width: =640
         Y: =188
         ZIndex: =8
@@ -72,10 +72,10 @@
                 AutoHeight: =true
                 Height: =48
                 Size: =21
-                Text: =Parent.DisplayName
+                Text: ="Question 1"
                 Width: =Parent.Width - 60
                 Wrap: =false
-                X: =43
+                X: =30
                 Y: =10
                 ZIndex: =1
 
@@ -127,4 +127,10 @@
                 Wrap: =false
                 Y: =DataCardKey2.Y
                 ZIndex: =4
+
+    Form2 As form:
+        DataSource: =teacher_questions
+        Width: =640
+        Y: =636
+        ZIndex: =9
 
