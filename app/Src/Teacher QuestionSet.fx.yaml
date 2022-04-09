@@ -20,14 +20,6 @@
     Header_6 As Header:
         ZIndex: =4
 
-    Label5 As label:
-        Height: =70
-        Size: =21
-        Text: ="Your Current Questions"
-        Width: =560
-        Y: =113
-        ZIndex: =6
-
     Button5 As button:
         BorderColor: =ColorFade(Button5.Fill, -15%)
         Height: =66
@@ -535,4 +527,43 @@
                 Wrap: =false
                 Y: =DataCardKey12.Y
                 ZIndex: =4
+
+    DataTable1 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        HeadingSize: =21
+        Height: =500
+        Items: =Filter(teacher_questions, Class = LookUp(Class_Table, Teacher= Office365Users.MyProfile().Mail, Class))
+        Size: =21
+        Width: =640
+        X: =0
+        Y: |
+            =114
+        ZIndex: =10
+
+        Questions_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =true
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Your Current Questions"
+            FieldName: ="Questions"
+            FieldVariantName: ="textualColumn"
+            Height: =144
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.Questions
+            Width: =100
+            X: =2
+            Y: =256
+            ZIndex: =5
+
+    Label10 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =87
+        Size: =21
+        Text: ="Add new questions"
+        Width: =560
+        X: =40
+        Y: =432
+        ZIndex: =11
 
