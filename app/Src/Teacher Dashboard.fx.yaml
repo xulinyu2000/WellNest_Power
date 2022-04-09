@@ -58,8 +58,26 @@
                     Text: ="See all students"
                     Underline: =true
                     Width: =240
-                    Y: =145
+                    X: =240
                     ZIndex: =3
+
+            Button4 As button:
+                BorderColor: =ColorFade(Button4.Fill, -15%)
+                BorderStyle: =BorderStyle.Dotted
+                Color: =BlueViolet
+                DisabledBorderColor: =RGBA(56, 96, 178, 1)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =70
+                HoverBorderColor: =ColorFade(Button4.BorderColor, 20%)
+                PressedBorderColor: =Button4.Fill
+                PressedColor: =Button4.Fill
+                PressedFill: =Button4.Color
+                Size: =24
+                Text: ="Daily quick update!"
+                Width: =280
+                X: =14
+                Y: =195
+                ZIndex: =4
 
         DataCard6 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
