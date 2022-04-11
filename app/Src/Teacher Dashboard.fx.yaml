@@ -135,16 +135,16 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =444
+            Height: =776
             Width: =640
             X: =0
             Y: =2
             ZIndex: =8
 
             Container2_1 As groupContainer.manualLayoutContainer:
-                Height: =396
-                Width: =561
-                X: =40
+                Height: =713
+                Width: =579
+                X: =21
                 Y: =25
                 ZIndex: =1
 
@@ -157,10 +157,9 @@
 
                 PowerBI1 As powerbi:
                     DashboardId: ="c8685c05-771c-4b87-bb25-998ce88c31cc"
-                    Height: =338
-                    TileUrl: |-
-                        ="https://app.powerbi.com/reportEmbed?reportId=95ac210b-0066-4c8d-aebd-ed58563c5f0e&autoAuth=true&ctid=dfa6b1ae-0a2c-49c4-9d31-fab217269229&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWF1c3RyYWxpYS1lYXN0LWItcHJpbWFyeS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D"
-                    Width: =560
+                    Height: =656
+                    TileUrl: =""
+                    Width: =572
                     WorkspaceId: ="__my-workspace"
                     Y: =56
                     ZIndex: =2
