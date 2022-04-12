@@ -91,7 +91,7 @@
             ZIndex: =7
 
             Container2 As groupContainer.manualLayoutContainer:
-                Height: =412
+                Height: =540
                 Width: =561
                 X: =30
                 Y: =20
@@ -103,24 +103,6 @@
                     Text: ="Class Check-In Update"
                     Width: =560
                     ZIndex: =1
-
-                Label5_1 As label:
-                    Height: =72
-                    Size: =21
-                    Text: ="Check-Ins Complete"
-                    Width: =138
-                    X: =45
-                    Y: =72
-                    ZIndex: =2
-
-            Label5 As label:
-                Height: =72
-                Size: =21
-                Text: ="Check-Ins Complete"
-                Width: =138
-                X: =384
-                Y: =99
-                ZIndex: =2
 
         DataCard7 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -162,14 +144,14 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =444
+            Height: =606
             Width: =640
             X: =0
             Y: =3
             ZIndex: =9
 
             Container2_2 As groupContainer.manualLayoutContainer:
-                Height: =396
+                Height: =542
                 Width: =561
                 X: =40
                 Y: =25
@@ -178,15 +160,79 @@
                 Label11_2 As label:
                     Height: =56
                     Size: =21
-                    Text: ="Mood Word - Word Cloud"
+                    Text: ="Student Check-In Overview"
                     Width: =560
                     ZIndex: =1
 
-                PowerBI2_2 As powerbi:
-                    Height: =340
-                    Width: =560
-                    Y: =56
-                    ZIndex: =2
+            DataTable5_1 As dataTable.datatable:
+                BorderStyle: =BorderStyle.Solid
+                DisplayMode: =DisplayMode.Edit
+                Fill: =RGBA(0, 0, 0, 0)
+                HeadingSize: =21
+                Height: =464
+                Items: =Table1
+                Size: =21
+                Width: =571
+                X: =26
+                Y: =103
+                ZIndex: =2
+
+                Student_Name_Column1_1 As dataTableColumn.textualColumn:
+                    DisplayMode: =DisplayMode.Edit
+                    FieldDisplayName: ="Student_Name"
+                    FieldName: ="Student_Name"
+                    FieldVariantName: ="textualColumn"
+                    Height: =Parent.Height
+                    LayoutHeight: =Parent.Height
+                    Order: =1
+                    Text: =ThisItem.Student_Name
+                    Width: =100
+                    X: =0
+                    Y: =0
+                    ZIndex: =11
+
+                Weather_Column1_1 As dataTableColumn.textualColumn:
+                    DisplayMode: =DisplayMode.Edit
+                    FieldDisplayName: ="Weather"
+                    FieldName: ="Weather"
+                    FieldVariantName: ="textualColumn"
+                    Height: =Parent.Height
+                    LayoutHeight: =Parent.Height
+                    Order: =2
+                    Text: =ThisItem.Weather
+                    Width: =100
+                    X: =0
+                    Y: =0
+                    ZIndex: =12
+
+                Word_Column1_1 As dataTableColumn.textualColumn:
+                    AutoWidth: =false
+                    DisplayMode: =DisplayMode.Edit
+                    FieldDisplayName: ="Word"
+                    FieldName: ="Word"
+                    FieldVariantName: ="textualColumn"
+                    Height: =Parent.Height
+                    LayoutHeight: =Parent.Height
+                    Order: =3
+                    Text: =ThisItem.Word
+                    Width: =146
+                    X: =0
+                    Y: =0
+                    ZIndex: =13
+
+                Face_Column1_1 As dataTableColumn.textualColumn:
+                    DisplayMode: =DisplayMode.Edit
+                    FieldDisplayName: ="Face"
+                    FieldName: ="Face"
+                    FieldVariantName: ="textualColumn"
+                    Height: =Parent.Height
+                    LayoutHeight: =Parent.Height
+                    Order: =4
+                    Text: =ThisItem.Face
+                    Width: =100
+                    X: =0
+                    Y: =0
+                    ZIndex: =14
 
         DataCard2 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
