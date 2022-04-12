@@ -84,7 +84,7 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(247, 249, 252, 1)
-            Height: =444
+            Height: =606
             Width: =640
             X: =0
             Y: =1
@@ -103,32 +103,6 @@
                     Text: ="Weather Status - Distribution"
                     Width: =560
                     ZIndex: =1
-
-            CompositePieChart2 As group:
-                Height: =5
-                Width: =5
-                X: =40
-                Y: =40
-                ZIndex: =2
-
-                Title5 As label:
-                    Align: =Align.Center
-                    Height: =20
-                    Text: ="Chart Title"
-                    Width: =568
-                    X: =40
-                    Y: =86
-                    ZIndex: =3
-
-                PieChart2 As pieChart:
-                    Height: =305
-                    HoverBorderColor: =ColorFade(PieChart2.BorderColor, 30%)
-                    Items: =Table2
-                    PressedBorderColor: =ColorFade(PieChart2.BorderColor, -30%)
-                    Width: =568
-                    X: =40
-                    Y: =111
-                    ZIndex: =4
 
         DataCard7 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -151,7 +125,7 @@
                 Label11_1 As label:
                     Height: =56
                     Size: =21
-                    Text: ="Mood Face - Distribution"
+                    Text: ="Class Mood Overview"
                     Width: =560
                     ZIndex: =1
 
