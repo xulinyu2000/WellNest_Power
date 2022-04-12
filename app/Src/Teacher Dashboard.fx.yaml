@@ -91,7 +91,7 @@
             ZIndex: =7
 
             Container2 As groupContainer.manualLayoutContainer:
-                Height: =396
+                Height: =412
                 Width: =561
                 X: =30
                 Y: =20
@@ -100,9 +100,27 @@
                 Label11 As label:
                     Height: =56
                     Size: =21
-                    Text: ="Weather Status - Distribution"
+                    Text: ="Class Check-In Update"
                     Width: =560
                     ZIndex: =1
+
+                Label5_1 As label:
+                    Height: =72
+                    Size: =21
+                    Text: ="Check-Ins Complete"
+                    Width: =138
+                    X: =45
+                    Y: =72
+                    ZIndex: =2
+
+            Label5 As label:
+                Height: =72
+                Size: =21
+                Text: ="Check-Ins Complete"
+                Width: =138
+                X: =384
+                Y: =99
+                ZIndex: =2
 
         DataCard7 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
