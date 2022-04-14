@@ -104,44 +104,15 @@
                     Width: =560
                     ZIndex: =1
 
-                CompositeColumnChart1 As group:
-                    Height: =5
-                    Width: =5
-                    X: =40
-                    Y: =40
+                PowerBI2 As powerbi:
+                    DashboardId: ="ae4e79e1-de10-46d0-929d-a566d76ee2b9"
+                    Height: =472
+                    TileUrl: |-
+                        ="https://app.powerbi.com/embed?dashboardId=ae4e79e1-de10-46d0-929d-a566d76ee2b9&tileId=ea58320f-a63c-4371-8a1d-0a5b3c2668c2&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
+                    Width: =560
+                    WorkspaceId: ="bd58d9d2-36a4-479f-960b-da1355ec415f"
+                    Y: =68
                     ZIndex: =2
-
-                    Title3 As label:
-                        Align: =Align.Center
-                        Height: =24
-                        Text: ="Chart Title"
-                        Width: =560
-                        Y: =65
-                        ZIndex: =3
-
-                    ColumnChart1 As barChart:
-                        Height: =380
-                        HoverBorderColor: =ColorFade(ColumnChart1.BorderColor, 30%)
-                        Items: |+
-                            =AddColumns(checkin, "Check In", ThisRecord.Student_Name)
-                            
-                            
-                        PressedBorderColor: =ColorFade(ColumnChart1.BorderColor, -30%)
-                        Width: =560
-                        Y: =94
-                        ZIndex: =4
-
-                    Legend1 As legend:
-                        Height: =76
-                        HoverBorderColor: =Legend1.BorderColor
-                        ItemColorSet: =ColumnChart1.ItemColorSet
-                        Items: =ColumnChart1.SeriesLabels
-                        PressedBorderColor: =Legend1.BorderColor
-                        Size: =18
-                        Width: =448
-                        X: =56
-                        Y: =464
-                        ZIndex: =5
 
         DataCard7 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
