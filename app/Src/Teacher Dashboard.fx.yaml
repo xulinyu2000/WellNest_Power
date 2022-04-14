@@ -123,7 +123,7 @@
                         Height: =380
                         HoverBorderColor: =ColorFade(ColumnChart1.BorderColor, 30%)
                         Items: |+
-                            =AddColumns('checkin', "Check In", ThisRecord.Student_Name)
+                            =AddColumns(checkin, "Check In", ThisRecord.Student_Name)
                             
                             
                         PressedBorderColor: =ColorFade(ColumnChart1.BorderColor, -30%)
