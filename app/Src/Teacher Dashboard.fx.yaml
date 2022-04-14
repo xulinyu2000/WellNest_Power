@@ -122,7 +122,10 @@
                     ColumnChart1 As barChart:
                         Height: =380
                         HoverBorderColor: =ColorFade(ColumnChart1.BorderColor, 30%)
-                        Items: =checkin
+                        Items: |+
+                            =AddColumns('checkin', "Check In", ThisRecord.Student_Name)
+                            
+                            
                         PressedBorderColor: =ColorFade(ColumnChart1.BorderColor, -30%)
                         Width: =560
                         Y: =94
