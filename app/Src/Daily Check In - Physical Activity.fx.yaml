@@ -73,6 +73,7 @@
         BorderColor: =ColorFade(Button1.Fill, -15%)
         Height: =70
         HoverBorderColor: =ColorFade(Button1.BorderColor, 20%)
+        OnSelect: =check_in_physical_activity.Run(Office365Users.MyProfile().Mail & Today(), "yes"); Navigate('Daily Check In - Stress')
         PressedBorderColor: =Button1.Fill
         PressedColor: =Button1.Fill
         PressedFill: =Button1.Color
@@ -87,6 +88,7 @@
         BorderColor: =ColorFade(Button1_1.Fill, -15%)
         Height: =70
         HoverBorderColor: =ColorFade(Button1_1.BorderColor, 20%)
+        OnSelect: =check_in_physical_activity.Run(Office365Users.MyProfile().Mail & Today(), "no"); Navigate('Daily Check In - Stress')
         PressedBorderColor: =Button1_1.Fill
         PressedColor: =Button1_1.Fill
         PressedFill: =Button1_1.Color

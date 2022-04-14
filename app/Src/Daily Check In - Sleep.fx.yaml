@@ -76,6 +76,7 @@
         FocusedBorderColor: =Self.BorderColor
         Height: =77
         HoverFill: =Self.Fill
+        OnChange: =check_in_sleep.Run(Office365Users.MyProfile().Mail & Today(), Rating1.Value); Navigate('Daily Check In - Physical Activity')
         PressedFill: =Self.Fill
         Width: =350
         X: =147
