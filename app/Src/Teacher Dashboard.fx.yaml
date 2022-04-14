@@ -122,7 +122,7 @@
                     PieChart1 As pieChart:
                         Height: =378
                         HoverBorderColor: =ColorFade(PieChart1.BorderColor, 30%)
-                        Items: =Table1
+                        Items: =Table1.Face
                         PressedBorderColor: =ColorFade(PieChart1.BorderColor, -30%)
                         Width: =560
                         Y: =99
