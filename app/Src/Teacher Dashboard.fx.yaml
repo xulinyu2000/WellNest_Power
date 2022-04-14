@@ -104,6 +104,42 @@
                     Width: =560
                     ZIndex: =1
 
+                CompositePieChart1 As group:
+                    Height: =5
+                    Width: =5
+                    X: =40
+                    Y: =40
+                    ZIndex: =2
+
+                    Title3 As label:
+                        Align: =Align.Center
+                        Height: =25
+                        Text: ="Chart Title"
+                        Width: =560
+                        Y: =70
+                        ZIndex: =3
+
+                    PieChart1 As pieChart:
+                        Height: =378
+                        HoverBorderColor: =ColorFade(PieChart1.BorderColor, 30%)
+                        Items: =Table1
+                        PressedBorderColor: =ColorFade(PieChart1.BorderColor, -30%)
+                        Width: =560
+                        Y: =99
+                        ZIndex: =4
+
+                    Legend1 As legend:
+                        Height: =98
+                        HoverBorderColor: =Legend1.BorderColor
+                        ItemColorSet: =PieChart1.ItemColorSet
+                        Items: =PieChart1.SeriesLabels
+                        PressedBorderColor: =Legend1.BorderColor
+                        Size: =16
+                        Width: =560
+                        X: =1
+                        Y: =442
+                        ZIndex: =5
+
         DataCard7 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
@@ -216,7 +252,7 @@
                     Order: =3
                     Text: =ThisItem.Word
                     Width: =146
-                    X: =0
+                    X: =411
                     Y: =0
                     ZIndex: =13
 
