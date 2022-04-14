@@ -104,7 +104,7 @@
                     Width: =560
                     ZIndex: =1
 
-                CompositePieChart1 As group:
+                CompositeColumnChart1 As group:
                     Height: =5
                     Width: =5
                     X: =40
@@ -113,31 +113,31 @@
 
                     Title3 As label:
                         Align: =Align.Center
-                        Height: =25
+                        Height: =24
                         Text: ="Chart Title"
                         Width: =560
-                        Y: =70
+                        Y: =65
                         ZIndex: =3
 
-                    PieChart1 As pieChart:
-                        Height: =378
-                        HoverBorderColor: =ColorFade(PieChart1.BorderColor, 30%)
-                        Items: =Table1.Face
-                        PressedBorderColor: =ColorFade(PieChart1.BorderColor, -30%)
+                    ColumnChart1 As barChart:
+                        Height: =380
+                        HoverBorderColor: =ColorFade(ColumnChart1.BorderColor, 30%)
+                        Items: =checkin
+                        PressedBorderColor: =ColorFade(ColumnChart1.BorderColor, -30%)
                         Width: =560
-                        Y: =99
+                        Y: =94
                         ZIndex: =4
 
                     Legend1 As legend:
-                        Height: =98
+                        Height: =76
                         HoverBorderColor: =Legend1.BorderColor
-                        ItemColorSet: =PieChart1.ItemColorSet
-                        Items: =PieChart1.SeriesLabels
+                        ItemColorSet: =ColumnChart1.ItemColorSet
+                        Items: =ColumnChart1.SeriesLabels
                         PressedBorderColor: =Legend1.BorderColor
-                        Size: =16
-                        Width: =560
-                        X: =1
-                        Y: =442
+                        Size: =18
+                        Width: =448
+                        X: =56
+                        Y: =464
                         ZIndex: =5
 
         DataCard7 As dataCard.blankCard:
@@ -200,20 +200,20 @@
                     Width: =560
                     ZIndex: =1
 
-            DataTable5_1 As dataTable.datatable:
+            DataTable6 As dataTable.datatable:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
                 Fill: =RGBA(0, 0, 0, 0)
                 HeadingSize: =21
-                Height: =464
-                Items: =Table1
+                Height: =477
+                Items: =checkin
                 Size: =21
-                Width: =571
-                X: =26
-                Y: =103
+                Width: =562
+                X: =30
+                Y: =88
                 ZIndex: =2
 
-                Student_Name_Column1_1 As dataTableColumn.textualColumn:
+                Student_Name_Column1 As dataTableColumn.textualColumn:
                     DisplayMode: =DisplayMode.Edit
                     FieldDisplayName: ="Student_Name"
                     FieldName: ="Student_Name"
@@ -227,48 +227,89 @@
                     Y: =0
                     ZIndex: =11
 
-                Weather_Column1_1 As dataTableColumn.textualColumn:
+                Date_Column1 As dataTableColumn.textualColumn:
                     DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="Weather"
-                    FieldName: ="Weather"
+                    FieldDisplayName: ="Date"
+                    FieldName: ="Date"
                     FieldVariantName: ="textualColumn"
                     Height: =Parent.Height
                     LayoutHeight: =Parent.Height
                     Order: =2
-                    Text: =ThisItem.Weather
+                    Text: =ThisItem.Date
                     Width: =100
                     X: =0
                     Y: =0
                     ZIndex: =12
 
-                Word_Column1_1 As dataTableColumn.textualColumn:
-                    AutoWidth: =false
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="Word"
-                    FieldName: ="Word"
-                    FieldVariantName: ="textualColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =3
-                    Text: =ThisItem.Word
-                    Width: =146
-                    X: =411
-                    Y: =0
-                    ZIndex: =13
-
-                Face_Column1_1 As dataTableColumn.textualColumn:
+                Face_Column1 As dataTableColumn.textualColumn:
                     DisplayMode: =DisplayMode.Edit
                     FieldDisplayName: ="Face"
                     FieldName: ="Face"
                     FieldVariantName: ="textualColumn"
                     Height: =Parent.Height
                     LayoutHeight: =Parent.Height
-                    Order: =4
+                    Order: =3
                     Text: =ThisItem.Face
                     Width: =100
                     X: =0
                     Y: =0
+                    ZIndex: =13
+
+                Physical_Activity_Column1 As dataTableColumn.textualColumn:
+                    DisplayMode: =DisplayMode.Edit
+                    FieldDisplayName: ="Physical_Activity"
+                    FieldName: ="Physical_Activity"
+                    FieldVariantName: ="textualColumn"
+                    Height: =Parent.Height
+                    LayoutHeight: =Parent.Height
+                    Order: =4
+                    Text: =ThisItem.Physical_Activity
+                    Width: =100
+                    X: =0
+                    Y: =0
                     ZIndex: =14
+
+                Sleep_Column1 As dataTableColumn.textualColumn:
+                    DisplayMode: =DisplayMode.Edit
+                    FieldDisplayName: ="Sleep"
+                    FieldName: ="Sleep"
+                    FieldVariantName: ="textualColumn"
+                    Height: =Parent.Height
+                    LayoutHeight: =Parent.Height
+                    Order: =5
+                    Text: =ThisItem.Sleep
+                    Width: =100
+                    X: =0
+                    Y: =0
+                    ZIndex: =15
+
+                Stress_Column1 As dataTableColumn.textualColumn:
+                    DisplayMode: =DisplayMode.Edit
+                    FieldDisplayName: ="Stress"
+                    FieldName: ="Stress"
+                    FieldVariantName: ="textualColumn"
+                    Height: =Parent.Height
+                    LayoutHeight: =Parent.Height
+                    Order: =6
+                    Text: =ThisItem.Stress
+                    Width: =100
+                    X: =0
+                    Y: =0
+                    ZIndex: =16
+
+                Word_Column1 As dataTableColumn.textualColumn:
+                    DisplayMode: =DisplayMode.Edit
+                    FieldDisplayName: ="Word"
+                    FieldName: ="Word"
+                    FieldVariantName: ="textualColumn"
+                    Height: =Parent.Height
+                    LayoutHeight: =Parent.Height
+                    Order: =7
+                    Text: =ThisItem.Word
+                    Width: =100
+                    X: =0
+                    Y: =0
+                    ZIndex: =17
 
         DataCard2 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
