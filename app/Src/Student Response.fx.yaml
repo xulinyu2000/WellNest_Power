@@ -23,6 +23,8 @@
 
     Form3 As form:
         DataSource: =Table2
+        DefaultMode: =New
+        Height: =231
         Width: =640
         Y: =374
         ZIndex: =6
@@ -50,7 +52,6 @@
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
-                Y: =10
                 ZIndex: =1
 
             DataCardValue2 As text:
@@ -101,4 +102,204 @@
                 Wrap: =false
                 Y: =DataCardKey3.Y
                 ZIndex: =4
+
+        Date_DataCard3 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Date"
+            Default: =ThisItem.Date
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Table2],DataSourceInfo.DisplayName,"Date")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@Table2], DataSourceInfo.MaxLength, "Date")
+            Required: =false
+            Update: =DataCardValue1.Text
+            Visible: =false
+            Width: =640
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey1 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: |-
+                    =If(Form1.Mode=FormMode.New, 
+                       Today(), 
+                       Parent.Default
+                    )
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                PressedBorderColor: =DataCardValue1.HoverBorderColor
+                PressedColor: =DataCardValue1.Color
+                PressedFill: =DataCardValue1.Fill
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1.Y + DataCardKey1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1.Y + DataCardValue1.Height
+                ZIndex: =3
+
+            StarVisible1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1.Y
+                ZIndex: =4
+
+        Student_ID_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Student_ID"
+            Default: =ThisItem.Student_ID
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Table2],DataSourceInfo.DisplayName,"Student_ID")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@Table2], DataSourceInfo.MaxLength, "Student_ID")
+            Required: =false
+            Update: =DataCardValue4.Text
+            Visible: =false
+            Width: =640
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey5 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue4 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: |-
+                    =If(Form1.Mode=FormMode.New, 
+                       Office365Users.MyProfile().Mail,
+                       Parent.Default
+                    )
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                PressedBorderColor: =DataCardValue4.HoverBorderColor
+                PressedColor: =DataCardValue4.Color
+                PressedFill: =DataCardValue4.Fill
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey5.Y + DataCardKey5.Height + 5
+                ZIndex: =2
+
+            ErrorMessage5 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue4.Y + DataCardValue4.Height
+                ZIndex: =3
+
+            StarVisible5 As label:
+                Align: =Align.Center
+                Height: =DataCardKey5.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey5.Y
+                ZIndex: =4
+
+    Label5 As label:
+        Height: =70
+        Size: =21
+        Text: |-
+            ="Question
+            "
+        Width: =560
+        X: =40
+        Y: =131
+        ZIndex: =7
+
+    Label5_1 As label:
+        Color: =RGBA(61, 61, 61, 1)
+        Height: =70
+        Size: =21
+        Text: =LookUp(teacher_questions, Class=LookUp(student_class,Student_ID = Office365Users.MyProfile().Mail, Class),Questions)
+        Width: =560
+        X: =40
+        Y: =201
+        ZIndex: =8
+
+    Button7 As button:
+        BorderColor: =ColorFade(Button7.Fill, -15%)
+        Height: =70
+        HoverBorderColor: =ColorFade(Button7.BorderColor, 20%)
+        OnSelect: =SubmitForm(Form3); NewForm(Form3);
+        PressedBorderColor: =Button7.Fill
+        PressedColor: =Button7.Fill
+        PressedFill: =Button7.Color
+        Size: =24
+        Text: |-
+            ="Submit Answer
+            "
+        Width: =280
+        X: =180
+        Y: =621
+        ZIndex: =9
 
