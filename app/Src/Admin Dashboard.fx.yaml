@@ -82,28 +82,20 @@
             Y: =1
             ZIndex: =4
 
-            Image4_2 As image:
-                Height: =300
-                HoverBorderColor: =ColorFade(Image4_2.BorderColor, 20%)
-                HoverFill: =ColorFade(Image4_2.Fill, 20%)
-                Image: =Picture3_1
-                PressedBorderColor: =ColorFade(Image4_2.BorderColor, -20%)
-                PressedFill: =ColorFade(Image4_2.Fill, -20%)
-                Width: =250
-                X: =46
-                Y: =33
+            PowerBITile_Overview As powerbi:
+                Height: =253
+                Width: =561
+                X: =40
+                Y: =86
                 ZIndex: =1
 
-            Image6_2 As image:
-                Height: =300
-                HoverBorderColor: =ColorFade(Image6_2.BorderColor, 20%)
-                HoverFill: =ColorFade(Image6_2.Fill, 20%)
-                Image: =Picture6_1
-                PressedBorderColor: =ColorFade(Image6_2.BorderColor, -20%)
-                PressedFill: =ColorFade(Image6_2.Fill, -20%)
-                Width: =250
-                X: =333
-                Y: =33
+            lblMoodOverview As label:
+                Height: =46
+                Size: =21
+                Text: ="School Mood Overview"
+                Width: =560
+                X: =40
+                Y: =26
                 ZIndex: =2
 
         DataCard1_2 As dataCard.blankCard:
@@ -117,29 +109,14 @@
             Y: =2
             ZIndex: =5
 
-            Image7_2 As image:
-                Height: =300
-                HoverBorderColor: =ColorFade(Image7_2.BorderColor, 20%)
-                HoverFill: =ColorFade(Image7_2.Fill, 20%)
-                Image: =Picture22
-                PressedBorderColor: =ColorFade(Image7_2.BorderColor, -20%)
-                PressedFill: =ColorFade(Image7_2.Fill, -20%)
-                Width: =250
-                X: =333
-                Y: =33
+            lblCheckInOverview As label:
+                Height: =56
+                Size: =21
+                Text: ="School Check-In Overview"
+                Width: =560
+                X: =39
+                Y: =21
                 ZIndex: =1
-
-            Image8_2 As image:
-                Height: =300
-                HoverBorderColor: =ColorFade(Image8_2.BorderColor, 20%)
-                HoverFill: =ColorFade(Image8_2.Fill, 20%)
-                Image: =Picture21_1
-                PressedBorderColor: =ColorFade(Image8_2.BorderColor, -20%)
-                PressedFill: =ColorFade(Image8_2.Fill, -20%)
-                Width: =250
-                X: =60
-                Y: =33
-                ZIndex: =2
 
         DataCard1_3 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
