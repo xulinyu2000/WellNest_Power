@@ -51,7 +51,7 @@
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@teacher_questions],DataSourceInfo.DisplayName,"Questions")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =287
             Required: =true
             Update: =question1.Text
             Visible: =true
@@ -95,8 +95,7 @@
                 ZIndex: =2
 
             ErrorMessage2 As label:
-                AutoHeight: =true
-                Height: =10
+                Height: =94
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -315,6 +314,6 @@
         Text: =LookUp(teacher_questions, Class = LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class), Questions)
         Width: =560
         X: =40
-        Y: =221
+        Y: =191
         ZIndex: =14
 
