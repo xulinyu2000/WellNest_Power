@@ -118,6 +118,19 @@
                 Y: =21
                 ZIndex: =1
 
+            DataTable1 As dataTable.datatable:
+                BorderStyle: =BorderStyle.Solid
+                DisplayMode: =DisplayMode.Edit
+                Fill: =RGBA(0, 0, 0, 0)
+                HeadingSize: =21
+                Height: =260
+                Items: =checkin
+                Size: =21
+                Width: =559
+                X: =40
+                Y: =77
+                ZIndex: =2
+
         DataCard1_3 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
