@@ -58,7 +58,7 @@
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
+                DisplayMode: =If(CountRows(Filter(student_response, Student_ID = Office365Users.MyProfile().Mail)) > 0,  Disabled, New)
                 Height: =140
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
@@ -288,18 +288,17 @@
 
     Button7 As button:
         BorderColor: =ColorFade(Button7.Fill, -15%)
-        Height: =70
+        DisplayMode: =If(CountRows(Filter(student_response, Student_ID = Office365Users.MyProfile().Mail)) > 0,  DisplayMode.Disabled, DisplayMode.Edit)
+        Height: =88
         HoverBorderColor: =ColorFade(Button7.BorderColor, 20%)
         OnSelect: =SubmitForm(Form3); NewForm(Form3);
         PressedBorderColor: =Button7.Fill
         PressedColor: =Button7.Fill
         PressedFill: =Button7.Color
         Size: =24
-        Text: |-
-            ="Submit Answer
-            "
-        Width: =280
-        X: =180
-        Y: =621
+        Text: =If(CountRows(Filter(student_response, Student_ID = Office365Users.MyProfile().Mail)) > 0,  "You have already answered", "Submit Answer")
+        Width: =378
+        X: =131
+        Y: =897
         ZIndex: =9
 
