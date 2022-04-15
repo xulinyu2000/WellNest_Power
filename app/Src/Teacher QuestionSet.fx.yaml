@@ -31,17 +31,17 @@
         Size: =24
         Text: ="Add questions"
         Width: =422
-        X: =93
-        Y: =945
+        X: =109
+        Y: =587
         ZIndex: =7
 
     Form1 As form:
         DataSource: =teacher_questions
         DefaultMode: |
             =New
-        Height: =221
+        Height: =335
         Width: =640
-        Y: =519
+        Y: =342
         ZIndex: =8
 
         Questions_DataCard2 As typedDataCard.textualMultiLineEditCard:
@@ -51,7 +51,7 @@
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@teacher_questions],DataSourceInfo.DisplayName,"Questions")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =287
+            Height: =245
             Required: =true
             Update: =question1.Text
             Visible: =true
@@ -65,11 +65,11 @@
                 AutoHeight: =true
                 Height: =48
                 Size: =21
-                Text: ="Question 1"
+                Text: ="Question"
                 Width: =Parent.Width - 60
                 Wrap: =false
-                X: =30
-                Y: =10
+                X: =27
+                Y: =3
                 ZIndex: =1
 
             question1 As text:
@@ -91,7 +91,7 @@
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =53
+                Y: =69
                 ZIndex: =2
 
             ErrorMessage2 As label:
@@ -132,7 +132,7 @@
             Required: =false
             Update: =class1.Text
             Visible: =false
-            Width: =640
+            Width: =652
             X: =0
             Y: =1
             ZIndex: =1
@@ -213,7 +213,7 @@
             Required: =false
             Update: =date1.Text
             Visible: =false
-            Width: =640
+            Width: =652
             X: =0
             Y: =2
             ZIndex: =1
@@ -287,10 +287,10 @@
         FontWeight: =FontWeight.Semibold
         Height: =87
         Size: =21
-        Text: ="Add new questions"
+        Text: ="Add new question"
         Width: =560
         X: =40
-        Y: =432
+        Y: =267
         ZIndex: =11
 
     TeachercompMenu_5 As TeachercompMenu:
@@ -316,4 +316,69 @@
         X: =40
         Y: =191
         ZIndex: =14
+
+    Label10_5 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =87
+        Size: =21
+        Text: ="Student responses"
+        Width: =560
+        X: =40
+        Y: =643
+        ZIndex: =15
+
+    DataTable2 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        HeadingSize: =21
+        Height: =316
+        Items: =student_response
+        Size: =21
+        Width: =640
+        X: =0
+        Y: =716
+        ZIndex: =16
+
+        Date_Column2 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Date"
+            FieldName: ="Date"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.Date
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =5
+
+        Reponse_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Reponse"
+            FieldName: ="Reponse"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.Reponse
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+        Student_ID_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Student_ID"
+            FieldName: ="Student_ID"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.Student_ID
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =7
 
