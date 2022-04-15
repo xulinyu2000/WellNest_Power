@@ -24,7 +24,7 @@
         BorderColor: =ColorFade(Button5.Fill, -15%)
         Height: =44
         HoverBorderColor: =ColorFade(Button5.BorderColor, 20%)
-        OnSelect: =If(CountRows(Filter(teacher_questions, Class = LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class))) > 0, update_teacher_question.Run(LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class), question1.Text, Today(), add_teacher_question.Run(LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class), question1.Text, Today());
+        OnSelect: =If(CountRows(Filter(teacher_questions, Class = LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class))) > 0, update_teacher_question.Run(LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class), question1.Text, Today()), add_teacher_question.Run(LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class), question1.Text, Today())); Reset(question1); Label10_4.Text = question1.Text;
         PressedBorderColor: =Button5.Fill
         PressedColor: =Button5.Fill
         PressedFill: =Button5.Color
