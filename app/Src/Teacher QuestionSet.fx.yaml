@@ -1,4 +1,5 @@
 "'Teacher QuestionSet' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    OnVisible: =Set(currQuestion, LookUp(teacher_questions, Class = LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class), Questions))
 
     RectQuickActionBar3_2 As rectangle:
         Fill: =RGBA(255, 255, 255, 1)
@@ -24,7 +25,7 @@
         BorderColor: =ColorFade(Button5.Fill, -15%)
         Height: =44
         HoverBorderColor: =ColorFade(Button5.BorderColor, 20%)
-        OnSelect: =If(CountRows(Filter(teacher_questions, Class = LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class))) > 0, update_teacher_question.Run(LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class), question1.Text, Today()), add_teacher_question.Run(LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class), question1.Text, Today())); Reset(question1); Label10_4.Text = question1.Text;
+        OnSelect: =If(CountRows(Filter(teacher_questions, Class = LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class))) > 0, update_teacher_question.Run(LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class), question1.Text, Today()), add_teacher_question.Run(LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class), question1.Text, Today())); Set(currQuestion, question1.Text);
         PressedBorderColor: =Button5.Fill
         PressedColor: =Button5.Fill
         PressedFill: =Button5.Color
@@ -311,7 +312,7 @@
     Label10_4 As label:
         Height: =87
         Size: =21
-        Text: =LookUp(teacher_questions, Class = LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class), Questions)
+        Text: =currQuestion
         Width: =560
         X: =40
         Y: =191
