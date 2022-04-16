@@ -97,13 +97,6 @@
                 Y: =20
                 ZIndex: =1
 
-                Label11_3 As label:
-                    Height: =56
-                    Size: =21
-                    Text: ="Class Check-In Update"
-                    Width: =560
-                    ZIndex: =1
-
                 PowerBI2_1 As powerbi:
                     DashboardId: ="59cfd302-9666-4b05-be14-1880acef7f70"
                     Height: =472
@@ -113,6 +106,15 @@
                     WorkspaceId: ="__my-workspace"
                     Y: =68
                     ZIndex: =2
+
+                lblMoodOverview_4 As label:
+                    Align: =Align.Center
+                    Height: =46
+                    Size: =21
+                    Text: ="School Check-In Overview"
+                    Width: =560
+                    Y: =10
+                    ZIndex: =3
 
         DataCard7_1 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
