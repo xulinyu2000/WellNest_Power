@@ -1,0 +1,359 @@
+"'Teacher Dashboard- Weekly' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+
+    RectQuickActionBar3_7 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =176
+        Width: =Parent.Width
+        ZIndex: =1
+
+    Canvas1_2 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =794
+        Width: =Parent.Width
+        Y: =233
+        ZIndex: =3
+
+        DataCard3_1 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(247, 249, 252, 1)
+            Height: =306
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+            Container1_1 As groupContainer.manualLayoutContainer:
+                Height: =225
+                Width: =557
+                X: =40
+                Y: =40
+                ZIndex: =3
+
+                Image10_1 As image:
+                    Height: =225
+                    HoverBorderColor: =ColorFade(Image10_1.BorderColor, 20%)
+                    HoverFill: =ColorFade(Image10_1.Fill, 20%)
+                    Image: =Picture23_1
+                    PressedBorderColor: =ColorFade(Image10_1.BorderColor, -20%)
+                    PressedFill: =ColorFade(Image10_1.Fill, -20%)
+                    Width: =315
+                    X: =240
+                    ZIndex: =1
+
+                Label7_1 As label:
+                    FontWeight: =FontWeight.Semibold
+                    Height: =155
+                    Size: =21
+                    Text: ="Homeroom 11A's " & Today() & " check-in report is ready below!"
+                    Width: =364
+                    ZIndex: =2
+
+                Label9_1 As label:
+                    Color: =RGBA(72, 161, 255, 1)
+                    FontWeight: =FontWeight.Semibold
+                    Height: =70
+                    Size: =21
+                    Text: ="See all students"
+                    Underline: =true
+                    Width: =240
+                    X: =240
+                    ZIndex: =3
+
+            Button4_1 As button:
+                BorderColor: =ColorFade(Button4_1.Fill, -15%)
+                BorderStyle: =BorderStyle.Dotted
+                Color: =BlueViolet
+                DisabledBorderColor: =RGBA(56, 96, 178, 1)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =70
+                HoverBorderColor: =ColorFade(Button4_1.BorderColor, 20%)
+                PressedBorderColor: =Button4_1.Fill
+                PressedColor: =Button4_1.Fill
+                PressedFill: =Button4_1.Color
+                Size: =24
+                Text: ="Daily quick update!"
+                Width: =280
+                X: =14
+                Y: =195
+                ZIndex: =4
+
+        DataCard6_1 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(247, 249, 252, 1)
+            Height: =606
+            Width: =640
+            X: =0
+            Y: =1
+            ZIndex: =7
+
+            Container2_3 As groupContainer.manualLayoutContainer:
+                Height: =540
+                Width: =561
+                X: =30
+                Y: =20
+                ZIndex: =1
+
+                Label11_3 As label:
+                    Height: =56
+                    Size: =21
+                    Text: ="Class Check-In Update"
+                    Width: =560
+                    ZIndex: =1
+
+                PowerBI2_1 As powerbi:
+                    DashboardId: ="59cfd302-9666-4b05-be14-1880acef7f70"
+                    Height: =472
+                    TileUrl: |-
+                        ="https://app.powerbi.com/reportEmbed?reportId=e88a5d28-e4f7-4574-9639-ecba358d6029&autoAuth=true&ctid=dfa6b1ae-0a2c-49c4-9d31-fab217269229&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWF1c3RyYWxpYS1lYXN0LWItcHJpbWFyeS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D"
+                    Width: =560
+                    WorkspaceId: ="__my-workspace"
+                    Y: =68
+                    ZIndex: =2
+
+        DataCard7_1 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =606
+            Width: =640
+            X: =0
+            Y: =2
+            ZIndex: =8
+
+            Container2_4 As groupContainer.manualLayoutContainer:
+                Height: =533
+                Width: =579
+                X: =21
+                Y: =25
+                ZIndex: =1
+
+                Label11_4 As label:
+                    Height: =56
+                    Size: =21
+                    Text: ="Class Mood Overview"
+                    Width: =560
+                    ZIndex: =1
+
+                PowerBI1_1 As powerbi:
+                    DashboardId: ="59cfd302-9666-4b05-be14-1880acef7f70"
+                    Height: =477
+                    TileUrl: |-
+                        ="https://app.powerbi.com/reportEmbed?reportId=f29789fa-d473-495b-9a4d-373189db2a99&autoAuth=true&ctid=dfa6b1ae-0a2c-49c4-9d31-fab217269229&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWF1c3RyYWxpYS1lYXN0LWItcHJpbWFyeS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D"
+                    Width: =579
+                    WorkspaceId: ="__my-workspace"
+                    Y: =56
+                    ZIndex: =2
+
+        DataCard10_1 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =606
+            Width: =640
+            X: =0
+            Y: =3
+            ZIndex: =9
+
+            Container2_5 As groupContainer.manualLayoutContainer:
+                Height: =542
+                Width: =561
+                X: =40
+                Y: =25
+                ZIndex: =1
+
+                Label11_5 As label:
+                    Height: =56
+                    Size: =21
+                    Text: ="Student Check-In Overview"
+                    Width: =560
+                    ZIndex: =1
+
+            DataTable6_1 As dataTable.datatable:
+                BorderStyle: =BorderStyle.Solid
+                DisplayMode: =DisplayMode.Edit
+                Fill: =RGBA(0, 0, 0, 0)
+                HeadingSize: =21
+                Height: =477
+                Items: =checkin
+                Size: =21
+                Width: =562
+                X: =30
+                Y: =88
+                ZIndex: =2
+
+                Student_Name_Column1_1 As dataTableColumn.textualColumn:
+                    DisplayMode: =DisplayMode.Edit
+                    FieldDisplayName: ="Student_Name"
+                    FieldName: ="Student_Name"
+                    FieldVariantName: ="textualColumn"
+                    Height: =Parent.Height
+                    LayoutHeight: =Parent.Height
+                    Order: =1
+                    Text: =ThisItem.Student_Name
+                    Width: =100
+                    X: =11
+                    Y: =0
+                    ZIndex: =11
+
+                Date_Column1_1 As dataTableColumn.textualColumn:
+                    DisplayMode: =DisplayMode.Edit
+                    FieldDisplayName: ="Date"
+                    FieldName: ="Date"
+                    FieldVariantName: ="textualColumn"
+                    Height: =Parent.Height
+                    LayoutHeight: =Parent.Height
+                    Order: =2
+                    Text: =ThisItem.Date
+                    Width: =100
+                    X: =0
+                    Y: =0
+                    ZIndex: =12
+
+                Face_Column1_1 As dataTableColumn.textualColumn:
+                    DisplayMode: =DisplayMode.Edit
+                    FieldDisplayName: ="Face"
+                    FieldName: ="Face"
+                    FieldVariantName: ="textualColumn"
+                    Height: =Parent.Height
+                    LayoutHeight: =Parent.Height
+                    Order: =3
+                    Text: =ThisItem.Face
+                    Width: =100
+                    X: =0
+                    Y: =0
+                    ZIndex: =13
+
+                Physical_Activity_Column1_1 As dataTableColumn.textualColumn:
+                    DisplayMode: =DisplayMode.Edit
+                    FieldDisplayName: ="Physical_Activity"
+                    FieldName: ="Physical_Activity"
+                    FieldVariantName: ="textualColumn"
+                    Height: =Parent.Height
+                    LayoutHeight: =Parent.Height
+                    Order: =4
+                    Text: =ThisItem.Physical_Activity
+                    Width: =100
+                    X: =0
+                    Y: =0
+                    ZIndex: =14
+
+                Sleep_Column1_1 As dataTableColumn.textualColumn:
+                    DisplayMode: =DisplayMode.Edit
+                    FieldDisplayName: ="Sleep"
+                    FieldName: ="Sleep"
+                    FieldVariantName: ="textualColumn"
+                    Height: =Parent.Height
+                    LayoutHeight: =Parent.Height
+                    Order: =5
+                    Text: =ThisItem.Sleep
+                    Width: =100
+                    X: =0
+                    Y: =0
+                    ZIndex: =15
+
+                Stress_Column1_1 As dataTableColumn.textualColumn:
+                    DisplayMode: =DisplayMode.Edit
+                    FieldDisplayName: ="Stress"
+                    FieldName: ="Stress"
+                    FieldVariantName: ="textualColumn"
+                    Height: =Parent.Height
+                    LayoutHeight: =Parent.Height
+                    Order: =6
+                    Text: =ThisItem.Stress
+                    Width: =100
+                    X: =0
+                    Y: =0
+                    ZIndex: =16
+
+                Word_Column1_1 As dataTableColumn.textualColumn:
+                    DisplayMode: =DisplayMode.Edit
+                    FieldDisplayName: ="Word"
+                    FieldName: ="Word"
+                    FieldVariantName: ="textualColumn"
+                    Height: =Parent.Height
+                    LayoutHeight: =Parent.Height
+                    Order: =7
+                    Text: =ThisItem.Word
+                    Width: =100
+                    X: =0
+                    Y: =0
+                    ZIndex: =17
+
+        DataCard2_1 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =100
+            Width: =640
+            X: =0
+            Y: =4
+            ZIndex: =10
+
+    DashboardLogo_8 As image:
+        Height: =98
+        HoverBorderColor: =ColorFade(DashboardLogo_8.BorderColor, 20%)
+        HoverFill: =ColorFade(DashboardLogo_8.Fill, 20%)
+        Image: =Picture1_1
+        PaddingLeft: =10
+        PressedBorderColor: =ColorFade(DashboardLogo_8.BorderColor, -20%)
+        PressedFill: =ColorFade(DashboardLogo_8.Fill, -20%)
+        Width: =68
+        ZIndex: =5
+
+    CheckInButton_3 As button:
+        BorderColor: =ColorFade(CheckInButton_3.Fill, -15%)
+        Fill: =RGBA(72, 161, 255, 1)
+        Height: =53
+        HoverBorderColor: =ColorFade(CheckInButton_3.BorderColor, 20%)
+        PressedBorderColor: =CheckInButton_3.Fill
+        PressedColor: =CheckInButton_3.Fill
+        PressedFill: =CheckInButton_3.Color
+        Text: ="Check-In"
+        Width: =175
+        X: =21
+        Y: =148
+        ZIndex: =6
+
+    WeeklyButton_3 As button:
+        BorderColor: =ColorFade(WeeklyButton_3.Fill, -15%)
+        Fill: =RGBA(72, 161, 255, 1)
+        Height: =53
+        HoverBorderColor: =ColorFade(WeeklyButton_3.BorderColor, 20%)
+        PressedBorderColor: =WeeklyButton_3.Fill
+        PressedColor: =WeeklyButton_3.Fill
+        PressedFill: =WeeklyButton_3.Color
+        Text: ="Weekly"
+        Width: =175
+        X: =225
+        Y: =148
+        ZIndex: =7
+
+    MonthlyButton_3 As button:
+        BorderColor: =ColorFade(MonthlyButton_3.Fill, -15%)
+        Fill: =RGBA(72, 161, 255, 1)
+        Height: =53
+        HoverBorderColor: =ColorFade(MonthlyButton_3.BorderColor, 20%)
+        PressedBorderColor: =MonthlyButton_3.Fill
+        PressedColor: =MonthlyButton_3.Fill
+        PressedFill: =MonthlyButton_3.Color
+        Text: ="Monthly"
+        Width: =175
+        X: =425
+        Y: =148
+        ZIndex: =8
+
+    Header_5 As Header:
+        ZIndex: =11
+
+    TeachercompMenu_4 As TeachercompMenu:
+        NavigationItems: =NavTeacherView
+        Y: =1042
+        ZIndex: =12
+
