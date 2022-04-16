@@ -51,62 +51,6 @@
         Y: =1042
         ZIndex: =5
 
-    imgBtnQuickChat As image:
-        Height: =79
-        HoverBorderColor: =ColorFade(imgBtnQuickChat.BorderColor, 20%)
-        HoverFill: =ColorFade(imgBtnQuickChat.Fill, 20%)
-        Image: =btnQuickChat
-        OnSelect: |-
-            =UpdateContext({isClickedFavourites: false}); UpdateContext({isClickedQC: true}); UpdateContext({isClickedBook: false});
-        PressedBorderColor: =ColorFade(imgBtnQuickChat.BorderColor, -20%)
-        PressedFill: =ColorFade(imgBtnQuickChat.Fill, -20%)
-        Width: =150
-        X: =39
-        Y: =251
-        ZIndex: =6
-
-    imgBtnFavourites As image:
-        Height: =79
-        HoverBorderColor: =ColorFade(imgBtnFavourites.BorderColor, 20%)
-        HoverFill: =ColorFade(imgBtnFavourites.Fill, 20%)
-        Image: =btnFavourites
-        OnSelect: |-
-            =UpdateContext({isClickedFavourites: true}); UpdateContext({isClickedQC: false}); UpdateContext({isClickedBook: false});
-        PressedBorderColor: =ColorFade(imgBtnFavourites.BorderColor, -20%)
-        PressedFill: =ColorFade(imgBtnFavourites.Fill, -20%)
-        Visible: |
-            =true
-        Width: =150
-        X: =245
-        Y: =251
-        ZIndex: =7
-
-    imgBtnBook As image:
-        Height: =79
-        HoverBorderColor: =ColorFade(imgBtnBook.BorderColor, 20%)
-        HoverFill: =ColorFade(imgBtnBook.Fill, 20%)
-        Image: =btnBook
-        OnSelect: =
-        PressedBorderColor: =ColorFade(imgBtnBook.BorderColor, -20%)
-        PressedFill: =ColorFade(imgBtnBook.Fill, -20%)
-        Visible: =If(isClickedBook=true,false,true)
-        Width: =150
-        X: =448
-        Y: =251
-        ZIndex: =8
-
-    imgTxtChatWithEducators As image:
-        Height: =85
-        HoverBorderColor: =ColorFade(imgTxtChatWithEducators.BorderColor, 20%)
-        HoverFill: =ColorFade(imgTxtChatWithEducators.Fill, 20%)
-        Image: =txtChatWithEducators
-        PressedBorderColor: =ColorFade(imgTxtChatWithEducators.BorderColor, -20%)
-        PressedFill: =ColorFade(imgTxtChatWithEducators.Fill, -20%)
-        Width: =559
-        X: =39
-        Y: =151
-        ZIndex: =9
-
     imgSeparatorLine As image:
         Height: =5
         HoverBorderColor: =ColorFade(imgSeparatorLine.BorderColor, 20%)
@@ -116,16 +60,27 @@
         PressedBorderColor: =ColorFade(imgSeparatorLine.BorderColor, -20%)
         PressedFill: =ColorFade(imgSeparatorLine.Fill, -20%)
         Width: =640
-        Y: =340
+        Y: =207
         ZIndex: =12
 
     IframePCF1 As IframePCF:
         DisplayMode: =DisplayMode.Edit
-        Height: =686
+        Height: =713
         src: |-
             ="https://web.powerva.microsoft.com/environments/Default-dfa6b1ae-0a2c-49c4-9d31-fab217269229/bots/new_bot_941825c771a44189a714dc3ff3684e21/webchat"
-        Width: =500
-        X: =56
-        Y: =345
+        Width: =498
+        X: =71
+        Y: =259
         ZIndex: =13
+
+    Label12 As label:
+        Align: =Align.Center
+        Font: =Font.Verdana
+        Height: =52
+        Size: =21
+        Text: ="AYMAX Chatbot"
+        Width: =498
+        X: =71
+        Y: =138
+        ZIndex: =14
 
