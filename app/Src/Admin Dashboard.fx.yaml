@@ -83,7 +83,10 @@
             ZIndex: =4
 
             PowerBITile_Overview As powerbi:
+                DashboardId: ="22b664e8-002c-4cd6-9979-7c038d5c2b6b"
                 Height: =253
+                TileUrl: |-
+                    ="https://app.powerbi.com/embed?dashboardId=22b664e8-002c-4cd6-9979-7c038d5c2b6b&tileId=6eb06f9e-318d-401c-b78c-4fc08a80d272&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
                 Width: =561
                 WorkspaceId: ="__my-workspace"
                 X: =40
@@ -93,7 +96,7 @@
             lblMoodOverview As label:
                 Height: =46
                 Size: =21
-                Text: ="School Mood Overview"
+                Text: ="School Check-In Overview"
                 Width: =560
                 X: =40
                 Y: =26
@@ -113,21 +116,19 @@
             lblCheckInOverview As label:
                 Height: =56
                 Size: =21
-                Text: ="School Check-In Overview"
+                Text: ="School Wellbeing Trends"
                 Width: =560
                 X: =39
                 Y: =21
                 ZIndex: =1
 
-            DataTable1 As dataTable.datatable:
-                BorderStyle: =BorderStyle.Solid
-                DisplayMode: =DisplayMode.Edit
-                Fill: =RGBA(0, 0, 0, 0)
-                HeadingSize: =21
-                Height: =260
-                Items: =checkin
-                Size: =21
+            PowerBI_ As powerbi:
+                DashboardId: ="22b664e8-002c-4cd6-9979-7c038d5c2b6b"
+                Height: =263
+                TileUrl: |-
+                    ="https://app.powerbi.com/embed?dashboardId=22b664e8-002c-4cd6-9979-7c038d5c2b6b&tileId=c3a95f75-c824-40f8-949c-4f826b4c3965&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
                 Width: =559
+                WorkspaceId: ="__my-workspace"
                 X: =40
                 Y: =77
                 ZIndex: =2
@@ -142,6 +143,25 @@
             X: =0
             Y: =3
             ZIndex: =6
+
+            PowerBI4 As powerbi:
+                DashboardId: ="22b664e8-002c-4cd6-9979-7c038d5c2b6b"
+                Height: =207
+                TileUrl: |-
+                    ="https://app.powerbi.com/embed?dashboardId=22b664e8-002c-4cd6-9979-7c038d5c2b6b&tileId=75e01a8d-b10c-4d34-8f86-cf4c7ea1ac33&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
+                Width: =556
+                WorkspaceId: ="__my-workspace"
+                X: =39
+                Y: =63
+                ZIndex: =1
+
+            Label8 As label:
+                Height: =63
+                Size: =21
+                Text: ="School Mood Breakdown"
+                Width: =560
+                X: =35
+                ZIndex: =2
 
     AdmincompMenu_1 As AdmincompMenu:
         NavigationItems: |-
