@@ -4,11 +4,9 @@
     <jsonTypes targetNamespace="https://australia-001.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
       <string name="ManualTriggerInput_Updatearow_KeyValue_def" />
       <string name="ManualTriggerInput_Updatearow_Stress_def" />
-      <string name="ManualTriggerInput_Updatearow_Class_def" />
       <object name="ManualTriggerInput">
         <property name="Updatearow_KeyValue" type="string" />
         <property name="Updatearow_Stress" type="string" />
-        <property name="Updatearow_Class" type="string" />
       </object>
     </jsonTypes>
   </grammars>
@@ -24,7 +22,6 @@
           <representation mediaType="application/json">
             <param style="plain" name="Updatearow_KeyValue" path="/Updatearow_KeyValue" type="xs:string" required="true" />
             <param style="plain" name="Updatearow_Stress" path="/Updatearow_Stress" type="xs:string" required="true" />
-            <param style="plain" name="Updatearow_Class" path="/Updatearow_Class" type="xs:string" required="true" />
           </representation>
         </request>
       </method>
