@@ -76,15 +76,15 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(247, 249, 252, 1)
-            Height: =375
+            Height: =426
             Width: =640
             X: =0
-            Y: =1
+            Y: =0
             ZIndex: =4
 
             PowerBITile_Overview As powerbi:
                 DashboardId: ="22b664e8-002c-4cd6-9979-7c038d5c2b6b"
-                Height: =253
+                Height: =314
                 TileUrl: |-
                     ="https://app.powerbi.com/embed?dashboardId=22b664e8-002c-4cd6-9979-7c038d5c2b6b&tileId=6eb06f9e-318d-401c-b78c-4fc08a80d272&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
                 Width: =561
@@ -107,10 +107,10 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(247, 249, 252, 1)
-            Height: =375
+            Height: =467
             Width: =640
             X: =0
-            Y: =2
+            Y: =1
             ZIndex: =5
 
             lblCheckInOverview As label:
@@ -124,7 +124,7 @@
 
             PowerBI_ As powerbi:
                 DashboardId: ="22b664e8-002c-4cd6-9979-7c038d5c2b6b"
-                Height: =263
+                Height: =344
                 TileUrl: |-
                     ="https://app.powerbi.com/embed?dashboardId=22b664e8-002c-4cd6-9979-7c038d5c2b6b&tileId=c3a95f75-c824-40f8-949c-4f826b4c3965&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
                 Width: =559
@@ -138,15 +138,15 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =100
+            Height: =450
             Width: =640
             X: =0
-            Y: =3
+            Y: =2
             ZIndex: =6
 
             PowerBI4 As powerbi:
                 DashboardId: ="22b664e8-002c-4cd6-9979-7c038d5c2b6b"
-                Height: =207
+                Height: =374
                 TileUrl: |-
                     ="https://app.powerbi.com/embed?dashboardId=22b664e8-002c-4cd6-9979-7c038d5c2b6b&tileId=75e01a8d-b10c-4d34-8f86-cf4c7ea1ac33&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
                 Width: =556
