@@ -85,9 +85,9 @@
       "1c840ac9-201a-4750-99f1-24820cfb4226",
       "38178d7e-e7e6-4de9-a2fd-d514a8183151",
       "31af61c2-f02d-4591-baec-8d95f98f108e",
-      "a80359fb-097a-4e43-b8cf-28eeeee5b187",
       "c3971906-5422-4fee-aa00-fd4f4753efa5",
-      "bc7435ed-7779-475e-b838-6a95be723c80"
+      "bc7435ed-7779-475e-b838-6a95be723c80",
+      "6db06d50-61f5-44d3-9bd0-50e64f83f7fe"
     ],
     "id": "11b65d48-0864-4651-9eb0-039e1b2730f2"
   },
@@ -190,41 +190,6 @@
     },
     "dependents": [],
     "id": "31af61c2-f02d-4591-baec-8d95f98f108e"
-  },
-  "35852137-048f-467b-bd37-c29d8999e2fd": {
-    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_logicflows/connections/95f85b4b005442b0ae2111fd47940e27-55c9532b2c614cf2",
-    "connectionParameters": {
-      "workFlowCallbackUri": "https://prod-17.australiasoutheast.logic.azure.com:443/workflows/1f1f8a56f58a48d2a6b368c712a04bb5/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=ZE1Qj-cFu616IVIIkyD6Y6eaLF7fxLMIt4y2Ti4s8yo",
-      "workflowEndpoint": "/subscriptions/9f3a0e5f-8058-487f-9d45-d3ff51164c54/resourceGroups/dfa6b1ae0a2c49c49d31fab217269229-19713377c4d548dda87f44b88febfb4b/providers/Microsoft.Logic/workflows/95f85b4b-0054-42b0-ae21-11fd47940e27",
-      "workflowName": "95f85b4b-0054-42b0-ae21-11fd47940e27",
-      "workflowPath": "/subscriptions/9f3a0e5f-8058-487f-9d45-d3ff51164c54/resourceGroups/dfa6b1ae0a2c49c49d31fab217269229-19713377c4d548dda87f44b88febfb4b/providers/Microsoft.Logic/workflows/95f85b4b-0054-42b0-ae21-11fd47940e27"
-    },
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "95f85b4b-0054-42b0-ae21-11fd47940e27"
-        }
-      },
-      "parameterHintsV2": {
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "95f85b4b-0054-42b0-ae21-11fd47940e27"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "check_in_stress"
-    ],
-    "dependencies": {
-      "shared_excelonlinebusiness": "11b65d48-0864-4651-9eb0-039e1b2730f2"
-    },
-    "dependents": [],
-    "id": "35852137-048f-467b-bd37-c29d8999e2fd"
   },
   "38178d7e-e7e6-4de9-a2fd-d514a8183151": {
     "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_logicflows/connections/89e0baac-d89d-4924-b1e6-1e7125c44e64",
@@ -342,6 +307,47 @@
     },
     "dependents": [],
     "id": "5e8a3a6f-0bdf-4803-9fb1-d3f4cae116d1"
+  },
+  "6db06d50-61f5-44d3-9bd0-50e64f83f7fe": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_logicflows/connections/95f85b4b005442b0ae2111fd47940e27-55c9532b2c614cf2",
+    "connectionParameters": {
+      "workFlowCallbackUri": "https://prod-17.australiasoutheast.logic.azure.com:443/workflows/1f1f8a56f58a48d2a6b368c712a04bb5/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=ZE1Qj-cFu616IVIIkyD6Y6eaLF7fxLMIt4y2Ti4s8yo",
+      "workflowEndpoint": "/subscriptions/9f3a0e5f-8058-487f-9d45-d3ff51164c54/resourceGroups/dfa6b1ae0a2c49c49d31fab217269229-19713377c4d548dda87f44b88febfb4b/providers/Microsoft.Logic/workflows/95f85b4b-0054-42b0-ae21-11fd47940e27",
+      "workflowName": "95f85b4b-0054-42b0-ae21-11fd47940e27",
+      "workflowPath": "/subscriptions/9f3a0e5f-8058-487f-9d45-d3ff51164c54/resourceGroups/dfa6b1ae0a2c49c49d31fab217269229-19713377c4d548dda87f44b88febfb4b/providers/Microsoft.Logic/workflows/95f85b4b-0054-42b0-ae21-11fd47940e27"
+    },
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "11b65d48-0864-4651-9eb0-039e1b2730f2": {
+          "value": "shared_excelonlinebusiness"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "95f85b4b-0054-42b0-ae21-11fd47940e27"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_excelonlinebusiness": {
+          "value": "11b65d48-0864-4651-9eb0-039e1b2730f2"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "95f85b4b-0054-42b0-ae21-11fd47940e27"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "check_in_stress"
+    ],
+    "dependencies": {
+      "shared_excelonlinebusiness": "11b65d48-0864-4651-9eb0-039e1b2730f2"
+    },
+    "dependents": [],
+    "id": "6db06d50-61f5-44d3-9bd0-50e64f83f7fe"
   },
   "7fb27fb0-822c-4b75-9bfb-06ee91c503ac": {
     "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_logicflows/connections/5b9c1a3f5ce94d1986f6434f2f37fc66-55c9532b2c614cf2",

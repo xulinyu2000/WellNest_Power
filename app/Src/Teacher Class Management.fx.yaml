@@ -34,7 +34,7 @@
         Fill: =RGBA(0, 0, 0, 0)
         HeadingSize: =21
         Height: =864
-        Items: =Filter(checkin_3, Value(Rating) > 0)
+        Items: =Filter(checkin_3, Value(Rating) > 0 && Class = LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class))
         Size: =21
         Width: =640
         X: =0
