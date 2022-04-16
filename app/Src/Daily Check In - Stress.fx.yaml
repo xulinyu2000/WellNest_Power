@@ -89,7 +89,7 @@
         BorderColor: =ColorFade(Button3.Fill, -15%)
         Height: =75
         HoverBorderColor: =ColorFade(Button3.BorderColor, 20%)
-        OnSelect: =check_in_stress.Run(Office365Users.MyProfile().Mail & Today(), Slider1.Value); Navigate('Student Dashboard')
+        OnSelect: =check_in_stress.Run(Office365Users.MyProfile().Mail & Today(), Slider1.Value, LookUp(student_class, Student_ID = Office365Users.MyProfile().Mail, Class); Navigate('Student Dashboard')
         PressedBorderColor: =Button3.Fill
         PressedColor: =Button3.Fill
         PressedFill: =Button3.Color
