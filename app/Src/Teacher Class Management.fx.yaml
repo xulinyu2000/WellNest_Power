@@ -19,47 +19,6 @@
         Y: =1041.3333333333333
         ZIndex: =12
 
-    DataTable1 As dataTable.datatable:
-        BorderStyle: =BorderStyle.Solid
-        DisplayMode: =DisplayMode.Edit
-        Fill: =RGBA(0, 0, 0, 0)
-        HeadingSize: =21
-        Height: =861
-        Items: =Filter(checkin, Rating > 0)
-        Size: =21
-        Width: =640
-        X: =0
-        Y: =180
-        ZIndex: =13
-
-        Student_ID_Column2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Student_ID"
-            FieldName: ="Student_ID"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =1
-            Text: =ThisItem.Student_ID
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =1
-
-        Student_Name_Column2 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Student_Name"
-            FieldName: ="Student_Name"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =2
-            Text: =ThisItem.Student_Name
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =2
-
     Label14 As label:
         Height: =70
         Size: =21
@@ -68,4 +27,59 @@
         X: =26
         Y: =110
         ZIndex: =14
+
+    DataTable4 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        HeadingSize: =21
+        Height: =864
+        Items: =Filter(checkin_2, Rating > 0)
+        Size: =21
+        Width: =640
+        X: =0
+        Y: =176
+        ZIndex: =15
+
+        Student_Date_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Student_Date"
+            FieldName: ="Student_Date"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.Student_Date
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+        Student_ID_Column4 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Student_ID"
+            FieldName: ="Student_ID"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.Student_ID
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =2
+
+        Rating_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Rating"
+            FieldName: ="Rating"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.Rating
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =3
 

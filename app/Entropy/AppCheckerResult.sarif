@@ -2296,17 +2296,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Teacher Class Management'.DataTable1.Items"
+                  "fullyQualifiedName": "'Teacher Class Management'.DataTable4.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Teacher Class Management'.DataTable1.Items",
+                  "fullyQualifiedName": "'Teacher Class Management'.DataTable4.Items",
                   "relativeAddress": 0
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 16,
+                  "charOffset": 18,
                   "snippet": {
                     "text": "Rating"
                   }
@@ -2315,21 +2315,61 @@
               "properties": {
                 "member": "Items",
                 "module": "Teacher Class Management",
-                "type": "'Teacher Class Management'.DataTable1"
+                "type": "'Teacher Class Management'.DataTable4"
               }
             }
           ],
           "message": {
             "arguments": [
-              "Rating"
+              "Number, Date, Time, DateTime"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
+          "ruleId": "app-ErrBadType-ExpectedTypesCSV",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Teacher Class Management'.DataTable4.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Teacher Class Management'.DataTable4.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 25,
+                  "snippet": {
+                    "text": ">"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Teacher Class Management",
+                "type": "'Teacher Class Management'.DataTable4"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
         },
         {
           "locations": [
