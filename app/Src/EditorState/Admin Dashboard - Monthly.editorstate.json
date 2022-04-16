@@ -1,6 +1,6 @@
 {
   "ControlStates": {
-    "Admin Dashboard": {
+    "Admin Dashboard - Monthly": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -28,7 +28,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Admin Dashboard",
+      "Name": "Admin Dashboard - Monthly",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -59,17 +59,17 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Orientation",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
           "PropertyName": "LoadingSpinner",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
           "PropertyName": "LoadingSpinnerColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Orientation",
           "RuleProviderType": "Unknown"
         },
         {
@@ -81,7 +81,7 @@
       "StyleName": "defaultScreenStyle",
       "Type": "ControlInfo"
     },
-    "AdmincompMenu_1": {
+    "AdmincompMenu_5": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -158,7 +158,7 @@
         "Description": ""
       },
       "MetaDataIDKey": "",
-      "Name": "AdmincompMenu_1",
+      "Name": "AdmincompMenu_5",
       "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -217,7 +217,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "btnDaily": {
+    "btnDaily_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -308,7 +308,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "btnDaily",
+      "Name": "btnDaily_2",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -496,7 +496,7 @@
       "StyleName": "defaultButtonStyle",
       "Type": "ControlInfo"
     },
-    "btnMonthly": {
+    "btnMonthly_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -579,7 +579,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "btnMonthly",
+      "Name": "btnMonthly_2",
       "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -762,7 +762,7 @@
       "StyleName": "defaultButtonStyle",
       "Type": "ControlInfo"
     },
-    "btnWeekly": {
+    "btnWeekly_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -845,7 +845,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "btnWeekly",
+      "Name": "btnWeekly_2",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1028,7 +1028,7 @@
       "StyleName": "defaultButtonStyle",
       "Type": "ControlInfo"
     },
-    "Canvas1_4": {
+    "Canvas1_6": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "BorderColor",
@@ -1054,7 +1054,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Canvas1_4",
+      "Name": "Canvas1_6",
       "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1127,7 +1127,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "DashboardLogo_4": {
+    "DashboardLogo_7": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -1183,7 +1183,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "DashboardLogo_4",
+      "Name": "DashboardLogo_7",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1336,7 +1336,7 @@
       "StyleName": "defaultImageStyle",
       "Type": "ControlInfo"
     },
-    "DataCard1_2": {
+    "DataCard1_6": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "BorderColor",
@@ -1372,7 +1372,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "DataCard1_2",
+      "Name": "DataCard1_6",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1425,7 +1425,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "DataCard1_3": {
+    "DataCard1_7": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "BorderColor",
@@ -1454,7 +1454,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "DataCard1_3",
+      "Name": "DataCard1_7",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1507,7 +1507,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "DataCard4_2": {
+    "DataCard4_4": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "BorderColor",
@@ -1536,7 +1536,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "DataCard4_2",
+      "Name": "DataCard4_4",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1589,7 +1589,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "Header_11": {
+    "Header_16": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -1627,7 +1627,7 @@
         "Description": ""
       },
       "MetaDataIDKey": "",
-      "Name": "Header_11",
+      "Name": "Header_16",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1665,7 +1665,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "Label8": {
+    "Label8_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -1731,7 +1731,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Label8",
+      "Name": "Label8_2",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1934,7 +1934,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "lblCheckInOverview": {
+    "lblCheckInOverview_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -2000,7 +2000,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "lblCheckInOverview",
+      "Name": "lblCheckInOverview_2",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2203,7 +2203,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "lblMoodOverview": {
+    "lblMoodOverview_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -2269,7 +2269,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "lblMoodOverview",
+      "Name": "lblMoodOverview_2",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2472,7 +2472,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "PowerBI_": {
+    "PowerBI__2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "DisplayMode",
@@ -2503,7 +2503,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PowerBI_",
+      "Name": "PowerBI__2",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2566,7 +2566,7 @@
       "StyleName": "defaultPowerbiStyle",
       "Type": "ControlInfo"
     },
-    "PowerBI4": {
+    "PowerBI4_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "DisplayMode",
@@ -2597,7 +2597,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PowerBI4",
+      "Name": "PowerBI4_2",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2660,17 +2660,10 @@
       "StyleName": "defaultPowerbiStyle",
       "Type": "ControlInfo"
     },
-    "PowerBITile_Overview": {
+    "PowerBITile_Overview_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "DisplayMode",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "DisplayMode",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -2695,7 +2688,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "AllowNewAPI"
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "false",
+          "InvariantPropertyName": "AllowNewAPI",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        }
       ],
       "HasDynamicProperties": false,
       "IsAutoGenerated": false,
@@ -2706,7 +2706,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "PowerBITile_Overview",
+      "Name": "PowerBITile_Overview_2",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2774,7 +2774,7 @@
       "StyleName": "defaultPowerbiStyle",
       "Type": "ControlInfo"
     },
-    "RectQuickActionBar3_4": {
+    "RectQuickActionBar3_6": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -2807,7 +2807,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%TemplatePhoneRectQuickActionBar.ID%",
-      "Name": "RectQuickActionBar3_4",
+      "Name": "RectQuickActionBar3_6",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2881,5 +2881,5 @@
       "Type": "ControlInfo"
     }
   },
-  "TopParentName": "Admin Dashboard"
+  "TopParentName": "Admin Dashboard - Monthly"
 }

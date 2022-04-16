@@ -1,77 +1,77 @@
-"'Admin Dashboard' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+"'Admin Dashboard - Weekly' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     OnVisible: |-
         =Collect(Collection1, {Image: DashboardLogo_1.Image})
 
-    RectQuickActionBar3_4 As rectangle:
+    RectQuickActionBar3_5 As rectangle:
         Fill: =RGBA(255, 255, 255, 1)
         Height: =113
         Width: =Parent.Width
         ZIndex: =1
 
-    DashboardLogo_4 As image:
+    DashboardLogo_6 As image:
         Height: =98
-        HoverBorderColor: =ColorFade(DashboardLogo_4.BorderColor, 20%)
-        HoverFill: =ColorFade(DashboardLogo_4.Fill, 20%)
+        HoverBorderColor: =ColorFade(DashboardLogo_6.BorderColor, 20%)
+        HoverFill: =ColorFade(DashboardLogo_6.Fill, 20%)
         Image: =Picture1_1
         PaddingLeft: =10
-        PressedBorderColor: =ColorFade(DashboardLogo_4.BorderColor, -20%)
-        PressedFill: =ColorFade(DashboardLogo_4.Fill, -20%)
+        PressedBorderColor: =ColorFade(DashboardLogo_6.BorderColor, -20%)
+        PressedFill: =ColorFade(DashboardLogo_6.Fill, -20%)
         Width: =68
         ZIndex: =2
 
-    btnDaily As button:
-        BorderColor: =ColorFade(btnDaily.Fill, -15%)
+    btnDaily_1 As button:
+        BorderColor: =ColorFade(btnDaily_1.Fill, -15%)
         Fill: =RGBA(72, 161, 255, 1)
         Height: =53
-        HoverBorderColor: =ColorFade(btnDaily.BorderColor, 20%)
-        PressedBorderColor: =btnDaily.Fill
-        PressedColor: =btnDaily.Fill
-        PressedFill: =btnDaily.Color
+        HoverBorderColor: =ColorFade(btnDaily_1.BorderColor, 20%)
+        PressedBorderColor: =btnDaily_1.Fill
+        PressedColor: =btnDaily_1.Fill
+        PressedFill: =btnDaily_1.Color
         Text: ="Daily"
         Width: =175
         X: =30
         Y: =148
         ZIndex: =3
 
-    btnWeekly As button:
-        BorderColor: =ColorFade(btnWeekly.Fill, -15%)
+    btnWeekly_1 As button:
+        BorderColor: =ColorFade(btnWeekly_1.Fill, -15%)
         Fill: =RGBA(72, 161, 255, 1)
         Height: =53
-        HoverBorderColor: =ColorFade(btnWeekly.BorderColor, 20%)
-        PressedBorderColor: =btnWeekly.Fill
-        PressedColor: =btnWeekly.Fill
-        PressedFill: =btnWeekly.Color
+        HoverBorderColor: =ColorFade(btnWeekly_1.BorderColor, 20%)
+        PressedBorderColor: =btnWeekly_1.Fill
+        PressedColor: =btnWeekly_1.Fill
+        PressedFill: =btnWeekly_1.Color
         Text: ="Weekly"
         Width: =175
         X: =234
         Y: =148
         ZIndex: =4
 
-    btnMonthly As button:
-        BorderColor: =ColorFade(btnMonthly.Fill, -15%)
+    btnMonthly_1 As button:
+        BorderColor: =ColorFade(btnMonthly_1.Fill, -15%)
         Fill: =RGBA(72, 161, 255, 1)
         Height: =53
-        HoverBorderColor: =ColorFade(btnMonthly.BorderColor, 20%)
-        PressedBorderColor: =btnMonthly.Fill
-        PressedColor: =btnMonthly.Fill
-        PressedFill: =btnMonthly.Color
+        HoverBorderColor: =ColorFade(btnMonthly_1.BorderColor, 20%)
+        PressedBorderColor: =btnMonthly_1.Fill
+        PressedColor: =btnMonthly_1.Fill
+        PressedFill: =btnMonthly_1.Color
         Text: ="Monthly"
         Width: =175
         X: =434
         Y: =148
         ZIndex: =5
 
-    Header_11 As Header:
+    Header_15 As Header:
         ZIndex: =6
 
-    Canvas1_4 As fluidGrid.fluidGridWithBlankCard:
+    Canvas1_5 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
         Height: =812
         Width: =Parent.Width
         Y: =233
         ZIndex: =7
 
-        DataCard4_2 As dataCard.blankCard:
+        DataCard4_3 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
@@ -82,20 +82,21 @@
             Y: =0
             ZIndex: =4
 
-            PowerBITile_Overview As powerbi:
+            PowerBITile_Overview_1 As powerbi:
+                AllowNewAPI: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
-                DashboardId: ="22b664e8-002c-4cd6-9979-7c038d5c2b6b"
+                DashboardId: ="a567ca29-7f63-467c-8b2d-03e2b351a768"
                 DisplayMode: =DisplayMode.View
                 Height: =407
                 TileUrl: |-
-                    ="https://app.powerbi.com/embed?dashboardId=22b664e8-002c-4cd6-9979-7c038d5c2b6b&tileId=6eb06f9e-318d-401c-b78c-4fc08a80d272&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d&$"
+                    ="https://app.powerbi.com/embed?dashboardId=a567ca29-7f63-467c-8b2d-03e2b351a768&tileId=3bbc7be0-4301-46c2-8b22-f2ad6f361de9&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
                 Width: =561
                 WorkspaceId: ="__my-workspace"
                 X: =40
                 Y: =86
                 ZIndex: =1
 
-            lblMoodOverview As label:
+            lblMoodOverview_1 As label:
                 Align: =Align.Center
                 Height: =46
                 Size: =21
@@ -105,7 +106,7 @@
                 Y: =26
                 ZIndex: =2
 
-        DataCard1_2 As dataCard.blankCard:
+        DataCard1_4 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
@@ -116,7 +117,7 @@
             Y: =1
             ZIndex: =5
 
-            lblCheckInOverview As label:
+            lblCheckInOverview_1 As label:
                 Align: =Align.Center
                 Height: =56
                 Size: =21
@@ -126,19 +127,20 @@
                 Y: =21
                 ZIndex: =1
 
-            PowerBI_ As powerbi:
+            PowerBI__1 As powerbi:
                 BorderColor: =RGBA(0, 0, 0, 0)
-                DashboardId: ="22b664e8-002c-4cd6-9979-7c038d5c2b6b"
+                DashboardId: ="a567ca29-7f63-467c-8b2d-03e2b351a768"
+                DisplayMode: =DisplayMode.View
                 Height: =436
                 TileUrl: |-
-                    ="https://app.powerbi.com/embed?dashboardId=22b664e8-002c-4cd6-9979-7c038d5c2b6b&tileId=c3a95f75-c824-40f8-949c-4f826b4c3965&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
+                    ="https://app.powerbi.com/embed?dashboardId=a567ca29-7f63-467c-8b2d-03e2b351a768&tileId=de713956-7444-4746-bc9a-b45585c97559&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
                 Width: =559
                 WorkspaceId: ="__my-workspace"
                 X: =40
                 Y: =77
                 ZIndex: =2
 
-        DataCard1_3 As dataCard.blankCard:
+        DataCard1_5 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
@@ -149,19 +151,19 @@
             Y: =2
             ZIndex: =6
 
-            PowerBI4 As powerbi:
+            PowerBI4_1 As powerbi:
                 BorderColor: =RGBA(0, 0, 0, 0)
-                DashboardId: ="22b664e8-002c-4cd6-9979-7c038d5c2b6b"
+                DashboardId: ="a567ca29-7f63-467c-8b2d-03e2b351a768"
                 Height: =434
                 TileUrl: |-
-                    ="https://app.powerbi.com/embed?dashboardId=22b664e8-002c-4cd6-9979-7c038d5c2b6b&tileId=75e01a8d-b10c-4d34-8f86-cf4c7ea1ac33&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
+                    ="https://app.powerbi.com/embed?dashboardId=a567ca29-7f63-467c-8b2d-03e2b351a768&tileId=07f6c0a7-2c05-48ef-9872-20c15c000976&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
                 Width: =556
                 WorkspaceId: ="__my-workspace"
                 X: =39
                 Y: =63
                 ZIndex: =1
 
-            Label8 As label:
+            Label8_1 As label:
                 Align: =Align.Center
                 Height: =63
                 Size: =21
@@ -170,7 +172,7 @@
                 X: =35
                 ZIndex: =2
 
-    AdmincompMenu_1 As AdmincompMenu:
+    AdmincompMenu_4 As AdmincompMenu:
         NavigationItems: |-
             =/*Table(
                 {
