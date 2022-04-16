@@ -34,7 +34,7 @@
         Fill: =RGBA(0, 0, 0, 0)
         HeadingSize: =21
         Height: =864
-        Items: =Filter(checkin_3, Rating > 0)
+        Items: =Filter(checkin_3, Value(Rating) > 0)
         Size: =21
         Width: =640
         X: =0
@@ -70,6 +70,7 @@
             ZIndex: =2
 
         Rating_Column2 As dataTableColumn.textualColumn:
+            AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Rating"
             FieldName: ="Rating"
@@ -78,8 +79,8 @@
             LayoutHeight: =Parent.Height
             Order: =3
             Text: =ThisItem.Rating
-            Width: =100
-            X: =0
+            Width: =125
+            X: =508
             Y: =0
             ZIndex: =3
 
