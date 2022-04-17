@@ -26,6 +26,8 @@
                 )
             ),VarClass in CLASS.Value) 
         Layout: =Layout.Vertical
+        OnSelect: |-
+            =Navigate('Detail Screen', ScreenTransition.None, {locCurrentRecord:ThisItem})
         TemplatePadding: =0
         TemplateSize: =Min(160, Self.Height - 60)
         Y: =321
