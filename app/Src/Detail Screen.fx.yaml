@@ -183,7 +183,7 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue7 As label:
+            EmailAddress As label:
                 AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
                 PaddingLeft: =0
@@ -238,7 +238,7 @@
         BorderColor: =ColorFade(Button12.Fill, -15%)
         Height: =70
         HoverBorderColor: =ColorFade(Button12.BorderColor, 20%)
-        OnSelect: =Office365Outlook.SendEmailV2("xulinyu2000@gmail.com","Test","Body")
+        OnSelect: =Office365Outlook.SendEmailV2(EmailAddress.Text,Subject.Text,Body.Text)
         PressedBorderColor: =Button12.Fill
         PressedColor: =Button12.Fill
         PressedFill: =Button12.Color
@@ -246,6 +246,31 @@
         Text: ="Send Email"
         Width: =280
         X: =180
-        Y: =908
+        Y: =1030
         ZIndex: =2
+
+    Body As text:
+        Default: ="some default message"
+        Height: =240
+        HintText: ="Email Contents "
+        PressedBorderColor: =Body.HoverBorderColor
+        PressedColor: =Body.Color
+        PressedFill: =Body.Fill
+        Size: =21
+        Width: =502
+        X: =29
+        Y: =725
+        ZIndex: =3
+
+    Subject As text:
+        Default: ="Text input"
+        Height: =70
+        PressedBorderColor: =Subject.HoverBorderColor
+        PressedColor: =Subject.Color
+        PressedFill: =Subject.Fill
+        Size: =21
+        Width: =560
+        X: =29
+        Y: =611
+        ZIndex: =4
 
