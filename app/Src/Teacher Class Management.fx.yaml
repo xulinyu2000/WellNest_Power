@@ -20,13 +20,24 @@
         ZIndex: =12
 
     Label14 As label:
-        Height: =70
+        Height: =64
         OnSelect: =Navigate('Teacher Class Management_1')
         Size: =21
         Text: =VarClass
         Underline: =true
-        Width: =560
+        Width: =94
         X: =26
         Y: =110
         ZIndex: =14
+
+    Label14_3 As label:
+        Height: =70
+        OnSelect: =Navigate('Teacher Class Management_1')
+        Size: =21
+        Text: ="View Students at risk"
+        Underline: =true
+        Width: =560
+        X: =80
+        Y: =107
+        ZIndex: =15
 
