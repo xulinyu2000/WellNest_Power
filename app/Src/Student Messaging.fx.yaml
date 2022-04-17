@@ -54,36 +54,13 @@
         Y: =1042
         ZIndex: =5
 
-    imgSeparatorLine As image:
-        Height: =5
-        HoverBorderColor: =ColorFade(imgSeparatorLine.BorderColor, 20%)
-        HoverFill: =ColorFade(imgSeparatorLine.Fill, 20%)
-        Image: =imgSeparator
-        ImagePosition: =ImagePosition.Fill
-        PressedBorderColor: =ColorFade(imgSeparatorLine.BorderColor, -20%)
-        PressedFill: =ColorFade(imgSeparatorLine.Fill, -20%)
-        Width: =640
-        Y: =207
-        ZIndex: =12
-
     IframePCF1 As IframePCF:
         DisplayMode: =DisplayMode.Edit
-        Height: =713
+        Height: =704
         src: |-
             ="https://orgb9a1081f.crm6.dynamics.com/WebResources/cr69e_Chatbot"
         Width: =498
         X: =71
-        Y: =259
+        Y: =140
         ZIndex: =13
-
-    Label12 As label:
-        Align: =Align.Center
-        Font: =Font.Verdana
-        Height: =52
-        Size: =21
-        Text: ="AYMAX Chatbot"
-        Width: =498
-        X: =71
-        Y: =138
-        ZIndex: =14
 
