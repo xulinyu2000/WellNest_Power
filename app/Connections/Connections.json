@@ -536,21 +536,21 @@
           "AppUsers": {
             "tableName": "3dcdbd79-d524-47a0-a37f-4aa5770f7c1a"
           },
-          "AppUsers_1": {
-            "tableName": "3dcdbd79-d524-47a0-a37f-4aa5770f7c1a"
-          },
           "Documents": {
             "tableName": "8a3153c2-6dd8-44ec-b171-404df7177f2b"
+          },
+          "UserAppPermission": {
+            "tableName": "3822ea82-657b-4d4f-894d-b7783891443e"
           }
         }
       }
     },
     "dataSources": [
+      "UserAppPermission",
       "Documents",
       "11B",
       "7A",
-      "AppUsers",
-      "AppUsers_1"
+      "AppUsers"
     ],
     "dependencies": {},
     "dependents": [
