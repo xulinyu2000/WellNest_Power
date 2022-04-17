@@ -84,3 +84,17 @@
             Y: =0
             ZIndex: =3
 
+    Button9 As button:
+        BorderColor: =ColorFade(Button9.Fill, -15%)
+        Height: =70
+        HoverBorderColor: =ColorFade(Button9.BorderColor, 20%)
+        PressedBorderColor: =Button9.Fill
+        PressedColor: =Button9.Fill
+        PressedFill: =Button9.Color
+        Size: =24
+        Text: ="Send Email "
+        Width: =280
+        X: =198
+        Y: =747
+        ZIndex: =16
+
