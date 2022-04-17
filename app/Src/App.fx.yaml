@@ -2,7 +2,7 @@ App As appinfo:
     BackEnabled: =false
     MinScreenHeight: =320
     MinScreenWidth: =320
-    OnStart: |-
+    OnStart: |+
         =ClearCollect(
             NavStudentView,
             {
@@ -91,6 +91,8 @@ App As appinfo:
         );
         
         Set(VarClass, LookUp(Class_Table,Teacher = Office365Users.MyProfile().Mail, Class));
+        
+        
 
     PowerBIIntegration As hostControl.DynamicHostControlVariant:
         OnCancel: =false
