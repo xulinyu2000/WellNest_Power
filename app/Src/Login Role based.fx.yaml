@@ -6,11 +6,12 @@
         Visible: =IsUserStudent
         Width: =526
         X: =65
-        Y: =238
+        Y: =272
         ZIndex: =4
 
         Button6 As button:
             BorderColor: =ColorFade(Button6.Fill, -15%)
+            Fill: =RGBA(72, 161, 255, 1)
             Height: =70
             HoverBorderColor: =ColorFade(Button6.BorderColor, 20%)
             OnSelect: |
@@ -26,11 +27,13 @@
             Size: =24
             Text: ="Student Login "
             Width: =280
-            X: =135
-            Y: =147
+            X: =123
+            Y: =231
             ZIndex: =1
 
         Dropdown_Class As dropdown:
+            BorderColor: =RGBA(72, 161, 255, 1)
+            ChevronBackground: =RGBA(72, 161, 255, 1)
             Default: ="0"
             Height: =70
             HoverBorderColor: =ColorFade(Dropdown_Class.BorderColor, 15%)
@@ -38,7 +41,7 @@
             PressedBorderColor: =Dropdown_Class.HoverBorderColor
             Size: =21
             Width: =526
-            Y: =258
+            Y: =100
             ZIndex: =2
 
     Container6 As groupContainer.manualLayoutContainer:
@@ -46,12 +49,13 @@
         Visible: |
             =IsUserTeacher
         Width: =526
-        X: =28
-        Y: =527
+        X: =62
+        Y: =629
         ZIndex: =5
 
         Button8 As button:
             BorderColor: =ColorFade(Button8.Fill, -15%)
+            Fill: =RGBA(72, 161, 255, 1)
             Height: =70
             HoverBorderColor: =ColorFade(Button8.BorderColor, 20%)
             OnSelect: |
@@ -64,11 +68,13 @@
             Size: =24
             Text: ="Teacher Login"
             Width: =280
-            X: =165
-            Y: =126
+            X: =123
+            Y: =195
             ZIndex: =1
 
         Dropdown_Class_1 As dropdown:
+            BorderColor: =RGBA(72, 161, 255, 1)
+            ChevronBackground: =RGBA(72, 161, 255, 1)
             Default: ="0"
             Height: =70
             HoverBorderColor: =ColorFade(Dropdown_Class_1.BorderColor, 15%)
@@ -76,7 +82,7 @@
             PressedBorderColor: =Dropdown_Class_1.HoverBorderColor
             Size: =21
             Width: =526
-            Y: =262
+            Y: =85
             ZIndex: =2
 
     Container8 As groupContainer.manualLayoutContainer:
@@ -88,6 +94,7 @@
 
         Button11 As button:
             BorderColor: =ColorFade(Button11.Fill, -15%)
+            Fill: =RGBA(72, 161, 255, 1)
             Height: =70
             HoverBorderColor: =ColorFade(Button11.BorderColor, 20%)
             OnSelect: =Set(AdminView,true);Set(StudentView,false);Set(TeacherView,false);Navigate('Admin Dashboard')
@@ -97,8 +104,8 @@
             Size: =24
             Text: ="Admin Login"
             Width: =280
-            X: =128
-            Y: =72
+            X: =134
+            Y: =98
             ZIndex: =1
 
     Image11 As image:
