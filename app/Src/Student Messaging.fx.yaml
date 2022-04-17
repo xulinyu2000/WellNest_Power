@@ -29,7 +29,7 @@
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(247, 249, 252, 1)
-            Height: =1046
+            Height: =1071
             Width: =Parent.Width
             X: =0
             Y: =0
@@ -47,7 +47,10 @@
             ZIndex: =2
 
     StudentcompMenu_3 As StudentcompMenu:
+        BackgroundColor: =RGBA(72, 161, 255, 1)
+        ForegroundColor: =RGBA(237, 250, 255, 1)
         NavigationItems: =NavStudentView
+        SelectedItemBackground: =RGBA(237, 250, 255, 1)
         Y: =1042
         ZIndex: =5
 
