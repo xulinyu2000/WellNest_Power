@@ -2,7 +2,8 @@
 
     "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         Height: =675
-        Items: =AppUsers_1
+        Items: |
+            =Filter(AppUsers, CLASS.Value = VarClass)
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =Min(160, Self.Height - 60)
