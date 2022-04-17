@@ -1,5 +1,85 @@
 "'Teacher Class Management' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
+    "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Height: =675
+        Items: ='7A'
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(160, Self.Height - 60)
+        Y: =321
+        ZIndex: =1
+
+        Image13 As image:
+            Height: =128
+            HoverBorderColor: =ColorFade(Image13.BorderColor, 20%)
+            HoverFill: =ColorFade(Image13.Fill, 20%)
+            Image: =User().Image
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =ColorFade(Image13.BorderColor, -20%)
+            PressedFill: =ColorFade(Image13.Fill, -20%)
+            Width: =128
+            X: =16
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Title5 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Title
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - Image13.Width - 104
+            X: =Image13.X + Image13.Width + 24
+            Y: =44
+            ZIndex: =2
+
+        Subtitle3 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.User.DisplayName
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title5.Width
+            X: =Title5.X
+            Y: =Title5.Y + Title5.Height + 4
+            ZIndex: =3
+
+        NextArrow5 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            DisabledFill: =NextArrow5.Fill
+            Height: =60
+            HoverBorderColor: =ColorFade(NextArrow5.BorderColor, 20%)
+            HoverColor: =ColorFade(NextArrow5.Color, 20%)
+            HoverFill: =NextArrow5.Fill
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            PressedBorderColor: =ColorFade(NextArrow5.BorderColor, -20%)
+            PressedColor: =ColorFade(NextArrow5.Color, -20%)
+            PressedFill: =NextArrow5.Fill
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator5 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
     DashboardLogo_5 As image:
         Height: =98
         HoverBorderColor: =ColorFade(DashboardLogo_5.BorderColor, 20%)
