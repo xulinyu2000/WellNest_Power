@@ -3,7 +3,19 @@
     "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         Height: =675
         Items: |+
-            =Filter(AppUsers,  VarClass in CLASS.Value)
+            =AddColumns(
+                AppUsers,
+                "UserPhoto",
+                If(
+                    // check if the the user has an email and a profile picture
+                    !IsBlank(USER.Email)
+                    And Office365Users.UserPhotoMetadata(USER.Email).HasPhoto,
+                    // get the profile picture
+                    Office365Users.UserPhotoV2(USER.Email)
+                )
+            );
+            
+            Filter(AppUsers,  VarClass in CLASS.Value)
             
             
             
@@ -18,7 +30,7 @@
             Height: =128
             HoverBorderColor: =ColorFade(Image13.BorderColor, 20%)
             HoverFill: =ColorFade(Image13.Fill, 20%)
-            Image: =User().Image
+            Image: =ThisItem.UserPhoto
             OnSelect: =Select(Parent)
             PressedBorderColor: =ColorFade(Image13.BorderColor, -20%)
             PressedFill: =ColorFade(Image13.Fill, -20%)
