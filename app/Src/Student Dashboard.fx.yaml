@@ -153,7 +153,10 @@
             ZIndex: =6
 
     StudentcompMenu_1 As StudentcompMenu:
+        BackgroundColor: =RGBA(72, 161, 255, 1)
+        ForegroundColor: =RGBA(237, 250, 255, 1)
         NavigationItems: =NavStudentView
+        SelectedItemBackground: =RGBA(237, 250, 255, 1)
         Y: =1042
         ZIndex: =8
 
