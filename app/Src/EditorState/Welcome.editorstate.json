@@ -11,7 +11,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "Color",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "RGBA(0, 18, 107, 1)",
+          "InvariantPropertyName": "Color",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisabledColor",
         "PressedColor",
         "HoverColor",
@@ -25,7 +32,14 @@
         "Width",
         "Height",
         "BorderStyle",
-        "BorderColor",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "BorderColor",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisabledBorderColor",
         "PressedBorderColor",
         "HoverBorderColor",
@@ -53,7 +67,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "IconNextWelcome_1",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -469,7 +483,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LabelEnter_1",
-      "ParentIndex": 5,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -772,7 +786,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LabelWelcome_1",
-      "ParentIndex": 3,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

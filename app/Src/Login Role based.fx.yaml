@@ -1,4 +1,5 @@
 "'Login Role based' As screen":
+    Fill: =RGBA(217, 242, 255, 1)
 
     Container4 As groupContainer.manualLayoutContainer:
         Height: =347
@@ -99,4 +100,16 @@
             X: =128
             Y: =72
             ZIndex: =1
+
+    Image11 As image:
+        Height: =283
+        HoverBorderColor: =ColorFade(Image11.BorderColor, 20%)
+        HoverFill: =ColorFade(Image11.Fill, 20%)
+        Image: ='Group 132'
+        PressedBorderColor: =ColorFade(Image11.BorderColor, -20%)
+        PressedFill: =ColorFade(Image11.Fill, -20%)
+        Width: =263
+        X: =196
+        Y: =36
+        ZIndex: =8
 

@@ -27,6 +27,8 @@ Welcome As screen:
         ZIndex: =2
 
     IconNextWelcome_1 As icon.Add:
+        BorderColor: =RGBA(72, 161, 255, 1)
+        Color: =RGBA(72, 161, 255, 1)
         DisabledFill: =IconNextWelcome_1.Fill
         FocusedBorderColor: =IconNextWelcome_1.BorderColor
         HoverBorderColor: =ColorFade(IconNextWelcome_1.BorderColor, 20%)
@@ -43,7 +45,7 @@ Welcome As screen:
 
     LabelEnter_1 As label:
         Align: =Align.Center
-        Color: =RGBA(0, 18, 107, 1)
+        Color: =RGBA(72, 161, 255, 1)
         FocusedBorderColor: =LabelEnter_1.BorderColor
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
