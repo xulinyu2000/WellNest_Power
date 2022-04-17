@@ -20,9 +20,9 @@
                 "UserPhoto",
                 If(
                     // check if the the user has an email and a profile picture
-                    !IsBlank(USERS.Email) And Office365Users.UserPhotoMetadata(USERS.Email).HasPhoto,
+                    !IsBlank('Student Email'.Email) And Office365Users.UserPhotoMetadata('Student Email'.Email).HasPhoto,
                     // get the profile picture
-                    Office365Users.UserPhotoV2(USERS.Email)
+                    Office365Users.UserPhotoV2('Student Email'.Email)
                 )
             ),VarClass in CLASS.Value)
             
@@ -55,7 +55,7 @@
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.USERS.DisplayName
+            Text: =ThisItem.'Student Email'.DisplayName
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - Image7.Width - 104
             X: =Image7.X + Image7.Width + 24

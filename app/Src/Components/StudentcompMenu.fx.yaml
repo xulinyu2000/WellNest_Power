@@ -45,7 +45,8 @@ StudentcompMenu As CanvasComponent:
         OnSelect: =Navigate(ThisItem.ScreenToGoTo, Fade)
         TemplateFill: =If(ThisItem.IsSelected, StudentcompMenu.ForegroundColor, StudentcompMenu.BackgroundColor)
         TemplatePadding: =0
-        TemplateSize: =Self.Width/4
+        TemplateSize: |
+            =Self.Width/3
         Width: =Parent.Width
         ZIndex: =1
 
@@ -69,7 +70,7 @@ StudentcompMenu As CanvasComponent:
             PressedColor: =ColorFade(Icon8.Color, -20%)
             PressedFill: =Icon8.Fill
             Width: =59
-            X: =50
+            X: =77
             Y: =18
             ZIndex: =1
 
