@@ -1,0 +1,276 @@
+"'School Detail Screen' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+
+    FormViewer1_1 As formViewer:
+        DataSource: =AppUsers
+        Height: =628
+        Item: =LookUp(AppUsers,ID = BrowseGallery1.Selected.ID)
+        Width: =640
+        Y: =40
+        ZIndex: =1
+
+        "'Student Name_DataCard1_1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Name"
+            Default: =ThisItem.'Student Name'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppUsers],DataSourceInfo.DisplayName,"Name")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey4_1 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue3_1 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey4_1.Y + DataCardKey4_1.Height + 5
+                ZIndex: =2
+
+        "'Student Email_DataCard1_1' As typedDataCard.comboBoxViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="LinyuXu"
+            Default: =ThisItem.'Student Email'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppUsers],DataSourceInfo.DisplayName,"LinyuXu")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue5_1.Selected
+            Width: =640
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey6_1 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue5_1 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["DisplayName","Email","Picture"]
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                HoverBorderColor: =ColorFade(DataCardValue5_1.BorderColor, 15%)
+                Items: =Choices([@AppUsers].'Student Email')
+                MoreItemsButtonColor: =Self.ChevronBackground
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedBorderColor: =DataCardValue5_1.HoverBorderColor
+                SearchFields: =["DisplayName"]
+                SearchItems: =Choices(AppUsers.'Student Email',DataCardValue5_1.SearchText)
+                SelectMultiple: =false
+                Size: =21
+                Template: =ListItemTemplate.Person
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey6_1.Y + DataCardKey6_1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage4_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue5_1.Y + DataCardValue5_1.Height
+                ZIndex: =3
+
+            StarVisible4_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey6_1.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey6_1.Y
+                ZIndex: =4
+
+        "'Parent Name_DataCard1_1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ParentName"
+            Default: =ThisItem.'Parent Name'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppUsers],DataSourceInfo.DisplayName,"ParentName")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey7_1 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue6_1 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey7_1.Y + DataCardKey7_1.Height + 5
+                ZIndex: =2
+
+        "'Parent Email_DataCard1_1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ParentEmails"
+            Default: =ThisItem.'Parent Email'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppUsers],DataSourceInfo.DisplayName,"ParentEmails")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =3
+            ZIndex: =1
+
+            DataCardKey8_1 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            EmailAddress_1 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey8_1.Y + DataCardKey8_1.Height + 5
+                ZIndex: =2
+
+        "'Parent Mobile Number_DataCard1_1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ParentMobileNumber"
+            Default: =ThisItem.'Parent Mobile Number'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppUsers],DataSourceInfo.DisplayName,"ParentMobileNumber")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =4
+            ZIndex: =1
+
+            DataCardKey11_1 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue8_1 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey11_1.Y + DataCardKey11_1.Height + 5
+                ZIndex: =2
+
+    Button12_1 As button:
+        BorderColor: =ColorFade(Button12_1.Fill, -15%)
+        Height: =70
+        HoverBorderColor: =ColorFade(Button12_1.BorderColor, 20%)
+        OnSelect: =Office365Outlook.SendEmailV2(EmailAddress_1.Text,Subject_1.Text,Body_1.Text)
+        PressedBorderColor: =Button12_1.Fill
+        PressedColor: =Button12_1.Fill
+        PressedFill: =Button12_1.Color
+        Size: =24
+        Text: ="Send Email"
+        Width: =280
+        X: =180
+        Y: =1030
+        ZIndex: =2
+
+    Body_1 As text:
+        Default: ="some default message"
+        Height: =240
+        HintText: ="Email Contents "
+        PressedBorderColor: =Body_1.HoverBorderColor
+        PressedColor: =Body_1.Color
+        PressedFill: =Body_1.Fill
+        Size: =21
+        Width: =502
+        X: =29
+        Y: =725
+        ZIndex: =3
+
+    Subject_1 As text:
+        Default: ="emailsubject"
+        Height: =70
+        PressedBorderColor: =Subject_1.HoverBorderColor
+        PressedColor: =Subject_1.Color
+        PressedFill: =Subject_1.Fill
+        Size: =21
+        Width: =560
+        X: =29
+        Y: =611
+        ZIndex: =4
+

@@ -75,7 +75,7 @@
             HoverColor: =ColorFade(NextArrow3.Color, 20%)
             HoverFill: =NextArrow3.Fill
             Icon: =Icon.ChevronRight
-            OnSelect: =Select(Parent)
+            OnSelect: =Navigate('School Detail Screen')
             PaddingBottom: =10
             PaddingLeft: =10
             PaddingRight: =10
