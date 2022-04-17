@@ -3,7 +3,7 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
     "CdpRevision": {
       "BaseUrl": "/",
-      "LastChangedTimeString": "2022-03-28T16:18:11.4110000Z",
+      "LastChangedTimeString": "2022-04-13T16:24:27.0640000Z",
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
@@ -25,21 +25,34 @@
       "{VersionNumber}": "Version number",
       "Author": "Created By",
       "Author#Claims": "Created By Claims",
+      "CLASS": "CLASS",
+      "CLASS#Id": "CLASS Id",
+      "CLASS@odata.type": "CLASS (CLASS@odata.type)",
       "ComplianceAssetId": "Compliance Asset Id",
       "Created": "Created",
       "Editor": "Modified By",
       "Editor#Claims": "Modified By Claims",
+      "field_1": "User",
+      "field_2": "Class",
+      "field_2#Id": "Class Id",
+      "field_3": "Role",
+      "field_3#Id": "Role Id",
       "ID": "ID",
+      "LinyuXu": "USERS",
+      "LinyuXu#Claims": "USERS Claims",
       "Modified": "Modified",
-      "Title": "Title",
-      "User": "User",
-      "User#Claims": "User Claims"
+      "ParentEmails": "Parent Email",
+      "ParentName": "Parent Name",
+      "ProfilePhoto": "Profile Photo",
+      "ROLE": "ROLE",
+      "ROLE#Id": "ROLE Id",
+      "Title": "Title"
     },
     "DatasetName": "https://unswinfs.sharepoint.com/sites/PowerApps",
     "EncodeDataset": true,
     "IsSampleData": false,
     "IsWritable": true,
-    "Name": "UserAppPermission",
+    "Name": "AppUsers_1",
     "Type": "ConnectedDataSourceInfo"
   }
 ]

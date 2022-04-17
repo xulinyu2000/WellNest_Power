@@ -14,11 +14,6 @@
     Header_19 As Header:
         ZIndex: =11
 
-    TeachercompMenu_7 As TeachercompMenu:
-        NavigationItems: =NavTeacherView
-        Y: =1042
-        ZIndex: =12
-
     Label14_1 As label:
         Height: =70
         Size: =21
@@ -65,7 +60,7 @@
             Order: =2
             Text: =ThisItem.Student_Name
             Width: =100
-            X: =0
+            X: =60
             Y: =0
             ZIndex: =2
 
@@ -97,4 +92,18 @@
         X: =198
         Y: =747
         ZIndex: =16
+
+    Icon4 As icon.BackArrow:
+        DisabledFill: =Icon4.Fill
+        HoverBorderColor: =ColorFade(Icon4.BorderColor, 20%)
+        HoverColor: =ColorFade(Icon4.Color, 20%)
+        HoverFill: =Icon4.Fill
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        PressedBorderColor: =ColorFade(Icon4.BorderColor, -20%)
+        PressedColor: =ColorFade(Icon4.Color, -20%)
+        PressedFill: =Icon4.Fill
+        X: =26
+        Y: =1064
+        ZIndex: =17
 

@@ -452,6 +452,24 @@
     "dependents": [],
     "id": "94a545d3-08e2-4fe7-969b-ba56bfa6118d"
   },
+  "9944917e-c36f-42a4-9a3a-6a290636d2dd": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_office365/connections/9a20ca169fc5469eb217dcde818d81c7",
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1566/1.0.1566.2741/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "9944917e-c36f-42a4-9a3a-6a290636d2dd"
+  },
   "9eac057b-8655-4ef1-b4b1-b57cb539ad4a": {
     "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_logicflows/connections/5b3e2c3078d94683bafbf0502f11c3ac",
     "connectionParameters": {
@@ -518,21 +536,21 @@
           "AppUsers": {
             "tableName": "3dcdbd79-d524-47a0-a37f-4aa5770f7c1a"
           },
+          "AppUsers_1": {
+            "tableName": "3dcdbd79-d524-47a0-a37f-4aa5770f7c1a"
+          },
           "Documents": {
             "tableName": "8a3153c2-6dd8-44ec-b171-404df7177f2b"
-          },
-          "UserAppPermission": {
-            "tableName": "3822ea82-657b-4d4f-894d-b7783891443e"
           }
         }
       }
     },
     "dataSources": [
-      "UserAppPermission",
       "Documents",
       "11B",
       "7A",
-      "AppUsers"
+      "AppUsers",
+      "AppUsers_1"
     ],
     "dependencies": {},
     "dependents": [

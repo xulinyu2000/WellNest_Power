@@ -31,34 +31,20 @@
         Y: =321
         ZIndex: =1
 
-        Image13 As image:
+        Image7 As image:
             Height: =128
-            HoverBorderColor: =ColorFade(Image13.BorderColor, 20%)
-            HoverFill: =ColorFade(Image13.Fill, 20%)
+            HoverBorderColor: =ColorFade(Image7.BorderColor, 20%)
+            HoverFill: =ColorFade(Image7.Fill, 20%)
             Image: =ThisItem.UserPhoto
             OnSelect: =Select(Parent)
-            PressedBorderColor: =ColorFade(Image13.BorderColor, -20%)
-            PressedFill: =ColorFade(Image13.Fill, -20%)
+            PressedBorderColor: =ColorFade(Image7.BorderColor, -20%)
+            PressedFill: =ColorFade(Image7.Fill, -20%)
             Width: =128
             X: =16
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =1
 
-        Title5 As label:
-            Height: =Self.Size * 1.8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.Title
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - Image13.Width - 104
-            X: =Image13.X + Image13.Width + 24
-            Y: =44
-            ZIndex: =2
-
-        Subtitle3 As label:
+        Title11 As label:
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -67,27 +53,43 @@
             PaddingTop: =0
             Text: =ThisItem.USERS.DisplayName
             VerticalAlign: =VerticalAlign.Top
-            Width: =Title5.Width
-            X: =Title5.X
-            Y: =Title5.Y + Title5.Height + 4
+            Width: =Parent.TemplateWidth - Image7.Width - 104
+            X: =Image7.X + Image7.Width + 24
+            Y: =44
+            ZIndex: =2
+
+        Subtitle7 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem."Parent Name"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title11.Width
+            X: =Title11.X
+            Y: =Title11.Y + Title11.Height + 4
             ZIndex: =3
 
-        NextArrow5 As icon.ChevronRight:
+        NextArrow1 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
-            DisabledFill: =NextArrow5.Fill
+            DisabledFill: =NextArrow1.Fill
             Height: =60
-            HoverBorderColor: =ColorFade(NextArrow5.BorderColor, 20%)
-            HoverColor: =ColorFade(NextArrow5.Color, 20%)
-            HoverFill: =NextArrow5.Fill
+            HoverBorderColor: =ColorFade(NextArrow1.BorderColor, 20%)
+            HoverColor: =ColorFade(NextArrow1.Color, 20%)
+            HoverFill: =NextArrow1.Fill
             Icon: =Icon.ChevronRight
-            OnSelect: =Select(Parent)
+            OnSelect: |-
+                =Navigate('Further Info and email',Fade)
+                //Select(Parent)
             PaddingBottom: =10
             PaddingLeft: =10
             PaddingRight: =10
             PaddingTop: =10
-            PressedBorderColor: =ColorFade(NextArrow5.BorderColor, -20%)
-            PressedColor: =ColorFade(NextArrow5.Color, -20%)
-            PressedFill: =NextArrow5.Fill
+            PressedBorderColor: =ColorFade(NextArrow1.BorderColor, -20%)
+            PressedColor: =ColorFade(NextArrow1.Color, -20%)
+            PressedFill: =NextArrow1.Fill
             TabIndex: =0
             Tooltip: ="View item details"
             Width: =60
@@ -95,7 +97,7 @@
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =4
 
-        Separator5 As rectangle:
+        Separator9 As rectangle:
             Height: =1
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
