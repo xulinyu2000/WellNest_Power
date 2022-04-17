@@ -98,10 +98,10 @@
                 ZIndex: =1
 
                 PowerBI2 As powerbi:
-                    DashboardId: ="59cfd302-9666-4b05-be14-1880acef7f70"
+                    DashboardId: ="e5160ddd-a46b-4809-aff5-ae1a38165de9"
                     Height: =472
                     TileUrl: |-
-                        ="https://app.powerbi.com/reportEmbed?reportId=6a607d57-b362-4d9b-865c-b5c75619474d&autoAuth=true&ctid=dfa6b1ae-0a2c-49c4-9d31-fab217269229&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWF1c3RyYWxpYS1lYXN0LWItcHJpbWFyeS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3Dd"
+                        ="https://app.powerbi.com/embed?dashboardId=e5160ddd-a46b-4809-aff5-ae1a38165de9&tileId=3e1e449c-4c58-4e9f-9ff8-db2672f7debd&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
                     Width: =560
                     WorkspaceId: ="__my-workspace"
                     Y: =68
@@ -141,10 +141,10 @@
                     ZIndex: =1
 
                 PowerBI1 As powerbi:
-                    DashboardId: ="59cfd302-9666-4b05-be14-1880acef7f70"
+                    DashboardId: ="e5160ddd-a46b-4809-aff5-ae1a38165de9"
                     Height: =477
                     TileUrl: |-
-                        ="https://app.powerbi.com/reportEmbed?reportId=f29789fa-d473-495b-9a4d-373189db2a99&autoAuth=true&ctid=dfa6b1ae-0a2c-49c4-9d31-fab217269229&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWF1c3RyYWxpYS1lYXN0LWItcHJpbWFyeS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D"
+                        ="https://app.powerbi.com/embed?dashboardId=e5160ddd-a46b-4809-aff5-ae1a38165de9&tileId=ecd0518a-a6b3-4de9-9c9e-72d241d105b7&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
                     Width: =579
                     WorkspaceId: ="__my-workspace"
                     Y: =56
@@ -174,117 +174,6 @@
                     Text: ="Student Check-In Overview"
                     Width: =560
                     ZIndex: =1
-
-            DataTable6 As dataTable.datatable:
-                BorderStyle: =BorderStyle.Solid
-                DisplayMode: =DisplayMode.Edit
-                Fill: =RGBA(0, 0, 0, 0)
-                HeadingSize: =21
-                Height: =477
-                Items: =checkin
-                Size: =21
-                Width: =562
-                X: =30
-                Y: =88
-                ZIndex: =2
-
-                Student_Name_Column1 As dataTableColumn.textualColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="Student_Name"
-                    FieldName: ="Student_Name"
-                    FieldVariantName: ="textualColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =1
-                    Text: =ThisItem.Student_Name
-                    Width: =100
-                    X: =11
-                    Y: =0
-                    ZIndex: =11
-
-                Date_Column1 As dataTableColumn.textualColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="Date"
-                    FieldName: ="Date"
-                    FieldVariantName: ="textualColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =2
-                    Text: =ThisItem.Date
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =12
-
-                Face_Column1 As dataTableColumn.textualColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="Face"
-                    FieldName: ="Face"
-                    FieldVariantName: ="textualColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =3
-                    Text: =ThisItem.Face
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =13
-
-                Physical_Activity_Column1 As dataTableColumn.textualColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="Physical_Activity"
-                    FieldName: ="Physical_Activity"
-                    FieldVariantName: ="textualColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =4
-                    Text: =ThisItem.Physical_Activity
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =14
-
-                Sleep_Column1 As dataTableColumn.textualColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="Sleep"
-                    FieldName: ="Sleep"
-                    FieldVariantName: ="textualColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =5
-                    Text: =ThisItem.Sleep
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =15
-
-                Stress_Column1 As dataTableColumn.textualColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="Stress"
-                    FieldName: ="Stress"
-                    FieldVariantName: ="textualColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =6
-                    Text: =ThisItem.Stress
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =16
-
-                Word_Column1 As dataTableColumn.textualColumn:
-                    DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="Word"
-                    FieldName: ="Word"
-                    FieldVariantName: ="textualColumn"
-                    Height: =Parent.Height
-                    LayoutHeight: =Parent.Height
-                    Order: =7
-                    Text: =ThisItem.Word
-                    Width: =100
-                    X: =0
-                    Y: =0
-                    ZIndex: =17
 
         DataCard2 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
