@@ -11,11 +11,6 @@ App As appinfo:
                 ScreenToGoTo: 'Student Dashboard'
             },
             {
-                MenuText: "Student Community",
-                MenuIcon: Icon.People,
-                ScreenToGoTo: 'Student Community'
-            },
-            {
                 MenuText: "xxx Chatbot",
                 MenuIcon: Icon.Message,
                 ScreenToGoTo: 'Student Messaging'
@@ -41,7 +36,7 @@ App As appinfo:
             {
                 MenuText: "xx Question",
                 MenuIcon: Icon.Settings,
-                ScreenToGoTo: 'Teacher Knowledge'
+                ScreenToGoTo: 'Teacher QuestionSet'
             }
         );
         ClearCollect(
