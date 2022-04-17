@@ -5,6 +5,98 @@
         Width: =Parent.Width
         ZIndex: =1
 
+    "BrowseGallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Height: =886
+        Items: |
+            =AddColumns(
+                AppUsers,
+                "UserPhoto",
+                If(
+                    // check if the the user has an email and a profile picture
+                    !IsBlank('Student Email'.Email) And Office365Users.UserPhotoMetadata('Student Email'.Email).HasPhoto,
+                    // get the profile picture
+                    Office365Users.UserPhotoV2('Student Email'.Email)
+                )
+            )
+        Layout: =Layout.Vertical
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =Min(160, Self.Height - 60)
+        Width: =Parent.Width
+        Y: =156
+        ZIndex: =1
+
+        Image9 As image:
+            Height: =128
+            HoverBorderColor: =ColorFade(Image9.BorderColor, 20%)
+            HoverFill: =ColorFade(Image9.Fill, 20%)
+            Image: =ThisItem.UserPhoto
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =ColorFade(Image9.BorderColor, -20%)
+            PressedFill: =ColorFade(Image9.Fill, -20%)
+            Width: =128
+            X: =16
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Title2 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'Student Email'.DisplayName
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - Image9.Width - 104
+            X: =Image9.X + Image9.Width + 24
+            Y: =44
+            ZIndex: =2
+
+        Subtitle2 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Class.Value
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title2.Width
+            X: =Title2.X
+            Y: =Title2.Y + Title2.Height + 4
+            ZIndex: =3
+
+        NextArrow3 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            DisabledFill: =NextArrow3.Fill
+            Height: =60
+            HoverBorderColor: =ColorFade(NextArrow3.BorderColor, 20%)
+            HoverColor: =ColorFade(NextArrow3.Color, 20%)
+            HoverFill: =NextArrow3.Fill
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            PressedBorderColor: =ColorFade(NextArrow3.BorderColor, -20%)
+            PressedColor: =ColorFade(NextArrow3.Color, -20%)
+            PressedFill: =NextArrow3.Fill
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator2 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
     LblAppName1 As label:
         Height: =88
         Size: =27
@@ -98,88 +190,6 @@
         Width: =Parent.Width
         Y: =TextSearchBox1.Y + TextSearchBox1.Height
         ZIndex: =8
-
-    "BrowseGallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
-        Height: =906
-        Items: =AppUsers
-        Layout: =Layout.Vertical
-        ShowScrollbar: =false
-        TemplatePadding: =0
-        TemplateSize: =Min(160, Self.Height - 60)
-        Width: =Parent.Width
-        Y: =156
-        ZIndex: =9
-
-        Image9 As image:
-            Height: =128
-            HoverBorderColor: =ColorFade(Image9.BorderColor, 20%)
-            HoverFill: =ColorFade(Image9.Fill, 20%)
-            Image: =ThisItem.'Profile Photo'
-            OnSelect: =Select(Parent)
-            PressedBorderColor: =ColorFade(Image9.BorderColor, -20%)
-            PressedFill: =ColorFade(Image9.Fill, -20%)
-            Width: =128
-            X: =16
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =1
-
-        Title1 As label:
-            Height: =Self.Size * 1.8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.Title
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - Image9.Width - 104
-            X: =Image9.X + Image9.Width + 24
-            Y: =44
-            ZIndex: =2
-
-        Subtitle1 As label:
-            Height: =Self.Size * 1.8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.'Student Email'.DisplayName
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Title1.Width
-            X: =Title1.X
-            Y: =Title1.Y + Title1.Height + 4
-            ZIndex: =3
-
-        NextArrow2 As icon.ChevronRight:
-            AccessibleLabel: =Self.Tooltip
-            DisabledFill: =NextArrow2.Fill
-            Height: =60
-            HoverBorderColor: =ColorFade(NextArrow2.BorderColor, 20%)
-            HoverColor: =ColorFade(NextArrow2.Color, 20%)
-            HoverFill: =NextArrow2.Fill
-            Icon: =Icon.ChevronRight
-            OnSelect: =Select(Parent)
-            PaddingBottom: =10
-            PaddingLeft: =10
-            PaddingRight: =10
-            PaddingTop: =10
-            PressedBorderColor: =ColorFade(NextArrow2.BorderColor, -20%)
-            PressedColor: =ColorFade(NextArrow2.Color, -20%)
-            PressedFill: =NextArrow2.Fill
-            TabIndex: =0
-            Tooltip: ="View item details"
-            Width: =60
-            X: =Parent.TemplateWidth - Self.Width - 5
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =4
-
-        Separator1 As rectangle:
-            Height: =1
-            OnSelect: =Select(Parent)
-            Width: =Parent.TemplateWidth
-            Y: =Parent.TemplateHeight - 1
-            ZIndex: =5
 
     AdmincompMenu_6 As AdmincompMenu:
         NavigationItems: |
