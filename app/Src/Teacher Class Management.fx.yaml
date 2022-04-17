@@ -3,7 +3,7 @@
     "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         Height: =675
         Items: |+
-            =Filter(AppUsers,  VarClass in 'CLASS'.Value)
+            =Filter(AppUsers,  VarClass in CLASS.Value)
             
             
             
@@ -48,7 +48,7 @@
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.LinyuXu.DisplayName
+            Text: =ThisItem.USER.DisplayName
             VerticalAlign: =VerticalAlign.Top
             Width: =Title5.Width
             X: =Title5.X
