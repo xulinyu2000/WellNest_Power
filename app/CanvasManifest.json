@@ -69,7 +69,7 @@
       "webbarcodescanner": false
     },
     "Author": "",
-    "ContainsThirdPartyPcfControls": true,
+    "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",
     "DocumentLayoutHeight": 1136,
@@ -97,38 +97,5 @@
     "PublishTarget": "player",
     "UserLocale": "en-US"
   },
-  "ScreenOrder": [
-    "Welcome",
-    "Start",
-    "Login Role based",
-    "Student Dashboard",
-    "Admin Dashboard",
-    "Admin Dashboard - Weekly",
-    "Admin Dashboard - Monthly",
-    "Daily Check In - Face",
-    "Daily Check In - Word",
-    "Daily Check In - Weather",
-    "Daily Check In - Sleep",
-    "Daily Check In - Physical Activity",
-    "Daily Check In - Stress",
-    "Student Dashboard Result",
-    "Student Community",
-    "Student Messaging",
-    "Admin Messaging",
-    "Student Response",
-    "Admin Knowledge",
-    "Teacher Knowledge",
-    "Teacher Dashboard",
-    "Teacher Dashboard- Weekly",
-    "Teacher Dashboard- Monthly",
-    "Teacher QuestionSet",
-    "Teacher Class Management",
-    "Copy of Students at risk just in case",
-    "Teacher Class Management_1",
-    "FurtherInformation",
-    "Success",
-    "Log out",
-    "Email parent",
-    "Detail Screen"
-  ]
+  "ScreenOrder": []
 }
