@@ -32,29 +32,129 @@
             Y: =0
             ZIndex: =1
 
-    FormViewer2 As formViewer:
+    Form2 As form:
         DataSource: =AppUsers
-        Height: =746
+        Height: =994
         Item: =StudentGallery.Selected
         Width: =640
-        Y: =114
+        Y: =40
         ZIndex: =4
 
-        Title_DataCard3 As typedDataCard.textualViewCard:
+        "'Parent Email_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ParentEmails"
+            Default: =ThisItem.'Parent Email'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@AppUsers],DataSourceInfo.DisplayName,"ParentEmails")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@AppUsers], DataSourceInfo.MaxLength, "ParentEmails")
+            Required: =false
+            Update: =DataCardValue12.Text
+            Width: =640
+            X: =0
+            Y: =4
+            ZIndex: =1
+
+            DataCardKey15 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue12 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                PressedBorderColor: =DataCardValue12.HoverBorderColor
+                PressedColor: =DataCardValue12.Color
+                PressedFill: =DataCardValue12.Fill
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey15.Y + DataCardKey15.Height + 5
+                ZIndex: =2
+
+        "'Parent Name_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ParentName"
+            Default: =ThisItem.'Parent Name'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@AppUsers],DataSourceInfo.DisplayName,"ParentName")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@AppUsers], DataSourceInfo.MaxLength, "ParentName")
+            Required: =false
+            Update: =DataCardValue13.Text
+            Width: =640
+            X: =0
+            Y: =5
+            ZIndex: =1
+
+            DataCardKey16 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue13 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                PressedBorderColor: =DataCardValue13.HoverBorderColor
+                PressedColor: =DataCardValue13.Color
+                PressedFill: =DataCardValue13.Fill
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey16.Y + DataCardKey16.Height + 5
+                ZIndex: =2
+
+        Title_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Title"
             Default: =ThisItem.Title
-            DisplayMode: =DisplayMode.View
+            DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@AppUsers],DataSourceInfo.DisplayName,"Title")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =50
+            MaxLength: =DataSourceInfo([@AppUsers], DataSourceInfo.MaxLength, "Title")
             Required: =false
+            Update: =DataCardValue3.Text
             Width: =640
             X: =0
             Y: =0
             ZIndex: =5
 
-            DataCardKey21 As label:
+            DataCardKey4 As label:
                 AutoHeight: =true
                 Height: =48
                 Size: =21
@@ -65,34 +165,71 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue18 As label:
-                AutoHeight: =true
+            DataCardValue3 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                PressedBorderColor: =DataCardValue3.HoverBorderColor
+                PressedColor: =DataCardValue3.Color
+                PressedFill: =DataCardValue3.Fill
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey4.Y + DataCardKey4.Height + 5
+                ZIndex: =2
+
+            ErrorMessage4 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
-                Text: =Parent.Default
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey21.Y + DataCardKey21.Height + 5
-                ZIndex: =2
+                Y: =DataCardValue3.Y + DataCardValue3.Height
+                ZIndex: =3
 
-        User_DataCard3 As typedDataCard.textualViewCard:
+            StarVisible4 As label:
+                Align: =Align.Center
+                Height: =DataCardKey4.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey4.Y
+                ZIndex: =4
+
+        USERS_DataCard1 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="field_1"
-            Default: =ThisItem.User
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppUsers],DataSourceInfo.DisplayName,"field_1")
+            DataField: ="LinyuXu"
+            Default: =ThisItem.USERS
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@AppUsers],DataSourceInfo.DisplayName,"LinyuXu")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =50
             Required: =false
+            Update: =DataCardValue8.Selected
             Width: =640
             X: =0
             Y: =1
             ZIndex: =5
 
-            DataCardKey22 As label:
+            DataCardKey11 As label:
                 AutoHeight: =true
                 Height: =48
                 Size: =21
@@ -103,213 +240,29 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue19 As label:
-                AutoHeight: =true
-                DisplayMode: =Parent.DisplayMode
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =21
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey22.Y + DataCardKey22.Height + 5
-                ZIndex: =2
-
-        Class_DataCard2 As typedDataCard.comboBoxViewCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_2"
-            Default: =ThisItem.Class
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppUsers],DataSourceInfo.DisplayName,"field_2")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue20.Selected
-            Width: =640
-            X: =0
-            Y: =2
-            ZIndex: =5
-
-            DataCardKey23 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue20 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Height: =70
-                HoverBorderColor: =ColorFade(DataCardValue20.BorderColor, 15%)
-                Items: =Choices([@AppUsers].Class)
-                MoreItemsButtonColor: =Self.ChevronBackground
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PressedBorderColor: =DataCardValue20.HoverBorderColor
-                SearchFields: =["Value"]
-                SearchItems: =Choices(AppUsers.Class,DataCardValue20.SearchText)
-                SelectMultiple: =false
-                Size: =21
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey23.Y + DataCardKey23.Height + 5
-                ZIndex: =2
-
-            ErrorMessage14 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =24
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue20.Y + DataCardValue20.Height
-                ZIndex: =3
-
-            StarVisible14 As label:
-                Align: =Align.Center
-                Height: =DataCardKey23.Height
-                Size: =21
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey23.Y
-                ZIndex: =4
-
-        Role_DataCard2 As typedDataCard.comboBoxViewCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_3"
-            Default: =ThisItem.Role
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppUsers],DataSourceInfo.DisplayName,"field_3")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue21.Selected
-            Width: =640
-            X: =0
-            Y: =3
-            ZIndex: =5
-
-            DataCardKey24 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue21 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Height: =70
-                HoverBorderColor: =ColorFade(DataCardValue21.BorderColor, 15%)
-                Items: =Choices([@AppUsers].Role)
-                MoreItemsButtonColor: =Self.ChevronBackground
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PressedBorderColor: =DataCardValue21.HoverBorderColor
-                SearchFields: =["Value"]
-                SearchItems: =Choices(AppUsers.Role,DataCardValue21.SearchText)
-                SelectMultiple: =false
-                Size: =21
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey24.Y + DataCardKey24.Height + 5
-                ZIndex: =2
-
-            ErrorMessage15 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =24
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue21.Y + DataCardValue21.Height
-                ZIndex: =3
-
-            StarVisible15 As label:
-                Align: =Align.Center
-                Height: =DataCardKey24.Height
-                Size: =21
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey24.Y
-                ZIndex: =4
-
-        USERS_DataCard3 As typedDataCard.comboBoxViewCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="LinyuXu"
-            Default: =ThisItem.USERS
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppUsers],DataSourceInfo.DisplayName,"LinyuXu")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue22.Selected
-            Width: =640
-            X: =0
-            Y: =4
-            ZIndex: =5
-
-            DataCardKey25 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue22 As combobox:
+            DataCardValue8 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["DisplayName","Email","Picture"]
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
-                HoverBorderColor: =ColorFade(DataCardValue22.BorderColor, 15%)
-                Items: =Choices([@AppUsers].USERS)
+                HoverBorderColor: =ColorFade(DataCardValue8.BorderColor, 15%)
+                Items: =Choices([@AppUsers].LinyuXu)
                 MoreItemsButtonColor: =Self.ChevronBackground
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PressedBorderColor: =DataCardValue22.HoverBorderColor
+                PressedBorderColor: =DataCardValue8.HoverBorderColor
                 SearchFields: =["DisplayName"]
-                SearchItems: =Choices(AppUsers.USERS,DataCardValue22.SearchText)
+                SearchItems: =Choices(AppUsers.LinyuXu,DataCardValue8.SearchText)
                 SelectMultiple: =false
                 Size: =21
                 Template: =ListItemTemplate.Person
+                Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey25.Y + DataCardKey25.Height + 5
+                Y: =DataCardKey11.Y + DataCardKey11.Height + 5
                 ZIndex: =2
 
-            ErrorMessage16 As label:
+            ErrorMessage11 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -322,36 +275,36 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue22.Y + DataCardValue22.Height
+                Y: =DataCardValue8.Y + DataCardValue8.Height
                 ZIndex: =3
 
-            StarVisible16 As label:
+            StarVisible11 As label:
                 Align: =Align.Center
-                Height: =DataCardKey25.Height
+                Height: =DataCardKey11.Height
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey25.Y
+                Y: =DataCardKey11.Y
                 ZIndex: =4
 
-        CLASS_DataCard2 As typedDataCard.comboBoxMultiSelectViewCard:
+        CLASS_DataCard1 As typedDataCard.comboBoxMultiSelectEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="CLASS"
             Default: =ThisItem.CLASS
-            DisplayMode: =DisplayMode.View
+            DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@AppUsers],DataSourceInfo.DisplayName,"CLASS")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =DataCardValue23.SelectedItems
+            Update: =DataCardValue9.SelectedItems
             Width: =640
             X: =0
-            Y: =5
+            Y: =2
             ZIndex: =5
 
-            DataCardKey26 As label:
+            DataCardKey12 As label:
                 AutoHeight: =true
                 Height: =48
                 Size: =21
@@ -362,26 +315,27 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue23 As combobox:
+            DataCardValue9 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
-                HoverBorderColor: =ColorFade(DataCardValue23.BorderColor, 15%)
+                HoverBorderColor: =ColorFade(DataCardValue9.BorderColor, 15%)
                 Items: =Choices([@AppUsers].CLASS)
                 MoreItemsButtonColor: =Self.ChevronBackground
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PressedBorderColor: =DataCardValue23.HoverBorderColor
+                PressedBorderColor: =DataCardValue9.HoverBorderColor
                 SearchFields: =["Value"]
-                SearchItems: =Choices(AppUsers.CLASS,DataCardValue23.SearchText)
+                SearchItems: =Choices(AppUsers.CLASS,DataCardValue9.SearchText)
                 Size: =21
+                Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey26.Y + DataCardKey26.Height + 5
+                Y: =DataCardKey12.Y + DataCardKey12.Height + 5
                 ZIndex: =2
 
-            ErrorMessage17 As label:
+            ErrorMessage12 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -394,94 +348,21 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue23.Y + DataCardValue23.Height
+                Y: =DataCardValue9.Y + DataCardValue9.Height
                 ZIndex: =3
 
-            StarVisible17 As label:
+            StarVisible12 As label:
                 Align: =Align.Center
-                Height: =DataCardKey26.Height
+                Height: =DataCardKey12.Height
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey26.Y
+                Y: =DataCardKey12.Y
                 ZIndex: =4
 
-        ROLE_DataCard2 As typedDataCard.comboBoxViewCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ROLE"
-            Default: =ThisItem.ROLE
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppUsers],DataSourceInfo.DisplayName,"ROLE")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue24.Selected
-            Width: =640
-            X: =0
-            Y: =6
-            ZIndex: =5
-
-            DataCardKey27 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue24 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Height: =70
-                HoverBorderColor: =ColorFade(DataCardValue24.BorderColor, 15%)
-                Items: =Choices([@AppUsers].ROLE)
-                MoreItemsButtonColor: =Self.ChevronBackground
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PressedBorderColor: =DataCardValue24.HoverBorderColor
-                SearchFields: =["Value"]
-                SearchItems: =Choices(AppUsers.ROLE,DataCardValue24.SearchText)
-                SelectMultiple: =false
-                Size: =21
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey27.Y + DataCardKey27.Height + 5
-                ZIndex: =2
-
-            ErrorMessage18 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =24
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue24.Y + DataCardValue24.Height
-                ZIndex: =3
-
-            StarVisible18 As label:
-                Align: =Align.Center
-                Height: =DataCardKey27.Height
-                Size: =21
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey27.Y
-                ZIndex: =4
-
-        "'Profile Photo_DataCard2' As typedDataCard.largeImageViewCard":
+        "'Profile Photo_DataCard1' As typedDataCard.largeImageViewCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ProfilePhoto"
             Default: =ThisItem.'Profile Photo'
@@ -492,10 +373,10 @@
             Required: =false
             Width: =640
             X: =0
-            Y: =7
+            Y: =3
             ZIndex: =5
 
-            DataCardKey28 As label:
+            DataCardKey14 As label:
                 AutoHeight: =true
                 Height: =48
                 Size: =21
@@ -506,16 +387,16 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue25 As image:
+            DataCardValue11 As image:
                 DisplayMode: =Parent.DisplayMode
                 Height: =320
-                HoverBorderColor: =ColorFade(DataCardValue25.BorderColor, 20%)
-                HoverFill: =ColorFade(DataCardValue25.Fill, 20%)
+                HoverBorderColor: =ColorFade(DataCardValue11.BorderColor, 20%)
+                HoverFill: =ColorFade(DataCardValue11.Fill, 20%)
                 Image: =Parent.Default
-                PressedBorderColor: =ColorFade(DataCardValue25.BorderColor, -20%)
-                PressedFill: =ColorFade(DataCardValue25.Fill, -20%)
+                PressedBorderColor: =ColorFade(DataCardValue11.BorderColor, -20%)
+                PressedFill: =ColorFade(DataCardValue11.Fill, -20%)
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey28.Y + DataCardKey28.Height + 5
+                Y: =DataCardKey14.Y + DataCardKey14.Height + 5
                 ZIndex: =2
 
