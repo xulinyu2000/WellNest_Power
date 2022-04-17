@@ -17,21 +17,23 @@ Header As CanvasComponent:
         ZIndex: =1
 
         Logo_2 As image:
-            Height: =49
+            Height: =79
             HoverBorderColor: =ColorFade(Logo_2.BorderColor, 20%)
             HoverFill: =ColorFade(Logo_2.Fill, 20%)
-            Image: =Picture1
+            Image: ='Group 132'
             PressedBorderColor: =ColorFade(Logo_2.BorderColor, -20%)
             PressedFill: =ColorFade(Logo_2.Fill, -20%)
-            Width: =61
+            Width: =83
+            X: =28
+            Y: =16
             ZIndex: =1
 
         Label4 As label:
-            Height: =70
-            Size: =10
+            Size: =9
             Text: =Now()
-            Width: =146
-            Y: =43
+            Width: =191
+            X: =124
+            Y: =72
             ZIndex: =2
 
     Container3 As groupContainer.manualLayoutContainer:
@@ -55,7 +57,7 @@ Header As CanvasComponent:
             Align: =Align.Center
             Height: =113.6
             OnSelect: =
-            Size: =20
+            Size: =18
             Text: =User().FullName
             Width: =175
             X: =131

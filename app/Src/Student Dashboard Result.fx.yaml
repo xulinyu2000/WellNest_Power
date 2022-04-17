@@ -1,0 +1,130 @@
+"'Student Dashboard Result' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+
+    RectQuickActionBar3_9 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =176
+        Width: =Parent.Width
+        ZIndex: =1
+
+    Canvas1_8 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =794
+        Width: =Parent.Width
+        Y: =233
+        ZIndex: =3
+
+        DataCard3_3 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(247, 249, 252, 1)
+            Height: =306
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+            Container1_3 As groupContainer.manualLayoutContainer:
+                Height: =225
+                Width: =557
+                X: =40
+                Y: =40
+                ZIndex: =3
+
+                Image10_3 As image:
+                    Height: =225
+                    HoverBorderColor: =ColorFade(Image10_3.BorderColor, 20%)
+                    HoverFill: =ColorFade(Image10_3.Fill, 20%)
+                    Image: =Picture23_1
+                    PressedBorderColor: =ColorFade(Image10_3.BorderColor, -20%)
+                    PressedFill: =ColorFade(Image10_3.Fill, -20%)
+                    Width: =315
+                    X: =240
+                    ZIndex: =1
+
+                Label7_3 As label:
+                    FontWeight: =FontWeight.Semibold
+                    Height: =155
+                    Size: =21
+                    Text: ="Hi " & User().FullName & ", thanks for checking in today!"
+                    Width: =364
+                    ZIndex: =2
+
+        DataCard6_3 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(247, 249, 252, 1)
+            Height: =606
+            Width: =640
+            X: =0
+            Y: =1
+            ZIndex: =7
+
+        DataCard2_3 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =100
+            Width: =640
+            X: =0
+            Y: =4
+            ZIndex: =10
+
+    DashboardLogo_10 As image:
+        Height: =98
+        HoverBorderColor: =ColorFade(DashboardLogo_10.BorderColor, 20%)
+        HoverFill: =ColorFade(DashboardLogo_10.Fill, 20%)
+        Image: =Picture1_1
+        PaddingLeft: =10
+        PressedBorderColor: =ColorFade(DashboardLogo_10.BorderColor, -20%)
+        PressedFill: =ColorFade(DashboardLogo_10.Fill, -20%)
+        Width: =68
+        ZIndex: =5
+
+    CheckInButton_5 As button:
+        BorderColor: =ColorFade(CheckInButton_5.Fill, -15%)
+        Fill: =RGBA(72, 161, 255, 1)
+        Height: =53
+        HoverBorderColor: =ColorFade(CheckInButton_5.BorderColor, 20%)
+        PressedBorderColor: =CheckInButton_5.Fill
+        PressedColor: =CheckInButton_5.Fill
+        PressedFill: =CheckInButton_5.Color
+        Text: ="Check-In"
+        Width: =175
+        X: =21
+        Y: =148
+        ZIndex: =6
+
+    WeeklyButton_5 As button:
+        BorderColor: =ColorFade(WeeklyButton_5.Fill, -15%)
+        Fill: =RGBA(72, 161, 255, 1)
+        Height: =53
+        HoverBorderColor: =ColorFade(WeeklyButton_5.BorderColor, 20%)
+        PressedBorderColor: =WeeklyButton_5.Fill
+        PressedColor: =WeeklyButton_5.Fill
+        PressedFill: =WeeklyButton_5.Color
+        Text: ="Weekly"
+        Width: =175
+        X: =225
+        Y: =148
+        ZIndex: =7
+
+    MonthlyButton_5 As button:
+        BorderColor: =ColorFade(MonthlyButton_5.Fill, -15%)
+        Fill: =RGBA(72, 161, 255, 1)
+        Height: =53
+        HoverBorderColor: =ColorFade(MonthlyButton_5.BorderColor, 20%)
+        PressedBorderColor: =MonthlyButton_5.Fill
+        PressedColor: =MonthlyButton_5.Fill
+        PressedFill: =MonthlyButton_5.Color
+        Text: ="Monthly"
+        Width: =175
+        X: =425
+        Y: =148
+        ZIndex: =8
+
+    Header_18 As Header:
+        ZIndex: =11
+
