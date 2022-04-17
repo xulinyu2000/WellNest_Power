@@ -215,7 +215,7 @@
         PressedBorderColor: =CheckInButton_1.Fill
         PressedColor: =CheckInButton_1.Fill
         PressedFill: =CheckInButton_1.Color
-        Text: ="Check-In"
+        Text: ="Daily"
         Width: =175
         X: =21
         Y: =148
@@ -226,6 +226,7 @@
         Fill: =RGBA(72, 161, 255, 1)
         Height: =53
         HoverBorderColor: =ColorFade(WeeklyButton_1.BorderColor, 20%)
+        OnSelect: =Navigate([@'Teacher Dashboard- Weekly'], None)
         PressedBorderColor: =WeeklyButton_1.Fill
         PressedColor: =WeeklyButton_1.Fill
         PressedFill: =WeeklyButton_1.Color
@@ -240,6 +241,7 @@
         Fill: =RGBA(72, 161, 255, 1)
         Height: =53
         HoverBorderColor: =ColorFade(MonthlyButton_1.BorderColor, 20%)
+        OnSelect: =Navigate([@'Teacher Dashboard- Monthly'], None)
         PressedBorderColor: =MonthlyButton_1.Fill
         PressedColor: =MonthlyButton_1.Fill
         PressedFill: =MonthlyButton_1.Color

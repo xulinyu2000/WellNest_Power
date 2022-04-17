@@ -314,6 +314,7 @@
         Fill: =RGBA(72, 161, 255, 1)
         Height: =53
         HoverBorderColor: =ColorFade(CheckInButton_3.BorderColor, 20%)
+        OnSelect: =Navigate([@'Teacher Dashboard'], None)
         PressedBorderColor: =CheckInButton_3.Fill
         PressedColor: =CheckInButton_3.Fill
         PressedFill: =CheckInButton_3.Color
@@ -342,6 +343,7 @@
         Fill: =RGBA(72, 161, 255, 1)
         Height: =53
         HoverBorderColor: =ColorFade(MonthlyButton_3.BorderColor, 20%)
+        OnSelect: =Navigate([@'Teacher Dashboard- Monthly'], None)
         PressedBorderColor: =MonthlyButton_3.Fill
         PressedColor: =MonthlyButton_3.Fill
         PressedFill: =MonthlyButton_3.Color
