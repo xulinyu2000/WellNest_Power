@@ -28,14 +28,6 @@ Header As CanvasComponent:
             Y: =16
             ZIndex: =1
 
-        Label4 As label:
-            Size: =9
-            Text: =Now()
-            Width: =191
-            X: =124
-            Y: =72
-            ZIndex: =2
-
     Container3 As groupContainer.manualLayoutContainer:
         Height: =Header.Height
         Width: =306
@@ -43,14 +35,21 @@ Header As CanvasComponent:
         ZIndex: =2
 
         Image1 As image:
-            Height: =113
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =2
+            Height: =90
             HoverBorderColor: =ColorFade(Image1.BorderColor, 20%)
             HoverFill: =ColorFade(Image1.Fill, 20%)
             Image: =Office365Users.UserPhoto(Office365Users.MyProfile().Id)
             PressedBorderColor: =ColorFade(Image1.BorderColor, -20%)
             PressedFill: =ColorFade(Image1.Fill, -20%)
+            RadiusBottomLeft: =90
+            RadiusBottomRight: =90
+            RadiusTopLeft: =90
+            RadiusTopRight: =90
             Width: =90
-            X: =41
+            X: =31
+            Y: =11
             ZIndex: =1
 
         Label3 As label:
