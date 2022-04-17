@@ -7,7 +7,7 @@ Header As CanvasComponent:
     ZIndex: =1
 
     Container3_1 As groupContainer.manualLayoutContainer:
-        Fill: =RGBA(153, 207, 236, 1)
+        Fill: =RGBA(217, 242, 255, 1)
         Height: =Header.Height
         Width: =640
         X: |
@@ -29,7 +29,7 @@ Header As CanvasComponent:
             ZIndex: =1
 
     Container3 As groupContainer.manualLayoutContainer:
-        Height: =Header.Height
+        Height: =113
         Width: =306
         X: =334
         ZIndex: =2
@@ -37,28 +37,29 @@ Header As CanvasComponent:
         Image1 As image:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =2
-            Height: =90
+            Height: =70
             HoverBorderColor: =ColorFade(Image1.BorderColor, 20%)
             HoverFill: =ColorFade(Image1.Fill, 20%)
             Image: =Office365Users.UserPhoto(Office365Users.MyProfile().Id)
             PressedBorderColor: =ColorFade(Image1.BorderColor, -20%)
             PressedFill: =ColorFade(Image1.Fill, -20%)
-            RadiusBottomLeft: =90
-            RadiusBottomRight: =90
-            RadiusTopLeft: =90
-            RadiusTopRight: =90
-            Width: =90
-            X: =31
-            Y: =11
+            RadiusBottomLeft: =70
+            RadiusBottomRight: =70
+            RadiusTopLeft: =70
+            RadiusTopRight: =70
+            Width: =70
+            X: =215
+            Y: =21
             ZIndex: =1
 
         Label3 As label:
-            Align: =Align.Center
+            Align: =Align.Right
+            FontWeight: =FontWeight.Semibold
             Height: =113.6
             OnSelect: =
-            Size: =18
+            Size: =12
             Text: =User().FullName
-            Width: =175
-            X: =131
+            Width: =195
+            X: =7
             ZIndex: =2
 
