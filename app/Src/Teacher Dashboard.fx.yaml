@@ -144,7 +144,7 @@
                     DashboardId: ="e5160ddd-a46b-4809-aff5-ae1a38165de9"
                     Height: =477
                     TileUrl: |-
-                        ="https://app.powerbi.com/embed?dashboardId=e5160ddd-a46b-4809-aff5-ae1a38165de9&tileId=ecd0518a-a6b3-4de9-9c9e-72d241d105b7&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
+                        ="https://app.powerbi.com/embed?dashboardId=e5160ddd-a46b-4809-aff5-ae1a38165de9&tileId=667c0f13-c19d-46ad-b10a-c1a566dcdf0c&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
                     Width: =579
                     WorkspaceId: ="__my-workspace"
                     Y: =56
@@ -174,6 +174,16 @@
                     Text: ="Student Check-In Overview"
                     Width: =560
                     ZIndex: =1
+
+                PowerBI3 As powerbi:
+                    DashboardId: ="e5160ddd-a46b-4809-aff5-ae1a38165de9"
+                    Height: =486
+                    TileUrl: |-
+                        ="https://app.powerbi.com/embed?dashboardId=e5160ddd-a46b-4809-aff5-ae1a38165de9&tileId=2b7a4aae-09a9-4221-a30e-8e8162f54298&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
+                    Width: =560
+                    WorkspaceId: ="__my-workspace"
+                    Y: =56
+                    ZIndex: =2
 
         DataCard2 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
