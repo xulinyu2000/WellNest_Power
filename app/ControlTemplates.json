@@ -41,6 +41,20 @@
     "OverridableProperties": {},
     "Version": "2.2.0"
   },
+  "combobox": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/combobox",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "combobox",
+    "OverridableProperties": {},
+    "Version": "2.4.0"
+  },
   "dataCard": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -233,6 +247,21 @@
     "Name": "icon",
     "OverridableProperties": {},
     "Version": "2.4.0"
+  },
+  "IframePCF": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": false,
+    "Id": "http://microsoft.com/appmagic/powercontrol/ya_btd.IframePCF",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "ya_btd.IframePCF",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "IframePCF",
+    "Version": "0.0.1"
   },
   "image": {
     "CustomGroupControlTemplateName": "",
