@@ -83,6 +83,9 @@
         BorderColor: =ColorFade(Button9.Fill, -15%)
         Height: =70
         HoverBorderColor: =ColorFade(Button9.BorderColor, 20%)
+        OnSelect: |-
+            =Set(ParentEmail, LookUp(AppUsers, "Student Email" = Student_ID_Column5_1.Text, "Parent Email"));
+            Office365Outlook.SendEmailV2(ParentEmail, "Test","Body")
         PressedBorderColor: =Button9.Fill
         PressedColor: =Button9.Fill
         PressedFill: =Button9.Color
