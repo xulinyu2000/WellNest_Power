@@ -2,7 +2,7 @@
 
     "StudentGallery As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         Height: =675
-        Items: |-
+        Items: |+
             =/*AddColumns(
                 AppUsers,
                 "UserPhoto",
@@ -24,10 +24,12 @@
                     // get the profile picture
                     Office365Users.UserPhotoV2(USERS.Email)
                 )
-            ),VarClass in CLASS.Value) 
+            ),VarClass in CLASS.Value)
+            
         Layout: =Layout.Vertical
-        OnSelect: |-
-            =Navigate('Detail Screen', ScreenTransition.None, {locCurrentRecord:ThisItem})
+        OnSelect: |
+            =//Navigate('Detail Screen', ScreenTransition.None, {locCurrentRecord:ThisItem})
+            Navigate('Detail Screen', ScreenTransition.None, {SelectedItem: StudentGallery.Selected})
         TemplatePadding: =0
         TemplateSize: =Min(160, Self.Height - 60)
         Y: =321
