@@ -53,8 +53,8 @@ App As appinfo:
             },
             {
                 MenuText: "School Managment",
-                MenuIcon: Icon.DocumentWithContent,
-                ScreenToGoTo: 'Admin Knowledge'
+                MenuIcon: Icon.Settings,
+                ScreenToGoTo: 'School Management'
             }
         );
         Set(
