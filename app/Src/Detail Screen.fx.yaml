@@ -196,18 +196,56 @@
                 Y: =DataCardKey8.Y + DataCardKey8.Height + 5
                 ZIndex: =2
 
+        "'Parent Mobile Number_DataCard1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ParentMobileNumber"
+            Default: =ThisItem.'Parent Mobile Number'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppUsers],DataSourceInfo.DisplayName,"ParentMobileNumber")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =4
+            ZIndex: =1
+
+            DataCardKey11 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue8 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey11.Y + DataCardKey11.Height + 5
+                ZIndex: =2
+
     Button12 As button:
         BorderColor: =ColorFade(Button12.Fill, -15%)
         Height: =70
         HoverBorderColor: =ColorFade(Button12.BorderColor, 20%)
-        OnSelect: =Navigate('Email parent')
+        OnSelect: =Office365Outlook.SendEmailV2("xulinyu2000@gmail.com","Test","Body")
         PressedBorderColor: =Button12.Fill
         PressedColor: =Button12.Fill
         PressedFill: =Button12.Color
         Size: =24
         Text: ="Send Email"
         Width: =280
-        X: =195
-        Y: =798
+        X: =180
+        Y: =908
         ZIndex: =2
 
