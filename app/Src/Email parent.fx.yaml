@@ -1,4 +1,4 @@
-"'Further Info and email' As screen.'phoneLayout_Email_ver3.0'":
+"'Email parent' As screen.'phoneLayout_Email_ver3.0'":
 
     RectQuickActionBar1 As rectangle:
         Height: =88
@@ -302,10 +302,10 @@
     Label4 As label:
         Height: =70
         Size: =21
-        Text: ="Text"
+        Text: ="Parent Name"
         Width: =560
         X: =40
-        Y: =877
+        Y: =791
         ZIndex: =14
 
     Icon3 As icon.BackArrow:
@@ -321,4 +321,49 @@
         X: =14
         Y: =12
         ZIndex: =15
+
+    Label4_1 As label:
+        Height: =70
+        Size: =21
+        Text: ="Parent Email "
+        Width: =560
+        X: =45
+        Y: =951
+        ZIndex: =17
+
+    TextInput1 As text:
+        Default: ="Text input"
+        Height: =70
+        PressedBorderColor: =TextInput1.HoverBorderColor
+        PressedColor: =TextInput1.Color
+        PressedFill: =TextInput1.Fill
+        Size: =21
+        Width: =560
+        X: =45
+        Y: =861
+        ZIndex: =18
+
+    TextInput2 As text:
+        Default: ="Text input"
+        Height: =70
+        PressedBorderColor: =TextInput2.HoverBorderColor
+        PressedColor: =TextInput2.Color
+        PressedFill: =TextInput2.Fill
+        Size: =21
+        Width: =560
+        X: =60
+        Y: =60
+        ZIndex: =19
+
+    TextInput3 As text:
+        Default: ="Text input"
+        Height: =70
+        PressedBorderColor: =TextInput3.HoverBorderColor
+        PressedColor: =TextInput3.Color
+        PressedFill: =TextInput3.Fill
+        Size: =21
+        Width: =560
+        X: =45
+        Y: =1021
+        ZIndex: =20
 
