@@ -28,8 +28,8 @@
             
         Layout: =Layout.Vertical
         OnSelect: |
-            =//Navigate('Detail Screen', ScreenTransition.None, {locCurrentRecord:ThisItem})
-            Navigate('Detail Screen', ScreenTransition.None, {SelectedItem: StudentGallery.Selected})
+            =Navigate('Detail Screen', ScreenTransition.None, {locCurrentRecord:ThisItem})
+            //Navigate('Detail Screen', ScreenTransition.None, {SelectedItem: StudentGallery.Selected})
         TemplatePadding: =0
         TemplateSize: =Min(160, Self.Height - 60)
         Y: =321
