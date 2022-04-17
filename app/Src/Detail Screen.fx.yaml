@@ -79,12 +79,12 @@
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
                 HoverBorderColor: =ColorFade(DataCardValue5.BorderColor, 15%)
-                Items: =Choices([@AppUsers].LinyuXu)
+                Items: =Choices([@AppUsers].'Student Email')
                 MoreItemsButtonColor: =Self.ChevronBackground
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedBorderColor: =DataCardValue5.HoverBorderColor
                 SearchFields: =["DisplayName"]
-                SearchItems: =Choices(AppUsers.LinyuXu,DataCardValue5.SearchText)
+                SearchItems: =Choices(AppUsers.'Student Email',DataCardValue5.SearchText)
                 SelectMultiple: =false
                 Size: =21
                 Template: =ListItemTemplate.Person

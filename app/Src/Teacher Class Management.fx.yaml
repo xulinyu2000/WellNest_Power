@@ -130,7 +130,7 @@
 
     Label14 As label:
         Height: =64
-        OnSelect: =Navigate('Teacher Class Management_1')
+        OnSelect: =Navigate('Stundent At Risk')
         Size: =21
         Text: =VarClass
         Underline: =true
@@ -141,7 +141,7 @@
 
     Label14_3 As label:
         Height: =70
-        OnSelect: =Navigate('Teacher Class Management_1')
+        OnSelect: =Navigate('Stundent At Risk')
         Size: =21
         Text: ="View Students at risk"
         Underline: =true
