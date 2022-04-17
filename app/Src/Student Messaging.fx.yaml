@@ -18,33 +18,10 @@
 
     Canvas3_1 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
-        Height: =Parent.Height - Self.Y
+        Height: =1022
         Width: =Parent.Width
-        Y: =RectQuickActionBar4_1.Y + RectQuickActionBar4_1.Height
+        Y: =113
         ZIndex: =4
-
-        DataCard8_1 As dataCard:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderStyle: =BorderStyle.Solid
-            BorderThickness: =0
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(247, 249, 252, 1)
-            Height: =1071
-            Width: =Parent.Width
-            X: =0
-            Y: =0
-            ZIndex: =1
-
-        DataCard4 As dataCard.blankCard:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =90
-            Width: =640
-            X: =0
-            Y: =1
-            ZIndex: =2
 
     StudentcompMenu_3 As StudentcompMenu:
         BackgroundColor: =RGBA(72, 161, 255, 1)
@@ -54,14 +31,13 @@
         Y: =1042
         ZIndex: =5
 
-    IframePCF1 As IframePCF:
+    IframePCF2 As IframePCF:
         DisplayMode: =DisplayMode.Edit
-        Height: =954
+        Height: =929
         src: |-
             ="https://orgb9a1081f.crm6.dynamics.com/WebResources/cr69e_Chatbot"
-        TabIndex: =0
         Width: =640
         X: =0
-        Y: =88
-        ZIndex: =13
+        Y: =113
+        ZIndex: =6
 

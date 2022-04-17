@@ -149,12 +149,12 @@
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
                 HoverBorderColor: =ColorFade(DataCardValue20.BorderColor, 15%)
-                Items: =Choices([@AppUsers].field_2)
+                Items: =Choices([@AppUsers].Class)
                 MoreItemsButtonColor: =Self.ChevronBackground
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedBorderColor: =DataCardValue20.HoverBorderColor
                 SearchFields: =["Value"]
-                SearchItems: =Choices(AppUsers.field_2,DataCardValue20.SearchText)
+                SearchItems: =Choices(AppUsers.Class,DataCardValue20.SearchText)
                 SelectMultiple: =false
                 Size: =21
                 Width: =Parent.Width - 60
@@ -222,12 +222,12 @@
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
                 HoverBorderColor: =ColorFade(DataCardValue21.BorderColor, 15%)
-                Items: =Choices([@AppUsers].field_3)
+                Items: =Choices([@AppUsers].Role)
                 MoreItemsButtonColor: =Self.ChevronBackground
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedBorderColor: =DataCardValue21.HoverBorderColor
                 SearchFields: =["Value"]
-                SearchItems: =Choices(AppUsers.field_3,DataCardValue21.SearchText)
+                SearchItems: =Choices(AppUsers.Role,DataCardValue21.SearchText)
                 SelectMultiple: =false
                 Size: =21
                 Width: =Parent.Width - 60
@@ -295,12 +295,12 @@
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
                 HoverBorderColor: =ColorFade(DataCardValue22.BorderColor, 15%)
-                Items: =Choices([@AppUsers].LinyuXu)
+                Items: =Choices([@AppUsers].USERS)
                 MoreItemsButtonColor: =Self.ChevronBackground
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedBorderColor: =DataCardValue22.HoverBorderColor
                 SearchFields: =["DisplayName"]
-                SearchItems: =Choices(AppUsers.LinyuXu,DataCardValue22.SearchText)
+                SearchItems: =Choices(AppUsers.USERS,DataCardValue22.SearchText)
                 SelectMultiple: =false
                 Size: =21
                 Template: =ListItemTemplate.Person
