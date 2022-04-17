@@ -55,6 +55,7 @@ comMenu_H As CanvasComponent:
 
         Icon6 As icon.CancelBadge:
             Color: =If(ThisItem.ScreenName = App.ActiveScreen, comMenu_H.SelectColor, comMenu_H.UnselectedColor)
+            DisabledBorderColor: =RGBA(217, 242, 255, 1)
             DisabledColor: |-
                 =ColorValue("#48A1FF")
             DisabledFill: =Icon6.Fill

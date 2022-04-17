@@ -34,6 +34,7 @@ StudentcompMenu As CanvasComponent:
     ZIndex: =1
 
     Gallery4 As gallery.galleryHorizontal:
+        BorderColor: =RGBA(217, 242, 255, 1)
         Default: =LookUp(StudentcompMenu.NavigationItems, ScreenToGoTo.Name = App.ActiveScreen.Name)
         Height: =Parent.Height
         Items: |+
@@ -52,6 +53,7 @@ StudentcompMenu As CanvasComponent:
             Color: |-
                 =//compMenu.ForegroundColor
                 If(ThisItem.IsSelected, StudentcompMenu.BackgroundColor, StudentcompMenu.ForegroundColor)
+            DisabledBorderColor: =RGBA(217, 242, 255, 1)
             DisabledFill: =Icon8.Fill
             Height: =58
             HoverBorderColor: =ColorFade(Icon8.BorderColor, 20%)
@@ -86,6 +88,7 @@ StudentcompMenu As CanvasComponent:
 
         Icon8_1 As icon.Add:
             Color: =Transparent
+            DisabledBorderColor: =RGBA(217, 242, 255, 1)
             DisabledFill: =Icon8_1.Fill
             Height: =Parent.TemplateHeight
             HoverBorderColor: =ColorFade(Icon8_1.BorderColor, 20%)

@@ -35,8 +35,8 @@ Header As CanvasComponent:
         ZIndex: =2
 
         Image1 As image:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =2
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderThickness: =0.8
             Height: =70
             HoverBorderColor: =ColorFade(Image1.BorderColor, 20%)
             HoverFill: =ColorFade(Image1.Fill, 20%)
