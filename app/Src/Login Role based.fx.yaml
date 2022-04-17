@@ -15,7 +15,7 @@
             OnSelect: |
                 =Set(StudentView,true);Set(AdminView,false);Set(TeacherView,false); 
                 If(Dropdown_Class.Selected.Result = 0, Notify("Please select the correct class"));
-                If(Dropdown_Class.Selected.Result = LookUp(student_class,Student_ID = Office365Users.MyProfile().Mail, Class), Navigate('Student Dashboard'), Notify("Please select the correct class"));
+                If(Dropdown_Class.Selected.Result = LookUp(student_class,Student_ID = Office365Users.MyProfile().Mail, Class), Navigate('Student Dashboard'), Notify("Please select the correct class",NotificationType.Error));
                 
                 
                  
@@ -53,7 +53,10 @@
             BorderColor: =ColorFade(Button8.Fill, -15%)
             Height: =70
             HoverBorderColor: =ColorFade(Button8.BorderColor, 20%)
-            OnSelect: =Set(TeacherView,true);Set(AdminView,false);Set(StudentView,false);Navigate('Teacher Dashboard')
+            OnSelect: |
+                =Set(TeacherView,true);Set(AdminView,false);Set(StudentView,false);Navigate('Teacher Dashboard');
+                If(Dropdown_Class.Selected.Result = 0, Notify("Please select the correct class"));
+                If(Dropdown_Class.Selected.Result = LookUp(Class_Table,Teacher = Office365Users.MyProfile().Mail, Class), Navigate('Teacher Dashboard'), Notify("Please select the correct class",NotificationType.Error));
             PressedBorderColor: =Button8.Fill
             PressedColor: =Button8.Fill
             PressedFill: =Button8.Color
@@ -63,6 +66,17 @@
             X: =165
             Y: =126
             ZIndex: =1
+
+        Dropdown_Class_1 As dropdown:
+            Default: ="0"
+            Height: =70
+            HoverBorderColor: =ColorFade(Dropdown_Class_1.BorderColor, 15%)
+            Items: =Sort(Distinct(Class_Table, Class),Result)
+            PressedBorderColor: =Dropdown_Class_1.HoverBorderColor
+            Size: =21
+            Width: =526
+            Y: =262
+            ZIndex: =2
 
     Container8 As groupContainer.manualLayoutContainer:
         Height: =225
