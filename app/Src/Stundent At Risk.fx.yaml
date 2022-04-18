@@ -38,7 +38,7 @@
 
         Student_ID_Column5_1 As dataTableColumn.textualColumn:
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Student_ID"
+            FieldDisplayName: ="Email"
             FieldName: ="Student_ID"
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
@@ -52,7 +52,7 @@
 
         Student_Name_Column4_1 As dataTableColumn.textualColumn:
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Student_Name"
+            FieldDisplayName: ="Name"
             FieldName: ="Student_Name"
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
