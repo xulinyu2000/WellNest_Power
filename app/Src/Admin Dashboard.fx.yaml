@@ -96,25 +96,14 @@
 
             PowerBI2 As powerbi:
                 DashboardId: ="c052e6b9-e1fb-4535-98c1-684ae6b3938e"
-                Height: =300
+                Height: =410
                 TileUrl: |-
                     ="https://app.powerbi.com/embed?dashboardId=c052e6b9-e1fb-4535-98c1-684ae6b3938e&tileId=3ea48373-15f3-4c69-9c09-20b21dce0fed&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
-                Width: =256
+                Width: =560
                 WorkspaceId: ="__my-workspace"
                 X: =40
                 Y: =83
                 ZIndex: =3
-
-            PowerBI11 As powerbi:
-                DashboardId: ="7aa49544-4653-4057-8b2e-100c9a0a7847"
-                Height: =300
-                TileUrl: |-
-                    ="https://app.powerbi.com/embed?dashboardId=7aa49544-4653-4057-8b2e-100c9a0a7847&tileId=98c0e660-405b-4744-943d-8be15a6d7e74&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
-                Width: =300
-                WorkspaceId: ="__my-workspace"
-                X: =300
-                Y: =83
-                ZIndex: =4
 
         DataCard1_2 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)

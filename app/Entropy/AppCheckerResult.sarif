@@ -94,166 +94,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Student Dashboard- Weekly'.CheckInButton_6.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Student Dashboard- Weekly'.CheckInButton_6.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 77,
-                  "snippet": {
-                    "text": "&"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Student Dashboard- Weekly",
-                "type": "'Student Dashboard- Weekly'.CheckInButton_6"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Student Dashboard- Weekly'.CheckInButton_6.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Student Dashboard- Weekly'.CheckInButton_6.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 42,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Student Dashboard- Weekly",
-                "type": "'Student Dashboard- Weekly'.CheckInButton_6"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Student Dashboard- Monthly'.CheckInButton_7.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Student Dashboard- Monthly'.CheckInButton_7.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 77,
-                  "snippet": {
-                    "text": "&"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Student Dashboard- Monthly",
-                "type": "'Student Dashboard- Monthly'.CheckInButton_7"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Student Dashboard- Monthly'.CheckInButton_7.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Student Dashboard- Monthly'.CheckInButton_7.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 42,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Student Dashboard- Monthly",
-                "type": "'Student Dashboard- Monthly'.CheckInButton_7"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Login Role based'.Container4.Button6.OnSelect"
                 }
               ],
@@ -2977,60 +2817,160 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "comMenu_H.Gallery1.AccessibleLabel"
+                  "fullyQualifiedName": "'Student Dashboard- Weekly'.CheckInButton_6.OnSelect"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "comMenu_H.Gallery1.AccessibleLabel",
+                  "fullyQualifiedName": "'Student Dashboard- Weekly'.CheckInButton_6.OnSelect",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 77,
+                  "snippet": {
+                    "text": "&"
+                  }
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "comMenu_H",
-                "type": "comMenu_H.Gallery1"
+                "member": "OnSelect",
+                "module": "Student Dashboard- Weekly",
+                "type": "'Student Dashboard- Weekly'.CheckInButton_6"
               }
             }
           ],
           "message": {
+            "arguments": [
+              "Filter"
+            ],
             "id": "issue"
           },
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "comMenu_H.Gallery1.TabIndex"
+                  "fullyQualifiedName": "'Student Dashboard- Weekly'.CheckInButton_6.OnSelect"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "comMenu_H.Gallery1.TabIndex",
+                  "fullyQualifiedName": "'Student Dashboard- Weekly'.CheckInButton_6.OnSelect",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 42,
+                  "snippet": {
+                    "text": "="
+                  }
                 }
               },
               "properties": {
-                "member": "TabIndex",
-                "module": "comMenu_H",
-                "type": "comMenu_H.Gallery1"
+                "member": "OnSelect",
+                "module": "Student Dashboard- Weekly",
+                "type": "'Student Dashboard- Weekly'.CheckInButton_6"
               }
             }
           ],
           "message": {
+            "arguments": [
+              "Filter"
+            ],
             "id": "issue"
           },
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 7
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Student Dashboard- Monthly'.CheckInButton_7.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Student Dashboard- Monthly'.CheckInButton_7.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 77,
+                  "snippet": {
+                    "text": "&"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Student Dashboard- Monthly",
+                "type": "'Student Dashboard- Monthly'.CheckInButton_7"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Student Dashboard- Monthly'.CheckInButton_7.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Student Dashboard- Monthly'.CheckInButton_7.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 42,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Student Dashboard- Monthly",
+                "type": "'Student Dashboard- Monthly'.CheckInButton_7"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -3217,19 +3157,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Welcome.IconNextWelcome_1.AccessibleLabel"
+                  "fullyQualifiedName": "comMenu_H.Gallery1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Welcome.IconNextWelcome_1.AccessibleLabel",
+                  "fullyQualifiedName": "comMenu_H.Gallery1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Welcome",
-                "type": "Welcome.IconNextWelcome_1"
+                "module": "comMenu_H",
+                "type": "comMenu_H.Gallery1"
               }
             }
           ],
@@ -3247,19 +3187,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Welcome.IconNextWelcome_1.TabIndex"
+                  "fullyQualifiedName": "comMenu_H.Gallery1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Welcome.IconNextWelcome_1.TabIndex",
+                  "fullyQualifiedName": "comMenu_H.Gallery1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Welcome",
-                "type": "Welcome.IconNextWelcome_1"
+                "module": "comMenu_H",
+                "type": "comMenu_H.Gallery1"
               }
             }
           ],
@@ -5240,6 +5180,66 @@
                 "member": "TabIndex",
                 "module": "Daily Check In - Physical Activity",
                 "type": "'Daily Check In - Physical Activity'.Icon1_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Welcome.IconNextWelcome_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Welcome.IconNextWelcome_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Welcome",
+                "type": "Welcome.IconNextWelcome_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Welcome.IconNextWelcome_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Welcome.IconNextWelcome_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Welcome",
+                "type": "Welcome.IconNextWelcome_1"
               }
             }
           ],
