@@ -23,7 +23,7 @@
         ZIndex: =5
 
     Form3 As form:
-        DataSource: =student_response_1
+        DataSource: =student_response_2
         DefaultMode: =New
         Height: =231
         Width: =640
@@ -368,7 +368,7 @@
     Button7 As button:
         BorderColor: =ColorFade(Button7.Fill, -15%)
         DisplayMode: =If(CountRows(Filter(student_response, Student_ID = Office365Users.MyProfile().Mail)) > 0,  DisplayMode.Disabled, DisplayMode.Edit)
-        Height: =88
+        Height: =74
         HoverBorderColor: =ColorFade(Button7.BorderColor, 20%)
         OnSelect: =SubmitForm(Form3); NewForm(Form3);
         PressedBorderColor: =Button7.Fill
@@ -376,8 +376,8 @@
         PressedFill: =Button7.Color
         Size: =24
         Text: =If(CountRows(Filter(student_response, Student_ID = Office365Users.MyProfile().Mail)) > 0,  "You have already answered", "Submit Answer")
-        Width: =378
-        X: =131
-        Y: =897
+        Width: =351
+        X: =144
+        Y: =910
         ZIndex: =9
 
