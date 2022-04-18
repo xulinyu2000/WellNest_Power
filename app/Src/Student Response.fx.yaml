@@ -31,6 +31,7 @@
         ZIndex: =6
 
         Reponse_DataCard2 As typedDataCard.textualMultiLineEditCard:
+            BorderColor: =RGBA(0, 121, 187, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Reponse"
             Default: =ThisItem.Reponse
@@ -368,6 +369,7 @@
     Button7 As button:
         BorderColor: =ColorFade(Button7.Fill, -15%)
         DisplayMode: =If(CountRows(Filter(student_response, Student_ID = Office365Users.MyProfile().Mail)) > 0,  DisplayMode.Disabled, DisplayMode.Edit)
+        Fill: =RGBA(0, 121, 187, 1)
         Height: =74
         HoverBorderColor: =ColorFade(Button7.BorderColor, 20%)
         OnSelect: =SubmitForm(Form3); NewForm(Form3);
