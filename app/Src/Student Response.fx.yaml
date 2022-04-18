@@ -17,12 +17,13 @@
         ZIndex: =3
 
     StudentcompMenu_4 As StudentcompMenu:
+        BackgroundColor: =RGBA(255, 255, 255, 1)
         NavigationItems: =NavStudentView
         Y: =1041.3333333333333
         ZIndex: =5
 
     Form3 As form:
-        DataSource: =Table2
+        DataSource: =student_response_1
         DefaultMode: =New
         Height: =231
         Width: =640
@@ -65,10 +66,6 @@
                 PressedBorderColor: =DataCardValue2.HoverBorderColor
                 PressedColor: =DataCardValue2.Color
                 PressedFill: =DataCardValue2.Fill
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
                 Size: =21
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -134,7 +131,7 @@
             DataCardValue1 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: |-
-                    =If(Form1.Mode=FormMode.New, 
+                    =If(Form3.Mode=FormMode.New, 
                        Today(), 
                        Parent.Default
                     )
@@ -215,7 +212,7 @@
             DataCardValue4 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: |-
-                    =If(Form1.Mode=FormMode.New, 
+                    =If(Form3.Mode=FormMode.New, 
                        Office365Users.MyProfile().Mail,
                        Parent.Default
                     )
@@ -263,6 +260,87 @@
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey5.Y
+                ZIndex: =4
+
+        Class_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Class"
+            Default: =ThisItem.Class
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@student_response_1],DataSourceInfo.DisplayName,"Class")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@student_response_1], DataSourceInfo.MaxLength, "Class")
+            Required: =false
+            Update: =DataCardValue7.Text
+            Visible: =false
+            Width: =640
+            X: =0
+            Y: =3
+            ZIndex: =1
+
+            DataCardKey12 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue7 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: |-
+                    =If(Form3.Mode=FormMode.New, 
+                       LookUp(student_class, Student_ID = Office365Users.MyProfile().Mail, Class),
+                       Parent.Default
+                    )
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                PressedBorderColor: =DataCardValue7.HoverBorderColor
+                PressedColor: =DataCardValue7.Color
+                PressedFill: =DataCardValue7.Fill
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey12.Y + DataCardKey12.Height + 5
+                ZIndex: =2
+
+            ErrorMessage6 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue7.Y + DataCardValue7.Height
+                ZIndex: =3
+
+            StarVisible6 As label:
+                Align: =Align.Center
+                Height: =DataCardKey12.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey12.Y
                 ZIndex: =4
 
     Label5 As label:
