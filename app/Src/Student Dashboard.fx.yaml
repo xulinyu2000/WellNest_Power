@@ -83,7 +83,10 @@
             ZIndex: =5
 
             PowerBI1 As powerbi:
+                DashboardId: ="3ad75cd6-2e4a-43a3-985d-5f8a8dec40f6"
                 Height: =512
+                TileUrl: |-
+                    ="https://app.powerbi.com/embed?dashboardId=3ad75cd6-2e4a-43a3-985d-5f8a8dec40f6&tileId=5012d791-bd00-486c-89de-227a964f245e&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
                 Width: =554
                 WorkspaceId: ="__my-workspace"
                 X: =33
