@@ -84,19 +84,6 @@
             Y: =0
             ZIndex: =4
 
-            PowerBITile_Overview As powerbi:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                DashboardId: ="c052e6b9-e1fb-4535-98c1-684ae6b3938e"
-                DisplayMode: =DisplayMode.View
-                Height: =407
-                TileUrl: |-
-                    ="https://app.powerbi.com/embed?dashboardId=c052e6b9-e1fb-4535-98c1-684ae6b3938e&tileId=3ea48373-15f3-4c69-9c09-20b21dce0fed&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
-                Width: =561
-                WorkspaceId: ="__my-workspace"
-                X: =40
-                Y: =86
-                ZIndex: =1
-
             lblMoodOverview As label:
                 Align: =Align.Center
                 Height: =46
@@ -106,6 +93,17 @@
                 X: =40
                 Y: =26
                 ZIndex: =2
+
+            PowerBI2 As powerbi:
+                DashboardId: ="c052e6b9-e1fb-4535-98c1-684ae6b3938e"
+                Height: =421
+                TileUrl: |-
+                    ="https://app.powerbi.com/embed?dashboardId=c052e6b9-e1fb-4535-98c1-684ae6b3938e&tileId=3ea48373-15f3-4c69-9c09-20b21dce0fed&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
+                Width: =560
+                WorkspaceId: ="__my-workspace"
+                X: =40
+                Y: =83
+                ZIndex: =3
 
         DataCard1_2 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
