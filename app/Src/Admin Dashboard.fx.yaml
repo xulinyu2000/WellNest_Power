@@ -95,6 +95,7 @@
                 ZIndex: =2
 
             PowerBI2 As powerbi:
+                BorderColor: =RGBA(0, 0, 0, 0)
                 DashboardId: ="c052e6b9-e1fb-4535-98c1-684ae6b3938e"
                 Height: =410
                 TileUrl: |-
@@ -129,7 +130,7 @@
             PowerBI_ As powerbi:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DashboardId: ="c052e6b9-e1fb-4535-98c1-684ae6b3938e"
-                Height: =436
+                Height: =407
                 TileUrl: |-
                     ="https://app.powerbi.com/embed?dashboardId=c052e6b9-e1fb-4535-98c1-684ae6b3938e&tileId=2e5ac29d-53a2-4d4e-aff8-a76cc12c33bd&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
                 Width: =559
