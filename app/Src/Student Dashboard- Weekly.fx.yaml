@@ -84,10 +84,10 @@
             ZIndex: =5
 
             PowerBI1_3 As powerbi:
-                DashboardId: ="3ad75cd6-2e4a-43a3-985d-5f8a8dec40f6"
+                DashboardId: ="07c4e98e-5fee-45b9-94ee-8ffd540445b7"
                 Height: =512
                 TileUrl: |-
-                    ="https://app.powerbi.com/embed?dashboardId=3ad75cd6-2e4a-43a3-985d-5f8a8dec40f6&tileId=5012d791-bd00-486c-89de-227a964f245e&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
+                    ="https://app.powerbi.com/embed?dashboardId=07c4e98e-5fee-45b9-94ee-8ffd540445b7&tileId=26e56867-de31-4139-ada6-7438b11c8263&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
                 Width: =554
                 WorkspaceId: ="__my-workspace"
                 X: =33
@@ -104,6 +104,17 @@
             X: =0
             Y: =3
             ZIndex: =6
+
+            PowerBI9 As powerbi:
+                DashboardId: ="07c4e98e-5fee-45b9-94ee-8ffd540445b7"
+                Height: =542
+                TileUrl: |-
+                    ="https://app.powerbi.com/embed?dashboardId=07c4e98e-5fee-45b9-94ee-8ffd540445b7&tileId=eb8910f7-6837-499e-b689-5bf26bb5ecaa&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
+                Width: =566
+                WorkspaceId: ="__my-workspace"
+                X: =27
+                Y: =39
+                ZIndex: =1
 
     StudentcompMenu_2 As StudentcompMenu:
         BackgroundColor: =RGBA(72, 161, 255, 1)
