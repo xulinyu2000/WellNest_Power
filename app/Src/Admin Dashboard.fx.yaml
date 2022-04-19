@@ -80,8 +80,8 @@
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(247, 249, 252, 1)
-            Height: =522
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =905
             Width: =640
             X: =0
             Y: =0
@@ -89,89 +89,75 @@
 
             lblMoodOverview As label:
                 Align: =Align.Center
+                FontWeight: =FontWeight.Bold
                 Height: =46
                 Size: =21
                 Text: ="Daily Check-In Overview"
                 Width: =560
-                X: =40
-                Y: =26
+                X: =33
+                Y: =18
                 ZIndex: =2
 
             PowerBI2 As powerbi:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DashboardId: ="c052e6b9-e1fb-4535-98c1-684ae6b3938e"
-                Height: =410
+                Height: =732
                 TileUrl: |-
                     ="https://app.powerbi.com/embed?dashboardId=c052e6b9-e1fb-4535-98c1-684ae6b3938e&tileId=3ea48373-15f3-4c69-9c09-20b21dce0fed&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
-                Width: =560
+                Width: =611
                 WorkspaceId: ="__my-workspace"
-                X: =40
-                Y: =83
+                X: =14
+                Y: =144
                 ZIndex: =3
 
-        DataCard1_2 As dataCard.blankCard:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(247, 249, 252, 1)
-            Height: =562
-            Width: =640
-            X: =0
-            Y: =1
-            ZIndex: =5
-
-            lblCheckInOverview As label:
-                Align: =Align.Center
-                Height: =56
-                Size: =21
-                Text: ="Daily Rating Distribution"
-                Width: =560
-                X: =39
-                Y: =21
-                ZIndex: =1
-
-            PowerBI_ As powerbi:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                DashboardId: ="c052e6b9-e1fb-4535-98c1-684ae6b3938e"
-                Height: =407
-                TileUrl: |-
-                    ="https://app.powerbi.com/embed?dashboardId=c052e6b9-e1fb-4535-98c1-684ae6b3938e&tileId=2e5ac29d-53a2-4d4e-aff8-a76cc12c33bd&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
-                Width: =559
-                WorkspaceId: ="__my-workspace"
-                X: =40
-                Y: =77
-                ZIndex: =2
+            btnWeekly_4 As button:
+                BorderColor: =ColorFade(btnWeekly_4.Fill, -15%)
+                BorderThickness: =0
+                Fill: =RGBA(179, 179, 179, 1)
+                Height: =51
+                HoverBorderColor: =ColorFade(btnWeekly_4.BorderColor, 20%)
+                OnSelect: =Navigate('Admin Dashboard - Distribution', ScreenTransition.Cover)
+                PressedBorderColor: =btnWeekly_4.Fill
+                PressedColor: =btnWeekly_4.Fill
+                PressedFill: =btnWeekly_4.Color
+                Text: ="View Distribution"
+                Width: =202
+                X: =218
+                Y: =78
+                ZIndex: =4
 
         DataCard1_3 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(247, 249, 252, 1)
-            Height: =537
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =633
             Width: =640
             X: =0
-            Y: =2
+            Y: =1
             ZIndex: =6
 
             PowerBI4 As powerbi:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DashboardId: ="c052e6b9-e1fb-4535-98c1-684ae6b3938e"
-                Height: =412
+                Height: =546
                 TileUrl: |-
                     ="https://app.powerbi.com/embed?dashboardId=c052e6b9-e1fb-4535-98c1-684ae6b3938e&tileId=202c308c-a6a9-4ff0-8ffb-5e1fa33cbb7e&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
-                Width: =545
+                Width: =601
                 WorkspaceId: ="__my-workspace"
-                X: =50
+                X: =16
                 Y: =63
                 ZIndex: =1
 
             Label8 As label:
                 Align: =Align.Center
+                FontWeight: =FontWeight.Bold
                 Height: =63
                 Size: =21
                 Text: ="Student Overview"
-                Width: =560
-                X: =35
+                Width: =601
+                X: =16
+                Y: =11
                 ZIndex: =2
 
     AdmincompMenu_1 As AdmincompMenu:

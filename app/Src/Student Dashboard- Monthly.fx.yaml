@@ -29,8 +29,8 @@
         PressedFill: =CheckInButton_7.Color
         Text: ="Check-In"
         Width: =175
-        X: =30
-        Y: =148
+        X: =232
+        Y: =137
         ZIndex: =3
 
     WeeklyButton_7 As button:
@@ -45,7 +45,7 @@
         Text: ="Weekly"
         Width: =175
         X: =234
-        Y: =148
+        Y: =214
         ZIndex: =4
 
     MonthlyButton_7 As button:
@@ -59,7 +59,7 @@
         Text: ="Monthly"
         Width: =175
         X: =434
-        Y: =148
+        Y: =214
         ZIndex: =5
 
     Header_13 As Header:
@@ -67,9 +67,9 @@
 
     Canvas1_10 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
-        Height: =812
+        Height: =739
         Width: =Parent.Width
-        Y: =233
+        Y: =305
         ZIndex: =7
 
         DataCard1_10 As dataCard.blankCard:
@@ -123,4 +123,19 @@
         SelectedItemBackground: =RGBA(237, 250, 255, 1)
         Y: =1042
         ZIndex: =8
+
+    WeeklyButton_10 As button:
+        BorderColor: =ColorFade(WeeklyButton_10.Fill, -15%)
+        Fill: =RGBA(72, 161, 255, 1)
+        Height: =53
+        HoverBorderColor: =ColorFade(WeeklyButton_10.BorderColor, 20%)
+        OnSelect: =Navigate([@'Student Dashboard'], None)
+        PressedBorderColor: =WeeklyButton_10.Fill
+        PressedColor: =WeeklyButton_10.Fill
+        PressedFill: =WeeklyButton_10.Color
+        Text: ="Daily"
+        Width: =175
+        X: =31
+        Y: =214
+        ZIndex: =9
 

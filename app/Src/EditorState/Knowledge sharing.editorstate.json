@@ -544,7 +544,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button14_1",
-      "ParentIndex": 15,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2338,14 +2338,7 @@
         "TemplatePadding",
         "Layout",
         "Transition",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "true",
-          "InvariantPropertyName": "ShowScrollbar",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "ShowScrollbar",
         "LoadingSpinner",
         "LoadingSpinnerColor",
         "AccessibleLabel",
@@ -2364,14 +2357,7 @@
         "X",
         "Y",
         "Width",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "If(Self.Visible, Parent.Height / 2 + 200, 0)",
-          "InvariantPropertyName": "Height",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Height",
         "ZIndex",
         "Visible"
       ],
