@@ -27,18 +27,6 @@
         X: =552
         ZIndex: =14
 
-    Logo_7 As image:
-        Height: =85
-        HoverBorderColor: =ColorFade(Logo_7.BorderColor, 20%)
-        HoverFill: =ColorFade(Logo_7.Fill, 20%)
-        Image: =Picture1
-        PressedBorderColor: =ColorFade(Logo_7.BorderColor, -20%)
-        PressedFill: =ColorFade(Logo_7.Fill, -20%)
-        Width: =94
-        X: =27
-        Y: =30
-        ZIndex: =15
-
     Label1_8 As label:
         Align: =Align.Center
         Height: =68
@@ -59,7 +47,7 @@
         HoverColor: =ColorFade(Icon1_3.Color, 20%)
         HoverFill: =Icon1_3.Fill
         Icon: =Icon.ArrowLeft
-        OnSelect: =Navigate('Daily Check In - Word')
+        OnSelect: =Navigate('Daily Check In - Sleep')
         PressedBorderColor: =ColorFade(Icon1_3.BorderColor, -20%)
         PressedColor: =ColorFade(Icon1_3.Color, -20%)
         PressedFill: =Icon1_3.Fill
@@ -109,4 +97,16 @@
         X: =182
         Y: =643
         ZIndex: =19
+
+    Image2_3 As image:
+        Height: =96
+        HoverBorderColor: =ColorFade(Image2_3.BorderColor, 20%)
+        HoverFill: =ColorFade(Image2_3.Fill, 20%)
+        Image: ='Group 132'
+        PressedBorderColor: =ColorFade(Image2_3.BorderColor, -20%)
+        PressedFill: =ColorFade(Image2_3.Fill, -20%)
+        Width: =106
+        X: =28
+        Y: =30
+        ZIndex: =20
 

@@ -140,18 +140,6 @@
         Y: =258
         ZIndex: =11
 
-    Logo_3 As image:
-        Height: =85
-        HoverBorderColor: =ColorFade(Logo_3.BorderColor, 20%)
-        HoverFill: =ColorFade(Logo_3.Fill, 20%)
-        Image: =Picture1
-        PressedBorderColor: =ColorFade(Logo_3.BorderColor, -20%)
-        PressedFill: =ColorFade(Logo_3.Fill, -20%)
-        Width: =94
-        X: =18
-        Y: =22
-        ZIndex: =13
-
     Label1_3 As label:
         Align: =Align.Center
         Height: =68
@@ -180,4 +168,16 @@
         Width: =88
         X: =552
         ZIndex: =15
+
+    Image2 As image:
+        Height: =96
+        HoverBorderColor: =ColorFade(Image2.BorderColor, 20%)
+        HoverFill: =ColorFade(Image2.Fill, 20%)
+        Image: ='Group 132'
+        PressedBorderColor: =ColorFade(Image2.BorderColor, -20%)
+        PressedFill: =ColorFade(Image2.Fill, -20%)
+        Width: =106
+        X: =28
+        Y: =30
+        ZIndex: =16
 

@@ -1,0 +1,67 @@
+"'Admin Student Management' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+
+    DashboardLogo_15 As image:
+        Height: =98
+        HoverBorderColor: =ColorFade(DashboardLogo_15.BorderColor, 20%)
+        HoverFill: =ColorFade(DashboardLogo_15.Fill, 20%)
+        Image: =Picture1_1
+        PaddingLeft: =10
+        PressedBorderColor: =ColorFade(DashboardLogo_15.BorderColor, -20%)
+        PressedFill: =ColorFade(DashboardLogo_15.Fill, -20%)
+        Width: =68
+        ZIndex: =5
+
+    Header_21 As Header:
+        ZIndex: =11
+
+    Label14_4 As label:
+        Height: =70
+        Size: =21
+        Text: ="Students at risk"
+        Width: =560
+        X: =26
+        Y: =110
+        ZIndex: =14
+
+    DataTable4_3 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        HeadingSize: =21
+        Height: =960
+        Items: =Filter(checkin_3, Value(Rating) > 0)
+        Size: =21
+        Width: =640
+        X: =0
+        Y: =176
+        ZIndex: =15
+
+        Student_Name_Column4_3 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Name"
+            FieldName: ="Student_Name"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.Student_Name
+            Width: =100
+            X: =60
+            Y: =0
+            ZIndex: =2
+
+        Rating_Column2_3 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Rating"
+            FieldName: ="Rating"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.Rating
+            Width: =125
+            X: =508
+            Y: =0
+            ZIndex: =3
+
