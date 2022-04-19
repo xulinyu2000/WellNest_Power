@@ -69,7 +69,7 @@
     LblRecipientCount1 As label:
         PaddingLeft: =0
         Size: =18
-        Text: ="*To (" &CountRows(MyPeople) & ")"
+        Text: ="To (" &CountRows(MyPeople) & ")"
         Width: =EmailPeopleGallery1.Width
         Wrap: =false
         X: =32
@@ -143,6 +143,73 @@
         Y: =TextSearchBox2.Y
         ZIndex: =7
 
+    LblEmailSubject1 As label:
+        PaddingLeft: =0
+        Size: =18
+        Text: ="Subject"
+        Width: =Parent.Width - Self.X * 2
+        Wrap: =false
+        X: =32
+        Y: =EmailPeopleGallery1.Y + EmailPeopleGallery1.Height + 16
+        ZIndex: =8
+
+    TextEmailSubject1 As text:
+        AccessibleLabel: ="A subject is required to send an email."
+        Default: =""
+        Height: =70
+        HintText: ="Add a subject"
+        PressedBorderColor: =TextEmailSubject1.HoverBorderColor
+        PressedColor: =TextEmailSubject1.Color
+        PressedFill: =TextEmailSubject1.Fill
+        Size: =21
+        TabIndex: =If(PeopleBrowseGallery1.Visible, -1, 0)
+        Width: =Parent.Width - Self.X * 2
+        X: =32
+        Y: =LblEmailSubject1.Y + LblEmailSubject1.Height + 6
+        ZIndex: =9
+
+    LblEmailMessage1 As label:
+        PaddingLeft: =0
+        Size: =18
+        Text: ="Message"
+        Width: =200
+        Wrap: =false
+        X: =32
+        Y: =TextEmailSubject1.Y + TextEmailSubject1.Height + 16
+        ZIndex: =10
+
+    TextEmailMessage1 As text:
+        AccessibleLabel: ="Add a message"
+        Default: ="This is can send emails to everybody inside the org. Should we include Teachers when send knowledge to everybody?"
+        Height: =584
+        HintText: ="Add a message"
+        Mode: =TextMode.MultiLine
+        PressedBorderColor: =TextEmailMessage1.HoverBorderColor
+        PressedColor: =TextEmailMessage1.Color
+        PressedFill: =TextEmailMessage1.Fill
+        Size: =21
+        TabIndex: =If(PeopleBrowseGallery1.Visible, -1, 0)
+        Width: =586
+        X: =32
+        Y: =LblEmailMessage1.Y + LblEmailMessage1.Height + 6
+        ZIndex: =11
+
+    Button14_1 As button:
+        BorderColor: =ColorFade(Button14_1.Fill, -15%)
+        Fill: =RGBA(72, 161, 255, 1)
+        Height: =70
+        HoverBorderColor: =ColorFade(Button14_1.BorderColor, 20%)
+        OnSelect: =Back()
+        PressedBorderColor: =Button14_1.Fill
+        PressedColor: =Button14_1.Fill
+        PressedFill: =Button14_1.Color
+        Size: =24
+        Text: ="Back"
+        Width: =280
+        X: =187
+        Y: =1046
+        ZIndex: =14
+
     EmailPeopleGallery1 As gallery.SelectedUsersGallery:
         AccessibleLabel: ="User selected people"
         BorderColor: =TextSearchBox2.BorderColor
@@ -160,7 +227,7 @@
         WrapCount: =2
         X: =27
         Y: =TextSearchBox2.Y + TextSearchBox2.Height + 8
-        ZIndex: =8
+        ZIndex: =15
 
         Rectangle1 As rectangle:
             DisabledFill: =Rectangle1.Fill
@@ -207,56 +274,39 @@
             X: =EmailPeopleGallery1.TemplateWidth - Self.Width
             ZIndex: =3
 
-    LblEmailSubject1 As label:
-        PaddingLeft: =0
-        Size: =18
-        Text: ="*Subject"
-        Width: =Parent.Width - Self.X * 2
-        Wrap: =false
-        X: =32
-        Y: =EmailPeopleGallery1.Y + EmailPeopleGallery1.Height + 16
-        ZIndex: =9
+    AddMediaWithImage1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =15
 
-    TextEmailSubject1 As text:
-        AccessibleLabel: ="A subject is required to send an email."
-        Default: =""
-        Height: =70
-        HintText: ="Add a subject"
-        PressedBorderColor: =TextEmailSubject1.HoverBorderColor
-        PressedColor: =TextEmailSubject1.Color
-        PressedFill: =TextEmailSubject1.Fill
-        Size: =21
-        TabIndex: =If(PeopleBrowseGallery1.Visible, -1, 0)
-        Width: =Parent.Width - Self.X * 2
-        X: =32
-        Y: =LblEmailSubject1.Y + LblEmailSubject1.Height + 6
-        ZIndex: =10
+        UploadedImage1 As image:
+            Height: =328
+            HoverBorderColor: =ColorFade(UploadedImage1.BorderColor, 20%)
+            HoverFill: =ColorFade(UploadedImage1.Fill, 20%)
+            Image: =If(IsBlank(AddMediaButton1.Media), SampleImage, AddMediaButton1.Media)
+            ImagePosition: =ImagePosition.Fill
+            PressedBorderColor: =ColorFade(UploadedImage1.BorderColor, -20%)
+            PressedFill: =ColorFade(UploadedImage1.Fill, -20%)
+            Width: =436
+            X: =104
+            Y: =655
+            ZIndex: =12
 
-    LblEmailMessage1 As label:
-        PaddingLeft: =0
-        Size: =18
-        Text: ="Message"
-        Width: =200
-        Wrap: =false
-        X: =32
-        Y: =TextEmailSubject1.Y + TextEmailSubject1.Height + 16
-        ZIndex: =11
-
-    TextEmailMessage1 As text:
-        AccessibleLabel: ="Add a message"
-        Default: ="This is can send emails to everybody inside the org. Should we include Teachers when send knowledge to everybody?"
-        Height: =584
-        HintText: ="Add a message"
-        Mode: =TextMode.MultiLine
-        PressedBorderColor: =TextEmailMessage1.HoverBorderColor
-        PressedColor: =TextEmailMessage1.Color
-        PressedFill: =TextEmailMessage1.Fill
-        Size: =21
-        TabIndex: =If(PeopleBrowseGallery1.Visible, -1, 0)
-        Width: =586
-        X: =32
-        Y: =LblEmailMessage1.Y + LblEmailMessage1.Height + 6
-        ZIndex: =12
+        AddMediaButton1 As addMedia:
+            Height: =328
+            HoverBorderColor: =ColorFade(AddMediaButton1.BorderColor, 20%)
+            HoverColor: =AddMediaButton1.Color
+            HoverFill: =ColorFade(AddMediaButton1.Fill, 20%)
+            PressedBorderColor: =ColorFade(AddMediaButton1.BorderColor, -20%)
+            PressedColor: =AddMediaButton1.Color
+            PressedFill: =ColorFade(AddMediaButton1.Fill, -20%)
+            Size: =25
+            Width: =436
+            X: =99
+            Y: =655
+            ZIndex: =13
 
     PeopleBrowseGallery1 As gallery.PeoplePickerGallerySmall:
         AccessibleLabel: ="User look up search results"
@@ -279,7 +329,7 @@
         Width: =Parent.Width - Self.X * 2
         X: =32
         Y: =TextSearchBox2.Y + TextSearchBox2.Height
-        ZIndex: =13
+        ZIndex: =16
 
         Rectangle2 As rectangle:
             BorderColor: =Title4.Color
@@ -331,54 +381,4 @@
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - 1
             ZIndex: =4
-
-    AddMediaWithImage1 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =15
-
-        UploadedImage1 As image:
-            Height: =328
-            HoverBorderColor: =ColorFade(UploadedImage1.BorderColor, 20%)
-            HoverFill: =ColorFade(UploadedImage1.Fill, 20%)
-            Image: =If(IsBlank(AddMediaButton1.Media), SampleImage, AddMediaButton1.Media)
-            ImagePosition: =ImagePosition.Fill
-            PressedBorderColor: =ColorFade(UploadedImage1.BorderColor, -20%)
-            PressedFill: =ColorFade(UploadedImage1.Fill, -20%)
-            Width: =436
-            X: =104
-            Y: =655
-            ZIndex: =14
-
-        AddMediaButton1 As addMedia:
-            Height: =328
-            HoverBorderColor: =ColorFade(AddMediaButton1.BorderColor, 20%)
-            HoverColor: =AddMediaButton1.Color
-            HoverFill: =ColorFade(AddMediaButton1.Fill, 20%)
-            PressedBorderColor: =ColorFade(AddMediaButton1.BorderColor, -20%)
-            PressedColor: =AddMediaButton1.Color
-            PressedFill: =ColorFade(AddMediaButton1.Fill, -20%)
-            Size: =25
-            Width: =436
-            X: =99
-            Y: =655
-            ZIndex: =15
-
-    Button14_1 As button:
-        BorderColor: =ColorFade(Button14_1.Fill, -15%)
-        Fill: =RGBA(72, 161, 255, 1)
-        Height: =70
-        HoverBorderColor: =ColorFade(Button14_1.BorderColor, 20%)
-        OnSelect: =Back()
-        PressedBorderColor: =Button14_1.Fill
-        PressedColor: =Button14_1.Fill
-        PressedFill: =Button14_1.Color
-        Size: =24
-        Text: ="Back"
-        Width: =280
-        X: =187
-        Y: =1046
-        ZIndex: =16
 
