@@ -7,7 +7,7 @@
         ZIndex: =1
 
     "BrowseGallery1_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
-        Height: =886
+        Height: =978
         Items: |-
             =/*AddColumns(
                 AppUsers,
@@ -44,7 +44,6 @@
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =Min(160, Self.Height - 60)
-        Width: =Parent.Width
         Y: =156
         ZIndex: =1
 
@@ -212,10 +211,4 @@
         Width: =Parent.Width
         Y: =TextSearchBox1_1.Y + TextSearchBox1_1.Height
         ZIndex: =8
-
-    AdmincompMenu_9 As AdmincompMenu:
-        NavigationItems: |
-            =NavAdminView
-        Y: =496
-        ZIndex: =10
 

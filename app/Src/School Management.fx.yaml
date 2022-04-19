@@ -1,0 +1,53 @@
+"'School Management' As screen.'phoneLayout_HeaderAndGallery_ver3.0'":
+
+    AdmincompMenu_6 As AdmincompMenu:
+        NavigationItems: |
+            =NavAdminView
+        Y: =1042
+        ZIndex: =10
+
+    Header_1 As Header:
+        ZIndex: =11
+
+    Button15 As button:
+        BorderColor: =ColorFade(Button15.Fill, -15%)
+        Height: =70
+        HoverBorderColor: =ColorFade(Button15.BorderColor, 20%)
+        PressedBorderColor: =Button15.Fill
+        PressedColor: =Button15.Fill
+        PressedFill: =Button15.Color
+        Size: =24
+        Text: ="View Stundet At risk"
+        Width: =280
+        X: =159
+        Y: =252
+        ZIndex: =12
+
+    Button16 As button:
+        BorderColor: =ColorFade(Button16.Fill, -15%)
+        Height: =70
+        HoverBorderColor: =ColorFade(Button16.BorderColor, 20%)
+        PressedBorderColor: =Button16.Fill
+        PressedColor: =Button16.Fill
+        PressedFill: =Button16.Color
+        Size: =24
+        Text: ="Managme Teacher"
+        Width: =280
+        X: =180
+        Y: =798
+        ZIndex: =13
+
+    Button17 As button:
+        BorderColor: =ColorFade(Button17.Fill, -15%)
+        Height: =70
+        HoverBorderColor: =ColorFade(Button17.BorderColor, 20%)
+        PressedBorderColor: =Button17.Fill
+        PressedColor: =Button17.Fill
+        PressedFill: =Button17.Color
+        Size: =24
+        Text: ="View Student Cohort"
+        Width: =280
+        X: =159
+        Y: =477
+        ZIndex: =14
+
