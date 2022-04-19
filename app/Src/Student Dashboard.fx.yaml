@@ -21,17 +21,21 @@
         BorderColor: =ColorFade(CheckInButton_2.Fill, -15%)
         BorderThickness: =0
         Fill: =RGBA(72, 161, 255, 1)
-        Height: =53
+        Height: =48
         HoverBorderColor: =ColorFade(CheckInButton_2.BorderColor, 20%)
         OnSelect: |
             =If(CountRows(Filter(checkin, Student_Date = (Office365Users.MyProfile().Mail & Today()))) = 0, Navigate('Daily Check In - Face'), Notify("You have already completed the checkin!",NotificationType.Error));
         PressedBorderColor: =CheckInButton_2.Fill
         PressedColor: =CheckInButton_2.Fill
         PressedFill: =CheckInButton_2.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
         Text: ="Check-In"
         Width: =175
-        X: =232
-        Y: =135
+        X: =235
+        Y: =138
         ZIndex: =3
 
     WeeklyButton_2 As button:
@@ -44,6 +48,10 @@
         PressedBorderColor: =WeeklyButton_2.Fill
         PressedColor: =WeeklyButton_2.Fill
         PressedFill: =WeeklyButton_2.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
         Text: ="Weekly"
         Width: =175
         X: =235
@@ -60,6 +68,10 @@
         PressedBorderColor: =MonthlyButton_2.Fill
         PressedColor: =MonthlyButton_2.Fill
         PressedFill: =MonthlyButton_2.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
         Text: ="Monthly"
         Width: =175
         X: =435
@@ -81,7 +93,7 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =795
+            Height: =773
             Width: =640
             X: =0
             Y: =0
@@ -90,13 +102,11 @@
             PowerBI1 As powerbi:
                 BorderStyle: =BorderStyle.None
                 DashboardId: ="59d4afaa-7771-446f-ad7c-6c1eb00b93c7"
-                Height: =674
+                Height: =771
                 TileUrl: |-
                     ="https://app.powerbi.com/embed?dashboardId=59d4afaa-7771-446f-ad7c-6c1eb00b93c7&tileId=cc3a54f8-f764-43cd-8114-ee60319e4a32&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
-                Width: =554
+                Width: =631
                 WorkspaceId: ="__my-workspace"
-                X: =33
-                Y: =63
                 ZIndex: =1
 
     StudentcompMenu_1 As StudentcompMenu:
@@ -116,6 +126,10 @@
         PressedBorderColor: =WeeklyButton_8.Fill
         PressedColor: =WeeklyButton_8.Fill
         PressedFill: =WeeklyButton_8.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
         Text: ="Daily"
         Width: =175
         X: =30

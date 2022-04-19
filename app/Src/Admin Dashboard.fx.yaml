@@ -165,13 +165,13 @@
 
             Label8 As label:
                 Align: =Align.Center
+                BorderColor: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =63
                 Size: =21
                 Text: ="Student Overview"
-                Width: =601
-                X: =16
-                Y: =11
+                Width: =640
                 ZIndex: =2
 
     AdmincompMenu_1 As AdmincompMenu:

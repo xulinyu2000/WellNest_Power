@@ -19,6 +19,7 @@
 
     CheckInButton_7 As button:
         BorderColor: =ColorFade(CheckInButton_7.Fill, -15%)
+        BorderThickness: =0
         Fill: =RGBA(72, 161, 255, 1)
         Height: =53
         HoverBorderColor: =ColorFade(CheckInButton_7.BorderColor, 20%)
@@ -27,6 +28,10 @@
         PressedBorderColor: =CheckInButton_7.Fill
         PressedColor: =CheckInButton_7.Fill
         PressedFill: =CheckInButton_7.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
         Text: ="Check-In"
         Width: =175
         X: =232
@@ -35,6 +40,7 @@
 
     WeeklyButton_7 As button:
         BorderColor: =ColorFade(WeeklyButton_7.Fill, -15%)
+        BorderThickness: =0
         Fill: =RGBA(72, 161, 255, 1)
         Height: =53
         HoverBorderColor: =ColorFade(WeeklyButton_7.BorderColor, 20%)
@@ -42,6 +48,10 @@
         PressedBorderColor: =WeeklyButton_7.Fill
         PressedColor: =WeeklyButton_7.Fill
         PressedFill: =WeeklyButton_7.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
         Text: ="Weekly"
         Width: =175
         X: =234
@@ -50,12 +60,17 @@
 
     MonthlyButton_7 As button:
         BorderColor: =ColorFade(MonthlyButton_7.Fill, -15%)
+        BorderThickness: =0
         Fill: =RGBA(72, 161, 255, 1)
         Height: =53
         HoverBorderColor: =ColorFade(MonthlyButton_7.BorderColor, 20%)
         PressedBorderColor: =MonthlyButton_7.Fill
         PressedColor: =MonthlyButton_7.Fill
         PressedFill: =MonthlyButton_7.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
         Text: ="Monthly"
         Width: =175
         X: =434
@@ -67,13 +82,13 @@
 
     Canvas1_10 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
-        Height: =776
+        Height: =757
         Width: =Parent.Width
-        Y: =305
+        Y: =286
         ZIndex: =7
 
         DataCard1_10 As dataCard.blankCard:
-            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(255, 255, 255, 1)
@@ -83,26 +98,39 @@
             Y: =0
             ZIndex: =5
 
+            PowerBI6 As powerbi:
+                BorderColor: =RGBA(255, 255, 255, 1)
+                DashboardId: ="074316b5-b4bd-4780-b863-6b491aa758df"
+                Height: =879
+                TileUrl: |-
+                    ="https://app.powerbi.com/embed?dashboardId=074316b5-b4bd-4780-b863-6b491aa758df&tileId=144e7685-b182-4f2d-bf9f-84779d49a8df&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
+                Width: =625
+                WorkspaceId: ="__my-workspace"
+                X: =3
+                Y: =21
+                ZIndex: =1
+
         DataCard1_11 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =850
+            Height: =875
             Width: =640
             X: =0
             Y: =1
             ZIndex: =6
 
             PowerBI16 As powerbi:
+                BorderColor: =RGBA(255, 255, 255, 1)
                 DashboardId: ="074316b5-b4bd-4780-b863-6b491aa758df"
-                Height: =780
+                Height: =871
                 TileUrl: |-
                     ="https://app.powerbi.com/embed?dashboardId=074316b5-b4bd-4780-b863-6b491aa758df&tileId=bdda108a-0ecd-466c-b477-a9c45173ef10&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
-                Width: =544
+                Width: =608
                 WorkspaceId: ="__my-workspace"
-                X: =51
-                Y: =39
+                X: =9
+                Y: =6
                 ZIndex: =1
 
     StudentcompMenu_5 As StudentcompMenu:
@@ -115,6 +143,7 @@
 
     WeeklyButton_10 As button:
         BorderColor: =ColorFade(WeeklyButton_10.Fill, -15%)
+        BorderThickness: =0
         Fill: =RGBA(72, 161, 255, 1)
         Height: =53
         HoverBorderColor: =ColorFade(WeeklyButton_10.BorderColor, 20%)
@@ -122,6 +151,10 @@
         PressedBorderColor: =WeeklyButton_10.Fill
         PressedColor: =WeeklyButton_10.Fill
         PressedFill: =WeeklyButton_10.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
         Text: ="Daily"
         Width: =175
         X: =31

@@ -42,9 +42,10 @@
 
     PowerBI11 As powerbi:
         BorderColor: =RGBA(0, 0, 0, 0)
-        DashboardId: ="2f08202c-3944-48fa-a9fa-d6b7c22ab3d4"
-        Height: =771
-        TileUrl: =""
+        DashboardId: ="230009de-7b1a-4ba8-9924-8d540d2544b4"
+        Height: =768
+        TileUrl: |-
+            ="https://app.powerbi.com/embed?dashboardId=230009de-7b1a-4ba8-9924-8d540d2544b4&tileId=6e06e556-09db-42d2-907a-0dcab0e8103b&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
         WorkspaceId: ="__my-workspace"
         Y: =203
         ZIndex: =6
@@ -54,6 +55,7 @@
         BorderStyle: =BorderStyle.None
         BorderThickness: =0
         Fill: =RGBA(72, 161, 255, 1)
+        FontWeight: =FontWeight.Bold
         Height: =53
         HoverBorderColor: =ColorFade(Button5_1.BorderColor, 20%)
         OnSelect: =Navigate('Teacher QuestionSet', ScreenTransition.Cover)
@@ -64,10 +66,9 @@
         RadiusBottomRight: =30
         RadiusTopLeft: =30
         RadiusTopRight: =30
-        Size: =24
         Text: ="Back"
         Width: =146
         X: =247
-        Y: =974
+        Y: =971
         ZIndex: =7
 
