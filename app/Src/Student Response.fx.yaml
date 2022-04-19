@@ -64,7 +64,10 @@
                 DisplayMode: =If(CountRows(Filter(student_response, Student_ID = Office365Users.MyProfile().Mail)) > 0,  Disabled, New)
                 Height: =140
                 Mode: =TextMode.MultiLine
-                PaddingLeft: =5
+                PaddingBottom: =15
+                PaddingLeft: =15
+                PaddingRight: =15
+                PaddingTop: =15
                 PressedBorderColor: =DataCardValue2.HoverBorderColor
                 PressedColor: =DataCardValue2.Color
                 PressedFill: =DataCardValue2.Fill
@@ -376,7 +379,7 @@
         BorderThickness: =0
         DisplayMode: =If(CountRows(Filter(student_response, Student_ID = Office365Users.MyProfile().Mail)) > 0,  DisplayMode.Disabled, DisplayMode.Edit)
         Fill: =RGBA(72, 161, 255, 1)
-        Height: =74
+        Height: =97
         HoverBorderColor: =ColorFade(Button7.BorderColor, 20%)
         OnSelect: =SubmitForm(Form3); NewForm(Form3);
         PressedBorderColor: =Button7.Fill
@@ -390,6 +393,6 @@
         Text: =If(CountRows(Filter(student_response, Student_ID = Office365Users.MyProfile().Mail)) > 0,  "You have already answered", "Submit Answer")
         Width: =351
         X: =144
-        Y: =910
+        Y: =886
         ZIndex: =9
 

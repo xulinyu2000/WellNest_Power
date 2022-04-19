@@ -87,7 +87,10 @@
                 DisplayMode: =Parent.DisplayMode
                 Height: =140
                 Mode: =TextMode.MultiLine
-                PaddingLeft: =5
+                PaddingBottom: =15
+                PaddingLeft: =15
+                PaddingRight: =15
+                PaddingTop: =15
                 PressedBorderColor: =question1.HoverBorderColor
                 PressedColor: =question1.Color
                 PressedFill: =question1.Fill
