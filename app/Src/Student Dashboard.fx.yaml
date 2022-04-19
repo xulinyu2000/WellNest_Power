@@ -80,16 +80,17 @@
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(247, 249, 252, 1)
-            Height: =606
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =795
             Width: =640
             X: =0
             Y: =0
             ZIndex: =5
 
             PowerBI1 As powerbi:
+                BorderStyle: =BorderStyle.None
                 DashboardId: ="59d4afaa-7771-446f-ad7c-6c1eb00b93c7"
-                Height: =512
+                Height: =674
                 TileUrl: |-
                     ="https://app.powerbi.com/embed?dashboardId=59d4afaa-7771-446f-ad7c-6c1eb00b93c7&tileId=cc3a54f8-f764-43cd-8114-ee60319e4a32&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
                 Width: =554
