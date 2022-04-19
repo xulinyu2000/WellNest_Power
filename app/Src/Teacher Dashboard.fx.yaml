@@ -84,36 +84,11 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(247, 249, 252, 1)
-            Height: =606
+            Height: =905
             Width: =640
             X: =0
             Y: =1
             ZIndex: =7
-
-            Container2 As groupContainer.manualLayoutContainer:
-                Height: =540
-                Width: =561
-                X: =30
-                Y: =20
-                ZIndex: =1
-
-                lblMoodOverview_3 As label:
-                    Align: =Align.Center
-                    Height: =46
-                    Size: =21
-                    Text: ="School Check-In Overview"
-                    Width: =560
-                    ZIndex: =3
-
-                PowerBI3 As powerbi:
-                    DashboardId: ="cb31ea51-ac71-4377-b72f-8a4a5aedffd9"
-                    Height: =494
-                    TileUrl: |-
-                        ="https://app.powerbi.com/embed?dashboardId=cb31ea51-ac71-4377-b72f-8a4a5aedffd9&tileId=c6be668b-d1fe-4788-9d9a-f9abac787b29&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
-                    Width: =560
-                    WorkspaceId: ="__my-workspace"
-                    Y: =46
-                    ZIndex: =4
 
         DataCard7 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -160,30 +135,6 @@
             X: =0
             Y: =3
             ZIndex: =9
-
-            Container2_2 As groupContainer.manualLayoutContainer:
-                Height: =542
-                Width: =561
-                X: =40
-                Y: =25
-                ZIndex: =1
-
-                Label11_2 As label:
-                    Height: =56
-                    Size: =21
-                    Text: ="Student Check-In Overview"
-                    Width: =560
-                    ZIndex: =1
-
-                PowerBI8 As powerbi:
-                    DashboardId: ="cb31ea51-ac71-4377-b72f-8a4a5aedffd9"
-                    Height: =486
-                    TileUrl: |-
-                        ="https://app.powerbi.com/embed?dashboardId=cb31ea51-ac71-4377-b72f-8a4a5aedffd9&tileId=62c7d8eb-d42f-4fba-8fa4-3ba4d2b09546&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
-                    Width: =560
-                    WorkspaceId: ="__my-workspace"
-                    Y: =56
-                    ZIndex: =2
 
         DataCard2 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
