@@ -7,7 +7,7 @@
 
     "BrowseGallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         Height: =886
-        Items: |
+        Items: |-
             =/*AddColumns(
                 AppUsers,
                 "UserPhoto",
@@ -18,8 +18,27 @@
                     Office365Users.UserPhotoV2(LinyuXu.Email)
                 )
             )*/
-            
-            SortByColumns(Filter(AppUsers, StartsWith(NAME, TextSearchBox1.Text)),"EnrolledClass",If(SortDescending1, Descending, Ascending)) 
+            /*SortByColumns(Filter(AppUsers, StartsWith(NAME, TextSearchBox1.Text)),"EnrolledClass", Ascending)*/
+            SortByColumns(
+                Filter(
+                    AddColumns(
+                        AppUsers,
+                        "UserPhoto",
+                        If(
+                    // check if the the user has an email and a profile picture
+                            !IsBlank(LinyuXu.Email) And Office365Users.UserPhotoMetadata(LinyuXu.Email).HasPhoto,
+                    // get the profile picture
+                            Office365Users.UserPhotoV2(LinyuXu.Email)
+                        )
+                    ),
+                    StartsWith(
+                        NAME,
+                        TextSearchBox1.Text
+                    )
+                ),
+                "EnrolledClass",
+                Ascending
+            )
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplatePadding: =0

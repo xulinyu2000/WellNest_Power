@@ -1494,46 +1494,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'School Management'.BrowseGallery1.Image9.Image"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'School Management'.BrowseGallery1.Image9.Image",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 10,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".UserPhoto"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Image",
-                "module": "School Management",
-                "type": "'School Management'.BrowseGallery1.Image9"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "UserPhoto"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Student Dashboard- Monthly'.CheckInButton_7.OnSelect"
                 }
               ],
