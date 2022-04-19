@@ -11,6 +11,7 @@
 
         Button6 As button:
             BorderColor: =ColorFade(Button6.Fill, -15%)
+            BorderThickness: =0
             Fill: =RGBA(72, 161, 255, 1)
             Height: =70
             HoverBorderColor: =ColorFade(Button6.BorderColor, 20%)
@@ -24,24 +25,30 @@
             PressedBorderColor: =Button6.Fill
             PressedColor: =Button6.Fill
             PressedFill: =Button6.Color
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
             Size: =24
             Text: ="Student Login "
             Width: =280
-            X: =123
-            Y: =231
+            X: =126
+            Y: =187
             ZIndex: =1
 
         Dropdown_Class As dropdown:
             BorderColor: =RGBA(72, 161, 255, 1)
+            BorderThickness: =0
             ChevronBackground: =RGBA(72, 161, 255, 1)
             Default: ="0"
-            Height: =70
+            Height: =63
             HoverBorderColor: =ColorFade(Dropdown_Class.BorderColor, 15%)
             Items: =Sort(Distinct(Class_Table, Class),Result)
             PressedBorderColor: =Dropdown_Class.HoverBorderColor
             Size: =21
-            Width: =526
-            Y: =100
+            Width: =280
+            X: =126
+            Y: =96
             ZIndex: =2
 
     Container6 As groupContainer.manualLayoutContainer:
@@ -73,8 +80,8 @@
             Size: =24
             Text: ="Teacher Login"
             Width: =280
-            X: =138
-            Y: =147
+            X: =124
+            Y: =180
             ZIndex: =1
 
         Dropdown_Class_1 As dropdown:
@@ -88,8 +95,8 @@
             PressedBorderColor: =Dropdown_Class_1.HoverBorderColor
             Size: =21
             Width: =280
-            X: =138
-            Y: =239
+            X: =124
+            Y: =88
             ZIndex: =2
 
     Container8 As groupContainer.manualLayoutContainer:
@@ -101,6 +108,7 @@
 
         Button11 As button:
             BorderColor: =ColorFade(Button11.Fill, -15%)
+            BorderThickness: =0
             Fill: =RGBA(72, 161, 255, 1)
             Height: =70
             HoverBorderColor: =ColorFade(Button11.BorderColor, 20%)
@@ -108,11 +116,15 @@
             PressedBorderColor: =Button11.Fill
             PressedColor: =Button11.Fill
             PressedFill: =Button11.Color
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
             Size: =24
             Text: ="Admin Login"
             Width: =280
-            X: =150
-            Y: =120
+            X: =136
+            Y: =96
             ZIndex: =1
 
     Image11 As image:
