@@ -1,12 +1,12 @@
-"'Knowledge sharing' As screen.'phoneLayout_Email_ver3.0'":
+"'Knowledge sharing_1' As screen.'phoneLayout_Email_ver3.0'":
 
-    RectQuickActionBar2 As rectangle:
+    RectQuickActionBar2_1 As rectangle:
         Fill: =RGBA(72, 161, 255, 1)
         Height: =88
         Width: =Parent.Width
         ZIndex: =1
 
-    LblAppName2 As label:
+    LblAppName2_1 As label:
         Fill: =RGBA(58, 58, 58, 0)
         Height: =88
         PaddingLeft: =0
@@ -17,11 +17,11 @@
         X: =32
         ZIndex: =2
 
-    iconMail1 As icon.Send:
+    iconMail1_1 As icon.Send:
         DisabledFill: =RGBA(240, 240, 240, 0.5)
         DisplayMode: |-
             =/*Email must have a subject and recipients to be sent*/
-            If(Len(Trim(TextEmailSubject1.Text)) > 0 && !IsEmpty(MyPeople), DisplayMode.Edit, DisplayMode.Disabled)
+            If(Len(Trim(TextEmailSubject1_1.Text)) > 0 && !IsEmpty(MyPeople), DisplayMode.Edit, DisplayMode.Disabled)
         Height: =88
         Icon: =Icon.Send
         OnSelect: |
@@ -33,29 +33,29 @@
             Clear(MyPeople)*/
             
             Set( _emailRecipientString, Concat(MyPeople, Mail & ";") );
-            If( IsBlank( UploadedImage1 ),
+            If( IsBlank( UploadedImage1_1 ),
                 'Office365Outlook'.SendEmail( _emailRecipientString, 
-                    TextEmailSubject1.Text, 
-                    TextEmailMessage1.Text, 
+                    TextEmailSubject1_1.Text, 
+                    TextEmailMessage1_1.Text, 
                     { Importance: "Normal" }
                 ),
                 'Office365Outlook'.SendEmail( _emailRecipientString, 
-                    TextEmailSubject1.Text, 
-                    TextEmailMessage1.Text, 
+                    TextEmailSubject1_1.Text, 
+                    TextEmailMessage1_1.Text, 
                     {
                         Importance: "Normal",
                         Attachments: Table(
                             {
                                 Name: "Image.jpg", 
-                                ContentBytes: UploadedImage1.Image
+                                ContentBytes: UploadedImage1_1.Image
                             }
                         )
                     }
                 )
             );
-            Reset( TextEmailSubject1 );
-            Reset( TextEmailMessage1 );
-            Reset( AddMediaButton1 );
+            Reset( TextEmailSubject1_1 );
+            Reset( TextEmailMessage1_1 );
+            Reset( AddMediaButton1_1 );
             Clear( MyPeople ); Navigate('Email Success')
         PaddingBottom: =24
         PaddingLeft: =24
@@ -66,87 +66,87 @@
         X: =Parent.Width - Self.Width
         ZIndex: =3
 
-    LblRecipientCount1 As label:
+    LblRecipientCount1_1 As label:
         PaddingLeft: =0
         Size: =18
         Text: ="To (" &CountRows(MyPeople) & ")"
-        Width: =EmailPeopleGallery1.Width
+        Width: =EmailPeopleGallery1_1.Width
         Wrap: =false
         X: =32
-        Y: =RectQuickActionBar2.Height + 15
+        Y: =RectQuickActionBar2_1.Height + 15
         ZIndex: =4
 
-    TextSearchBox2 As text:
+    TextSearchBox2_1 As text:
         AccessibleLabel: ="Search people or add email address. At least one recipient is required for a successful submission."
         Default: =""
         Height: =70
         HintText: ="Search people or add email address"
         PaddingLeft: =70
-        PressedBorderColor: =TextSearchBox2.HoverBorderColor
-        PressedColor: =TextSearchBox2.Color
-        PressedFill: =TextSearchBox2.Fill
+        PressedBorderColor: =TextSearchBox2_1.HoverBorderColor
+        PressedColor: =TextSearchBox2_1.Color
+        PressedFill: =TextSearchBox2_1.Fill
         Size: =21
         Width: =Parent.Width - Self.X * 2
         X: =32
-        Y: =LblRecipientCount1.Y + LblRecipientCount1.Height + 6
+        Y: =LblRecipientCount1_1.Y + LblRecipientCount1_1.Height + 6
         ZIndex: =5
 
-    SearchIcon2 As icon.Search:
-        DisabledFill: =SearchIcon2.Fill
+    SearchIcon2_1 As icon.Search:
+        DisabledFill: =SearchIcon2_1.Fill
         Height: =Self.Width
-        HoverBorderColor: =ColorFade(SearchIcon2.BorderColor, 20%)
-        HoverColor: =ColorFade(SearchIcon2.Color, 20%)
-        HoverFill: =SearchIcon2.Fill
+        HoverBorderColor: =ColorFade(SearchIcon2_1.BorderColor, 20%)
+        HoverColor: =ColorFade(SearchIcon2_1.Color, 20%)
+        HoverFill: =SearchIcon2_1.Fill
         Icon: =Icon.Search
         PaddingBottom: =18
         PaddingLeft: =18
         PaddingRight: =18
         PaddingTop: =18
-        PressedBorderColor: =ColorFade(SearchIcon2.BorderColor, -20%)
-        PressedColor: =ColorFade(SearchIcon2.Color, -20%)
-        PressedFill: =SearchIcon2.Fill
+        PressedBorderColor: =ColorFade(SearchIcon2_1.BorderColor, -20%)
+        PressedColor: =ColorFade(SearchIcon2_1.Color, -20%)
+        PressedFill: =SearchIcon2_1.Fill
         Tooltip: ="Search"
-        Width: =TextSearchBox2.Height
-        X: =TextSearchBox2.X
-        Y: =TextSearchBox2.Y
+        Width: =TextSearchBox2_1.Height
+        X: =TextSearchBox2_1.X
+        Y: =TextSearchBox2_1.Y
         ZIndex: =6
 
-    AddIcon1 As icon.Add:
-        DisabledFill: =AddIcon1.Fill
-        Height: =TextSearchBox2.Height
-        HoverBorderColor: =ColorFade(AddIcon1.BorderColor, 20%)
-        HoverColor: =ColorFade(AddIcon1.Color, 20%)
-        HoverFill: =AddIcon1.Fill
+    AddIcon1_1 As icon.Add:
+        DisabledFill: =AddIcon1_1.Fill
+        Height: =TextSearchBox2_1.Height
+        HoverBorderColor: =ColorFade(AddIcon1_1.BorderColor, 20%)
+        HoverColor: =ColorFade(AddIcon1_1.Color, 20%)
+        HoverFill: =AddIcon1_1.Fill
         Icon: =Icon.Add
         OnSelect: |-
             =Collect(MyPeople,           
-            {DisplayName: TextSearchBox2.Text, UserPrincipalName: TextSearchBox2.Text, Mail: TextSearchBox2.Text});           
-            Reset(TextSearchBox2)
+            {DisplayName: TextSearchBox2_1.Text, UserPrincipalName: TextSearchBox2_1.Text, Mail: TextSearchBox2_1.Text});           
+            Reset(TextSearchBox2_1)
         PaddingBottom: =15
         PaddingLeft: =15
         PaddingRight: =15
         PaddingTop: =15
-        PressedBorderColor: =ColorFade(AddIcon1.BorderColor, -20%)
-        PressedColor: =ColorFade(AddIcon1.Color, -20%)
-        PressedFill: =AddIcon1.Fill
+        PressedBorderColor: =ColorFade(AddIcon1_1.BorderColor, -20%)
+        PressedColor: =ColorFade(AddIcon1_1.Color, -20%)
+        PressedFill: =AddIcon1_1.Fill
         TabIndex: =0
         Tooltip: ="Select to add user to collection"
         Visible: |-
-            =!IsBlank(TextSearchBox2.Text) &&           
+            =!IsBlank(TextSearchBox2_1.Text) &&           
             
             /*Is user entry a valid email address*/           
-            IsMatch(TextSearchBox2.Text, Match.Email)           &&
+            IsMatch(TextSearchBox2_1.Text, Match.Email)           &&
             
-            Not(Trim(TextSearchBox2.Text) in MyPeople.UserPrincipalName)
+            Not(Trim(TextSearchBox2_1.Text) in MyPeople.UserPrincipalName)
         Width: =70
-        X: =TextSearchBox2.X + TextSearchBox2.Width - Self.Width - 10
-        Y: =TextSearchBox2.Y
+        X: =TextSearchBox2_1.X + TextSearchBox2_1.Width - Self.Width - 10
+        Y: =TextSearchBox2_1.Y
         ZIndex: =7
 
-    EmailPeopleGallery1 As gallery.SelectedUsersGallery:
+    EmailPeopleGallery1_1 As gallery.SelectedUsersGallery:
         AccessibleLabel: ="User selected people"
-        BorderColor: =TextSearchBox2.BorderColor
-        Fill: =TextSearchBox2.Fill
+        BorderColor: =TextSearchBox2_1.BorderColor
+        Fill: =TextSearchBox2_1.Fill
         Height: |-
             =/*Height adjusts to number of items in gallery*/
             Min((Self.TemplateHeight + Self.TemplatePadding * 2) * RoundUp(CountRows(Self.AllItems) / 2, 0), 304)
@@ -158,224 +158,217 @@
         TemplateSize: =47
         Width: =Parent.Width - Self.X * 2
         WrapCount: =2
-        X: =27
-        Y: =TextSearchBox2.Y + TextSearchBox2.Height + 8
+        Y: =TextSearchBox2_1.Y + TextSearchBox2_1.Height + 8
         ZIndex: =8
 
-        Rectangle1 As rectangle:
-            DisabledFill: =Rectangle1.Fill
+        Rectangle1_1 As rectangle:
+            DisabledFill: =Rectangle1_1.Fill
             Height: =Parent.TemplateHeight
-            HoverFill: =Rectangle1.Fill
+            HoverFill: =Rectangle1_1.Fill
             OnSelect: =Select(Parent)
-            PressedFill: =Rectangle1.Fill
+            PressedFill: =Rectangle1_1.Fill
             Width: =Parent.TemplateWidth
             ZIndex: =1
 
-        Title3 As label:
+        Title3_1 As label:
             FocusedBorderThickness: =2
-            Height: =EmailPeopleGallery1.TemplateHeight
+            Height: =EmailPeopleGallery1_1.TemplateHeight
             OnSelect: =Set(_selectedUser, ThisItem)
             PaddingLeft: =10
             Size: =18
-            TabIndex: =If(PeopleBrowseGallery1.Visible, -1, 0)
+            TabIndex: =If(PeopleBrowseGallery1_1.Visible, -1, 0)
             Text: =ThisItem.DisplayName
             VerticalAlign: =Middle
-            Width: =EmailPeopleGallery1.TemplateWidth - iconRemove1.Width + 10
+            Width: =EmailPeopleGallery1_1.TemplateWidth - iconRemove1_1.Width + 10
             Wrap: =false
             ZIndex: =2
 
-        iconRemove1 As icon.Cancel:
-            AccessibleLabel: =iconRemove1.Tooltip
-            Color: =Title3.Color
-            DisabledFill: =iconRemove1.Fill
-            Height: =EmailPeopleGallery1.TemplateHeight
-            HoverBorderColor: =ColorFade(iconRemove1.BorderColor, 20%)
-            HoverColor: =ColorFade(iconRemove1.Color, 20%)
-            HoverFill: =iconRemove1.Fill
+        iconRemove1_1 As icon.Cancel:
+            AccessibleLabel: =iconRemove1_1.Tooltip
+            Color: =Title3_1.Color
+            DisabledFill: =iconRemove1_1.Fill
+            Height: =EmailPeopleGallery1_1.TemplateHeight
+            HoverBorderColor: =ColorFade(iconRemove1_1.BorderColor, 20%)
+            HoverColor: =ColorFade(iconRemove1_1.Color, 20%)
+            HoverFill: =iconRemove1_1.Fill
             Icon: =Icon.Cancel
             OnSelect: =Remove(MyPeople, LookUp(MyPeople, UserPrincipalName = ThisItem.UserPrincipalName))
             PaddingBottom: =9
             PaddingLeft: =9
             PaddingRight: =9
             PaddingTop: =9
-            PressedBorderColor: =ColorFade(iconRemove1.BorderColor, -20%)
-            PressedColor: =ColorFade(iconRemove1.Color, -20%)
-            PressedFill: =iconRemove1.Fill
-            TabIndex: =If(PeopleBrowseGallery1.Visible, -1, 0)
+            PressedBorderColor: =ColorFade(iconRemove1_1.BorderColor, -20%)
+            PressedColor: =ColorFade(iconRemove1_1.Color, -20%)
+            PressedFill: =iconRemove1_1.Fill
+            TabIndex: =If(PeopleBrowseGallery1_1.Visible, -1, 0)
             Tooltip: ="Select to remove user from collection"
             Width: =Self.Height
-            X: =EmailPeopleGallery1.TemplateWidth - Self.Width
+            X: =EmailPeopleGallery1_1.TemplateWidth - Self.Width
             ZIndex: =3
 
-    LblEmailSubject1 As label:
+    LblEmailSubject1_1 As label:
         PaddingLeft: =0
         Size: =18
         Text: ="Subject"
         Width: =Parent.Width - Self.X * 2
         Wrap: =false
         X: =32
-        Y: =EmailPeopleGallery1.Y + EmailPeopleGallery1.Height + 16
+        Y: =EmailPeopleGallery1_1.Y + EmailPeopleGallery1_1.Height + 16
         ZIndex: =9
 
-    TextEmailSubject1 As text:
+    TextEmailSubject1_1 As text:
         AccessibleLabel: ="A subject is required to send an email."
         Default: =""
         Height: =70
         HintText: ="Add a subject"
-        PressedBorderColor: =TextEmailSubject1.HoverBorderColor
-        PressedColor: =TextEmailSubject1.Color
-        PressedFill: =TextEmailSubject1.Fill
+        PressedBorderColor: =TextEmailSubject1_1.HoverBorderColor
+        PressedColor: =TextEmailSubject1_1.Color
+        PressedFill: =TextEmailSubject1_1.Fill
         Size: =21
-        TabIndex: =If(PeopleBrowseGallery1.Visible, -1, 0)
+        TabIndex: =If(PeopleBrowseGallery1_1.Visible, -1, 0)
         Width: =Parent.Width - Self.X * 2
         X: =32
-        Y: =LblEmailSubject1.Y + LblEmailSubject1.Height + 6
+        Y: =LblEmailSubject1_1.Y + LblEmailSubject1_1.Height + 6
         ZIndex: =10
 
-    LblEmailMessage1 As label:
+    LblEmailMessage1_1 As label:
         PaddingLeft: =0
         Size: =18
         Text: ="Message"
         Width: =200
         Wrap: =false
         X: =32
-        Y: =TextEmailSubject1.Y + TextEmailSubject1.Height + 16
+        Y: =TextEmailSubject1_1.Y + TextEmailSubject1_1.Height + 16
         ZIndex: =11
 
-    TextEmailMessage1 As text:
+    TextEmailMessage1_1 As text:
         AccessibleLabel: ="Add a message"
         Default: ="This is can send emails to everybody inside the org. Should we include Teachers when send knowledge to everybody?"
         Height: =584
         HintText: ="Add a message"
         Mode: =TextMode.MultiLine
-        PressedBorderColor: =TextEmailMessage1.HoverBorderColor
-        PressedColor: =TextEmailMessage1.Color
-        PressedFill: =TextEmailMessage1.Fill
+        PressedBorderColor: =TextEmailMessage1_1.HoverBorderColor
+        PressedColor: =TextEmailMessage1_1.Color
+        PressedFill: =TextEmailMessage1_1.Fill
         Size: =21
-        TabIndex: =If(PeopleBrowseGallery1.Visible, -1, 0)
+        TabIndex: =If(PeopleBrowseGallery1_1.Visible, -1, 0)
         Width: =586
         X: =32
-        Y: =LblEmailMessage1.Y + LblEmailMessage1.Height + 6
+        Y: =LblEmailMessage1_1.Y + LblEmailMessage1_1.Height + 6
         ZIndex: =12
 
-    Button14_1 As button:
-        BorderColor: =ColorFade(Button14_1.Fill, -15%)
+    Button14_2 As button:
+        BorderColor: =ColorFade(Button14_2.Fill, -15%)
         Fill: =RGBA(72, 161, 255, 1)
         Height: =70
-        HoverBorderColor: =ColorFade(Button14_1.BorderColor, 20%)
+        HoverBorderColor: =ColorFade(Button14_2.BorderColor, 20%)
         OnSelect: =Back()
-        PressedBorderColor: =Button14_1.Fill
-        PressedColor: =Button14_1.Fill
-        PressedFill: =Button14_1.Color
+        PressedBorderColor: =Button14_2.Fill
+        PressedColor: =Button14_2.Fill
+        PressedFill: =Button14_2.Color
         Size: =24
         Text: ="Back"
         Width: =280
         X: =187
-        Y: =1062
-        ZIndex: =13
+        Y: =1046
+        ZIndex: =15
 
-    AddMediaWithImage1 As group:
+    AddMediaWithImage1_1 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =15
 
-        UploadedImage1 As image:
+        UploadedImage1_1 As image:
             Height: =328
-            HoverBorderColor: =ColorFade(UploadedImage1.BorderColor, 20%)
-            HoverFill: =ColorFade(UploadedImage1.Fill, 20%)
-            Image: =If(IsBlank(AddMediaButton1.Media), SampleImage, AddMediaButton1.Media)
+            HoverBorderColor: =ColorFade(UploadedImage1_1.BorderColor, 20%)
+            HoverFill: =ColorFade(UploadedImage1_1.Fill, 20%)
+            Image: =If(IsBlank(AddMediaButton1_1.Media), SampleImage, AddMediaButton1_1.Media)
             ImagePosition: =ImagePosition.Fill
-            PressedBorderColor: =ColorFade(UploadedImage1.BorderColor, -20%)
-            PressedFill: =ColorFade(UploadedImage1.Fill, -20%)
+            PressedBorderColor: =ColorFade(UploadedImage1_1.BorderColor, -20%)
+            PressedFill: =ColorFade(UploadedImage1_1.Fill, -20%)
             Width: =436
             X: =104
             Y: =655
-            ZIndex: =14
+            ZIndex: =13
 
-        AddMediaButton1 As addMedia:
+        AddMediaButton1_1 As addMedia:
             Height: =328
-            HoverBorderColor: =ColorFade(AddMediaButton1.BorderColor, 20%)
-            HoverColor: =AddMediaButton1.Color
-            HoverFill: =ColorFade(AddMediaButton1.Fill, 20%)
-            PressedBorderColor: =ColorFade(AddMediaButton1.BorderColor, -20%)
-            PressedColor: =AddMediaButton1.Color
-            PressedFill: =ColorFade(AddMediaButton1.Fill, -20%)
+            HoverBorderColor: =ColorFade(AddMediaButton1_1.BorderColor, 20%)
+            HoverColor: =AddMediaButton1_1.Color
+            HoverFill: =ColorFade(AddMediaButton1_1.Fill, 20%)
+            PressedBorderColor: =ColorFade(AddMediaButton1_1.BorderColor, -20%)
+            PressedColor: =AddMediaButton1_1.Color
+            PressedFill: =ColorFade(AddMediaButton1_1.Fill, -20%)
             Size: =25
             Width: =436
             X: =99
             Y: =655
-            ZIndex: =15
+            ZIndex: =14
 
-    PeopleBrowseGallery1 As gallery.PeoplePickerGallerySmall:
+    PeopleBrowseGallery1_1 As gallery.PeoplePickerGallerySmall:
         AccessibleLabel: ="User look up search results"
         BorderThickness: =2
         Fill: =Parent.Fill
-        Height: |-
-            =Min( 
-                ( EmailPeopleGallery1.TemplateHeight + EmailPeopleGallery1.TemplatePadding * 2 ) *
-                    RoundUp( CountRows( EmailPeopleGallery1.AllItems ) / 2, 0 ), 
-                304
-            )
+        Height: =If(Self.Visible, Parent.Height / 2 + 200, 0)
         Items: |-
             =/*Only use Office 365 Users operation if user has started searching*/
-            If(!IsBlank(Trim(TextSearchBox2.Text)), Office365Users.SearchUser({searchTerm: Trim(TextSearchBox2.Text), top: 15}))
+            If(!IsBlank(Trim(TextSearchBox3.Text)), Office365Users.SearchUser({searchTerm: Trim(TextSearchBox3.Text), top: 15}))
         Layout: =Layout.Vertical
-        ShowScrollbar: =EmailPeopleGallery1.Height >= 304
         TemplatePadding: =0
         TemplateSize: =104
-        Visible: =!IsBlank(Trim(TextSearchBox2.Text))
+        Visible: =!IsBlank(Trim(TextSearchBox3.Text))
         Width: =Parent.Width - Self.X * 2
-        X: =32
-        Y: =TextSearchBox2.Y + TextSearchBox2.Height
+        X: =52
+        Y: =TextSearchBox3.Y + TextSearchBox3.Height
         ZIndex: =16
 
-        Rectangle2 As rectangle:
-            BorderColor: =Title4.Color
+        Rectangle5_1 As rectangle:
+            BorderColor: =Title5_1.Color
             BorderThickness: =If(ThisItem.UserPrincipalName in MyPeople.UserPrincipalName, 4, 0)
-            DisabledFill: =Rectangle2.Fill
+            DisabledFill: =Rectangle5_1.Fill
             Fill: =RGBA(0,0,0,0)
             Height: =Parent.TemplateHeight
             HoverFill: =RGBA(0,0,0,0)
-            OnSelect: =Select(Title4)
-            PressedFill: =Rectangle2.Fill
+            OnSelect: =Select(Title5_1)
+            PressedFill: =Rectangle5_1.Fill
             Width: =Parent.TemplateWidth
             ZIndex: =1
 
-        Title4 As label:
+        Title5_1 As label:
             BorderColor: =Self.Color
             FocusedBorderThickness: =2
             OnSelect: |-
                 =/*Select user, clear search contents and if this user hasn't been added to MyPeople collection, add them*/
                 Concurrent(
                 Set(_selectedUser, ThisItem),
-                Reset(TextSearchBox2),
+                Reset(TextSearchBox3),
                 If(Not(ThisItem.UserPrincipalName in MyPeople.UserPrincipalName), Collect(MyPeople, ThisItem)))
             Size: =21
             TabIndex: =0
             Text: =ThisItem.DisplayName
             VerticalAlign: =Middle
-            Width: =PeopleBrowseGallery1.TemplateWidth - 2 * Self.X
+            Width: =PeopleBrowseGallery1_1.TemplateWidth - 2 * Self.X
             Wrap: =false
             X: =16
             Y: =4
             ZIndex: =2
 
-        Subtitle3 As label:
-            Color: =ColorFade(Title4.Color, 0.20)
+        Subtitle1_1 As label:
+            Color: =ColorFade(Title5_1.Color, 0.20)
             FocusedBorderThickness: =2
-            OnSelect: =Select(Title4)
+            OnSelect: =Select(Title5_1)
             Size: =21
             Text: =ThisItem.UserPrincipalName
             VerticalAlign: =Middle
-            Width: =PeopleBrowseGallery1.TemplateWidth - 2 * Self.X
+            Width: =PeopleBrowseGallery1_1.TemplateWidth - 2 * Self.X
             Wrap: =false
-            X: =Title4.X
-            Y: =Title4.Y + Title4.Height + 3
+            X: =Title5_1.X
+            Y: =Title5_1.Y + Title5_1.Height + 3
             ZIndex: =3
 
-        Separator3 As rectangle:
+        Separator1_1 As rectangle:
             Height: =1
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth

@@ -32,7 +32,7 @@
             //Navigate('Detail Screen', ScreenTransition.None, {SelectedItem: StudentGallery.Selected})
         TemplatePadding: =0
         TemplateSize: =Min(160, Self.Height - 60)
-        Y: =321
+        Y: =366
         ZIndex: =1
 
         Image7 As image:
@@ -136,8 +136,8 @@
         Text: =VarClass
         Underline: =true
         Width: =94
-        X: =523
-        Y: =113
+        X: =193
+        Y: =217
         ZIndex: =14
 
     Label14_3 As label:
@@ -146,8 +146,15 @@
         Size: =21
         Text: ="View Students at risk"
         Underline: =true
-        Width: =560
+        Width: =404
         X: =80
         Y: =107
         ZIndex: =15
+
+    RectQuickActionBar1_1 As rectangle:
+        Fill: =RGBA(72, 161, 255, 1)
+        Height: =88
+        Width: =Parent.Width
+        Y: =261
+        ZIndex: =16
 
