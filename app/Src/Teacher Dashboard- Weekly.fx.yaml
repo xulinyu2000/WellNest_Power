@@ -84,37 +84,11 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(247, 249, 252, 1)
-            Height: =606
+            Height: =905
             Width: =640
             X: =0
             Y: =1
             ZIndex: =7
-
-            Container2_3 As groupContainer.manualLayoutContainer:
-                Height: =540
-                Width: =561
-                X: =30
-                Y: =20
-                ZIndex: =1
-
-                PowerBI2_1 As powerbi:
-                    DashboardId: ="0af1aa97-d4fa-4c1b-81e7-b8dbf55739fa"
-                    Height: =472
-                    TileUrl: |-
-                        ="https://app.powerbi.com/embed?dashboardId=0af1aa97-d4fa-4c1b-81e7-b8dbf55739fa&tileId=927548b8-1ada-4eb7-89f6-19439e796e77&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
-                    Width: =560
-                    WorkspaceId: ="__my-workspace"
-                    Y: =68
-                    ZIndex: =2
-
-                lblMoodOverview_4 As label:
-                    Align: =Align.Center
-                    Height: =46
-                    Size: =21
-                    Text: ="School Check-In Overview"
-                    Width: =560
-                    Y: =10
-                    ZIndex: =3
 
         DataCard7_1 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
