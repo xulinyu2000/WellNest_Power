@@ -123,52 +123,6 @@
                 Y: =60
                 ZIndex: =1
 
-        DataCard10_2 As dataCard.blankCard:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =606
-            Width: =640
-            X: =0
-            Y: =3
-            ZIndex: =9
-
-            Container2_8 As groupContainer.manualLayoutContainer:
-                Height: =542
-                Width: =561
-                X: =40
-                Y: =25
-                ZIndex: =1
-
-                Label11_8 As label:
-                    Height: =56
-                    Size: =21
-                    Text: ="Student Check-In Overview"
-                    Width: =560
-                    ZIndex: =1
-
-                PowerBI6 As powerbi:
-                    DashboardId: ="f1140de3-1543-4f65-acc8-512fb635c7b5"
-                    Height: =486
-                    TileUrl: |-
-                        ="https://app.powerbi.com/embed?dashboardId=f1140de3-1543-4f65-acc8-512fb635c7b5&tileId=5bb1d4fe-c897-4627-bb16-17ef930373d6&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
-                    Width: =560
-                    WorkspaceId: ="__my-workspace"
-                    Y: =56
-                    ZIndex: =2
-
-        DataCard2_2 As dataCard.blankCard:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =100
-            Width: =640
-            X: =0
-            Y: =4
-            ZIndex: =10
-
     DashboardLogo_9 As image:
         Height: =98
         HoverBorderColor: =ColorFade(DashboardLogo_9.BorderColor, 20%)
