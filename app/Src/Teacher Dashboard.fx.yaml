@@ -130,17 +130,18 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =600
+            Height: =920
             Width: =640
             X: =0
             Y: =3
             ZIndex: =9
 
             PowerBI13 As powerbi:
+                BorderStyle: =BorderStyle.None
                 DashboardId: ="cb31ea51-ac71-4377-b72f-8a4a5aedffd9"
-                Height: =527
+                Height: =851
                 TileUrl: |-
-                    ="https://app.powerbi.com/embed?dashboardId=cb31ea51-ac71-4377-b72f-8a4a5aedffd9&tileId=c170ab65-0789-4c9e-bafd-8f5cc594dd50&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
+                    ="https://app.powerbi.com/embed?dashboardId=cb31ea51-ac71-4377-b72f-8a4a5aedffd9&tileId=1b603e4b-15e7-4b14-ad12-76f75de3da70&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
                 Width: =557
                 WorkspaceId: ="__my-workspace"
                 X: =40
