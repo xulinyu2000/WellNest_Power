@@ -28,7 +28,7 @@
         DisplayMode: =DisplayMode.Edit
         Fill: =RGBA(0, 0, 0, 0)
         HeadingSize: =21
-        Height: =960
+        Height: =813
         Items: =Filter(checkin_3, Value(Rating) > 0)
         Size: =21
         Width: =640
@@ -37,6 +37,7 @@
         ZIndex: =15
 
         Student_Name_Column4_3 As dataTableColumn.textualColumn:
+            AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Name"
             FieldName: ="Student_Name"
@@ -45,23 +46,97 @@
             LayoutHeight: =Parent.Height
             Order: =3
             Text: =ThisItem.Student_Name
-            Width: =100
+            Width: =169
             X: =60
             Y: =0
             ZIndex: =2
 
-        Rating_Column2_3 As dataTableColumn.textualColumn:
+        Face_Column1 As dataTableColumn.textualColumn:
             AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Rating"
-            FieldName: ="Rating"
+            FieldDisplayName: ="Face"
+            FieldName: ="Face"
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =4
-            Text: =ThisItem.Rating
-            Width: =125
-            X: =508
+            Order: =5
+            Text: =ThisItem.Face
+            Width: =75
+            X: =0
             Y: =0
-            ZIndex: =3
+            ZIndex: =4
+
+        Physical_Activity_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Active"
+            FieldName: ="Physical_Activity"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =6
+            Text: =ThisItem.Physical_Activity
+            Width: =109
+            X: =0
+            Y: =0
+            ZIndex: =5
+
+        Sleep_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Sleep"
+            FieldName: ="Sleep"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =7
+            Text: =ThisItem.Sleep
+            Width: =96
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+        Stress_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Stress"
+            FieldName: ="Stress"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =8
+            Text: =ThisItem.Stress
+            Width: =94
+            X: =524
+            Y: =0
+            ZIndex: =7
+
+        Word_Column3 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Word"
+            FieldName: ="Word"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =9
+            Text: =ThisItem.Word
+            Width: =93
+            X: =0
+            Y: =0
+            ZIndex: =8
+
+    Label4 As label:
+        Color: =RGBA(46, 45, 45, 1)
+        Height: =140
+        Size: =15
+        Text: |-
+            ="Face: 1 (unhappy) - 5 (happy)
+            Active: Yes/No
+            Sleep Quality: 1 (bad) - 5 (good) 
+            Stress Levels: 0 (No Stress) - 10 (Extremely Stressed)"
+        Width: =583
+        X: =26
+        Y: =989
+        ZIndex: =16
 
