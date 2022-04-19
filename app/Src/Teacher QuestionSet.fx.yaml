@@ -40,7 +40,7 @@
         Text: ="Add question"
         Width: =422
         X: =109
-        Y: =648
+        Y: =605
         ZIndex: =7
 
     Form1 As form:
@@ -327,20 +327,11 @@
         Y: =191
         ZIndex: =14
 
-    Label10_5 As label:
-        FontWeight: =FontWeight.Semibold
-        Height: =87
-        Size: =21
-        Text: ="Student responses"
-        Width: =560
-        X: =40
-        Y: =719
-        ZIndex: =15
-
     DataTable2 As dataTable.datatable:
         BorderStyle: =BorderStyle.Solid
         DisplayMode: =DisplayMode.Edit
         Fill: =RGBA(0, 0, 0, 0)
+        HeadingFill: =RGBA(87, 196, 255, 1)
         HeadingSize: =21
         Height: =226
         Items: =Filter(student_response, Class = LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class))
@@ -392,4 +383,16 @@
             X: =0
             Y: =0
             ZIndex: =7
+
+    Label4_2 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(158, 223, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =89
+        Size: =21
+        Text: ="Student Responses"
+        Width: =640
+        Y: =717
+        ZIndex: =17
 

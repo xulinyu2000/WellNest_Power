@@ -58,6 +58,7 @@
         ZIndex: =17
 
     Rating1 As rating:
+        BorderColor: =RGBA(72, 161, 255, 1)
         Default: =3
         DisabledFill: =Self.Fill
         DisplayMode: =DisplayMode.Edit
@@ -66,6 +67,7 @@
         HoverFill: =Self.Fill
         OnChange: =check_in_sleep.Run(Office365Users.MyProfile().Mail & Today(), Rating1.Value); Navigate('Daily Check In - Physical Activity')
         PressedFill: =Self.Fill
+        RatingFill: =RGBA(72, 161, 255, 1)
         Width: =350
         X: =147
         Y: =612

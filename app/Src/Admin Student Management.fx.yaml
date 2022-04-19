@@ -14,26 +14,18 @@
     Header_21 As Header:
         ZIndex: =11
 
-    Label14_4 As label:
-        Height: =70
-        Size: =21
-        Text: ="Students at risk"
-        Width: =560
-        X: =26
-        Y: =110
-        ZIndex: =14
-
     DataTable4_3 As dataTable.datatable:
         BorderStyle: =BorderStyle.Solid
         DisplayMode: =DisplayMode.Edit
         Fill: =RGBA(0, 0, 0, 0)
+        HeadingFill: =RGBA(87, 196, 255, 1)
         HeadingSize: =21
-        Height: =813
+        Height: =787
         Items: =Filter(checkin_3, Value(Rating) > 0)
         Size: =21
         Width: =640
         X: =0
-        Y: =176
+        Y: =202
         ZIndex: =15
 
         Student_Name_Column4_3 As dataTableColumn.textualColumn:
@@ -139,4 +131,16 @@
         X: =26
         Y: =989
         ZIndex: =16
+
+    Label4_5 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(158, 223, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =89
+        Size: =21
+        Text: ="Students at Risk"
+        Width: =640
+        Y: =113
+        ZIndex: =17
 
