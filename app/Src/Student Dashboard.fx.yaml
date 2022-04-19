@@ -88,26 +88,15 @@
             ZIndex: =5
 
             PowerBI1 As powerbi:
-                DashboardId: ="3ad75cd6-2e4a-43a3-985d-5f8a8dec40f6"
+                DashboardId: ="59d4afaa-7771-446f-ad7c-6c1eb00b93c7"
                 Height: =512
                 TileUrl: |-
-                    ="https://app.powerbi.com/embed?dashboardId=3ad75cd6-2e4a-43a3-985d-5f8a8dec40f6&tileId=5012d791-bd00-486c-89de-227a964f245e&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
+                    ="https://app.powerbi.com/embed?dashboardId=59d4afaa-7771-446f-ad7c-6c1eb00b93c7&tileId=cc3a54f8-f764-43cd-8114-ee60319e4a32&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
                 Width: =554
                 WorkspaceId: ="__my-workspace"
                 X: =33
                 Y: =63
                 ZIndex: =1
-
-        DataCard1 As dataCard.blankCard:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =606
-            Width: =640
-            X: =0
-            Y: =3
-            ZIndex: =6
 
     StudentcompMenu_1 As StudentcompMenu:
         BackgroundColor: =RGBA(72, 161, 255, 1)
