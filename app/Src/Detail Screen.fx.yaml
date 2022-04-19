@@ -11,7 +11,7 @@
         "'Student Name_DataCard1' As typedDataCard.textualViewCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="Name"
-            Default: =ThisItem.'Student Name'
+            Default: =ThisItem.'Title (Name)'
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@AppUsers],DataSourceInfo.DisplayName,"Name")
             Fill: =RGBA(0, 0, 0, 0)
