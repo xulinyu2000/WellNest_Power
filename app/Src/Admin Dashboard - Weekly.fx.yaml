@@ -24,9 +24,9 @@
 
     Canvas1_5 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
-        Height: =846
+        Height: =770
         Width: =Parent.Width
-        Y: =197
+        Y: =198
         ZIndex: =7
 
         DataCard4_3 As dataCard.blankCard:
@@ -45,44 +45,23 @@
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DashboardId: ="b566920b-b2cc-494f-a670-93406e9e8e2a"
                 DisplayMode: =DisplayMode.View
-                Height: =863
+                Height: =866
                 TileUrl: |-
                     ="https://app.powerbi.com/embed?dashboardId=b566920b-b2cc-494f-a670-93406e9e8e2a&tileId=d6a0ac9b-837b-4a83-8025-c2d2bcac98ef&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
                 Width: =622
                 WorkspaceId: ="__my-workspace"
-                Y: =134
+                Y: =72
                 ZIndex: =1
 
             lblMoodOverview_1 As label:
                 Align: =Align.Center
                 FontWeight: =FontWeight.Semibold
-                Height: =46
+                Height: =72
                 Size: =21
                 Text: ="Weekly Check-In Overview"
                 Width: =560
                 X: =40
-                Y: =26
                 ZIndex: =2
-
-            btnWeekly_6 As button:
-                BorderColor: =ColorFade(btnWeekly_6.Fill, -15%)
-                BorderThickness: =0
-                Fill: =RGBA(179, 179, 179, 1)
-                Height: =51
-                HoverBorderColor: =ColorFade(btnWeekly_6.BorderColor, 20%)
-                OnSelect: =Navigate('Admin Dashboard - Weekly - Distribution', ScreenTransition.Cover)
-                PressedBorderColor: =btnWeekly_6.Fill
-                PressedColor: =btnWeekly_6.Fill
-                PressedFill: =btnWeekly_6.Color
-                RadiusBottomLeft: =30
-                RadiusBottomRight: =30
-                RadiusTopLeft: =30
-                RadiusTopRight: =30
-                Text: ="View Distribution"
-                Width: =202
-                X: =219
-                Y: =83
-                ZIndex: =3
 
         DataCard1_5 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -139,6 +118,26 @@
             NavAdminView
         Y: =1042
         ZIndex: =8
+
+    btnWeekly_8 As button:
+        BorderColor: =ColorFade(btnWeekly_8.Fill, -15%)
+        BorderThickness: =0
+        Fill: =RGBA(179, 179, 179, 1)
+        Height: =51
+        HoverBorderColor: =ColorFade(btnWeekly_8.BorderColor, 20%)
+        OnSelect: =Navigate('Admin Dashboard - Weekly - Distribution', ScreenTransition.Cover)
+        PressedBorderColor: =btnWeekly_8.Fill
+        PressedColor: =btnWeekly_8.Fill
+        PressedFill: =btnWeekly_8.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Text: ="View Distribution"
+        Width: =202
+        X: =219
+        Y: =979
+        ZIndex: =12
 
     Group3 As group:
         Height: =5

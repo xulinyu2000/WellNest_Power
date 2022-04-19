@@ -24,9 +24,9 @@
 
     Canvas1_11 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
-        Height: =829
+        Height: =850
         Width: =Parent.Width
-        Y: =213
+        Y: =113
         ZIndex: =7
 
         DataCard1_12 As dataCard.blankCard:
@@ -43,12 +43,11 @@
             lblCheckInOverview_3 As label:
                 Align: =Align.Center
                 FontWeight: =FontWeight.Bold
-                Height: =56
+                Height: =76
                 Size: =21
                 Text: ="Daily Rating Distribution"
                 Width: =560
                 X: =39
-                Y: =21
                 ZIndex: =1
 
             PowerBI__3 As powerbi:
@@ -101,8 +100,8 @@
         RadiusTopLeft: =30
         RadiusTopRight: =30
         Text: ="Back"
-        Width: =175
-        X: =232
-        Y: =136
+        Width: =150
+        X: =245
+        Y: =976
         ZIndex: =9
 

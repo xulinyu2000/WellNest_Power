@@ -24,9 +24,9 @@
 
     Canvas1_12 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
-        Height: =837
+        Height: =852
         Width: =Parent.Width
-        Y: =208
+        Y: =113
         ZIndex: =7
 
         DataCard4_5 As dataCard.blankCard:
@@ -56,12 +56,12 @@
             lblMoodOverview_3 As label:
                 Align: =Align.Center
                 FontWeight: =FontWeight.Semibold
-                Height: =46
+                Height: =67
                 Size: =21
                 Text: ="Weekly Rating Distribution"
                 Width: =560
                 X: =40
-                Y: =26
+                Y: =3
                 ZIndex: =2
 
     AdmincompMenu_7 As AdmincompMenu:
@@ -102,8 +102,8 @@
         RadiusTopLeft: =30
         RadiusTopRight: =30
         Text: ="Back"
-        Width: =175
-        X: =232
-        Y: =136
+        Width: =150
+        X: =245
+        Y: =977
         ZIndex: =9
 
