@@ -8,9 +8,9 @@
 
     Canvas1_7 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
-        Height: =794
+        Height: =827
         Width: =Parent.Width
-        Y: =233
+        Y: =199
         ZIndex: =3
 
         DataCard3_2 As dataCard.blankCard:
@@ -44,30 +44,33 @@
 
                 Label7_2 As label:
                     FontWeight: =FontWeight.Semibold
-                    Height: =155
+                    Height: =113
                     Size: =21
                     Text: ="Homeroom 11A's " & Today() & " check-in report is ready below!"
-                    Width: =364
+                    Width: =402
                     ZIndex: =2
 
                 Label9_2 As label:
-                    Color: =RGBA(72, 161, 255, 1)
+                    Align: =Align.Right
+                    Color: =RGBA(255, 255, 255, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =70
                     Size: =21
                     Text: ="See all students"
                     Underline: =true
-                    Width: =240
-                    X: =240
+                    Width: =188
+                    X: =352
+                    Y: =43
                     ZIndex: =3
 
             Button4_2 As button:
+                Align: =Align.Left
                 BorderColor: =ColorFade(Button4_2.Fill, -15%)
                 BorderStyle: =BorderStyle.Dotted
                 Color: =BlueViolet
                 DisabledBorderColor: =RGBA(56, 96, 178, 1)
                 Fill: =RGBA(0, 0, 0, 0)
-                Height: =70
+                Height: =99
                 HoverBorderColor: =ColorFade(Button4_2.BorderColor, 20%)
                 PressedBorderColor: =Button4_2.Fill
                 PressedColor: =Button4_2.Fill
@@ -75,8 +78,8 @@
                 Size: =24
                 Text: ="Daily quick update!"
                 Width: =280
-                X: =14
-                Y: =195
+                X: =40
+                Y: =166
                 ZIndex: =4
 
         DataCard6_2 As dataCard.blankCard:
@@ -91,15 +94,15 @@
             ZIndex: =7
 
             PowerBI8 As powerbi:
+                BorderColor: =RGBA(255, 255, 255, 1)
                 BorderStyle: =BorderStyle.None
                 DashboardId: ="f1140de3-1543-4f65-acc8-512fb635c7b5"
-                Height: =777
+                Height: =784
                 TileUrl: |-
                     ="https://app.powerbi.com/embed?dashboardId=f1140de3-1543-4f65-acc8-512fb635c7b5&tileId=a3993159-7521-4fb5-95c2-93452134de1a&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
-                Width: =552
+                Width: =622
                 WorkspaceId: ="__my-workspace"
-                X: =40
-                Y: =40
+                Y: =3
                 ZIndex: =1
 
         DataCard7_2 As dataCard.blankCard:
@@ -135,53 +138,6 @@
         Width: =68
         ZIndex: =5
 
-    CheckInButton_4 As button:
-        BorderColor: =ColorFade(CheckInButton_4.Fill, -15%)
-        BorderThickness: =0
-        Fill: =RGBA(72, 161, 255, 1)
-        Height: =53
-        HoverBorderColor: =ColorFade(CheckInButton_4.BorderColor, 20%)
-        OnSelect: =Navigate([@'Teacher Dashboard'], None)
-        PressedBorderColor: =CheckInButton_4.Fill
-        PressedColor: =CheckInButton_4.Fill
-        PressedFill: =CheckInButton_4.Color
-        Text: ="Daily"
-        Width: =175
-        X: =21
-        Y: =148
-        ZIndex: =6
-
-    WeeklyButton_4 As button:
-        BorderColor: =ColorFade(WeeklyButton_4.Fill, -15%)
-        BorderThickness: =0
-        Fill: =RGBA(72, 161, 255, 1)
-        Height: =53
-        HoverBorderColor: =ColorFade(WeeklyButton_4.BorderColor, 20%)
-        OnSelect: =Navigate([@'Teacher Dashboard- Weekly'], None)
-        PressedBorderColor: =WeeklyButton_4.Fill
-        PressedColor: =WeeklyButton_4.Fill
-        PressedFill: =WeeklyButton_4.Color
-        Text: ="Weekly"
-        Width: =175
-        X: =225
-        Y: =148
-        ZIndex: =7
-
-    MonthlyButton_4 As button:
-        BorderColor: =ColorFade(MonthlyButton_4.Fill, -15%)
-        BorderThickness: =0
-        Fill: =RGBA(72, 161, 255, 1)
-        Height: =53
-        HoverBorderColor: =ColorFade(MonthlyButton_4.BorderColor, 20%)
-        PressedBorderColor: =MonthlyButton_4.Fill
-        PressedColor: =MonthlyButton_4.Fill
-        PressedFill: =MonthlyButton_4.Color
-        Text: ="Monthly"
-        Width: =175
-        X: =425
-        Y: =148
-        ZIndex: =8
-
     Header_17 As Header:
         ZIndex: =11
 
@@ -191,4 +147,63 @@
         NavigationItems: =NavTeacherView
         Y: =1042
         ZIndex: =12
+
+    WeeklyButton_22 As button:
+        BorderColor: =ColorFade(WeeklyButton_22.Fill, -15%)
+        BorderThickness: =0
+        Fill: =RGBA(56, 123, 194, 1)
+        Height: =53
+        HoverBorderColor: =ColorFade(WeeklyButton_22.BorderColor, 20%)
+        OnSelect: =Navigate([@'Teacher Dashboard- Weekly'], None)
+        PressedBorderColor: =WeeklyButton_22.Fill
+        PressedColor: =WeeklyButton_22.Fill
+        PressedFill: =WeeklyButton_22.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Text: ="Weekly"
+        Width: =120
+        X: =270
+        Y: =129
+        ZIndex: =13
+
+    MonthlyButton_14 As button:
+        BorderColor: =ColorFade(MonthlyButton_14.Fill, -15%)
+        BorderThickness: =0
+        Fill: =RGBA(51, 111, 176, 1)
+        Height: =53
+        HoverBorderColor: =ColorFade(MonthlyButton_14.BorderColor, 20%)
+        PressedBorderColor: =MonthlyButton_14.Fill
+        PressedColor: =MonthlyButton_14.Fill
+        PressedFill: =MonthlyButton_14.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Text: ="Monthly"
+        Width: =120
+        X: =410
+        Y: =130
+        ZIndex: =14
+
+    WeeklyButton_23 As button:
+        BorderColor: =ColorFade(WeeklyButton_23.Fill, -15%)
+        BorderThickness: =0
+        Fill: =RGBA(72, 161, 255, 1)
+        Height: =53
+        HoverBorderColor: =ColorFade(WeeklyButton_23.BorderColor, 20%)
+        OnSelect: =Navigate([@'Teacher Dashboard'], None)
+        PressedBorderColor: =WeeklyButton_23.Fill
+        PressedColor: =WeeklyButton_23.Fill
+        PressedFill: =WeeklyButton_23.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Text: ="Daily"
+        Width: =120
+        X: =130
+        Y: =129
+        ZIndex: =15
 
