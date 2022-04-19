@@ -242,7 +242,13 @@
         BorderColor: =ColorFade(Button12.Fill, -15%)
         Height: =70
         HoverBorderColor: =ColorFade(Button12.BorderColor, 20%)
-        OnSelect: =Office365Outlook.SendEmailV2(EmailAddress.Text,Subject.Text,Body.Text)
+        OnSelect: |-
+            =//Office365Outlook.SendEmailV2(EmailAddress.Text,Subject.Text,Body.Text)
+            Office365Outlook.SendEmailV2(
+                "z5237545@ad.unsw.edu.au",// To
+                "Greetings from my App",// Subject
+                "Just wanted to say helllo."// Body
+            )
         PressedBorderColor: =Button12.Fill
         PressedColor: =Button12.Fill
         PressedFill: =Button12.Color
