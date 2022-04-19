@@ -158,7 +158,7 @@
                 Y: =DataCardKey7_1.Y + DataCardKey7_1.Height + 5
                 ZIndex: =2
 
-        "'Parent Email_DataCard1_1' As typedDataCard.textualViewCard":
+        "'Parent Email_DataCard1_1' As typedDataCard.emailViewCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ParentEmails"
             Default: =ThisItem.'Parent Email'
@@ -172,7 +172,7 @@
             Y: =3
             ZIndex: =1
 
-            DataCardKey8_1 As label:
+            DataCardKey15 As label:
                 AutoHeight: =true
                 Height: =48
                 Size: =21
@@ -183,20 +183,22 @@
                 Y: =10
                 ZIndex: =1
 
-            EmailAddress_1 As label:
+            DataCardValue11 As htmlViewer:
                 AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
+                Height: =45
+                HtmlText: |-
+                    ="<a href='mailto:" & Parent.Default & "'>" & Parent.Default & "</a>"
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =21
-                Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey8_1.Y + DataCardKey8_1.Height + 5
+                Y: =DataCardKey15.Y + DataCardKey15.Height + 5
                 ZIndex: =2
 
-        "'Parent Mobile Number_DataCard1_1' As typedDataCard.textualViewCard":
+        "'Parent Mobile Number_DataCard1_1' As typedDataCard.phoneViewCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ParentMobileNumber"
             Default: =ThisItem.'Parent Mobile Number'
@@ -210,7 +212,7 @@
             Y: =4
             ZIndex: =1
 
-            DataCardKey11_1 As label:
+            DataCardKey14 As label:
                 AutoHeight: =true
                 Height: =48
                 Size: =21
@@ -221,17 +223,19 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue8_1 As label:
+            DataCardValue10 As htmlViewer:
                 AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
+                Height: =45
+                HtmlText: |-
+                    ="<a href='tel:" & Parent.Default & "'>" & Parent.Default & "</a>"
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =21
-                Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey11_1.Y + DataCardKey11_1.Height + 5
+                Y: =DataCardKey14.Y + DataCardKey14.Height + 5
                 ZIndex: =2
 
     Button12_1 As button:
