@@ -24,9 +24,9 @@
 
     Canvas1_12 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
-        Height: =857
+        Height: =837
         Width: =Parent.Width
-        Y: =188
+        Y: =208
         ZIndex: =7
 
         DataCard4_5 As dataCard.blankCard:
@@ -91,12 +91,16 @@
         BorderColor: =ColorFade(btnWeekly_7.Fill, -15%)
         BorderThickness: =0
         Fill: =RGBA(72, 161, 255, 1)
-        Height: =53
+        Height: =52
         HoverBorderColor: =ColorFade(btnWeekly_7.BorderColor, 20%)
         OnSelect: =Navigate([@'Admin Dashboard - Weekly'], ScreenTransition.CoverRight)
         PressedBorderColor: =btnWeekly_7.Fill
         PressedColor: =btnWeekly_7.Fill
         PressedFill: =btnWeekly_7.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
         Text: ="Back"
         Width: =175
         X: =232

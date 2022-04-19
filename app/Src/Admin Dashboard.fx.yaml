@@ -28,6 +28,10 @@
         PressedBorderColor: =btnDaily.Fill
         PressedColor: =btnDaily.Fill
         PressedFill: =btnDaily.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
         Text: ="Daily"
         Width: =175
         X: =30
@@ -44,6 +48,10 @@
         PressedBorderColor: =btnWeekly.Fill
         PressedColor: =btnWeekly.Fill
         PressedFill: =btnWeekly.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
         Text: ="Weekly"
         Width: =175
         X: =234
@@ -60,6 +68,10 @@
         PressedBorderColor: =btnMonthly.Fill
         PressedColor: =btnMonthly.Fill
         PressedFill: =btnMonthly.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
         Text: ="Monthly"
         Width: =175
         X: =434
@@ -119,6 +131,10 @@
                 PressedBorderColor: =btnWeekly_4.Fill
                 PressedColor: =btnWeekly_4.Fill
                 PressedFill: =btnWeekly_4.Color
+                RadiusBottomLeft: =30
+                RadiusBottomRight: =30
+                RadiusTopLeft: =30
+                RadiusTopRight: =30
                 Text: ="View Distribution"
                 Width: =202
                 X: =218
