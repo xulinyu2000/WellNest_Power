@@ -245,7 +245,7 @@
         OnSelect: |-
             =//Office365Outlook.SendEmailV2(EmailAddress.Text,Subject.Text,Body.Text)
             Office365Outlook.SendEmailV2(
-                "z5237545@ad.unsw.edu.au",// To
+                "xulinyu2000@gmail.com",// To
                 "Greetings from my App",// Subject
                 "Just wanted to say helllo."// Body
             )
