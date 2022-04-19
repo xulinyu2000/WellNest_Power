@@ -1,0 +1,118 @@
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://australia-001.azure-apim.net/apim/sendmail" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="Mail" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="Mail">Mail Connection Provider lets you send email notification.</doc>
+  <grammars>
+    <jsonTypes targetNamespace="https://australia-001.azure-apim.net/apim/sendmail" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+      <string name="EmailRequest_to_def" />
+      <string name="EmailRequest_toname_def" />
+      <string name="EmailRequest_subject_def" />
+      <string name="EmailRequest_text_def" />
+      <boolean name="EmailRequest_ishtml_def" />
+      <string name="EmailRequest_cc_def" />
+      <string name="EmailRequest_ccname_def" />
+      <string name="EmailRequest_bcc_def" />
+      <string name="EmailRequest_bccname_def" />
+      <base64Binary name="EmailRequest_files_def" />
+      <string name="EmailRequest_filenames_def" />
+      <object name="EmailRequest">
+        <property name="to" type="string" />
+        <property name="toname" type="string" />
+        <property name="subject" type="string" />
+        <property name="text" type="string" />
+        <property name="ishtml" type="boolean" />
+        <property name="cc" type="string" />
+        <property name="ccname" type="string" />
+        <property name="bcc" type="string" />
+        <property name="bccname" type="string" />
+        <property name="files" typeRef="EmailRequest_files_def" />
+        <property name="filenames" type="string" />
+      </object>
+      <object name="Object" />
+      <string name="EmailResponse_message_def" />
+      <object name="EmailResponse">
+        <property name="message" type="string" />
+      </object>
+      <string name="EmailRequestV3_to_def" />
+      <string name="EmailRequestV3_toname_def" />
+      <string name="EmailRequestV3_subject_def" />
+      <string name="EmailRequestV3_text_def" />
+      <boolean name="EmailRequestV3_ishtml_def" />
+      <string name="EmailRequestV3_cc_def" />
+      <string name="EmailRequestV3_ccname_def" />
+      <string name="EmailRequestV3_bcc_def" />
+      <string name="EmailRequestV3_bccname_def" />
+      <base64Binary name="EmailRequestV3_files_def" />
+      <string name="EmailRequestV3_filenames_def" />
+      <object name="EmailRequestV3">
+        <property name="to" type="string" />
+        <property name="toname" type="string" />
+        <property name="subject" type="string" />
+        <property name="text" type="string" />
+        <property name="ishtml" type="boolean" />
+        <property name="cc" type="string" />
+        <property name="ccname" type="string" />
+        <property name="bcc" type="string" />
+        <property name="bccname" type="string" />
+        <property name="files" typeRef="EmailRequestV3_files_def" />
+        <property name="filenames" type="string" />
+      </object>
+    </jsonTypes>
+  </grammars>
+  <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://australia-001.azure-apim.net/apim/sendmail">
+    <resource path="/{connectionId}/mail/send">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="SendEmail" visibility="important" siena:isDeprecated="true" siena:family="SendEmail" siena:revision="1" siena:status="Production">
+        <doc title="Send an email notification&#xA;Send an email notification to the specified email addresses." />
+        <request>
+          <representation mediaType="application/json">
+            <param style="plain" name="to" path="/to" type="xs:string" required="true" />
+            <param style="plain" name="toname" path="/toname" type="xs:string" />
+            <param style="plain" name="subject" path="/subject" type="xs:string" required="true" />
+            <param style="plain" name="text" path="/text" type="xs:string" required="true" />
+            <param style="plain" name="ishtml" path="/ishtml" type="xs:boolean" default="true" />
+            <param style="plain" name="cc" path="/cc" type="xs:string" />
+            <param style="plain" name="ccname" path="/ccname" type="xs:string" />
+            <param style="plain" name="bcc" path="/bcc" type="xs:string" />
+            <param style="plain" name="bccname" path="/bccname" type="xs:string" />
+            <param style="plain" name="files" path="/files" type="service:EmailRequest_files_def" />
+            <param style="plain" name="filenames" path="/filenames" type="xs:string" />
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:Object" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/v3/mail/send">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="SendEmailV3" visibility="important" siena:isDeprecated="false" siena:family="SendEmail" siena:revision="3" siena:status="Production">
+        <doc title="Send an email notification (V3)&#xA;Send an email notification to the specified email addresses." />
+        <request>
+          <representation mediaType="application/json">
+            <param style="plain" name="to" path="/to" type="xs:string" required="true" />
+            <param style="plain" name="toname" path="/toname" type="xs:string" />
+            <param style="plain" name="subject" path="/subject" type="xs:string" required="true" />
+            <param style="plain" name="text" path="/text" type="xs:string" required="true" />
+            <param style="plain" name="ishtml" path="/ishtml" type="xs:boolean" required="true" default="true" />
+            <param style="plain" name="cc" path="/cc" type="xs:string" />
+            <param style="plain" name="ccname" path="/ccname" type="xs:string" />
+            <param style="plain" name="bcc" path="/bcc" type="xs:string" />
+            <param style="plain" name="bccname" path="/bccname" type="xs:string" />
+            <param style="plain" name="files" path="/files" type="service:EmailRequestV3_files_def" />
+            <param style="plain" name="filenames" path="/filenames" type="xs:string" />
+          </representation>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:Object" />
+        </response>
+      </method>
+    </resource>
+  </resources>
+  <authenticationProviders xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <connectionProvider id="PowerAppAuth" siena:connectionProviderId="shared_sendmail" />
+  </authenticationProviders>
+  <template xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <variable name="connectionId">
+      <modifyParams style="template" name="connectionId" attribute="fixed" />
+    </variable>
+  </template>
+</application>

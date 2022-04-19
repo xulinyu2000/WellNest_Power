@@ -250,6 +250,24 @@
     "dependents": [],
     "id": "38178d7e-e7e6-4de9-a2fd-d514a8183151"
   },
+  "41a741ed-ad64-46d1-8b95-47ae4e76b9e6": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_sendmail/connections/e97b8b6c8cf64d1e8664ce90cb83ae87",
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "Mail",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1528/1.0.1528.2589/sendmail/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sendmail"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Mail"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "41a741ed-ad64-46d1-8b95-47ae4e76b9e6"
+  },
   "5690f524-f336-4b6c-a1b4-ca6c9b9e1068": {
     "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_office365users/connections/183da72e59144c59ba079217eb12cfb7",
     "connectionParameters": {

@@ -1,0 +1,48 @@
+"'Email Success' As screen.'phoneLayout_Success_ver3.0'":
+
+    iconCircle2 As circle.Circle:
+        DisabledFill: =iconCircle2.Fill
+        HoverFill: =iconCircle2.Fill
+        PressedFill: =iconCircle2.Fill
+        X: =Parent.Width/2 - Self.Width/2
+        Y: =(Parent.Height/2 - Self.Height/2) * .7
+        ZIndex: =1
+
+    iconCheck2 As icon.Check:
+        Height: =iconCircle2.Height
+        Icon: =Icon.Check
+        PaddingBottom: =Self.PaddingTop
+        PaddingLeft: =Self.PaddingTop
+        PaddingRight: =Self.PaddingTop
+        PaddingTop: =18
+        Width: =iconCircle2.Width
+        X: =Parent.Width/2 - Self.Width/2
+        Y: =(Parent.Height/2 - Self.Height/2) * .7
+        ZIndex: =2
+
+    LblSuccessMsg2 As label:
+        Align: =Align.Center
+        AutoHeight: =true
+        Height: =iconCircle2.Height
+        Size: =21
+        Text: ="This was successfully completed"
+        Width: =Parent.Width * 0.75
+        X: =Parent.Width/2 - Self.Width/2
+        Y: =iconCheck2.Y + iconCheck2.Height + 100
+        ZIndex: =3
+
+    Button14 As button:
+        BorderColor: =ColorFade(Button14.Fill, -15%)
+        Height: =70
+        HoverBorderColor: =ColorFade(Button14.BorderColor, 20%)
+        OnSelect: =Back()
+        PressedBorderColor: =Button14.Fill
+        PressedColor: =Button14.Fill
+        PressedFill: =Button14.Color
+        Size: =24
+        Text: ="Back"
+        Width: =280
+        X: =165
+        Y: =822
+        ZIndex: =4
+
