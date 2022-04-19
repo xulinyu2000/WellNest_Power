@@ -29,12 +29,13 @@ WellNest is a mobile application to facillitate connections between students, te
 ## ▶️ How to run the app 
 
 1. Log into https://make.powerapps.com/ using one of the accounts above 
+2. After logging in, if you receive a notification from Microsoft that they have enabled **Security Defaults** for your account, click on 'Next' and follow the prompts, including setting up Microsoft Authenticator on your phone and approving your login. **This is a necessary security measure from Microsoft, and ensures that the Chatbot works correctly.**
 
 ![ezgif-2-49a9d19898](https://user-images.githubusercontent.com/71417329/163995514-8c28110f-5805-40a6-8cb7-b020e9a2b70f.gif)
 
-2. Scroll down to the WellNest app
-3. Click the 'More Commands' button and click the 'Play' button 
-4. Depending on the type of user, select the appropriate class to successfully log in 
+3. Scroll down to the WellNest app
+4. Click the 'More Commands' button and click the 'Play' button 
+5. Depending on the type of user, select the appropriate class to successfully log in 
 
 # 📱 For a mobile experience...
 
