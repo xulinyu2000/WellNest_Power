@@ -36,20 +36,6 @@
         Y: =176
         ZIndex: =15
 
-        Student_ID_Column5_1 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Email"
-            FieldName: ="Student_ID"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =1
-            Text: =ThisItem.Student_ID
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =1
-
         Student_Name_Column4_1 As dataTableColumn.textualColumn:
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Name"
@@ -64,20 +50,80 @@
             Y: =0
             ZIndex: =2
 
-        Rating_Column2_1 As dataTableColumn.textualColumn:
+        Face_Column2 As dataTableColumn.textualColumn:
             AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Rating"
-            FieldName: ="Rating"
+            FieldDisplayName: ="Face"
+            FieldName: ="Face"
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =3
-            Text: =ThisItem.Rating
-            Width: =125
-            X: =508
+            Order: =4
+            Text: =ThisItem.Face
+            Width: =80
+            X: =0
             Y: =0
-            ZIndex: =3
+            ZIndex: =4
+
+        Physical_Activity_Column2 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Active"
+            FieldName: ="Physical_Activity"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =5
+            Text: =ThisItem.Physical_Activity
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =5
+
+        Sleep_Column2 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Sleep"
+            FieldName: ="Sleep"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =6
+            Text: =ThisItem.Sleep
+            Width: =106
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+        Stress_Column2 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Stress"
+            FieldName: ="Stress"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =7
+            Text: =ThisItem.Stress
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =7
+
+        Word_Column2 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Word"
+            FieldName: ="Word"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =8
+            Text: =ThisItem.Word
+            Width: =96
+            X: =0
+            Y: =0
+            ZIndex: =8
 
     Button9 As button:
         BorderColor: =ColorFade(Button9.Fill, -15%)
