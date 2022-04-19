@@ -37,7 +37,7 @@
                     )
                 ),
                 "EnrolledClass",
-                Ascending
+               If(SortDescending1, Descending, Ascending)
             )
         Layout: =Layout.Vertical
         ShowScrollbar: =false
