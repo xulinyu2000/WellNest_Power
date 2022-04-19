@@ -8,44 +8,6 @@
         Y: =40
         ZIndex: =1
 
-        NAME_DataCard1 As typedDataCard.textualViewCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Name"
-            Default: =ThisItem.NAME
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppUsers],DataSourceInfo.DisplayName,"Name")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =false
-            Width: =640
-            X: =0
-            Y: =0
-            ZIndex: =1
-
-            DataCardKey8 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue12 As label:
-                AutoHeight: =true
-                DisplayMode: =Parent.DisplayMode
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =21
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey8.Y + DataCardKey8.Height + 5
-                ZIndex: =2
-
         "'Parent Name_DataCard1' As typedDataCard.textualViewCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ParentName"
@@ -160,6 +122,44 @@
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey11.Y + DataCardKey11.Height + 5
+                ZIndex: =2
+
+        NAME_DataCard1 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Name"
+            Default: =ThisItem.NAME
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppUsers],DataSourceInfo.DisplayName,"Name")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey8 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue12 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey8.Y + DataCardKey8.Height + 5
                 ZIndex: =2
 
     Button12 As button:

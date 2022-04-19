@@ -67,7 +67,7 @@
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.'Student Email'
+            Text: =ThisItem.NAME
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - Image9.Width - 104
             X: =Image9.X + Image9.Width + 24
