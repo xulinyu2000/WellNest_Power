@@ -17,74 +17,14 @@
         Width: =68
         ZIndex: =2
 
-    CheckInButton_7 As button:
-        BorderColor: =ColorFade(CheckInButton_7.Fill, -15%)
-        BorderThickness: =0
-        Fill: =RGBA(72, 161, 255, 1)
-        Height: =53
-        HoverBorderColor: =ColorFade(CheckInButton_7.BorderColor, 20%)
-        OnSelect: |
-            =If(CountRows(Filter(checkin, Student_Date = (Office365Users.MyProfile().Mail & Today()))) = 0, Navigate('Daily Check In - Face'), Notify("You have already completed the checkin!",NotificationType.Error));
-        PressedBorderColor: =CheckInButton_7.Fill
-        PressedColor: =CheckInButton_7.Fill
-        PressedFill: =CheckInButton_7.Color
-        RadiusBottomLeft: =30
-        RadiusBottomRight: =30
-        RadiusTopLeft: =30
-        RadiusTopRight: =30
-        Text: ="Check-In"
-        Width: =175
-        X: =232
-        Y: =137
-        ZIndex: =3
-
-    WeeklyButton_7 As button:
-        BorderColor: =ColorFade(WeeklyButton_7.Fill, -15%)
-        BorderThickness: =0
-        Fill: =RGBA(72, 161, 255, 1)
-        Height: =53
-        HoverBorderColor: =ColorFade(WeeklyButton_7.BorderColor, 20%)
-        OnSelect: =Navigate([@'Student Dashboard- Weekly'], None)
-        PressedBorderColor: =WeeklyButton_7.Fill
-        PressedColor: =WeeklyButton_7.Fill
-        PressedFill: =WeeklyButton_7.Color
-        RadiusBottomLeft: =30
-        RadiusBottomRight: =30
-        RadiusTopLeft: =30
-        RadiusTopRight: =30
-        Text: ="Weekly"
-        Width: =175
-        X: =234
-        Y: =214
-        ZIndex: =4
-
-    MonthlyButton_7 As button:
-        BorderColor: =ColorFade(MonthlyButton_7.Fill, -15%)
-        BorderThickness: =0
-        Fill: =RGBA(72, 161, 255, 1)
-        Height: =53
-        HoverBorderColor: =ColorFade(MonthlyButton_7.BorderColor, 20%)
-        PressedBorderColor: =MonthlyButton_7.Fill
-        PressedColor: =MonthlyButton_7.Fill
-        PressedFill: =MonthlyButton_7.Color
-        RadiusBottomLeft: =30
-        RadiusBottomRight: =30
-        RadiusTopLeft: =30
-        RadiusTopRight: =30
-        Text: ="Monthly"
-        Width: =175
-        X: =434
-        Y: =214
-        ZIndex: =5
-
     Header_13 As Header:
         ZIndex: =6
 
     Canvas1_10 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
-        Height: =757
+        Height: =843
         Width: =Parent.Width
-        Y: =286
+        Y: =198
         ZIndex: =7
 
         DataCard1_10 As dataCard.blankCard:
@@ -101,13 +41,12 @@
             PowerBI6 As powerbi:
                 BorderColor: =RGBA(255, 255, 255, 1)
                 DashboardId: ="074316b5-b4bd-4780-b863-6b491aa758df"
-                Height: =879
+                Height: =899
                 TileUrl: |-
                     ="https://app.powerbi.com/embed?dashboardId=074316b5-b4bd-4780-b863-6b491aa758df&tileId=144e7685-b182-4f2d-bf9f-84779d49a8df&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
                 Width: =625
                 WorkspaceId: ="__my-workspace"
                 X: =3
-                Y: =21
                 ZIndex: =1
 
         DataCard1_11 As dataCard.blankCard:
@@ -141,23 +80,82 @@
         Y: =1042
         ZIndex: =8
 
-    WeeklyButton_10 As button:
-        BorderColor: =ColorFade(WeeklyButton_10.Fill, -15%)
+    CheckInButton_8 As button:
+        BorderColor: =ColorFade(CheckInButton_8.Fill, -15%)
+        BorderThickness: =0
+        Fill: =RGBA(158, 223, 255, 1)
+        Height: =53
+        HoverBorderColor: =ColorFade(CheckInButton_8.BorderColor, 20%)
+        OnSelect: =If(CountRows(Filter(checkin, Student_Date = (Office365Users.MyProfile().Mail & Today()))) = 0, Navigate('Daily Check In - Face'), Notify("You have already completed the checkin!",NotificationType.Error));
+        PressedBorderColor: =CheckInButton_8.Fill
+        PressedColor: =CheckInButton_8.Fill
+        PressedFill: =CheckInButton_8.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Text: ="Check-In"
+        Width: =177
+        X: =21
+        Y: =128
+        ZIndex: =10
+
+    WeeklyButton_12 As button:
+        BorderColor: =ColorFade(WeeklyButton_12.Fill, -15%)
+        BorderThickness: =0
+        Fill: =RGBA(56, 123, 194, 1)
+        Height: =53
+        HoverBorderColor: =ColorFade(WeeklyButton_12.BorderColor, 20%)
+        OnSelect: =Navigate([@'Student Dashboard- Weekly'], None)
+        PressedBorderColor: =WeeklyButton_12.Fill
+        PressedColor: =WeeklyButton_12.Fill
+        PressedFill: =WeeklyButton_12.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Text: ="Weekly"
+        Width: =120
+        X: =358
+        Y: =127
+        ZIndex: =11
+
+    MonthlyButton_8 As button:
+        BorderColor: =ColorFade(MonthlyButton_8.Fill, -15%)
+        BorderThickness: =0
+        Fill: =RGBA(51, 111, 176, 1)
+        Height: =53
+        HoverBorderColor: =ColorFade(MonthlyButton_8.BorderColor, 20%)
+        PressedBorderColor: =MonthlyButton_8.Fill
+        PressedColor: =MonthlyButton_8.Fill
+        PressedFill: =MonthlyButton_8.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Text: ="Monthly"
+        Width: =120
+        X: =498
+        Y: =128
+        ZIndex: =12
+
+    WeeklyButton_11 As button:
+        BorderColor: =ColorFade(WeeklyButton_11.Fill, -15%)
         BorderThickness: =0
         Fill: =RGBA(72, 161, 255, 1)
         Height: =53
-        HoverBorderColor: =ColorFade(WeeklyButton_10.BorderColor, 20%)
+        HoverBorderColor: =ColorFade(WeeklyButton_11.BorderColor, 20%)
         OnSelect: =Navigate([@'Student Dashboard'], None)
-        PressedBorderColor: =WeeklyButton_10.Fill
-        PressedColor: =WeeklyButton_10.Fill
-        PressedFill: =WeeklyButton_10.Color
+        PressedBorderColor: =WeeklyButton_11.Fill
+        PressedColor: =WeeklyButton_11.Fill
+        PressedFill: =WeeklyButton_11.Color
         RadiusBottomLeft: =30
         RadiusBottomRight: =30
         RadiusTopLeft: =30
         RadiusTopRight: =30
         Text: ="Daily"
-        Width: =175
-        X: =31
-        Y: =214
-        ZIndex: =9
+        Width: =120
+        X: =218
+        Y: =127
+        ZIndex: =13
 

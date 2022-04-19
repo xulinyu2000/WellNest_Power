@@ -20,8 +20,8 @@
     CheckInButton_2 As button:
         BorderColor: =ColorFade(CheckInButton_2.Fill, -15%)
         BorderThickness: =0
-        Fill: =RGBA(72, 161, 255, 1)
-        Height: =48
+        Fill: =RGBA(158, 223, 255, 1)
+        Height: =53
         HoverBorderColor: =ColorFade(CheckInButton_2.BorderColor, 20%)
         OnSelect: |
             =If(CountRows(Filter(checkin, Student_Date = (Office365Users.MyProfile().Mail & Today()))) = 0, Navigate('Daily Check In - Face'), Notify("You have already completed the checkin!",NotificationType.Error));
@@ -33,63 +33,24 @@
         RadiusTopLeft: =30
         RadiusTopRight: =30
         Text: ="Check-In"
-        Width: =175
-        X: =235
-        Y: =138
+        Width: =177
+        X: =21
+        Y: =127
         ZIndex: =3
-
-    WeeklyButton_2 As button:
-        BorderColor: =ColorFade(WeeklyButton_2.Fill, -15%)
-        BorderThickness: =0
-        Fill: =RGBA(72, 161, 255, 1)
-        Height: =53
-        HoverBorderColor: =ColorFade(WeeklyButton_2.BorderColor, 20%)
-        OnSelect: =Navigate([@'Student Dashboard- Weekly'], None)
-        PressedBorderColor: =WeeklyButton_2.Fill
-        PressedColor: =WeeklyButton_2.Fill
-        PressedFill: =WeeklyButton_2.Color
-        RadiusBottomLeft: =30
-        RadiusBottomRight: =30
-        RadiusTopLeft: =30
-        RadiusTopRight: =30
-        Text: ="Weekly"
-        Width: =175
-        X: =235
-        Y: =212
-        ZIndex: =4
-
-    MonthlyButton_2 As button:
-        BorderColor: =ColorFade(MonthlyButton_2.Fill, -15%)
-        BorderThickness: =0
-        Fill: =RGBA(72, 161, 255, 1)
-        Height: =53
-        HoverBorderColor: =ColorFade(MonthlyButton_2.BorderColor, 20%)
-        OnSelect: =Navigate([@'Student Dashboard- Monthly'], None)
-        PressedBorderColor: =MonthlyButton_2.Fill
-        PressedColor: =MonthlyButton_2.Fill
-        PressedFill: =MonthlyButton_2.Color
-        RadiusBottomLeft: =30
-        RadiusBottomRight: =30
-        RadiusTopLeft: =30
-        RadiusTopRight: =30
-        Text: ="Monthly"
-        Width: =175
-        X: =435
-        Y: =212
-        ZIndex: =5
 
     Header_7 As Header:
         ZIndex: =6
 
     Canvas1_3 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
-        Height: =735
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =850
         Width: =Parent.Width
-        Y: =308
+        Y: =192
         ZIndex: =7
 
         DataCard1_1 As dataCard.blankCard:
-            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(255, 255, 255, 1)
@@ -100,12 +61,13 @@
             ZIndex: =5
 
             PowerBI1 As powerbi:
+                BorderColor: =RGBA(255, 255, 255, 1)
                 BorderStyle: =BorderStyle.None
+                BorderThickness: =0
                 DashboardId: ="59d4afaa-7771-446f-ad7c-6c1eb00b93c7"
-                Height: =771
+                Height: =773
                 TileUrl: |-
                     ="https://app.powerbi.com/embed?dashboardId=59d4afaa-7771-446f-ad7c-6c1eb00b93c7&tileId=cc3a54f8-f764-43cd-8114-ee60319e4a32&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
-                Width: =631
                 WorkspaceId: ="__my-workspace"
                 ZIndex: =1
 
@@ -117,22 +79,62 @@
         Y: =1042
         ZIndex: =8
 
-    WeeklyButton_8 As button:
-        BorderColor: =ColorFade(WeeklyButton_8.Fill, -15%)
+    WeeklyButton_7 As button:
+        BorderColor: =ColorFade(WeeklyButton_7.Fill, -15%)
+        BorderThickness: =0
+        Fill: =RGBA(56, 123, 194, 1)
+        Height: =53
+        HoverBorderColor: =ColorFade(WeeklyButton_7.BorderColor, 20%)
+        OnSelect: =Navigate([@'Student Dashboard- Weekly'], None)
+        PressedBorderColor: =WeeklyButton_7.Fill
+        PressedColor: =WeeklyButton_7.Fill
+        PressedFill: =WeeklyButton_7.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Text: ="Weekly"
+        Width: =120
+        X: =358
+        Y: =127
+        ZIndex: =11
+
+    MonthlyButton_7 As button:
+        BorderColor: =ColorFade(MonthlyButton_7.Fill, -15%)
+        BorderThickness: =0
+        Fill: =RGBA(51, 111, 176, 1)
+        Height: =53
+        HoverBorderColor: =ColorFade(MonthlyButton_7.BorderColor, 20%)
+        OnSelect: =Navigate([@'Student Dashboard- Monthly'], None)
+        PressedBorderColor: =MonthlyButton_7.Fill
+        PressedColor: =MonthlyButton_7.Fill
+        PressedFill: =MonthlyButton_7.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Text: ="Monthly"
+        Width: =120
+        X: =498
+        Y: =128
+        ZIndex: =12
+
+    WeeklyButton_10 As button:
+        BorderColor: =ColorFade(WeeklyButton_10.Fill, -15%)
         BorderThickness: =0
         Fill: =RGBA(72, 161, 255, 1)
         Height: =53
-        HoverBorderColor: =ColorFade(WeeklyButton_8.BorderColor, 20%)
-        PressedBorderColor: =WeeklyButton_8.Fill
-        PressedColor: =WeeklyButton_8.Fill
-        PressedFill: =WeeklyButton_8.Color
+        HoverBorderColor: =ColorFade(WeeklyButton_10.BorderColor, 20%)
+        PressedBorderColor: =WeeklyButton_10.Fill
+        PressedColor: =WeeklyButton_10.Fill
+        PressedFill: =WeeklyButton_10.Color
         RadiusBottomLeft: =30
         RadiusBottomRight: =30
         RadiusTopLeft: =30
         RadiusTopRight: =30
         Text: ="Daily"
-        Width: =175
-        X: =30
-        Y: =212
-        ZIndex: =9
+        Width: =120
+        X: =218
+        Y: =127
+        ZIndex: =13
 

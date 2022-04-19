@@ -19,61 +19,14 @@
         Width: =68
         ZIndex: =2
 
-    btnDaily_2 As button:
-        BorderColor: =ColorFade(btnDaily_2.Fill, -15%)
-        BorderThickness: =0
-        Fill: =RGBA(72, 161, 255, 1)
-        Height: =53
-        HoverBorderColor: =ColorFade(btnDaily_2.BorderColor, 20%)
-        OnSelect: =Navigate([@'Admin Dashboard'], None)
-        PressedBorderColor: =btnDaily_2.Fill
-        PressedColor: =btnDaily_2.Fill
-        PressedFill: =btnDaily_2.Color
-        Text: ="Daily"
-        Width: =175
-        X: =30
-        Y: =148
-        ZIndex: =3
-
-    btnWeekly_2 As button:
-        BorderColor: =ColorFade(btnWeekly_2.Fill, -15%)
-        BorderThickness: =0
-        Fill: =RGBA(72, 161, 255, 1)
-        Height: =53
-        HoverBorderColor: =ColorFade(btnWeekly_2.BorderColor, 20%)
-        OnSelect: =Navigate([@'Admin Dashboard - Weekly'], None)
-        PressedBorderColor: =btnWeekly_2.Fill
-        PressedColor: =btnWeekly_2.Fill
-        PressedFill: =btnWeekly_2.Color
-        Text: ="Weekly"
-        Width: =175
-        X: =234
-        Y: =148
-        ZIndex: =4
-
-    btnMonthly_2 As button:
-        BorderColor: =ColorFade(btnMonthly_2.Fill, -15%)
-        BorderThickness: =0
-        Fill: =RGBA(72, 161, 255, 1)
-        Height: =53
-        HoverBorderColor: =ColorFade(btnMonthly_2.BorderColor, 20%)
-        PressedBorderColor: =btnMonthly_2.Fill
-        PressedColor: =btnMonthly_2.Fill
-        PressedFill: =btnMonthly_2.Color
-        Text: ="Monthly"
-        Width: =175
-        X: =434
-        Y: =148
-        ZIndex: =5
-
     Header_16 As Header:
         ZIndex: =6
 
     Canvas1_6 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
-        Height: =812
+        Height: =848
         Width: =Parent.Width
-        Y: =233
+        Y: =195
         ZIndex: =7
 
         DataCard4_4 As dataCard.blankCard:
@@ -180,4 +133,63 @@
             NavAdminView
         Y: =1042
         ZIndex: =8
+
+    WeeklyButton_16 As button:
+        BorderColor: =ColorFade(WeeklyButton_16.Fill, -15%)
+        BorderThickness: =0
+        Fill: =RGBA(56, 123, 194, 1)
+        Height: =53
+        HoverBorderColor: =ColorFade(WeeklyButton_16.BorderColor, 20%)
+        OnSelect: =Navigate([@'Admin Dashboard - Weekly'], None)
+        PressedBorderColor: =WeeklyButton_16.Fill
+        PressedColor: =WeeklyButton_16.Fill
+        PressedFill: =WeeklyButton_16.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Text: ="Weekly"
+        Width: =120
+        X: =260
+        Y: =128
+        ZIndex: =9
+
+    MonthlyButton_11 As button:
+        BorderColor: =ColorFade(MonthlyButton_11.Fill, -15%)
+        BorderThickness: =0
+        Fill: =RGBA(51, 111, 176, 1)
+        Height: =53
+        HoverBorderColor: =ColorFade(MonthlyButton_11.BorderColor, 20%)
+        PressedBorderColor: =MonthlyButton_11.Fill
+        PressedColor: =MonthlyButton_11.Fill
+        PressedFill: =MonthlyButton_11.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Text: ="Monthly"
+        Width: =120
+        X: =400
+        Y: =129
+        ZIndex: =10
+
+    WeeklyButton_17 As button:
+        BorderColor: =ColorFade(WeeklyButton_17.Fill, -15%)
+        BorderThickness: =0
+        Fill: =RGBA(72, 161, 255, 1)
+        Height: =53
+        HoverBorderColor: =ColorFade(WeeklyButton_17.BorderColor, 20%)
+        OnSelect: =Navigate([@'Admin Dashboard'], None)
+        PressedBorderColor: =WeeklyButton_17.Fill
+        PressedColor: =WeeklyButton_17.Fill
+        PressedFill: =WeeklyButton_17.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Text: ="Daily"
+        Width: =120
+        X: =120
+        Y: =128
+        ZIndex: =11
 

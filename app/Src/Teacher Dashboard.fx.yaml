@@ -39,44 +39,47 @@
                     PressedBorderColor: =ColorFade(Image10.BorderColor, -20%)
                     PressedFill: =ColorFade(Image10.Fill, -20%)
                     Width: =315
-                    X: =240
+                    X: =242
                     ZIndex: =1
 
                 Label7 As label:
                     FontWeight: =FontWeight.Semibold
-                    Height: =155
+                    Height: =112
                     Size: =21
                     Text: ="Homeroom 11A's " & Today() & " check-in report is ready below!"
-                    Width: =364
+                    Width: =417
                     ZIndex: =2
 
                 Label9 As label:
-                    Color: =RGBA(72, 161, 255, 1)
+                    Align: =Align.Right
+                    Color: =RGBA(255, 255, 255, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =70
                     Size: =21
                     Text: ="See all students"
                     Underline: =true
-                    Width: =240
-                    X: =240
+                    Width: =147
+                    X: =393
+                    Y: =42
                     ZIndex: =3
 
             Button4 As button:
+                Align: =Align.Left
                 BorderColor: =ColorFade(Button4.Fill, -15%)
                 BorderStyle: =BorderStyle.Dotted
                 Color: =BlueViolet
                 DisabledBorderColor: =RGBA(56, 96, 178, 1)
                 Fill: =RGBA(0, 0, 0, 0)
-                Height: =70
+                Height: =115
                 HoverBorderColor: =ColorFade(Button4.BorderColor, 20%)
                 PressedBorderColor: =Button4.Fill
                 PressedColor: =Button4.Fill
                 PressedFill: =Button4.Color
                 Size: =24
                 Text: ="Daily quick update!"
-                Width: =280
-                X: =14
-                Y: =195
+                Width: =265
+                X: =40
+                Y: =150
                 ZIndex: =4
 
         DataCard6 As dataCard.blankCard:
@@ -93,13 +96,12 @@
             PowerBI3 As powerbi:
                 BorderStyle: =BorderStyle.None
                 DashboardId: ="cb31ea51-ac71-4377-b72f-8a4a5aedffd9"
-                Height: =745
+                Height: =783
                 TileUrl: |-
                     ="https://app.powerbi.com/embed?dashboardId=cb31ea51-ac71-4377-b72f-8a4a5aedffd9&tileId=c6be668b-d1fe-4788-9d9a-f9abac787b29&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
-                Width: =557
+                Width: =637
                 WorkspaceId: ="__my-workspace"
-                X: =40
-                Y: =40
+                X: =3
                 ZIndex: =1
 
         DataCard7 As dataCard.blankCard:
@@ -116,13 +118,11 @@
             PowerBI10 As powerbi:
                 BorderStyle: =BorderStyle.None
                 DashboardId: ="cb31ea51-ac71-4377-b72f-8a4a5aedffd9"
-                Height: =584
+                Height: =663
                 TileUrl: |-
                     ="https://app.powerbi.com/embed?dashboardId=cb31ea51-ac71-4377-b72f-8a4a5aedffd9&tileId=62c7d8eb-d42f-4fba-8fa4-3ba4d2b09546&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
-                Width: =537
+                Width: =638
                 WorkspaceId: ="__my-workspace"
-                X: =40
-                Y: =40
                 ZIndex: =1
 
         DataCard1 As dataCard.blankCard:
