@@ -11,7 +11,7 @@
 
     Button15 As button:
         BorderColor: =ColorFade(Button15.Fill, -15%)
-        Height: =70
+        Height: =62
         HoverBorderColor: =ColorFade(Button15.BorderColor, 20%)
         OnSelect: =Navigate('Admin Student Management')
         PressedBorderColor: =Button15.Fill
@@ -19,14 +19,14 @@
         PressedFill: =Button15.Color
         Size: =24
         Text: ="View Stundent At risk"
-        Width: =280
+        Width: =350
         X: =159
         Y: =252
         ZIndex: =12
 
     Button16 As button:
         BorderColor: =ColorFade(Button16.Fill, -15%)
-        Height: =70
+        Height: =58
         HoverBorderColor: =ColorFade(Button16.BorderColor, 20%)
         OnSelect: |-
             = Navigate('Knowledge sharing')
@@ -36,14 +36,14 @@
         PressedFill: =Button16.Color
         Size: =24
         Text: ="Manage Teacher"
-        Width: =280
-        X: =180
-        Y: =798
+        Width: =353
+        X: =157
+        Y: =649
         ZIndex: =13
 
     Button17 As button:
         BorderColor: =ColorFade(Button17.Fill, -15%)
-        Height: =70
+        Height: =56
         HoverBorderColor: =ColorFade(Button17.BorderColor, 20%)
         OnSelect: =Navigate('View all students')
         PressedBorderColor: =Button17.Fill
@@ -51,7 +51,7 @@
         PressedFill: =Button17.Color
         Size: =24
         Text: ="View Student Cohort"
-        Width: =280
+        Width: =374
         X: =159
         Y: =477
         ZIndex: =14

@@ -121,8 +121,8 @@
     LblAppName1_1 As label:
         Height: =88
         Size: =27
-        Text: ="[Title]"
-        Width: =Parent.Width - LblAppName1_1.X - IconSortUpDown1_1.Width - IconNewItem1_1.Width - IconRefresh1_1.Width
+        Text: ="Student List"
+        Width: =0
         Wrap: =false
         X: =20
         ZIndex: =2
@@ -138,7 +138,7 @@
         TabIndex: =0
         Tooltip: ="Refresh list"
         Width: =88
-        X: =Parent.Width - IconNewItem1_1.Width - IconSortUpDown1_1.Width - IconRefresh1_1.Width
+        X: =464
         ZIndex: =3
 
     IconSortUpDown1_1 As icon.ArrowsUpDown:
@@ -154,22 +154,8 @@
         TabIndex: =0
         Tooltip: =If(SortDescending1, "Sort list in reverse alphabetical order", "Sort list in alphabetical order")
         Width: =88
-        X: =Parent.Width - IconNewItem1_1.Width - IconSortUpDown1_1.Width
+        X: =552
         ZIndex: =4
-
-    IconNewItem1_1 As icon.Add:
-        AccessibleLabel: =IconNewItem1_1.Tooltip
-        Height: =88
-        Icon: =Icon.Add
-        PaddingBottom: =24
-        PaddingLeft: =24
-        PaddingRight: =24
-        PaddingTop: =24
-        TabIndex: =0
-        Tooltip: ="Create new item"
-        Width: =88
-        X: =Parent.Width - IconNewItem1_1.Width
-        ZIndex: =5
 
     TextSearchBox1_1 As text:
         Align: =Left
