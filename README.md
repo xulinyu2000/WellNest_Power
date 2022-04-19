@@ -1,5 +1,5 @@
 # 🧠 WellNest
-WellNest is a mobile application to facillitate connection between students, teachers, counsellors and parents. 
+WellNest is a mobile application to facillitate connections between students, teachers, counsellors and parents. 
 
 ## 👩‍🎓 Student Accounts
 | Email | Password | Class |
