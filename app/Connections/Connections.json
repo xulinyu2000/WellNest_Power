@@ -265,7 +265,9 @@
       "Mail"
     ],
     "dependencies": {},
-    "dependents": [],
+    "dependents": [
+      "8f79f196-f852-4ebd-8e39-7e5e48d47c0d"
+    ],
     "id": "41a741ed-ad64-46d1-8b95-47ae4e76b9e6"
   },
   "5690f524-f336-4b6c-a1b4-ca6c9b9e1068": {
@@ -425,6 +427,47 @@
     },
     "dependents": [],
     "id": "7fb27fb0-822c-4b75-9bfb-06ee91c503ac"
+  },
+  "8f79f196-f852-4ebd-8e39-7e5e48d47c0d": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_logicflows/connections/2bb52ca394f74c008b5e030a1c05112a-5d1734e8bbb0e6d8",
+    "connectionParameters": {
+      "workFlowCallbackUri": "https://prod-25.australiasoutheast.logic.azure.com:443/workflows/7abf7d55d393427c87f8fdc487831840/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=7guasV2GvwkBfJruWFz1hoSQ4CxYZvVyCPsGxt6mJ78",
+      "workflowEndpoint": "/subscriptions/9f3a0e5f-8058-487f-9d45-d3ff51164c54/resourceGroups/dfa6b1ae0a2c49c49d31fab217269229-f1a461cd8eef4c19aec41ce18007e3ff/providers/Microsoft.Logic/workflows/2bb52ca3-94f7-4c00-8b5e-030a1c05112a",
+      "workflowName": "2bb52ca3-94f7-4c00-8b5e-030a1c05112a",
+      "workflowPath": "/subscriptions/9f3a0e5f-8058-487f-9d45-d3ff51164c54/resourceGroups/dfa6b1ae0a2c49c49d31fab217269229-f1a461cd8eef4c19aec41ce18007e3ff/providers/Microsoft.Logic/workflows/2bb52ca3-94f7-4c00-8b5e-030a1c05112a"
+    },
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "41a741ed-ad64-46d1-8b95-47ae4e76b9e6": {
+          "value": "shared_sendmail"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "2bb52ca3-94f7-4c00-8b5e-030a1c05112a"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sendmail": {
+          "value": "41a741ed-ad64-46d1-8b95-47ae4e76b9e6"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "2bb52ca3-94f7-4c00-8b5e-030a1c05112a"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "sendemail"
+    ],
+    "dependencies": {
+      "shared_sendmail": "41a741ed-ad64-46d1-8b95-47ae4e76b9e6"
+    },
+    "dependents": [],
+    "id": "8f79f196-f852-4ebd-8e39-7e5e48d47c0d"
   },
   "911349de-8a14-4b64-b613-d77a0c3b04aa": {
     "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_logicflows/connections/6a6a63e6b62c43feafaf0d773a9d84d0",
