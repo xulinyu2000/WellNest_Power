@@ -48,7 +48,7 @@
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.'Student Email'
+            Text: =ThisItem.LinyuXu
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - Image9.Width - 104
             X: =Image9.X + Image9.Width + 24
@@ -62,7 +62,7 @@
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.Class.Value
+            Text: =ThisItem.field_2.Value
             VerticalAlign: =VerticalAlign.Top
             Width: =Title2.Width
             X: =Title2.X
