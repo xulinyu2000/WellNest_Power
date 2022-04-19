@@ -244,10 +244,9 @@
         HoverBorderColor: =ColorFade(Button12.BorderColor, 20%)
         OnSelect: |
             =//Office365Outlook.SendEmailV2(EmailAddress.Text,Subject.Text,Body.Text)
-            Mail.SendEmailV3("xulinyu2000@gmail.com", 
+            Office365Outlook.SendEmailV2("xulinyu2000@gmail.com", 
                              "Enter the email title here", 
-                             "Enter your email message here",
-                             false
+                             "Enter your email message here"
             ); Navigate('Email Success')
         PressedBorderColor: =Button12.Fill
         PressedColor: =Button12.Fill
