@@ -30,7 +30,6 @@
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
-                Y: =10
                 ZIndex: =1
 
             DataCardValue3_1 As label:
@@ -259,6 +258,29 @@
         Default: |-
             ="Knowledge sharing that are relevent to 
             this student?"
+            UpdateContext({SortDescending1: true});
+            ClearCollect(
+            colWellness,
+            DropColumns(
+            AddColumns(
+            GroupBy(
+            Filter(
+            'Wellness Challenge',
+            TeamName.Value = vMyTeam.Value
+            ),
+            "TeamNamePipe",
+            "NamePipe",
+            "GroupedTeams"
+            ),
+            "Sum of Steps",
+            Sum(
+            GroupedTeams,
+            Steps
+            )
+            ),
+            "GroupedTeams"
+            )
+            );
         Height: =240
         HintText: ="Email Contents "
         PressedBorderColor: =Body_1.HoverBorderColor
@@ -279,7 +301,7 @@
         Size: =21
         Width: =560
         X: =29
-        Y: =611
+        Y: =583
         ZIndex: =4
 
     Button13 As button:
