@@ -30,7 +30,7 @@
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =925
+            Height: =930
             Width: =Parent.Width
             X: =0
             Y: =0
@@ -46,14 +46,14 @@
                 HeadingFont: =Font.'Segoe UI'
                 HeadingFontWeight: =FontWeight.Bold
                 HeadingSize: =16
-                Height: =833
-                Items: =admin_bookings_table
+                Height: =837
+                Items: =admin_bookings_table_1
                 NoDataText: =
                 SelectedFill: =RGBA(227, 234, 243, 1)
                 Size: =14
                 Width: =640
                 X: =0
-                Y: =90
+                Y: =89
                 ZIndex: =1
 
                 "'Student Email_Column1' As dataTableColumn.textualColumn":
@@ -66,13 +66,13 @@
                     LayoutHeight: =Parent.Height
                     Order: =1
                     Text: =ThisItem.'Student Email'
-                    Width: =194
+                    Width: =178
                     X: =0
                     Y: =0
                     ZIndex: =2
 
                 "'Student Name_Column1' As dataTableColumn.textualColumn":
-                    AutoWidth: =true
+                    AutoWidth: =false
                     DisplayMode: =DisplayMode.Edit
                     FieldDisplayName: ="Name"
                     FieldName: ="Student Name"
@@ -81,7 +81,7 @@
                     LayoutHeight: =Parent.Height
                     Order: =2
                     Text: =ThisItem.'Student Name'
-                    Width: =120
+                    Width: =165
                     X: =0
                     Y: =0
                     ZIndex: =3
@@ -96,7 +96,7 @@
                     LayoutHeight: =Parent.Height
                     Order: =3
                     Text: =ThisItem.'Student Class'
-                    Width: =62
+                    Width: =65
                     X: =0
                     Y: =0
                     ZIndex: =4
@@ -104,15 +104,15 @@
                 "'Preferred Time_Column1' As dataTableColumn.textualColumn":
                     AutoWidth: =false
                     DisplayMode: =DisplayMode.Edit
-                    FieldDisplayName: ="Time"
+                    FieldDisplayName: ="Timeslot"
                     FieldName: ="Preferred Time"
                     FieldVariantName: ="textualColumn"
                     Height: =Parent.Height
                     LayoutHeight: =Parent.Height
                     Order: =4
                     Text: =ThisItem.'Preferred Time'
-                    Width: =217
-                    X: =398
+                    Width: =221
+                    X: =357
                     Y: =0
                     ZIndex: =5
 
@@ -124,10 +124,11 @@
 
     Label4_1 As label:
         Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(158, 223, 255, 1)
         FontWeight: =FontWeight.Bold
-        Height: =89
+        Height: =90
         Size: =21
         Text: ="Student Appointment Requests"
         Width: =640

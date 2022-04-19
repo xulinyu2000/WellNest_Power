@@ -12,6 +12,9 @@
     "datasets": {
       "sites%252Funswinfs.sharepoint.com%252C01a556b2-17a1-46a4-aa81-ac807163f263%252C7e3710a0-84d4-4a03-8c2a-36c1b3e4cdf2,b%2521slalAaEXpEaqgayAcWPyY6AQN37UhANKjCo2wbPkzfLCUzGK2G3sRLFxQE33F38r,01KOXOUZB5U3Z3LOFL7BGIPFAJSQ2WTIBR": {
         "dataSources": {
+          "admin_bookings_table_1": {
+            "tableName": "{918F2262-45A3-4ADA-B686-2B0811E2AA3A}"
+          },
           "checkin": {
             "tableName": "{D7CBED8A-8CAF-454D-94C6-1FFE6B8E475F}"
           },
@@ -67,7 +70,8 @@
       "checkin_2",
       "checkin_3",
       "student_response_1",
-      "student_response_2"
+      "student_response_2",
+      "admin_bookings_table_1"
     ],
     "dependencies": {},
     "dependents": [

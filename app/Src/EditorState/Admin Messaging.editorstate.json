@@ -402,9 +402,23 @@
         "Font",
         "FontWeight",
         "X",
-        "Y",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Y",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Width",
-        "Height",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Height",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisplayMode",
         "ZIndex",
         "LinkColor",
@@ -713,7 +727,14 @@
         "DisabledColor",
         "PressedColor",
         "HoverColor",
-        "BorderColor",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "BorderColor",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisabledBorderColor",
         "PressedBorderColor",
         "HoverBorderColor",
@@ -1186,7 +1207,14 @@
         "FieldName",
         "Order",
         "FieldVariantName",
-        "FieldDisplayName",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "FieldDisplayName",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "LayoutHeight",
         "X",
         "Y",
@@ -1203,18 +1231,13 @@
       "IsDataControl": false,
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
-      "IsLocked": true,
+      "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Preferred Time_Column1",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
-        {
-          "Category": "Data",
-          "PropertyName": "AutoWidth",
-          "RuleProviderType": "Unknown"
-        },
         {
           "Category": "Data",
           "PropertyName": "FieldName",
@@ -1238,6 +1261,11 @@
         {
           "Category": "Data",
           "PropertyName": "Text",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "AutoWidth",
           "RuleProviderType": "Unknown"
         },
         {
@@ -1384,7 +1412,14 @@
         "FieldName",
         "Order",
         "FieldVariantName",
-        "FieldDisplayName",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "FieldDisplayName",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "LayoutHeight",
         "X",
         "Y",
@@ -1410,11 +1445,6 @@
       "Properties": [
         {
           "Category": "Data",
-          "PropertyName": "AutoWidth",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
           "PropertyName": "FieldName",
           "RuleProviderType": "Unknown"
         },
@@ -1436,6 +1466,11 @@
         {
           "Category": "Data",
           "PropertyName": "Text",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "AutoWidth",
           "RuleProviderType": "Unknown"
         },
         {
@@ -1483,7 +1518,14 @@
         "FieldName",
         "Order",
         "FieldVariantName",
-        "FieldDisplayName",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "FieldDisplayName",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "LayoutHeight",
         "X",
         "Y",
@@ -1509,11 +1551,6 @@
       "Properties": [
         {
           "Category": "Data",
-          "PropertyName": "AutoWidth",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
           "PropertyName": "FieldName",
           "RuleProviderType": "Unknown"
         },
@@ -1535,6 +1572,11 @@
         {
           "Category": "Data",
           "PropertyName": "Text",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "AutoWidth",
           "RuleProviderType": "Unknown"
         },
         {
@@ -1582,7 +1624,14 @@
         "FieldName",
         "Order",
         "FieldVariantName",
-        "FieldDisplayName",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "FieldDisplayName",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "LayoutHeight",
         "X",
         "Y",
@@ -1608,11 +1657,6 @@
       "Properties": [
         {
           "Category": "Data",
-          "PropertyName": "AutoWidth",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
           "PropertyName": "FieldName",
           "RuleProviderType": "Unknown"
         },
@@ -1634,6 +1678,11 @@
         {
           "Category": "Data",
           "PropertyName": "Text",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "AutoWidth",
           "RuleProviderType": "Unknown"
         },
         {
