@@ -40,20 +40,21 @@
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
-                Fill: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(242, 242, 242, 1)
                 Font: =Font.Verdana
                 HeadingFill: =RGBA(87, 196, 255, 1)
                 HeadingFont: =Font.'Segoe UI'
                 HeadingFontWeight: =FontWeight.Bold
                 HeadingSize: =16
-                Height: =837
+                Height: =845
+                HoverFill: =RGBA(230, 230, 230, 1)
                 Items: =admin_bookings_table_1
                 NoDataText: ="There are no appointments currently."
                 SelectedFill: =RGBA(227, 234, 243, 1)
                 Size: =14
-                Width: =640
-                X: =0
-                Y: =89
+                Width: =583
+                X: =23
+                Y: =71
                 ZIndex: =1
 
                 "'Student Email_Column1' As dataTableColumn.textualColumn":
@@ -81,7 +82,7 @@
                     LayoutHeight: =Parent.Height
                     Order: =2
                     Text: =ThisItem.'Student Name'
-                    Width: =165
+                    Width: =115
                     X: =0
                     Y: =0
                     ZIndex: =3
@@ -116,22 +117,23 @@
                     Y: =0
                     ZIndex: =5
 
+            Label4_8 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 0, 0, 0)
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(158, 223, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =57
+                Size: =21
+                Text: ="Student Appointment Requests"
+                Width: =583
+                X: =23
+                Y: =14
+                ZIndex: =2
+
     AdmincompMenu_2 As AdmincompMenu:
         NavigationItems: |
             =NavAdminView
         Y: =1042
         ZIndex: =5
-
-    Label4_1 As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(0, 0, 0, 0)
-        Color: =RGBA(255, 255, 255, 1)
-        Fill: =RGBA(158, 223, 255, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =90
-        Size: =21
-        Text: ="Student Appointment Requests"
-        Width: =640
-        Y: =113
-        ZIndex: =6
 
