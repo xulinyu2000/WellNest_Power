@@ -19,6 +19,7 @@
 
     CheckInButton_2 As button:
         BorderColor: =ColorFade(CheckInButton_2.Fill, -15%)
+        BorderThickness: =0
         Fill: =RGBA(72, 161, 255, 1)
         Height: =53
         HoverBorderColor: =ColorFade(CheckInButton_2.BorderColor, 20%)
@@ -35,6 +36,7 @@
 
     WeeklyButton_2 As button:
         BorderColor: =ColorFade(WeeklyButton_2.Fill, -15%)
+        BorderThickness: =0
         Fill: =RGBA(72, 161, 255, 1)
         Height: =53
         HoverBorderColor: =ColorFade(WeeklyButton_2.BorderColor, 20%)
@@ -50,6 +52,7 @@
 
     MonthlyButton_2 As button:
         BorderColor: =ColorFade(MonthlyButton_2.Fill, -15%)
+        BorderThickness: =0
         Fill: =RGBA(72, 161, 255, 1)
         Height: =53
         HoverBorderColor: =ColorFade(MonthlyButton_2.BorderColor, 20%)
