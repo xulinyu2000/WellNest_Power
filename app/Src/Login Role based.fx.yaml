@@ -20,7 +20,6 @@
                 If(Dropdown_Class.Selected.Result = 0, Notify("Please select the correct class"));
                 If(Dropdown_Class.Selected.Result = LookUp(student_class,Student_ID = Office365Users.MyProfile().Mail, Class), Navigate('Student Dashboard'), Notify("Please select the correct class",NotificationType.Error));
                 
-                
                  
             PressedBorderColor: =Button6.Fill
             PressedColor: =Button6.Fill
