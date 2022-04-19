@@ -27,12 +27,6 @@
           "Class_Table": {
             "tableName": "{C16EB9D8-8DF6-4DAD-A62B-F62FBBB873EF}"
           },
-          "Class_Table_1": {
-            "tableName": "{C16EB9D8-8DF6-4DAD-A62B-F62FBBB873EF}"
-          },
-          "Class_Table_3": {
-            "tableName": "{C16EB9D8-8DF6-4DAD-A62B-F62FBBB873EF}"
-          },
           "student_class": {
             "tableName": "{82917BBE-D4FF-470E-A5D3-06458D619D2F}"
           }
@@ -67,7 +61,6 @@
     },
     "dataSources": [
       "checkin",
-      "Class_Table_1",
       "Class_Table",
       "student_class",
       "checkin_1",
@@ -75,7 +68,6 @@
       "Table2",
       "Table1",
       "student_response",
-      "Class_Table_3",
       "checkin_2",
       "checkin_3",
       "student_response_1",
