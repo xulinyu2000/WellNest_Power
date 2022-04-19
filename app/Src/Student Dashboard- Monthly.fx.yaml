@@ -94,6 +94,17 @@
             Y: =1
             ZIndex: =6
 
+            PowerBI16 As powerbi:
+                DashboardId: ="074316b5-b4bd-4780-b863-6b491aa758df"
+                Height: =780
+                TileUrl: |-
+                    ="https://app.powerbi.com/embed?dashboardId=074316b5-b4bd-4780-b863-6b491aa758df&tileId=bdda108a-0ecd-466c-b477-a9c45173ef10&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
+                Width: =544
+                WorkspaceId: ="__my-workspace"
+                X: =51
+                Y: =39
+                ZIndex: =1
+
     StudentcompMenu_5 As StudentcompMenu:
         BackgroundColor: =RGBA(72, 161, 255, 1)
         ForegroundColor: =RGBA(237, 250, 255, 1)
