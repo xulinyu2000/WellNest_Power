@@ -11,7 +11,7 @@ WellNest is a mobile application to facillitate connections between students, te
 | StudentWilliam@UNSWINFS.onmicrosoft.com | Daf33171 | 8A |
 | StudentJoya@UNSWINFS.onmicrosoft.com | Vor13311 | 12B |
 
-## 🍎 Teacher/Counsellor Accounts
+## 🍎 Teacher Accounts
 | Email | Password |
 | --- | --- |
 | TeacherYenni@UNSWINFS.onmicrosoft.com | Mom00648 | 7A | 
@@ -20,7 +20,7 @@ WellNest is a mobile application to facillitate connections between students, te
 | JessicaLawson@UNSWINFS.onmicrosoft.com | Zop02575 | 11B |
 | JeffTan@UNSWINFS.onmicrosoft.com | Laz64430 | 12B |
 
-## 📏 Admin Accounts
+## 📏 Admin (Counsellor) Accounts
 | Email | Password |
 | --- | --- |
 | AdminWell@UNSWINFS.onmicrosoft.com | Kor32106 |
