@@ -98,17 +98,6 @@
                 Y: =26
                 ZIndex: =2
 
-            PowerBI3 As powerbi:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                DashboardId: ="7368e6d4-e804-405e-beac-508f666e5ffc"
-                Height: =913
-                TileUrl: |-
-                    ="https://app.powerbi.com/embed?dashboardId=7368e6d4-e804-405e-beac-508f666e5ffc&tileId=229bbfeb-7815-4487-81b9-f690b1067e33&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
-                Width: =624
-                WorkspaceId: ="__my-workspace"
-                Y: =137
-                ZIndex: =3
-
             btnWeekly_8 As button:
                 BorderColor: =ColorFade(btnWeekly_8.Fill, -15%)
                 BorderThickness: =0
