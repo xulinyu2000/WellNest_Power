@@ -114,6 +114,17 @@
                 Y: =86
                 ZIndex: =4
 
+            PowerBI7 As powerbi:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                DashboardId: ="7368e6d4-e804-405e-beac-508f666e5ffc"
+                Height: =912
+                TileUrl: |-
+                    ="https://app.powerbi.com/embed?dashboardId=7368e6d4-e804-405e-beac-508f666e5ffc&tileId=229bbfeb-7815-4487-81b9-f690b1067e33&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
+                Width: =628
+                WorkspaceId: ="__my-workspace"
+                Y: =137
+                ZIndex: =5
+
         DataCard1_7 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
