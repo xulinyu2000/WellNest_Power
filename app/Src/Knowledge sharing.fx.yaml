@@ -244,7 +244,7 @@
     TextEmailMessage1 As text:
         AccessibleLabel: ="Add a message"
         Default: ="This is can send emails to everybody inside the org. Should we include Teachers when send knowledge to everybody?"
-        Height: =350
+        Height: =584
         HintText: ="Add a message"
         Mode: =TextMode.MultiLine
         PressedBorderColor: =TextEmailMessage1.HoverBorderColor
@@ -252,7 +252,7 @@
         PressedFill: =TextEmailMessage1.Fill
         Size: =21
         TabIndex: =If(PeopleBrowseGallery1.Visible, -1, 0)
-        Width: =Parent.Width - Self.X * 2
+        Width: =586
         X: =32
         Y: =LblEmailMessage1.Y + LblEmailMessage1.Height + 6
         ZIndex: =12
@@ -339,20 +339,20 @@
         ZIndex: =15
 
         UploadedImage1 As image:
-            Height: =AddMediaButton1.Height
+            Height: =328
             HoverBorderColor: =ColorFade(UploadedImage1.BorderColor, 20%)
             HoverFill: =ColorFade(UploadedImage1.Fill, 20%)
             Image: =If(IsBlank(AddMediaButton1.Media), SampleImage, AddMediaButton1.Media)
             ImagePosition: =ImagePosition.Fill
             PressedBorderColor: =ColorFade(UploadedImage1.BorderColor, -20%)
             PressedFill: =ColorFade(UploadedImage1.Fill, -20%)
-            Width: =AddMediaButton1.Width
-            X: =38
-            Y: =421
+            Width: =436
+            X: =104
+            Y: =655
             ZIndex: =14
 
         AddMediaButton1 As addMedia:
-            Height: =432
+            Height: =328
             HoverBorderColor: =ColorFade(AddMediaButton1.BorderColor, 20%)
             HoverColor: =AddMediaButton1.Color
             HoverFill: =ColorFade(AddMediaButton1.Fill, 20%)
@@ -360,9 +360,9 @@
             PressedColor: =AddMediaButton1.Color
             PressedFill: =ColorFade(AddMediaButton1.Fill, -20%)
             Size: =25
-            Width: =575
-            X: =32
-            Y: =421
+            Width: =436
+            X: =99
+            Y: =655
             ZIndex: =15
 
     Button14_1 As button:
@@ -376,7 +376,7 @@
         Size: =24
         Text: ="Back"
         Width: =280
-        X: =165
-        Y: =822
+        X: =193
+        Y: =1018
         ZIndex: =16
 
