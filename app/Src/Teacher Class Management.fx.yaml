@@ -1,7 +1,7 @@
 "'Teacher Class Management' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
     "StudentGallery As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
-        Height: =675
+        Height: =840
         Items: |+
             =/*AddColumns(
                 AppUsers,
@@ -32,7 +32,7 @@
             //Navigate('Detail Screen', ScreenTransition.None, {SelectedItem: StudentGallery.Selected})
         TemplatePadding: =0
         TemplateSize: =Min(160, Self.Height - 60)
-        Y: =366
+        Y: =201
         ZIndex: =1
 
         Image7 As image:
@@ -58,8 +58,8 @@
             Text: =ThisItem.'Student Email'.DisplayName
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - Image7.Width - 104
-            X: =Image7.X + Image7.Width + 24
-            Y: =44
+            X: =155
+            Y: =34
             ZIndex: =2
 
         Subtitle7 As label:
@@ -73,7 +73,7 @@
             VerticalAlign: =VerticalAlign.Top
             Width: =Title11.Width
             X: =Title11.X
-            Y: =Title11.Y + Title11.Height + 4
+            Y: =95
             ZIndex: =3
 
         NextArrow1 As icon.ChevronRight:
@@ -117,44 +117,46 @@
         PressedBorderColor: =ColorFade(DashboardLogo_5.BorderColor, -20%)
         PressedFill: =ColorFade(DashboardLogo_5.Fill, -20%)
         Width: =68
-        ZIndex: =5
+        ZIndex: =2
 
     Header_4 As Header:
-        ZIndex: =11
+        ZIndex: =3
 
     TeachercompMenu_3 As TeachercompMenu:
         BackgroundColor: =RGBA(237, 250, 255, 1)
         ForegroundColor: =RGBA(72, 161, 255, 1)
         NavigationItems: =NavTeacherView
         Y: =1041.3333333333333
-        ZIndex: =12
-
-    Label14 As label:
-        Height: =64
-        OnSelect: =Navigate('Students At Risk')
-        Size: =21
-        Text: =VarClass
-        Underline: =true
-        Width: =94
-        X: =193
-        Y: =217
-        ZIndex: =14
-
-    Label14_3 As label:
-        Height: =70
-        OnSelect: =Navigate('Students At Risk')
-        Size: =21
-        Text: ="View Students at risk"
-        Underline: =true
-        Width: =404
-        X: =80
-        Y: =107
-        ZIndex: =15
+        ZIndex: =4
 
     RectQuickActionBar1_1 As rectangle:
         Fill: =RGBA(72, 161, 255, 1)
         Height: =88
         Width: =Parent.Width
-        Y: =261
-        ZIndex: =16
+        Y: =113
+        ZIndex: =5
+
+    Label14 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =64
+        OnSelect: =Navigate('Students At Risk')
+        Size: =21
+        Text: =VarClass
+        Width: =94
+        X: =30
+        Y: =125
+        ZIndex: =6
+
+    Label14_3 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =88
+        OnSelect: =Navigate('Students At Risk')
+        Size: =21
+        Text: ="View Students at risk"
+        Underline: =true
+        Width: =342
+        X: =298
+        Y: =113
+        ZIndex: =7
 
