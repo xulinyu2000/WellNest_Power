@@ -112,17 +112,6 @@
             Y: =2
             ZIndex: =8
 
-            PowerBI7 As powerbi:
-                DashboardId: ="cb31ea51-ac71-4377-b72f-8a4a5aedffd9"
-                Height: =527
-                TileUrl: |-
-                    ="https://app.powerbi.com/embed?dashboardId=cb31ea51-ac71-4377-b72f-8a4a5aedffd9&tileId=62c7d8eb-d42f-4fba-8fa4-3ba4d2b09546&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
-                Width: =542
-                WorkspaceId: ="__my-workspace"
-                X: =40
-                Y: =40
-                ZIndex: =1
-
     DashboardLogo_1 As image:
         Height: =98
         HoverBorderColor: =ColorFade(DashboardLogo_1.BorderColor, 20%)
