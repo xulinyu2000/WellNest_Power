@@ -19,9 +19,9 @@
 
     Canvas3_2 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
-        Height: =Parent.Height - Self.Y
+        Height: =928
         Width: =Parent.Width
-        Y: =RectQuickActionBar4_2.Y + RectQuickActionBar4_2.Height
+        Y: =113
         ZIndex: =4
 
         DataCard8_2 As dataCard:
@@ -30,19 +30,24 @@
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =Parent.Height - 100
+            Height: =865
             Width: =Parent.Width
             X: =0
             Y: =0
             ZIndex: =1
 
-            Label13_2 As label:
-                Height: =70
+            DataTable4_4 As dataTable.datatable:
+                BorderStyle: =BorderStyle.Solid
+                DisplayMode: =DisplayMode.Edit
+                Fill: =RGBA(0, 0, 0, 0)
+                HeadingSize: =21
+                Height: =929
+                Items: =checkin
+                NoDataText: =
                 Size: =21
-                Text: ="Message"
-                Width: =560
-                X: =80
-                Y: =498
+                Width: =640
+                X: =0
+                Y: =0
                 ZIndex: =1
 
     AdmincompMenu_2 As AdmincompMenu:
