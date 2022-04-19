@@ -54,7 +54,7 @@
                 Text: ="Question"
                 Width: =Parent.Width - 60
                 Wrap: =false
-                X: =27
+                X: =30
                 Y: =3
                 ZIndex: =1
 
@@ -63,7 +63,8 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Height: =140
+                Fill: =RGBA(240, 240, 240, 1)
+                Height: =120
                 Mode: =TextMode.MultiLine
                 PaddingBottom: =15
                 PaddingLeft: =15
@@ -76,26 +77,26 @@
                 RadiusBottomRight: =30
                 RadiusTopLeft: =30
                 RadiusTopRight: =30
-                Size: =21
+                Size: =20
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =69
+                Y: =51
                 ZIndex: =2
 
             ErrorMessage2 As label:
-                Height: =94
+                Height: =72
                 Live: =Live.Assertive
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =24
+                Size: =18
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
+                Width: =373
                 X: =30
-                Y: =question1.Y + question1.Height
+                Y: =173
                 ZIndex: =3
 
             StarVisible2 As label:
@@ -273,13 +274,14 @@
                 ZIndex: =4
 
     Label10 As label:
-        FontWeight: =FontWeight.Semibold
-        Height: =87
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Height: =35
         Size: =21
-        Text: ="Add new question"
-        Width: =560
-        X: =28
-        Y: =255
+        Text: |-
+            ="New Question:"
+        Width: =640
+        Y: =318
         ZIndex: =5
 
     TeachercompMenu_5 As TeachercompMenu:
@@ -289,37 +291,27 @@
         Y: =1041
         ZIndex: =6
 
-    Label10_1 As label:
-        FontWeight: =FontWeight.Semibold
-        Height: =87
-        Size: =21
-        Text: ="Your current question"
-        Width: =560
-        X: =28
-        Y: =140
-        ZIndex: =7
-
     Label10_4 As label:
-        Height: =87
-        Size: =21
+        Align: =Align.Center
+        Height: =110
+        Size: =20
         Text: =currQuestion
-        Width: =560
-        X: =40
-        Y: =191
+        Width: =640
+        Y: =171
         ZIndex: =8
 
     DataTable2 As dataTable.datatable:
         BorderStyle: =BorderStyle.Solid
         DisplayMode: =DisplayMode.Edit
-        Fill: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(230, 230, 230, 1)
         HeadingFill: =RGBA(87, 196, 255, 1)
         HeadingSize: =21
-        Height: =230
+        Height: =288
         Items: =Filter(student_response, Class = LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class))
         Size: =21
         Width: =640
         X: =0
-        Y: =802
+        Y: =673
         ZIndex: =9
 
         Date_Column2 As dataTableColumn.textualColumn:
@@ -370,11 +362,11 @@
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(158, 223, 255, 1)
         FontWeight: =FontWeight.Bold
-        Height: =89
+        Height: =62
         Size: =21
         Text: ="Student Responses"
         Width: =640
-        Y: =713
+        Y: =612
         ZIndex: =10
 
     Button5 As button:
@@ -395,8 +387,8 @@
         Size: =18
         Text: ="Add Question"
         Width: =200
-        X: =101
-        Y: =629
+        X: =408
+        Y: =528
         ZIndex: =11
 
     Button5_2 As button:
@@ -406,7 +398,7 @@
         Fill: =RGBA(72, 161, 255, 1)
         Height: =60
         HoverBorderColor: =ColorFade(Button5_2.BorderColor, 20%)
-        OnSelect: =Navigate('Teacher Questions Insights', ScreenTransition.CoverRight)
+        OnSelect: =Navigate('Teacher Questions Insights', ScreenTransition.UnCover)
         PressedBorderColor: =Button5_2.Fill
         PressedColor: =Button5_2.Fill
         PressedFill: =Button5_2.Color
@@ -417,7 +409,19 @@
         Size: =18
         Text: ="View Insights"
         Width: =200
-        X: =339
-        Y: =630
+        X: =220
+        Y: =971
         ZIndex: =12
+
+    Label4_7 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(158, 223, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =62
+        Size: =21
+        Text: ="Your Current Question"
+        Width: =640
+        Y: =112
+        ZIndex: =13
 

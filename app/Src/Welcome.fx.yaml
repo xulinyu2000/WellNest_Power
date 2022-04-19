@@ -22,46 +22,9 @@ Welcome As screen:
         Size: =22
         Text: ="Welcome, " & User().FullName
         Width: =560
-        X: =54
+        X: =40
         Y: =789
         ZIndex: =2
-
-    IconNextWelcome_1 As icon.Add:
-        BorderColor: =RGBA(72, 161, 255, 1)
-        Color: =RGBA(72, 161, 255, 1)
-        DisabledFill: =IconNextWelcome_1.Fill
-        FocusedBorderColor: =IconNextWelcome_1.BorderColor
-        HoverBorderColor: =ColorFade(IconNextWelcome_1.BorderColor, 20%)
-        HoverColor: =ColorFade(IconNextWelcome_1.Color, 20%)
-        HoverFill: =IconNextWelcome_1.Fill
-        Icon: =Icon.NextArrow
-        OnSelect: =Navigate([@Start], Fade)
-        PressedBorderColor: =ColorFade(IconNextWelcome_1.BorderColor, -20%)
-        PressedColor: =ColorFade(IconNextWelcome_1.Color, -20%)
-        PressedFill: =IconNextWelcome_1.Fill
-        X: =374
-        Y: =1022
-        ZIndex: =3
-
-    LabelEnter_1 As label:
-        Align: =Align.Center
-        Color: =RGBA(72, 161, 255, 1)
-        FocusedBorderColor: =LabelEnter_1.BorderColor
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
-        Height: =64
-        HoverBorderColor: =LabelEnter_1.BorderColor
-        HoverColor: =LabelEnter_1.Color
-        HoverFill: =LabelEnter_1.Fill
-        PressedBorderColor: =LabelEnter_1.BorderColor
-        PressedColor: =LabelEnter_1.Color
-        PressedFill: =LabelEnter_1.Fill
-        Size: =26
-        Text: ="ENTER"
-        Width: =143
-        X: =230
-        Y: =1022
-        ZIndex: =4
 
     Image6 As image:
         Height: =426
@@ -71,7 +34,51 @@ Welcome As screen:
         PressedBorderColor: =ColorFade(Image6.BorderColor, -20%)
         PressedFill: =ColorFade(Image6.Fill, -20%)
         Width: =453
-        X: =96
-        Y: =279
+        X: =94
+        Y: =277
         ZIndex: =5
+
+    Group4 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =6
+
+        IconNextWelcome_1 As icon.Add:
+            BorderColor: =RGBA(72, 161, 255, 1)
+            Color: =RGBA(72, 161, 255, 1)
+            DisabledFill: =IconNextWelcome_1.Fill
+            FocusedBorderColor: =IconNextWelcome_1.BorderColor
+            HoverBorderColor: =ColorFade(IconNextWelcome_1.BorderColor, 20%)
+            HoverColor: =ColorFade(IconNextWelcome_1.Color, 20%)
+            HoverFill: =IconNextWelcome_1.Fill
+            Icon: =Icon.NextArrow
+            OnSelect: =Navigate([@Start], Fade)
+            PressedBorderColor: =ColorFade(IconNextWelcome_1.BorderColor, -20%)
+            PressedColor: =ColorFade(IconNextWelcome_1.Color, -20%)
+            PressedFill: =IconNextWelcome_1.Fill
+            X: =360
+            Y: =1022
+            ZIndex: =3
+
+        LabelEnter_1 As label:
+            Align: =Align.Center
+            Color: =RGBA(72, 161, 255, 1)
+            FocusedBorderColor: =LabelEnter_1.BorderColor
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =64
+            HoverBorderColor: =LabelEnter_1.BorderColor
+            HoverColor: =LabelEnter_1.Color
+            HoverFill: =LabelEnter_1.Fill
+            PressedBorderColor: =LabelEnter_1.BorderColor
+            PressedColor: =LabelEnter_1.Color
+            PressedFill: =LabelEnter_1.Fill
+            Size: =26
+            Text: ="ENTER"
+            Width: =143
+            X: =216
+            Y: =1022
+            ZIndex: =4
 

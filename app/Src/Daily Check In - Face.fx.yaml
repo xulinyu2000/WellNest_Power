@@ -140,18 +140,6 @@
         Y: =258
         ZIndex: =11
 
-    Label1_3 As label:
-        Align: =Align.Center
-        Height: =68
-        Size: =24
-        Text: |-
-            ="Daily 
-            Check-in"
-        Width: =271
-        X: =179
-        Y: =58
-        ZIndex: =14
-
     IconCancel1_3 As icon.Cancel:
         AccessibleLabel: =Self.Tooltip
         Color: =RGBA(50, 86, 160, 1)
@@ -180,4 +168,16 @@
         X: =28
         Y: =30
         ZIndex: =16
+
+    Label1_5 As label:
+        Align: =Align.Center
+        Height: =68
+        Size: =24
+        Text: |-
+            ="Daily 
+            Check-in"
+        Width: =271
+        X: =187
+        Y: =68
+        ZIndex: =17
 

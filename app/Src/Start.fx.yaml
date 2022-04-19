@@ -19,40 +19,40 @@ Start As screen:
         PressedBorderColor: =LabelText2.BorderColor
         PressedColor: =LabelText2.Color
         PressedFill: =LabelText2.Fill
-        Size: =20
+        Size: =18
         Text: |-
             ="If you feel like life is no longer worth living, it’s really important to seek immediate help. With help, you can overcome these thoughts and stay safe.
             
             If you need support call one of the following 24/7 numbers:
+            
             Lifeline Australia | 13 11 14
             Kids Helpline | 1800 55 1800
             Beyond Blue | 1300 22 4636
             "
         Width: =520
-        X: =57
+        X: =59
         Y: =263
         ZIndex: =3
 
     LabelText1 As label:
         Align: =Align.Justify
         FocusedBorderColor: =LabelText1.BorderColor
-        Height: =310
+        Height: =255
         HoverBorderColor: =LabelText1.BorderColor
         HoverColor: =LabelText1.Color
         HoverFill: =LabelText1.Fill
         PressedBorderColor: =LabelText1.BorderColor
         PressedColor: =LabelText1.Color
         PressedFill: =LabelText1.Fill
-        Size: =20
+        Size: =18
         Text: |-
             ="Privacy is one of our greatest concerns. Your information will be securely stored if you continue from here.
             
             We use this data to understand and improve the general mental health of the school community.
             
-            
             "
         Width: =520
-        X: =57
+        X: =59
         Y: =728
         ZIndex: =7
 
@@ -72,7 +72,7 @@ Start As screen:
         Size: =24
         Text: ="Next"
         Width: =237
-        X: =198
+        X: =200
         Y: =983
         ZIndex: =9
 
@@ -84,7 +84,7 @@ Start As screen:
         PressedBorderColor: =ColorFade(Image8.BorderColor, -20%)
         PressedFill: =ColorFade(Image8.Fill, -20%)
         Width: =173
-        X: =230
+        X: =232
         Y: =63
         ZIndex: =10
 
@@ -105,7 +105,7 @@ Start As screen:
         Size: =24
         Text: ="Call"
         Width: =237
-        X: =198
-        Y: =658
+        X: =200
+        Y: =635
         ZIndex: =11
 
