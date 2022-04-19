@@ -117,14 +117,13 @@
             ZIndex: =8
 
             PowerBI12 As powerbi:
+                BorderColor: =RGBA(255, 255, 255, 1)
                 DashboardId: ="f1140de3-1543-4f65-acc8-512fb635c7b5"
-                Height: =712
+                Height: =900
                 TileUrl: |-
                     ="https://app.powerbi.com/embed?dashboardId=f1140de3-1543-4f65-acc8-512fb635c7b5&tileId=2823098e-3264-4fa2-b97c-ae7b78b88516&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
-                Width: =557
+                Width: =637
                 WorkspaceId: ="__my-workspace"
-                X: =40
-                Y: =60
                 ZIndex: =1
 
     DashboardLogo_9 As image:

@@ -16,32 +16,10 @@
         PressedBorderColor: =ColorFade(DashboardLogo_2.BorderColor, -20%)
         PressedFill: =ColorFade(DashboardLogo_2.Fill, -20%)
         Width: =68
-        ZIndex: =3
+        ZIndex: =2
 
     Header_6 As Header:
-        ZIndex: =4
-
-    Button5 As button:
-        BorderColor: =ColorFade(Button5.Fill, -15%)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =0
-        Fill: =RGBA(72, 161, 255, 1)
-        Height: =58
-        HoverBorderColor: =ColorFade(Button5.BorderColor, 20%)
-        OnSelect: =If(CountRows(Filter(teacher_questions, Class = LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class))) > 0, update_teacher_question.Run(LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class), question1.Text, Today()), add_teacher_question.Run(LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class), question1.Text, Today())); Set(currQuestion, question1.Text);
-        PressedBorderColor: =Button5.Fill
-        PressedColor: =Button5.Fill
-        PressedFill: =Button5.Color
-        RadiusBottomLeft: =30
-        RadiusBottomRight: =30
-        RadiusTopLeft: =30
-        RadiusTopRight: =30
-        Size: =24
-        Text: ="Add question"
-        Width: =422
-        X: =109
-        Y: =605
-        ZIndex: =7
+        ZIndex: =3
 
     Form1 As form:
         DataSource: =teacher_questions
@@ -50,7 +28,7 @@
         Height: =335
         Width: =640
         Y: =342
-        ZIndex: =8
+        ZIndex: =4
 
         Questions_DataCard2 As typedDataCard.textualMultiLineEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -302,14 +280,14 @@
         Width: =560
         X: =28
         Y: =255
-        ZIndex: =11
+        ZIndex: =5
 
     TeachercompMenu_5 As TeachercompMenu:
         BackgroundColor: =RGBA(237, 250, 255, 1)
         ForegroundColor: =RGBA(72, 161, 255, 1)
         NavigationItems: =NavTeacherView
         Y: =1041
-        ZIndex: =12
+        ZIndex: =6
 
     Label10_1 As label:
         FontWeight: =FontWeight.Semibold
@@ -319,7 +297,7 @@
         Width: =560
         X: =28
         Y: =140
-        ZIndex: =13
+        ZIndex: =7
 
     Label10_4 As label:
         Height: =87
@@ -328,7 +306,7 @@
         Width: =560
         X: =40
         Y: =191
-        ZIndex: =14
+        ZIndex: =8
 
     DataTable2 As dataTable.datatable:
         BorderStyle: =BorderStyle.Solid
@@ -336,13 +314,13 @@
         Fill: =RGBA(0, 0, 0, 0)
         HeadingFill: =RGBA(87, 196, 255, 1)
         HeadingSize: =21
-        Height: =206
+        Height: =230
         Items: =Filter(student_response, Class = LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class))
         Size: =21
         Width: =640
         X: =0
-        Y: =826
-        ZIndex: =16
+        Y: =802
+        ZIndex: =9
 
         Date_Column2 As dataTableColumn.textualColumn:
             AutoWidth: =false
@@ -396,15 +374,37 @@
         Size: =21
         Text: ="Student Responses"
         Width: =640
-        Y: =737
-        ZIndex: =17
+        Y: =713
+        ZIndex: =10
+
+    Button5 As button:
+        BorderColor: =ColorFade(Button5.Fill, -15%)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =0
+        Fill: =RGBA(72, 161, 255, 1)
+        Height: =60
+        HoverBorderColor: =ColorFade(Button5.BorderColor, 20%)
+        OnSelect: =If(CountRows(Filter(teacher_questions, Class = LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class))) > 0, update_teacher_question.Run(LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class), question1.Text, Today()), add_teacher_question.Run(LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class), question1.Text, Today())); Set(currQuestion, question1.Text);
+        PressedBorderColor: =Button5.Fill
+        PressedColor: =Button5.Fill
+        PressedFill: =Button5.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Size: =18
+        Text: ="Add Question"
+        Width: =200
+        X: =101
+        Y: =629
+        ZIndex: =11
 
     Button5_2 As button:
         BorderColor: =ColorFade(Button5_2.Fill, -15%)
         BorderStyle: =BorderStyle.None
         BorderThickness: =0
         Fill: =RGBA(72, 161, 255, 1)
-        Height: =58
+        Height: =60
         HoverBorderColor: =ColorFade(Button5_2.BorderColor, 20%)
         OnSelect: =Navigate('Teacher Questions Insights', ScreenTransition.CoverRight)
         PressedBorderColor: =Button5_2.Fill
@@ -414,10 +414,10 @@
         RadiusBottomRight: =30
         RadiusTopLeft: =30
         RadiusTopRight: =30
-        Size: =24
+        Size: =18
         Text: ="View Insights"
-        Width: =422
-        X: =109
-        Y: =671
-        ZIndex: =18
+        Width: =200
+        X: =339
+        Y: =630
+        ZIndex: =12
 
