@@ -23,13 +23,39 @@
             If(Len(Trim(TextEmailSubject1.Text)) > 0 && !IsEmpty(MyPeople), DisplayMode.Edit, DisplayMode.Disabled)
         Height: =88
         Icon: =Icon.Send
-        OnSelect: |-
-            =/*Create semicolon separated list of people to email, send the email, reset subject & message fields*/           
+        OnSelect: |
+            =/*Create semicolon separated list of people to email, send the email, reset subject & message fields          
             Set(_emailRecipientString, Concat(MyPeople, Mail & ";"));           
             Office365Outlook.SendEmail(_emailRecipientString, TextEmailSubject1.Text, TextEmailMessage1.Text, {Importance:"Normal"});           
             Reset(TextEmailSubject1);           
             Reset(TextEmailMessage1);           
-            Clear(MyPeople);Navigate('Email Success')
+            Clear(MyPeople)*/
+            
+            Set( _emailRecipientString, Concat(MyPeople, Mail & ";") );
+            If( IsBlank( UploadedImage1 ),
+                'Office365Outlook'.SendEmail( _emailRecipientString, 
+                    TextEmailSubject1.Text, 
+                    TextEmailMessage1.Text, 
+                    { Importance: "Normal" }
+                ),
+                'Office365Outlook'.SendEmail( _emailRecipientString, 
+                    TextEmailSubject1.Text, 
+                    TextEmailMessage1.Text, 
+                    {
+                        Importance: "Normal",
+                        Attachments: Table(
+                            {
+                                Name: "Image.jpg", 
+                                ContentBytes: UploadedImage1.Image
+                            }
+                        )
+                    }
+                )
+            );
+            Reset( TextEmailSubject1 );
+            Reset( TextEmailMessage1 );
+            Reset( AddMediaButton1 );
+            Clear( MyPeople ); Navigate('Email Success')
         PaddingBottom: =24
         PaddingLeft: =24
         PaddingRight: =24
@@ -235,11 +261,17 @@
         AccessibleLabel: ="User look up search results"
         BorderThickness: =2
         Fill: =Parent.Fill
-        Height: =If(Self.Visible, Parent.Height / 2 + 200, 0)
+        Height: |-
+            =Min( 
+                ( EmailPeopleGallery1.TemplateHeight + EmailPeopleGallery1.TemplatePadding * 2 ) *
+                    RoundUp( CountRows( EmailPeopleGallery1.AllItems ) / 2, 0 ), 
+                304
+            )
         Items: |-
             =/*Only use Office 365 Users operation if user has started searching*/
             If(!IsBlank(Trim(TextSearchBox2.Text)), Office365Users.SearchUser({searchTerm: Trim(TextSearchBox2.Text), top: 15}))
         Layout: =Layout.Vertical
+        ShowScrollbar: =EmailPeopleGallery1.Height >= 304
         TemplatePadding: =0
         TemplateSize: =104
         Visible: =!IsBlank(Trim(TextSearchBox2.Text))
@@ -299,6 +331,40 @@
             Y: =Parent.TemplateHeight - 1
             ZIndex: =4
 
+    AddMediaWithImage1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =15
+
+        UploadedImage1 As image:
+            Height: =AddMediaButton1.Height
+            HoverBorderColor: =ColorFade(UploadedImage1.BorderColor, 20%)
+            HoverFill: =ColorFade(UploadedImage1.Fill, 20%)
+            Image: =If(IsBlank(AddMediaButton1.Media), SampleImage, AddMediaButton1.Media)
+            ImagePosition: =ImagePosition.Fill
+            PressedBorderColor: =ColorFade(UploadedImage1.BorderColor, -20%)
+            PressedFill: =ColorFade(UploadedImage1.Fill, -20%)
+            Width: =AddMediaButton1.Width
+            X: =38
+            Y: =421
+            ZIndex: =14
+
+        AddMediaButton1 As addMedia:
+            Height: =432
+            HoverBorderColor: =ColorFade(AddMediaButton1.BorderColor, 20%)
+            HoverColor: =AddMediaButton1.Color
+            HoverFill: =ColorFade(AddMediaButton1.Fill, 20%)
+            PressedBorderColor: =ColorFade(AddMediaButton1.BorderColor, -20%)
+            PressedColor: =AddMediaButton1.Color
+            PressedFill: =ColorFade(AddMediaButton1.Fill, -20%)
+            Size: =25
+            Width: =575
+            X: =32
+            Y: =421
+            ZIndex: =15
+
     Button14_1 As button:
         BorderColor: =ColorFade(Button14_1.Fill, -15%)
         Height: =70
@@ -312,5 +378,5 @@
         Width: =280
         X: =165
         Y: =822
-        ZIndex: =14
+        ZIndex: =16
 
