@@ -83,7 +83,7 @@
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(247, 249, 252, 1)
+            Fill: =RGBA(255, 255, 255, 1)
             Height: =817
             Width: =640
             X: =0
@@ -91,6 +91,7 @@
             ZIndex: =7
 
             PowerBI3 As powerbi:
+                BorderStyle: =BorderStyle.None
                 DashboardId: ="cb31ea51-ac71-4377-b72f-8a4a5aedffd9"
                 Height: =745
                 TileUrl: |-
@@ -106,11 +107,46 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =640
+            Height: =665
             Width: =640
             X: =0
             Y: =2
             ZIndex: =8
+
+            PowerBI10 As powerbi:
+                BorderStyle: =BorderStyle.None
+                DashboardId: ="cb31ea51-ac71-4377-b72f-8a4a5aedffd9"
+                Height: =584
+                TileUrl: |-
+                    ="https://app.powerbi.com/embed?dashboardId=cb31ea51-ac71-4377-b72f-8a4a5aedffd9&tileId=62c7d8eb-d42f-4fba-8fa4-3ba4d2b09546&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
+                Width: =537
+                WorkspaceId: ="__my-workspace"
+                X: =40
+                Y: =40
+                ZIndex: =1
+
+        DataCard1 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =920
+            Width: =640
+            X: =0
+            Y: =3
+            ZIndex: =9
+
+            PowerBI13 As powerbi:
+                BorderStyle: =BorderStyle.None
+                DashboardId: ="cb31ea51-ac71-4377-b72f-8a4a5aedffd9"
+                Height: =851
+                TileUrl: |-
+                    ="https://app.powerbi.com/embed?dashboardId=cb31ea51-ac71-4377-b72f-8a4a5aedffd9&tileId=1b603e4b-15e7-4b14-ad12-76f75de3da70&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
+                Width: =557
+                WorkspaceId: ="__my-workspace"
+                X: =40
+                Y: =40
+                ZIndex: =1
 
     DashboardLogo_1 As image:
         Height: =98

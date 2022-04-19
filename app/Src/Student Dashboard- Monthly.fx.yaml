@@ -67,7 +67,7 @@
 
     Canvas1_10 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
-        Height: =739
+        Height: =776
         Width: =Parent.Width
         Y: =305
         ZIndex: =7
@@ -76,45 +76,23 @@
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(247, 249, 252, 1)
-            Height: =606
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =900
             Width: =640
             X: =0
-            Y: =2
+            Y: =0
             ZIndex: =5
-
-            PowerBI1_4 As powerbi:
-                DashboardId: ="074316b5-b4bd-4780-b863-6b491aa758df"
-                Height: =512
-                TileUrl: |-
-                    ="https://app.powerbi.com/embed?dashboardId=074316b5-b4bd-4780-b863-6b491aa758df&tileId=144e7685-b182-4f2d-bf9f-84779d49a8df&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
-                Width: =554
-                WorkspaceId: ="__my-workspace"
-                X: =33
-                Y: =63
-                ZIndex: =1
 
         DataCard1_11 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =606
+            Height: =850
             Width: =640
             X: =0
-            Y: =3
+            Y: =1
             ZIndex: =6
-
-            PowerBI10 As powerbi:
-                DashboardId: ="074316b5-b4bd-4780-b863-6b491aa758df"
-                Height: =524
-                TileUrl: |-
-                    ="https://app.powerbi.com/embed?dashboardId=074316b5-b4bd-4780-b863-6b491aa758df&tileId=bdda108a-0ecd-466c-b477-a9c45173ef10&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
-                Width: =548
-                WorkspaceId: ="__my-workspace"
-                X: =40
-                Y: =40
-                ZIndex: =1
 
     StudentcompMenu_5 As StudentcompMenu:
         BackgroundColor: =RGBA(72, 161, 255, 1)
