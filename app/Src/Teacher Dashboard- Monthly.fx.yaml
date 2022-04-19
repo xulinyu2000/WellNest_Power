@@ -44,10 +44,10 @@
 
                 Label7_2 As label:
                     FontWeight: =FontWeight.Semibold
-                    Height: =113
+                    Height: =112
                     Size: =21
                     Text: ="Homeroom 11A's " & Today() & " check-in report is ready below!"
-                    Width: =402
+                    Width: =417
                     ZIndex: =2
 
                 Label9_2 As label:
@@ -59,8 +59,8 @@
                     Text: ="See all students"
                     Underline: =true
                     Width: =188
-                    X: =352
-                    Y: =43
+                    X: =353
+                    Y: =42
                     ZIndex: =3
 
             Button4_2 As button:
