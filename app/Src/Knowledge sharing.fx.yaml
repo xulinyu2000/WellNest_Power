@@ -29,7 +29,7 @@
             Office365Outlook.SendEmail(_emailRecipientString, TextEmailSubject1.Text, TextEmailMessage1.Text, {Importance:"Normal"});           
             Reset(TextEmailSubject1);           
             Reset(TextEmailMessage1);           
-            Clear(MyPeople)
+            Clear(MyPeople);Navigate('Email Success')
         PaddingBottom: =24
         PaddingLeft: =24
         PaddingRight: =24
