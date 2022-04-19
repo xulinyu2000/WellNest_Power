@@ -55,7 +55,6 @@
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
-                Y: =3
                 ZIndex: =1
 
             question1 As text:
@@ -73,15 +72,15 @@
                 PressedBorderColor: =question1.HoverBorderColor
                 PressedColor: =question1.Color
                 PressedFill: =question1.Fill
-                RadiusBottomLeft: =30
-                RadiusBottomRight: =30
-                RadiusTopLeft: =30
-                RadiusTopRight: =30
+                RadiusBottomLeft: =15
+                RadiusBottomRight: =15
+                RadiusTopLeft: =15
+                RadiusTopRight: =15
                 Size: =20
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =51
+                Width: =606
+                X: =16
+                Y: =53
                 ZIndex: =2
 
             ErrorMessage2 As label:
@@ -273,17 +272,6 @@
                 Y: =DataCardKey10.Y
                 ZIndex: =4
 
-    Label10 As label:
-        Align: =Align.Center
-        FontWeight: =FontWeight.Bold
-        Height: =35
-        Size: =21
-        Text: |-
-            ="New Question:"
-        Width: =640
-        Y: =318
-        ZIndex: =5
-
     TeachercompMenu_5 As TeachercompMenu:
         BackgroundColor: =RGBA(237, 250, 255, 1)
         ForegroundColor: =RGBA(72, 161, 255, 1)
@@ -293,11 +281,13 @@
 
     Label10_4 As label:
         Align: =Align.Center
-        Height: =110
+        Fill: =RGBA(245, 245, 245, 1)
+        Height: =127
         Size: =20
         Text: =currQuestion
-        Width: =640
-        Y: =171
+        Width: =604
+        X: =18
+        Y: =181
         ZIndex: =8
 
     DataTable2 As dataTable.datatable:
@@ -305,13 +295,13 @@
         DisplayMode: =DisplayMode.Edit
         Fill: =RGBA(230, 230, 230, 1)
         HeadingFill: =RGBA(87, 196, 255, 1)
-        HeadingSize: =21
-        Height: =288
+        HeadingSize: =16
+        Height: =295
         Items: =Filter(student_response, Class = LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class))
-        Size: =21
-        Width: =640
-        X: =0
-        Y: =673
+        Size: =16
+        Width: =604
+        X: =18
+        Y: =666
         ZIndex: =9
 
         Date_Column2 As dataTableColumn.textualColumn:
@@ -330,6 +320,7 @@
             ZIndex: =5
 
         Reponse_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Reponse"
             FieldName: ="Reponse"
@@ -338,12 +329,13 @@
             LayoutHeight: =Parent.Height
             Order: =2
             Text: =ThisItem.Reponse
-            Width: =100
+            Width: =235
             X: =0
             Y: =0
             ZIndex: =6
 
         Student_ID_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Student"
             FieldName: ="Student_ID"
@@ -352,7 +344,7 @@
             LayoutHeight: =Parent.Height
             Order: =1
             Text: =ThisItem.Student_ID
-            Width: =100
+            Width: =194
             X: =0
             Y: =0
             ZIndex: =7
@@ -362,11 +354,12 @@
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(158, 223, 255, 1)
         FontWeight: =FontWeight.Bold
-        Height: =62
+        Height: =55
         Size: =21
         Text: ="Student Responses"
-        Width: =640
-        Y: =612
+        Width: =604
+        X: =18
+        Y: =611
         ZIndex: =10
 
     Button5 As button:
@@ -387,8 +380,8 @@
         Size: =18
         Text: ="Add Question"
         Width: =200
-        X: =408
-        Y: =528
+        X: =420
+        Y: =525
         ZIndex: =11
 
     Button5_2 As button:
@@ -418,10 +411,11 @@
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(158, 223, 255, 1)
         FontWeight: =FontWeight.Bold
-        Height: =62
+        Height: =55
         Size: =21
         Text: ="Your Current Question"
-        Width: =640
-        Y: =112
+        Width: =604
+        X: =18
+        Y: =126
         ZIndex: =13
 
