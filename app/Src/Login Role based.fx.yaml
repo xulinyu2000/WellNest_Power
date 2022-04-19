@@ -32,8 +32,8 @@
             Size: =24
             Text: ="Student Login "
             Width: =280
-            X: =126
-            Y: =187
+            X: =117
+            Y: =189
             ZIndex: =1
 
         Dropdown_Class As dropdown:
@@ -47,8 +47,8 @@
             PressedBorderColor: =Dropdown_Class.HoverBorderColor
             Size: =21
             Width: =280
-            X: =126
-            Y: =96
+            X: =117
+            Y: =102
             ZIndex: =2
 
     Container6 As groupContainer.manualLayoutContainer:
@@ -135,7 +135,7 @@
         PressedBorderColor: =ColorFade(Image11.BorderColor, -20%)
         PressedFill: =ColorFade(Image11.Fill, -20%)
         Width: =263
-        X: =196
+        X: =183
         Y: =36
         ZIndex: =8
 
