@@ -19,7 +19,7 @@
                 )
             )*/
             
-            SortByColumns(Filter(AppUsers, StartsWith(Title, TextSearchBox1.Text)),"Title",If(SortDescending1, Descending, Ascending)) 
+            SortByColumns(Filter(AppUsers, StartsWith(NAME, TextSearchBox1.Text)),"EnrolledClass",If(SortDescending1, Descending, Ascending)) 
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplatePadding: =0
@@ -49,7 +49,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Text: |
-                =ThisItem.'Title'
+                =ThisItem.'NAME'
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - Image9.Width - 104
             X: =Image9.X + Image9.Width + 24
