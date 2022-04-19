@@ -2,6 +2,7 @@
 
     iconCircle2 As circle.Circle:
         DisabledFill: =iconCircle2.Fill
+        Fill: =RGBA(72, 161, 255, 1)
         HoverFill: =iconCircle2.Fill
         PressedFill: =iconCircle2.Fill
         X: =Parent.Width/2 - Self.Width/2
@@ -33,6 +34,7 @@
 
     Button14 As button:
         BorderColor: =ColorFade(Button14.Fill, -15%)
+        Fill: =RGBA(72, 161, 255, 1)
         Height: =70
         HoverBorderColor: =ColorFade(Button14.BorderColor, 20%)
         OnSelect: =Back()
@@ -42,7 +44,7 @@
         Size: =24
         Text: ="Back"
         Width: =280
-        X: =165
-        Y: =822
+        X: =180
+        Y: =752
         ZIndex: =4
 
