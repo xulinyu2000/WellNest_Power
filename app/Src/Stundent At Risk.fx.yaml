@@ -81,6 +81,8 @@
 
     Button9 As button:
         BorderColor: =ColorFade(Button9.Fill, -15%)
+        BorderThickness: =0
+        Fill: =RGBA(72, 161, 255, 1)
         Height: =70
         HoverBorderColor: =ColorFade(Button9.BorderColor, 20%)
         OnSelect: |-
@@ -89,6 +91,10 @@
         PressedBorderColor: =Button9.Fill
         PressedColor: =Button9.Fill
         PressedFill: =Button9.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
         Size: =24
         Text: ="Send Email "
         Width: =280
@@ -107,6 +113,6 @@
         PressedColor: =ColorFade(Icon4.Color, -20%)
         PressedFill: =Icon4.Fill
         X: =26
-        Y: =1064
+        Y: =1040
         ZIndex: =17
 

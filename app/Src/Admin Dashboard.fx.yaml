@@ -21,6 +21,7 @@
 
     btnDaily As button:
         BorderColor: =ColorFade(btnDaily.Fill, -15%)
+        BorderThickness: =0
         Fill: =RGBA(72, 161, 255, 1)
         Height: =53
         HoverBorderColor: =ColorFade(btnDaily.BorderColor, 20%)
@@ -35,6 +36,7 @@
 
     btnWeekly As button:
         BorderColor: =ColorFade(btnWeekly.Fill, -15%)
+        BorderThickness: =0
         Fill: =RGBA(72, 161, 255, 1)
         Height: =53
         HoverBorderColor: =ColorFade(btnWeekly.BorderColor, 20%)
@@ -50,6 +52,7 @@
 
     btnMonthly As button:
         BorderColor: =ColorFade(btnMonthly.Fill, -15%)
+        BorderThickness: =0
         Fill: =RGBA(72, 161, 255, 1)
         Height: =53
         HoverBorderColor: =ColorFade(btnMonthly.BorderColor, 20%)
@@ -172,7 +175,8 @@
                 ZIndex: =2
 
     AdmincompMenu_1 As AdmincompMenu:
-        BackgroundColor: =RGBA(255, 255, 255, 1)
+        BackgroundColor: =RGBA(237, 250, 255, 1)
+        ForegroundColor: =RGBA(72, 161, 255, 1)
         NavigationItems: |-
             =/*Table(
                 {

@@ -71,12 +71,17 @@
 
     Button1 As button:
         BorderColor: =ColorFade(Button1.Fill, -15%)
+        Fill: =RGBA(72, 161, 255, 1)
         Height: =70
         HoverBorderColor: =ColorFade(Button1.BorderColor, 20%)
         OnSelect: =check_in_physical_activity.Run(Office365Users.MyProfile().Mail & Today(), "yes"); Navigate('Daily Check In - Stress')
         PressedBorderColor: =Button1.Fill
         PressedColor: =Button1.Fill
         PressedFill: =Button1.Color
+        RadiusBottomLeft: =40
+        RadiusBottomRight: =40
+        RadiusTopLeft: =40
+        RadiusTopRight: =40
         Size: =24
         Text: ="Yes"
         Width: =280
@@ -86,12 +91,18 @@
 
     Button1_1 As button:
         BorderColor: =ColorFade(Button1_1.Fill, -15%)
+        BorderThickness: =0
+        Fill: =RGBA(72, 161, 255, 1)
         Height: =70
         HoverBorderColor: =ColorFade(Button1_1.BorderColor, 20%)
         OnSelect: =check_in_physical_activity.Run(Office365Users.MyProfile().Mail & Today(), "no"); Navigate('Daily Check In - Stress')
         PressedBorderColor: =Button1_1.Fill
         PressedColor: =Button1_1.Fill
         PressedFill: =Button1_1.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
         Size: =24
         Text: ="No"
         Width: =280

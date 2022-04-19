@@ -240,6 +240,7 @@
 
     Button12_1 As button:
         BorderColor: =ColorFade(Button12_1.Fill, -15%)
+        Fill: =RGBA(72, 161, 255, 1)
         Height: =70
         HoverBorderColor: =ColorFade(Button12_1.BorderColor, 20%)
         OnSelect: =Office365Outlook.SendEmailV2(EmailAddress_1.Text,Subject_1.Text,Body_1.Text)

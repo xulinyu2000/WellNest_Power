@@ -17,7 +17,8 @@
         ZIndex: =3
 
     StudentcompMenu_4 As StudentcompMenu:
-        BackgroundColor: =RGBA(255, 255, 255, 1)
+        BackgroundColor: =RGBA(237, 250, 255, 1)
+        ForegroundColor: =RGBA(72, 161, 255, 1)
         NavigationItems: =NavStudentView
         Y: =1041.3333333333333
         ZIndex: =5
@@ -67,6 +68,10 @@
                 PressedBorderColor: =DataCardValue2.HoverBorderColor
                 PressedColor: =DataCardValue2.Color
                 PressedFill: =DataCardValue2.Fill
+                RadiusBottomLeft: =30
+                RadiusBottomRight: =30
+                RadiusTopLeft: =30
+                RadiusTopRight: =30
                 Size: =21
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -368,14 +373,19 @@
 
     Button7 As button:
         BorderColor: =ColorFade(Button7.Fill, -15%)
+        BorderThickness: =0
         DisplayMode: =If(CountRows(Filter(student_response, Student_ID = Office365Users.MyProfile().Mail)) > 0,  DisplayMode.Disabled, DisplayMode.Edit)
-        Fill: =RGBA(0, 121, 187, 1)
+        Fill: =RGBA(72, 161, 255, 1)
         Height: =74
         HoverBorderColor: =ColorFade(Button7.BorderColor, 20%)
         OnSelect: =SubmitForm(Form3); NewForm(Form3);
         PressedBorderColor: =Button7.Fill
         PressedColor: =Button7.Fill
         PressedFill: =Button7.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
         Size: =24
         Text: =If(CountRows(Filter(student_response, Student_ID = Office365Users.MyProfile().Mail)) > 0,  "You have already answered", "Submit Answer")
         Width: =351

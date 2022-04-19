@@ -21,6 +21,7 @@
 
     btnDaily_2 As button:
         BorderColor: =ColorFade(btnDaily_2.Fill, -15%)
+        BorderThickness: =0
         Fill: =RGBA(72, 161, 255, 1)
         Height: =53
         HoverBorderColor: =ColorFade(btnDaily_2.BorderColor, 20%)
@@ -36,6 +37,7 @@
 
     btnWeekly_2 As button:
         BorderColor: =ColorFade(btnWeekly_2.Fill, -15%)
+        BorderThickness: =0
         Fill: =RGBA(72, 161, 255, 1)
         Height: =53
         HoverBorderColor: =ColorFade(btnWeekly_2.BorderColor, 20%)
@@ -51,6 +53,7 @@
 
     btnMonthly_2 As button:
         BorderColor: =ColorFade(btnMonthly_2.Fill, -15%)
+        BorderThickness: =0
         Fill: =RGBA(72, 161, 255, 1)
         Height: =53
         HoverBorderColor: =ColorFade(btnMonthly_2.BorderColor, 20%)

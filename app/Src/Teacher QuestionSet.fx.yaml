@@ -25,13 +25,17 @@
         BorderColor: =ColorFade(Button5.Fill, -15%)
         BorderStyle: =BorderStyle.None
         BorderThickness: =0
-        Fill: =RGBA(50, 86, 160, 1)
+        Fill: =RGBA(72, 161, 255, 1)
         Height: =58
         HoverBorderColor: =ColorFade(Button5.BorderColor, 20%)
         OnSelect: =If(CountRows(Filter(teacher_questions, Class = LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class))) > 0, update_teacher_question.Run(LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class), question1.Text, Today()), add_teacher_question.Run(LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class), question1.Text, Today())); Set(currQuestion, question1.Text);
         PressedBorderColor: =Button5.Fill
         PressedColor: =Button5.Fill
         PressedFill: =Button5.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
         Size: =24
         Text: ="Add question"
         Width: =422
@@ -87,6 +91,10 @@
                 PressedBorderColor: =question1.HoverBorderColor
                 PressedColor: =question1.Color
                 PressedFill: =question1.Fill
+                RadiusBottomLeft: =30
+                RadiusBottomRight: =30
+                RadiusTopLeft: =30
+                RadiusTopRight: =30
                 Size: =21
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -294,7 +302,8 @@
         ZIndex: =11
 
     TeachercompMenu_5 As TeachercompMenu:
-        BackgroundColor: =RGBA(255, 255, 255, 1)
+        BackgroundColor: =RGBA(237, 250, 255, 1)
+        ForegroundColor: =RGBA(72, 161, 255, 1)
         NavigationItems: =NavTeacherView
         Y: =1041
         ZIndex: =12

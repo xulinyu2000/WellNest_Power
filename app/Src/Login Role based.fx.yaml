@@ -55,6 +55,7 @@
 
         Button8 As button:
             BorderColor: =ColorFade(Button8.Fill, -15%)
+            BorderThickness: =0
             Fill: =RGBA(72, 161, 255, 1)
             Height: =70
             HoverBorderColor: =ColorFade(Button8.BorderColor, 20%)
@@ -65,6 +66,10 @@
             PressedBorderColor: =Button8.Fill
             PressedColor: =Button8.Fill
             PressedFill: =Button8.Color
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
             Size: =24
             Text: ="Teacher Login"
             Width: =280
@@ -74,15 +79,17 @@
 
         Dropdown_Class_1 As dropdown:
             BorderColor: =RGBA(72, 161, 255, 1)
+            BorderThickness: =0
             ChevronBackground: =RGBA(72, 161, 255, 1)
             Default: ="0"
-            Height: =70
+            Height: =63
             HoverBorderColor: =ColorFade(Dropdown_Class_1.BorderColor, 15%)
             Items: =Sort(Distinct(Class_Table, Class),Result)
             PressedBorderColor: =Dropdown_Class_1.HoverBorderColor
             Size: =21
-            Width: =526
-            Y: =30
+            Width: =280
+            X: =138
+            Y: =239
             ZIndex: =2
 
     Container8 As groupContainer.manualLayoutContainer:
