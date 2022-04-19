@@ -149,7 +149,12 @@
         Fill: =TextSearchBox2.Fill
         Height: |-
             =/*Height adjusts to number of items in gallery*/
-            Min((Self.TemplateHeight + Self.TemplatePadding * 2) * RoundUp(CountRows(Self.AllItems) / 2, 0), 304)
+            //Min((Self.TemplateHeight + Self.TemplatePadding * 2) * RoundUp(CountRows(Self.AllItems) / 2, 0), 304)
+            Min( 
+                ( EmailPeopleGallery1.TemplateHeight + EmailPeopleGallery1.TemplatePadding * 2 ) *
+                    RoundUp( CountRows( EmailPeopleGallery1.AllItems ) / 2, 0 ), 
+                304
+            )
         Items: |-
             =/*Collection of user selected people*/
             MyPeople
