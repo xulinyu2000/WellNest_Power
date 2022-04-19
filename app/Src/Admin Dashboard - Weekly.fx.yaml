@@ -71,17 +71,17 @@
 
     Canvas1_5 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
-        Height: =812
+        Height: =803
         Width: =Parent.Width
-        Y: =233
+        Y: =241
         ZIndex: =7
 
         DataCard4_3 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(247, 249, 252, 1)
-            Height: =522
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =1041
             Width: =640
             X: =0
             Y: =0
@@ -92,17 +92,17 @@
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DashboardId: ="b566920b-b2cc-494f-a670-93406e9e8e2a"
                 DisplayMode: =DisplayMode.View
-                Height: =407
+                Height: =863
                 TileUrl: |-
                     ="https://app.powerbi.com/embed?dashboardId=b566920b-b2cc-494f-a670-93406e9e8e2a&tileId=d6a0ac9b-837b-4a83-8025-c2d2bcac98ef&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
-                Width: =561
+                Width: =622
                 WorkspaceId: ="__my-workspace"
-                X: =40
-                Y: =86
+                Y: =134
                 ZIndex: =1
 
             lblMoodOverview_1 As label:
                 Align: =Align.Center
+                FontWeight: =FontWeight.Semibold
                 Height: =46
                 Size: =21
                 Text: ="Weekly Check-In Overview"
@@ -111,65 +111,48 @@
                 Y: =26
                 ZIndex: =2
 
-        DataCard1_4 As dataCard.blankCard:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(247, 249, 252, 1)
-            Height: =562
-            Width: =640
-            X: =0
-            Y: =1
-            ZIndex: =5
-
-            lblCheckInOverview_1 As label:
-                Align: =Align.Center
-                Height: =56
-                Size: =21
-                Text: ="Weekly Rating Distribution"
-                Width: =560
-                X: =39
-                Y: =21
-                ZIndex: =1
-
-            PowerBI__1 As powerbi:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                DashboardId: ="b566920b-b2cc-494f-a670-93406e9e8e2a"
-                DisplayMode: =DisplayMode.View
-                Height: =436
-                TileUrl: |-
-                    ="https://app.powerbi.com/embed?dashboardId=b566920b-b2cc-494f-a670-93406e9e8e2a&tileId=e8fd126b-37e3-4e0c-9c10-4618d98b6a9c&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
-                Width: =559
-                WorkspaceId: ="__my-workspace"
-                X: =40
-                Y: =77
-                ZIndex: =2
+            btnWeekly_6 As button:
+                BorderColor: =ColorFade(btnWeekly_6.Fill, -15%)
+                BorderThickness: =0
+                Fill: =RGBA(179, 179, 179, 1)
+                Height: =51
+                HoverBorderColor: =ColorFade(btnWeekly_6.BorderColor, 20%)
+                OnSelect: =Navigate('Admin Dashboard - Weekly - Distribution', ScreenTransition.Cover)
+                PressedBorderColor: =btnWeekly_6.Fill
+                PressedColor: =btnWeekly_6.Fill
+                PressedFill: =btnWeekly_6.Color
+                Text: ="View Distribution"
+                Width: =202
+                X: =219
+                Y: =83
+                ZIndex: =3
 
         DataCard1_5 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(247, 249, 252, 1)
-            Height: =537
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =934
             Width: =640
             X: =0
-            Y: =2
+            Y: =1
             ZIndex: =6
 
             PowerBI4_1 As powerbi:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DashboardId: ="b566920b-b2cc-494f-a670-93406e9e8e2a"
-                Height: =434
+                Height: =868
                 TileUrl: |-
                     ="https://app.powerbi.com/embed?dashboardId=b566920b-b2cc-494f-a670-93406e9e8e2a&tileId=23552169-e4e3-4e2a-afb1-888cde00d1eb&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
-                Width: =556
+                Width: =608
                 WorkspaceId: ="__my-workspace"
-                X: =39
+                X: =10
                 Y: =63
                 ZIndex: =1
 
             Label8_1 As label:
                 Align: =Align.Center
+                FontWeight: =FontWeight.Semibold
                 Height: =63
                 Size: =21
                 Text: ="Weekly Trends"

@@ -1,0 +1,105 @@
+"'Admin Dashboard - Weekly - Distribution' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    OnVisible: |-
+        =Collect(Collection1, {Image: DashboardLogo_1.Image})
+
+    RectQuickActionBar3_14 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =113
+        Width: =Parent.Width
+        ZIndex: =1
+
+    DashboardLogo_18 As image:
+        Height: =98
+        HoverBorderColor: =ColorFade(DashboardLogo_18.BorderColor, 20%)
+        HoverFill: =ColorFade(DashboardLogo_18.Fill, 20%)
+        Image: =Picture1_1
+        PaddingLeft: =10
+        PressedBorderColor: =ColorFade(DashboardLogo_18.BorderColor, -20%)
+        PressedFill: =ColorFade(DashboardLogo_18.Fill, -20%)
+        Width: =68
+        ZIndex: =2
+
+    Header_23 As Header:
+        ZIndex: =6
+
+    Canvas1_12 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =857
+        Width: =Parent.Width
+        Y: =188
+        ZIndex: =7
+
+        DataCard4_5 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =1210
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =4
+
+            PowerBITile_Overview_3 As powerbi:
+                AllowNewAPI: =true
+                BorderColor: =RGBA(255, 255, 255, 1)
+                DashboardId: ="b566920b-b2cc-494f-a670-93406e9e8e2a"
+                DisplayMode: =DisplayMode.View
+                Height: =1113
+                TileUrl: |-
+                    ="https://app.powerbi.com/embed?dashboardId=b566920b-b2cc-494f-a670-93406e9e8e2a&tileId=e8fd126b-37e3-4e0c-9c10-4618d98b6a9c&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
+                Width: =616
+                WorkspaceId: ="__my-workspace"
+                Y: =86
+                ZIndex: =1
+
+            lblMoodOverview_3 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Semibold
+                Height: =46
+                Size: =21
+                Text: ="Weekly Rating Distribution"
+                Width: =560
+                X: =40
+                Y: =26
+                ZIndex: =2
+
+    AdmincompMenu_7 As AdmincompMenu:
+        NavigationItems: |-
+            =/*Table(
+                {
+                    MenuText: "Menu Item Screen 1",
+                    MenuIcon: Icon.Items,
+                    ScreenToGoTo: App.ActiveScreen
+                },
+                {
+                    MenuText: "Menu Item 2",
+                    MenuIcon: Icon.Message,
+                    ScreenToGoTo: App.ActiveScreen
+                },
+                {
+                    MenuText: "Menu Item 3",
+                     MenuIcon: Icon.DocumentWithContent,
+                    ScreenToGoTo: App.ActiveScreen
+                }
+            )*/
+            NavAdminView
+        Y: =1042
+        ZIndex: =8
+
+    btnWeekly_7 As button:
+        BorderColor: =ColorFade(btnWeekly_7.Fill, -15%)
+        BorderThickness: =0
+        Fill: =RGBA(72, 161, 255, 1)
+        Height: =53
+        HoverBorderColor: =ColorFade(btnWeekly_7.BorderColor, 20%)
+        OnSelect: =Navigate([@'Admin Dashboard - Weekly'], ScreenTransition.CoverRight)
+        PressedBorderColor: =btnWeekly_7.Fill
+        PressedColor: =btnWeekly_7.Fill
+        PressedFill: =btnWeekly_7.Color
+        Text: ="Back"
+        Width: =175
+        X: =232
+        Y: =136
+        ZIndex: =9
+
