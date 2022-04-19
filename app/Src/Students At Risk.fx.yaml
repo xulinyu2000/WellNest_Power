@@ -9,10 +9,10 @@
         PressedBorderColor: =ColorFade(DashboardLogo_11.BorderColor, -20%)
         PressedFill: =ColorFade(DashboardLogo_11.Fill, -20%)
         Width: =68
-        ZIndex: =5
+        ZIndex: =1
 
     Header_19 As Header:
-        ZIndex: =11
+        ZIndex: =2
 
     DataTable4_1 As dataTable.datatable:
         BorderStyle: =BorderStyle.Solid
@@ -26,7 +26,7 @@
         Width: =640
         X: =0
         Y: =202
-        ZIndex: =15
+        ZIndex: =3
 
         Student_Name_Column4_1 As dataTableColumn.textualColumn:
             DisplayMode: =DisplayMode.Edit
@@ -129,43 +129,6 @@
             Y: =0
             ZIndex: =8
 
-    Button9 As button:
-        BorderColor: =ColorFade(Button9.Fill, -15%)
-        BorderThickness: =0
-        Fill: =RGBA(72, 161, 255, 1)
-        Height: =70
-        HoverBorderColor: =ColorFade(Button9.BorderColor, 20%)
-        OnSelect: |-
-            =Set(ParentEmail, LookUp(AppUsers, "NAME" = Student_Name_Column4_1.Text, "Parent Email"));
-            Office365Outlook.SendEmailV2(ParentEmail.Text, "Test","Body")
-        PressedBorderColor: =Button9.Fill
-        PressedColor: =Button9.Fill
-        PressedFill: =Button9.Color
-        RadiusBottomLeft: =30
-        RadiusBottomRight: =30
-        RadiusTopLeft: =30
-        RadiusTopRight: =30
-        Size: =24
-        Text: ="Send Email "
-        Width: =280
-        X: =180
-        Y: =1037
-        ZIndex: =16
-
-    Icon4 As icon.BackArrow:
-        DisabledFill: =Icon4.Fill
-        HoverBorderColor: =ColorFade(Icon4.BorderColor, 20%)
-        HoverColor: =ColorFade(Icon4.Color, 20%)
-        HoverFill: =Icon4.Fill
-        Icon: =Icon.BackArrow
-        OnSelect: =Back()
-        PressedBorderColor: =ColorFade(Icon4.BorderColor, -20%)
-        PressedColor: =ColorFade(Icon4.Color, -20%)
-        PressedFill: =Icon4.Fill
-        X: =26
-        Y: =1040
-        ZIndex: =17
-
     Label4_4 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
@@ -176,5 +139,25 @@
         Text: ="Students at Risk"
         Width: =640
         Y: =113
-        ZIndex: =18
+        ZIndex: =4
+
+    btnWeekly_11 As button:
+        BorderColor: =ColorFade(btnWeekly_11.Fill, -15%)
+        BorderThickness: =0
+        Fill: =RGBA(72, 161, 255, 1)
+        Height: =53
+        HoverBorderColor: =ColorFade(btnWeekly_11.BorderColor, 20%)
+        OnSelect: =Back()
+        PressedBorderColor: =btnWeekly_11.Fill
+        PressedColor: =btnWeekly_11.Fill
+        PressedFill: =btnWeekly_11.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Text: ="Back"
+        Width: =150
+        X: =245
+        Y: =1059
+        ZIndex: =5
 
