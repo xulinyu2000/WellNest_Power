@@ -24,7 +24,7 @@
 
     Canvas1_6 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
-        Height: =848
+        Height: =763
         Width: =Parent.Width
         Y: =195
         ZIndex: =7
@@ -34,7 +34,7 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =1084
+            Height: =993
             Width: =640
             X: =0
             Y: =0
@@ -43,47 +43,30 @@
             lblMoodOverview_2 As label:
                 Align: =Align.Center
                 FontWeight: =FontWeight.Semibold
-                Height: =46
+                Height: =71
                 Size: =21
                 Text: ="Monthly Check-In Overview"
                 Width: =560
                 X: =40
-                Y: =26
-                ZIndex: =2
-
-            btnWeekly_8 As button:
-                BorderColor: =ColorFade(btnWeekly_8.Fill, -15%)
-                BorderThickness: =0
-                Fill: =RGBA(179, 179, 179, 1)
-                Height: =51
-                HoverBorderColor: =ColorFade(btnWeekly_8.BorderColor, 20%)
-                OnSelect: =Navigate('Admin Dashboard - Monthly - Distribution', ScreenTransition.Cover)
-                PressedBorderColor: =btnWeekly_8.Fill
-                PressedColor: =btnWeekly_8.Fill
-                PressedFill: =btnWeekly_8.Color
-                Text: ="View Distribution"
-                Width: =202
-                X: =219
-                Y: =86
-                ZIndex: =4
+                ZIndex: =1
 
             PowerBI7 As powerbi:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 DashboardId: ="7368e6d4-e804-405e-beac-508f666e5ffc"
-                Height: =912
+                Height: =889
                 TileUrl: |-
                     ="https://app.powerbi.com/embed?dashboardId=7368e6d4-e804-405e-beac-508f666e5ffc&tileId=229bbfeb-7815-4487-81b9-f690b1067e33&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
                 Width: =628
                 WorkspaceId: ="__my-workspace"
-                Y: =137
-                ZIndex: =5
+                Y: =71
+                ZIndex: =2
 
         DataCard1_7 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =961
+            Height: =946
             Width: =640
             X: =0
             Y: =1
@@ -104,7 +87,7 @@
             Label8_2 As label:
                 Align: =Align.Center
                 FontWeight: =FontWeight.Semibold
-                Height: =63
+                Height: =74
                 Size: =21
                 Text: ="Monthly Trends"
                 Width: =560
@@ -192,4 +175,20 @@
         X: =120
         Y: =128
         ZIndex: =11
+
+    btnWeekly_10 As button:
+        BorderColor: =ColorFade(btnWeekly_10.Fill, -15%)
+        BorderThickness: =0
+        Fill: =RGBA(179, 179, 179, 1)
+        Height: =51
+        HoverBorderColor: =ColorFade(btnWeekly_10.BorderColor, 20%)
+        OnSelect: =Navigate('Admin Dashboard - Monthly - Distribution', ScreenTransition.Cover)
+        PressedBorderColor: =btnWeekly_10.Fill
+        PressedColor: =btnWeekly_10.Fill
+        PressedFill: =btnWeekly_10.Color
+        Text: ="View Distribution"
+        Width: =202
+        X: =219
+        Y: =974
+        ZIndex: =12
 
