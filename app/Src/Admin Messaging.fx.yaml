@@ -117,11 +117,8 @@
                     ZIndex: =5
 
     AdmincompMenu_2 As AdmincompMenu:
-        BackgroundColor: =RGBA(72, 161, 255, 1)
-        ForegroundColor: =RGBA(237, 250, 255, 1)
         NavigationItems: |
             =NavAdminView
-        SelectedItemBackground: =RGBA(237, 250, 255, 1)
         Y: =1042
         ZIndex: =5
 
