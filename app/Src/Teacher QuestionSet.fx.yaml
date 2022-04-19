@@ -87,7 +87,10 @@
                 DisplayMode: =Parent.DisplayMode
                 Height: =140
                 Mode: =TextMode.MultiLine
-                PaddingLeft: =5
+                PaddingBottom: =15
+                PaddingLeft: =15
+                PaddingRight: =15
+                PaddingTop: =15
                 PressedBorderColor: =question1.HoverBorderColor
                 PressedColor: =question1.Color
                 PressedFill: =question1.Fill
@@ -333,12 +336,12 @@
         Fill: =RGBA(0, 0, 0, 0)
         HeadingFill: =RGBA(87, 196, 255, 1)
         HeadingSize: =21
-        Height: =226
+        Height: =206
         Items: =Filter(student_response, Class = LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class))
         Size: =21
         Width: =640
         X: =0
-        Y: =806
+        Y: =826
         ZIndex: =16
 
         Date_Column2 As dataTableColumn.textualColumn:
@@ -393,6 +396,28 @@
         Size: =21
         Text: ="Student Responses"
         Width: =640
-        Y: =717
+        Y: =737
         ZIndex: =17
+
+    Button5_2 As button:
+        BorderColor: =ColorFade(Button5_2.Fill, -15%)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =0
+        Fill: =RGBA(72, 161, 255, 1)
+        Height: =58
+        HoverBorderColor: =ColorFade(Button5_2.BorderColor, 20%)
+        OnSelect: =Navigate('Teacher Questions Insights', ScreenTransition.CoverRight)
+        PressedBorderColor: =Button5_2.Fill
+        PressedColor: =Button5_2.Fill
+        PressedFill: =Button5_2.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Size: =24
+        Text: ="View Insights"
+        Width: =422
+        X: =109
+        Y: =671
+        ZIndex: =18
 

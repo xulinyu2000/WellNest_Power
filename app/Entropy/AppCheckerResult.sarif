@@ -103,10 +103,50 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 5,
-                  "charOffset": 138,
+                  "charLength": 13,
+                  "charOffset": 85,
                   "snippet": {
-                    "text": ".Mail"
+                    "text": "student_class"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Daily Check In - Stress",
+                "type": "'Daily Check In - Stress'.Button3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "student_class"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Daily Check In - Stress'.Button3.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Daily Check In - Stress'.Button3.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 74,
+                  "charOffset": 78,
+                  "snippet": {
+                    "text": "LookUp(student_class, Student_ID = Office365Users.MyProfile().Mail, Class)"
                   }
                 }
               },
@@ -124,10 +164,50 @@
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 0
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Daily Check In - Stress'.Button3.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Daily Check In - Stress'.Button3.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 100,
+                  "snippet": {
+                    "text": "Student_ID"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Daily Check In - Stress",
+                "type": "'Daily Check In - Stress'.Button3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Student_ID"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -144,7 +224,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 110,
+                  "charOffset": 111,
                   "snippet": {
                     "text": "="
                   }
@@ -159,15 +239,56 @@
           ],
           "message": {
             "arguments": [
-              "LookUp"
+              "Error",
+              "Text"
             ],
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 0
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Daily Check In - Stress'.Button3.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Daily Check In - Stress'.Button3.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 146,
+                  "snippet": {
+                    "text": "Class"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Daily Check In - Stress",
+                "type": "'Daily Check In - Stress'.Button3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Class"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -1297,6 +1418,87 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'School Detail Screen'.FormViewer1_1.Item"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'School Detail Screen'.FormViewer1_1.Item",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 44,
+                  "snippet": {
+                    "text": ".ID"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Item",
+                "module": "School Detail Screen",
+                "type": "'School Detail Screen'.FormViewer1_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ID"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'School Detail Screen'.FormViewer1_1.Item"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'School Detail Screen'.FormViewer1_1.Item",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 19,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Item",
+                "module": "School Detail Screen",
+                "type": "'School Detail Screen'.FormViewer1_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Number",
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'School Detail Screen'.Button12_1.OnSelect"
                 }
               ],
@@ -1426,7 +1628,7 @@
                   "charLength": 102,
                   "charOffset": 322,
                   "snippet": {
-                    "text": "SortByColumns(Filter([@AppUsers], StartsWith(Title, TextSearchBox1.Text)),\"Student Email\", Descending)"
+                    "text": "SortByColumns(Filter(AppUsers, StartsWith(Subtitle2, TextSearchBox1.Text)),\"Student Name\", Descending)"
                   }
                 }
               },
@@ -1463,10 +1665,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 15,
-                  "charOffset": 396,
+                  "charLength": 14,
+                  "charOffset": 397,
                   "snippet": {
-                    "text": "\"Student Email\""
+                    "text": "\"Student Name\""
                   }
                 }
               },
@@ -1479,8 +1681,8 @@
           ],
           "message": {
             "arguments": [
-              "Student Email",
-              "ParentEmails"
+              "Student Name",
+              "ParentName"
             ],
             "id": "issue"
           },
@@ -1489,6 +1691,46 @@
           },
           "ruleId": "app-ErrColumnDoesNotExist-Name-Similar",
           "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'School Management'.BrowseGallery1.Image9.Image"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'School Management'.BrowseGallery1.Image9.Image",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Image",
+                "module": "School Management",
+                "type": "'School Management'.BrowseGallery1.Image9"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -1519,8 +1761,45 @@
             }
           ],
           "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'School Management'.BrowseGallery1.Title2.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'School Management'.BrowseGallery1.Title2.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "School Management",
+                "type": "'School Management'.BrowseGallery1.Title2"
+              }
+            }
+          ],
+          "message": {
             "arguments": [
-              "UserPhoto"
+              "ThisItem"
             ],
             "id": "issue"
           },
@@ -1544,10 +1823,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 16,
+                  "charLength": 15,
                   "charOffset": 8,
                   "snippet": {
-                    "text": ".'Student Email'"
+                    "text": ".'Student Name'"
                   }
                 }
               },
@@ -1559,16 +1838,52 @@
             }
           ],
           "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'School Management'.BrowseGallery1.NextArrow3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'School Management'.BrowseGallery1.NextArrow3.AccessibleLabel",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 4,
+                  "snippet": {
+                    "text": ".Tooltip"
+                  }
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "School Management",
+                "type": "'School Management'.BrowseGallery1.NextArrow3"
+              }
+            }
+          ],
+          "message": {
             "arguments": [
-              "Text",
-              "Record"
+              "'NextArrow3'.'AccessibleLabel' -> 'NextArrow3'.'AccessibleLabel'"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
+          "ruleId": "app-ErrCycleKnown",
           "ruleIndex": 7
         },
         {
@@ -1576,6 +1891,120 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'School Management'.BrowseGallery1.Subtitle2.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'School Management'.BrowseGallery1.Subtitle2.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "School Management",
+                "type": "'School Management'.BrowseGallery1.Subtitle2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'School Management'.BrowseGallery1.Subtitle2.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'School Management'.BrowseGallery1.Subtitle2.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".Class"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "School Management",
+                "type": "'School Management'.BrowseGallery1.Subtitle2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'School Management'.BrowseGallery1.Subtitle2.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'School Management'.BrowseGallery1.Subtitle2.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 14,
+                  "snippet": {
+                    "text": ".Value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "School Management",
+                "type": "'School Management'.BrowseGallery1.Subtitle2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Student Dashboard- Monthly'.CheckInButton_7.OnSelect"
                 }
               ],
@@ -1825,10 +2254,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 5,
-                  "charOffset": 91,
+                  "charLength": 13,
+                  "charOffset": 39,
                   "snippet": {
-                    "text": ".Mail"
+                    "text": "student_class"
                   }
                 }
               },
@@ -1841,15 +2270,15 @@
           ],
           "message": {
             "arguments": [
-              "LookUp"
+              "student_class"
             ],
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 0
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -1865,50 +2294,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 1,
-                  "charOffset": 63,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Student Response",
-                "type": "'Student Response'.Label5_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "LookUp"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Student Response'.Label5_1.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Student Response'.Label5_1.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 72,
+                  "charLength": 73,
                   "charOffset": 32,
                   "snippet": {
-                    "text": "LookUp(StudentTable,Student_ID = Office365Users.MyProfile().Mail, Class)"
+                    "text": "LookUp(student_class,Student_ID = Office365Users.MyProfile().Mail, Class)"
                   }
                 }
               },
@@ -1926,10 +2315,91 @@
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 0
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Student Response'.Label5_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Student Response'.Label5_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 53,
+                  "snippet": {
+                    "text": "Student_ID"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Student Response",
+                "type": "'Student Response'.Label5_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Student_ID"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Student Response'.Label5_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Student Response'.Label5_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 64,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Student Response",
+                "type": "'Student Response'.Label5_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1961,15 +2431,16 @@
           ],
           "message": {
             "arguments": [
-              "LookUp"
+              "Text",
+              "_Min"
             ],
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 0
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2065,10 +2536,50 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 5,
-                  "charOffset": 93,
+                  "charLength": 13,
+                  "charOffset": 40,
                   "snippet": {
-                    "text": ".Mail"
+                    "text": "student_class"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "Student Response",
+                "type": "'Student Response'.Form3.Class_DataCard1.DataCardValue7"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "student_class"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Student Response'.Form3.Class_DataCard1.DataCardValue7.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Student Response'.Form3.Class_DataCard1.DataCardValue7.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 74,
+                  "charOffset": 33,
+                  "snippet": {
+                    "text": "LookUp(student_class, Student_ID = Office365Users.MyProfile().Mail, Class)"
                   }
                 }
               },
@@ -2086,10 +2597,50 @@
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 0
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Student Response'.Form3.Class_DataCard1.DataCardValue7.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Student Response'.Form3.Class_DataCard1.DataCardValue7.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 55,
+                  "snippet": {
+                    "text": "Student_ID"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "Student Response",
+                "type": "'Student Response'.Form3.Class_DataCard1.DataCardValue7"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Student_ID"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -2106,7 +2657,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 65,
+                  "charOffset": 66,
                   "snippet": {
                     "text": "="
                   }
@@ -2121,15 +2672,56 @@
           ],
           "message": {
             "arguments": [
-              "LookUp"
+              "Error",
+              "Text"
             ],
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 0
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Student Response'.Form3.Class_DataCard1.DataCardValue7.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Student Response'.Form3.Class_DataCard1.DataCardValue7.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 101,
+                  "snippet": {
+                    "text": "Class"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "Student Response",
+                "type": "'Student Response'.Form3.Class_DataCard1.DataCardValue7"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Class"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -4854,6 +5446,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'School Management'.BrowseGallery1.NextArrow3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'School Management'.BrowseGallery1.NextArrow3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "School Management",
+                "type": "'School Management'.BrowseGallery1.NextArrow3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Student Response'.Form3.Reponse_DataCard2.DataCardValue2.AccessibleLabel"
                 }
               ],
@@ -7186,17 +7808,14 @@
               }
             },
             {
-              "id": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
+              "id": "app-ErrCycleKnown",
               "messageStrings": {
                 "issue": {
-                  "text": "Expected {0} value."
+                  "text": "This rule creates a circular reference between properties, which is not allowed. A property cannot reference itself or other properties affected by its value. This is the shortest circular reference: {0}"
                 }
               },
               "properties": {
                 "componentType": "app",
-                "howToFix": [
-                  "Change the rule to produce a {0} value."
-                ],
                 "level": "High",
                 "primaryCategory": "formula",
                 "whyFix": ""

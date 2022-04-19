@@ -299,3 +299,18 @@
             Y: =Parent.TemplateHeight - 1
             ZIndex: =4
 
+    Button14_1 As button:
+        BorderColor: =ColorFade(Button14_1.Fill, -15%)
+        Height: =70
+        HoverBorderColor: =ColorFade(Button14_1.BorderColor, 20%)
+        OnSelect: =Back()
+        PressedBorderColor: =Button14_1.Fill
+        PressedColor: =Button14_1.Fill
+        PressedFill: =Button14_1.Color
+        Size: =24
+        Text: ="Back"
+        Width: =280
+        X: =165
+        Y: =822
+        ZIndex: =14
+

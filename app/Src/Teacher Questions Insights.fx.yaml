@@ -1,0 +1,74 @@
+"'Teacher Questions Insights' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    OnVisible: =Set(currQuestion, LookUp(teacher_questions, Class = LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class), Questions))
+
+    RectQuickActionBar3_12 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =113
+        Width: =Parent.Width
+        ZIndex: =1
+
+    DashboardLogo_16 As image:
+        Height: =98
+        HoverBorderColor: =ColorFade(DashboardLogo_16.BorderColor, 20%)
+        HoverFill: =ColorFade(DashboardLogo_16.Fill, 20%)
+        Image: =Picture1_1
+        PaddingLeft: =10
+        PressedBorderColor: =ColorFade(DashboardLogo_16.BorderColor, -20%)
+        PressedFill: =ColorFade(DashboardLogo_16.Fill, -20%)
+        Width: =68
+        ZIndex: =2
+
+    Header_14 As Header:
+        ZIndex: =3
+
+    TeachercompMenu_7 As TeachercompMenu:
+        BackgroundColor: =RGBA(237, 250, 255, 1)
+        ForegroundColor: =RGBA(72, 161, 255, 1)
+        NavigationItems: =NavTeacherView
+        Y: =1042
+        ZIndex: =4
+
+    Label4_6 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(158, 223, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =89
+        Size: =21
+        Text: ="Student Response Analytics"
+        Width: =640
+        Y: =114
+        ZIndex: =5
+
+    PowerBI11 As powerbi:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DashboardId: ="2f08202c-3944-48fa-a9fa-d6b7c22ab3d4"
+        Height: =771
+        TileUrl: |-
+            ="https://app.powerbi.com/embed?dashboardId=2f08202c-3944-48fa-a9fa-d6b7c22ab3d4&tileId=28bb1f40-8311-48a1-acb2-eb678a745fce&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
+        WorkspaceId: ="__my-workspace"
+        Y: =203
+        ZIndex: =6
+
+    Button5_1 As button:
+        BorderColor: =ColorFade(Button5_1.Fill, -15%)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =0
+        Fill: =RGBA(72, 161, 255, 1)
+        Height: =53
+        HoverBorderColor: =ColorFade(Button5_1.BorderColor, 20%)
+        OnSelect: =Navigate('Teacher QuestionSet', ScreenTransition.Cover)
+        PressedBorderColor: =Button5_1.Fill
+        PressedColor: =Button5_1.Fill
+        PressedFill: =Button5_1.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Size: =24
+        Text: ="Back"
+        Width: =146
+        X: =247
+        Y: =974
+        ZIndex: =7
+
