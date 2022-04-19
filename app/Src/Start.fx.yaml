@@ -30,7 +30,7 @@ Start As screen:
             "
         Width: =520
         X: =57
-        Y: =286
+        Y: =263
         ZIndex: =3
 
     LabelText1 As label:
@@ -53,7 +53,7 @@ Start As screen:
             "
         Width: =520
         X: =57
-        Y: =706
+        Y: =728
         ZIndex: =7
 
     Button10 As button:
@@ -73,7 +73,7 @@ Start As screen:
         Text: ="Next"
         Width: =237
         X: =198
-        Y: =990
+        Y: =983
         ZIndex: =9
 
     Image8 As image:
@@ -87,4 +87,25 @@ Start As screen:
         X: =230
         Y: =63
         ZIndex: =10
+
+    Button10_1 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(72, 161, 255, 1)
+        Height: =70
+        HoverBorderColor: =ColorFade(Button10_1.BorderColor, 20%)
+        OnSelect: |-
+            =Launch("tel:131114")
+        PressedBorderColor: =Button10_1.Fill
+        PressedColor: =Button10_1.Fill
+        PressedFill: =Button10_1.Color
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Size: =24
+        Text: ="Call"
+        Width: =237
+        X: =198
+        Y: =658
+        ZIndex: =11
 

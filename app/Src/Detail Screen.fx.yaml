@@ -158,7 +158,7 @@
                 Y: =DataCardKey7.Y + DataCardKey7.Height + 5
                 ZIndex: =2
 
-        "'Parent Email_DataCard1' As typedDataCard.textualViewCard":
+        "'Parent Email_DataCard1' As typedDataCard.emailViewCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ParentEmails"
             Default: =ThisItem.'Parent Email'
@@ -172,7 +172,7 @@
             Y: =3
             ZIndex: =1
 
-            DataCardKey8 As label:
+            DataCardKey13 As label:
                 AutoHeight: =true
                 Height: =48
                 Size: =21
@@ -183,20 +183,22 @@
                 Y: =10
                 ZIndex: =1
 
-            EmailAddress As label:
+            DataCardValue9 As htmlViewer:
                 AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
+                Height: =45
+                HtmlText: |-
+                    ="<a href='mailto:" & Parent.Default & "'>" & Parent.Default & "</a>"
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =21
-                Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey8.Y + DataCardKey8.Height + 5
+                Y: =DataCardKey13.Y + DataCardKey13.Height + 5
                 ZIndex: =2
 
-        "'Parent Mobile Number_DataCard1' As typedDataCard.textualViewCard":
+        "'Parent Mobile Number_DataCard1' As typedDataCard.phoneViewCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ParentMobileNumber"
             Default: =ThisItem.'Parent Mobile Number'
@@ -221,14 +223,16 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue8 As label:
+            DataCardValue8 As htmlViewer:
                 AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
+                Height: =45
+                HtmlText: |-
+                    ="<a href='tel:" & Parent.Default & "'>" & Parent.Default & "</a>"
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =21
-                Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey11.Y + DataCardKey11.Height + 5
