@@ -84,70 +84,44 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(247, 249, 252, 1)
-            Height: =606
+            Height: =900
             Width: =640
             X: =0
             Y: =1
             ZIndex: =7
 
-            Container2_6 As groupContainer.manualLayoutContainer:
-                Height: =540
-                Width: =561
-                X: =30
-                Y: =20
+            PowerBI8 As powerbi:
+                DashboardId: ="f1140de3-1543-4f65-acc8-512fb635c7b5"
+                Height: =777
+                TileUrl: |-
+                    ="https://app.powerbi.com/embed?dashboardId=f1140de3-1543-4f65-acc8-512fb635c7b5&tileId=a3993159-7521-4fb5-95c2-93452134de1a&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
+                Width: =552
+                WorkspaceId: ="__my-workspace"
+                X: =40
+                Y: =40
                 ZIndex: =1
-
-                Label11_6 As label:
-                    Height: =56
-                    Size: =21
-                    Text: ="Class Check-In Update"
-                    Width: =560
-                    ZIndex: =1
-
-                PowerBI2_2 As powerbi:
-                    DashboardId: ="f1140de3-1543-4f65-acc8-512fb635c7b5"
-                    Height: =472
-                    TileUrl: |-
-                        ="https://app.powerbi.com/embed?dashboardId=f1140de3-1543-4f65-acc8-512fb635c7b5&tileId=a3993159-7521-4fb5-95c2-93452134de1a&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
-                    Width: =560
-                    WorkspaceId: ="__my-workspace"
-                    Y: =68
-                    ZIndex: =2
 
         DataCard7_2 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =606
+            Height: =900
             Width: =640
             X: =0
             Y: =2
             ZIndex: =8
 
-            Container2_7 As groupContainer.manualLayoutContainer:
-                Height: =533
-                Width: =579
-                X: =21
-                Y: =25
+            PowerBI12 As powerbi:
+                DashboardId: ="f1140de3-1543-4f65-acc8-512fb635c7b5"
+                Height: =712
+                TileUrl: |-
+                    ="https://app.powerbi.com/embed?dashboardId=f1140de3-1543-4f65-acc8-512fb635c7b5&tileId=2823098e-3264-4fa2-b97c-ae7b78b88516&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
+                Width: =557
+                WorkspaceId: ="__my-workspace"
+                X: =40
+                Y: =60
                 ZIndex: =1
-
-                Label11_7 As label:
-                    Height: =56
-                    Size: =21
-                    Text: ="Class Mood Overview"
-                    Width: =560
-                    ZIndex: =1
-
-                PowerBI1_2 As powerbi:
-                    DashboardId: ="f1140de3-1543-4f65-acc8-512fb635c7b5"
-                    Height: =477
-                    TileUrl: |-
-                        ="https://app.powerbi.com/embed?dashboardId=f1140de3-1543-4f65-acc8-512fb635c7b5&tileId=2823098e-3264-4fa2-b97c-ae7b78b88516&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
-                    Width: =579
-                    WorkspaceId: ="__my-workspace"
-                    Y: =56
-                    ZIndex: =2
 
         DataCard10_2 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
