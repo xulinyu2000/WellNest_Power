@@ -11,21 +11,6 @@ WellNest is a mobile application to facillitate connections between students, te
 | StudentWilliam@UNSWINFS.onmicrosoft.com | Daf33171 | 8A |
 | StudentJoya@UNSWINFS.onmicrosoft.com | Vor13311 | 12B |
 
-## 🍎 Teacher Accounts
-| Email | Password | Class |
-| --- | --- | -- |
-| TeacherYenni@UNSWINFS.onmicrosoft.com | Mom00648 | 7A | 
-| DavidHwang@UNSWINFS.onmicrosoft.com | Bak51924 | 8A |
-| WilsonHua@UNSWINFS.onmicrosoft.com | Jux94216 | 9A |
-| JessicaLawson@UNSWINFS.onmicrosoft.com | Zop02575 | 11B |
-| JeffTan@UNSWINFS.onmicrosoft.com | Laz64430 | 12B |
-
-## 📏 Admin (Counsellor) Accounts
-| Email | Password |
-| --- | --- |
-| AdminWell@UNSWINFS.onmicrosoft.com | Kor32106 |
-| AdminNest@UNSWINFS.onmicrosoft.com | Gom65143 |
-
 ## ▶️ How to run the app 
 
 1. Log into https://make.powerapps.com/ using one of the accounts above 
