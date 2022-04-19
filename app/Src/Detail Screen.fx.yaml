@@ -1,12 +1,24 @@
 "'Detail Screen' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
+    Rectangle3 As rectangle:
+        BorderStyle: =BorderStyle.None
+        DisabledFill: =Rectangle3.Fill
+        Fill: =RGBA(217, 242, 255, 1)
+        Height: =403
+        HoverFill: =Rectangle3.Fill
+        PressedFill: =Rectangle3.Fill
+        Width: =583
+        X: =23
+        Y: =40
+        ZIndex: =1
+
     FormViewer1 As formViewer:
         DataSource: =AppUsers
         Height: =628
         Item: =LookUp(AppUsers,ID = StudentGallery.Selected.ID)
         Width: =640
         Y: =40
-        ZIndex: =1
+        ZIndex: =2
 
         NAME_DataCard1 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
@@ -24,13 +36,13 @@
 
             DataCardKey8 As label:
                 AutoHeight: =true
+                FontWeight: =FontWeight.Bold
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
-                Y: =10
                 ZIndex: =1
 
             DataCardValue12 As label:
@@ -43,7 +55,7 @@
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey8.Y + DataCardKey8.Height + 5
+                Y: =48
                 ZIndex: =2
 
         "'Parent Name_DataCard1' As typedDataCard.textualViewCard":
@@ -62,13 +74,13 @@
 
             DataCardKey7 As label:
                 AutoHeight: =true
+                FontWeight: =FontWeight.Bold
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
-                Y: =10
                 ZIndex: =1
 
             DataCardValue6 As label:
@@ -81,7 +93,7 @@
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey7.Y + DataCardKey7.Height + 5
+                Y: =48
                 ZIndex: =2
 
         "'Parent Email_DataCard1' As typedDataCard.textualViewCard":
@@ -100,6 +112,7 @@
 
             DataCardKey13 As label:
                 AutoHeight: =true
+                FontWeight: =FontWeight.Semibold
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -138,6 +151,7 @@
 
             DataCardKey11 As label:
                 AutoHeight: =true
+                FontWeight: =FontWeight.Semibold
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -159,11 +173,12 @@
                 Size: =21
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey11.Y + DataCardKey11.Height + 5
+                Y: =58
                 ZIndex: =2
 
     Button12 As button:
         BorderColor: =ColorFade(Button12.Fill, -15%)
+        Fill: =RGBA(72, 161, 255, 1)
         Height: =70
         HoverBorderColor: =ColorFade(Button12.BorderColor, 20%)
         OnSelect: |
@@ -176,30 +191,40 @@
         Width: =280
         X: =180
         Y: =1030
-        ZIndex: =2
+        ZIndex: =3
 
     Body As text:
-        Default: ="some default message"
-        Height: =240
+        Default: |-
+            ="Dear "& DataCardValue6 &",
+            
+            You may have noticed that your child, child_name has been feeling a bit down lately. 
+            Here at WellNest, we believe in building strong mental health foundations in our future generations - we are here to help! 
+            
+            Here are some resources that you may find useful in supporting your child:
+            - generic link on supporting mental health as parent
+            - generic link on general mental health education
+            - 1x specialised link (we will have a bank of 1 generic link for sleep, study stress, and exercise)"
+        Height: =534
         HintText: ="Email Contents "
+        Mode: =TextMode.MultiLine
         PressedBorderColor: =Body.HoverBorderColor
         PressedColor: =Body.Color
         PressedFill: =Body.Fill
         Size: =21
-        Width: =502
-        X: =29
-        Y: =725
-        ZIndex: =3
+        Width: =570
+        X: =30
+        Y: =566
+        ZIndex: =4
 
     Subject As text:
-        Default: ="emailsubject"
+        Default: ="emailsubject????"
         Height: =70
         PressedBorderColor: =Subject.HoverBorderColor
         PressedColor: =Subject.Color
         PressedFill: =Subject.Fill
         Size: =21
-        Width: =560
-        X: =29
-        Y: =611
-        ZIndex: =4
+        Width: =570
+        X: =30
+        Y: =470
+        ZIndex: =5
 

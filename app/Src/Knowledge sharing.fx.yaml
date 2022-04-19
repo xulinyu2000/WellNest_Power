@@ -1,6 +1,7 @@
 "'Knowledge sharing' As screen.'phoneLayout_Email_ver3.0'":
 
     RectQuickActionBar2 As rectangle:
+        Fill: =RGBA(72, 161, 255, 1)
         Height: =88
         Width: =Parent.Width
         ZIndex: =1
@@ -367,6 +368,7 @@
 
     Button14_1 As button:
         BorderColor: =ColorFade(Button14_1.Fill, -15%)
+        Fill: =RGBA(72, 161, 255, 1)
         Height: =70
         HoverBorderColor: =ColorFade(Button14_1.BorderColor, 20%)
         OnSelect: =Back()
@@ -376,7 +378,7 @@
         Size: =24
         Text: ="Back"
         Width: =280
-        X: =193
-        Y: =1018
+        X: =187
+        Y: =1046
         ZIndex: =16
 
