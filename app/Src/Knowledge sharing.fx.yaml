@@ -251,7 +251,7 @@
         AccessibleLabel: ="Add a message"
         Default: =""
         Height: =584
-        HintText: ="Send a Social-emotional learning material to the teacher if his/her class general mood and score are low"
+        HintText: ="Send a social-emotional learning material to the teacher if his/her class general mood and score are low..."
         Mode: =TextMode.MultiLine
         PressedBorderColor: =TextEmailMessage1.HoverBorderColor
         PressedColor: =TextEmailMessage1.Color
@@ -265,6 +265,7 @@
 
     Button14_1 As button:
         BorderColor: =ColorFade(Button14_1.Fill, -15%)
+        BorderThickness: =0
         Fill: =RGBA(72, 161, 255, 1)
         Height: =70
         HoverBorderColor: =ColorFade(Button14_1.BorderColor, 20%)
@@ -272,10 +273,14 @@
         PressedBorderColor: =Button14_1.Fill
         PressedColor: =Button14_1.Fill
         PressedFill: =Button14_1.Color
-        Size: =24
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Size: =20
         Text: ="Back"
-        Width: =280
-        X: =187
+        Width: =175
+        X: =233
         Y: =1042
         ZIndex: =13
 
@@ -294,8 +299,8 @@
             ImagePosition: =ImagePosition.Fill
             PressedBorderColor: =ColorFade(UploadedImage1.BorderColor, -20%)
             PressedFill: =ColorFade(UploadedImage1.Fill, -20%)
-            Width: =436
-            X: =104
+            Width: =537
+            X: =61
             Y: =655
             ZIndex: =14
 
@@ -308,8 +313,8 @@
             PressedColor: =AddMediaButton1.Color
             PressedFill: =ColorFade(AddMediaButton1.Fill, -20%)
             Size: =25
-            Width: =436
-            X: =99
+            Width: =537
+            X: =54
             Y: =655
             ZIndex: =15
 
