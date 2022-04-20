@@ -1,7 +1,7 @@
 TeachercompMenu As CanvasComponent:
-    BackgroundColor: =DarkGray
+    BackgroundColor: =RGBA(72,161,255,100)
     Fill: =RGBA(0, 0, 0, 0)
-    ForegroundColor: =RGBA(0,134,208,1)
+    ForegroundColor: =RGBA(237,250,255,100)
     Height: |
         =App.DesignHeight/12
     NavigationItems: |-
@@ -27,7 +27,7 @@ TeachercompMenu As CanvasComponent:
                 ScreenToGoTo: App.ActiveScreen
             }
         )
-    SelectedItemBackground: =LightBlue
+    SelectedItemBackground: =RGBA(237,250,255,100)
     Width: =App.DesignWidth
     X: =0
     Y: =0
