@@ -9,10 +9,10 @@
         PressedBorderColor: =ColorFade(DashboardLogo_15.BorderColor, -20%)
         PressedFill: =ColorFade(DashboardLogo_15.Fill, -20%)
         Width: =68
-        ZIndex: =5
+        ZIndex: =1
 
     Header_21 As Header:
-        ZIndex: =11
+        ZIndex: =2
 
     DataTable4_3 As dataTable.datatable:
         BorderStyle: =BorderStyle.Solid
@@ -26,7 +26,7 @@
         Width: =640
         X: =0
         Y: =202
-        ZIndex: =15
+        ZIndex: =3
 
         Student_Name_Column4_3 As dataTableColumn.textualColumn:
             AutoWidth: =false
@@ -46,7 +46,7 @@
         Face_Column1 As dataTableColumn.textualColumn:
             AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Face"
+            FieldDisplayName: ="Wellbeing"
             FieldName: ="Face"
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
@@ -123,26 +123,26 @@
         Height: =140
         Size: =15
         Text: |-
-            ="Face: 1 (unhappy) - 5 (happy)
+            ="Wellbeing: 1 (Unhappy) - 5 (Happy)
             Active: Yes/No
-            Sleep Quality: 1 (bad) - 5 (good) 
+            Sleep Quality: 1 (Bad) - 5 (Good) 
             Stress Levels: 0 (No Stress) - 10 (Extremely Stressed)"
         Width: =583
         X: =26
         Y: =989
-        ZIndex: =16
+        ZIndex: =4
 
     Label4_5 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(158, 223, 255, 1)
         FontWeight: =FontWeight.Bold
-        Height: =89
+        Height: =99
         Size: =21
         Text: ="Students at Risk"
         Width: =640
         Y: =113
-        ZIndex: =17
+        ZIndex: =5
 
     Icon4 As icon.ArrowLeft:
         Color: =RGBA(255, 255, 255, 1)
@@ -158,6 +158,6 @@
         PressedFill: =Icon4.Fill
         Width: =52
         X: =16
-        Y: =130
-        ZIndex: =18
+        Y: =135
+        ZIndex: =6
 
