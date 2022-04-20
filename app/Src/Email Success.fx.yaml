@@ -37,7 +37,7 @@
         Fill: =RGBA(72, 161, 255, 1)
         Height: =70
         HoverBorderColor: =ColorFade(Button14.BorderColor, 20%)
-        OnSelect: =Back()
+        OnSelect: =Navigate('View all students')
         PressedBorderColor: =Button14.Fill
         PressedColor: =Button14.Fill
         PressedFill: =Button14.Color
