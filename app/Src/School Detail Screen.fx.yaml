@@ -3,15 +3,15 @@
     FormViewer1_1 As formViewer:
         DataSource: =AppUsers
         Height: =628
-        Item: =LookUp(AppUsers,ID = BrowseGallery1.Selected.ID)
+        Item: =LookUp(AppUsers,ID = BrowseGallery1_1.Selected.ID)
         Width: =640
         Y: =40
         ZIndex: =1
 
-        "'Student Name_DataCard1_1' As typedDataCard.textualViewCard":
+        NAME_DataCard2 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Name"
-            Default: =ThisItem.'Title (Name)'
+            Default: =ThisItem.NAME
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@AppUsers],DataSourceInfo.DisplayName,"Name")
             Fill: =RGBA(0, 0, 0, 0)
@@ -22,45 +22,7 @@
             Y: =0
             ZIndex: =1
 
-            DataCardKey4_1 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                ZIndex: =1
-
-            DataCardValue3_1 As label:
-                AutoHeight: =true
-                DisplayMode: =Parent.DisplayMode
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =21
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey4_1.Y + DataCardKey4_1.Height + 5
-                ZIndex: =2
-
-        "'Student Email_DataCard1_1' As typedDataCard.comboBoxViewCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="LinyuXu"
-            Default: =ThisItem.'Student Email'
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppUsers],DataSourceInfo.DisplayName,"LinyuXu")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue5_1.Selected
-            Width: =640
-            X: =0
-            Y: =1
-            ZIndex: =1
-
-            DataCardKey6_1 As label:
+            DataCardKey17 As label:
                 AutoHeight: =true
                 Height: =48
                 Size: =21
@@ -71,53 +33,18 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue5_1 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["DisplayName","Email","Picture"]
-                DisplayMode: =Parent.DisplayMode
-                Height: =70
-                HoverBorderColor: =ColorFade(DataCardValue5_1.BorderColor, 15%)
-                Items: =Choices([@AppUsers].'Student Email')
-                MoreItemsButtonColor: =Self.ChevronBackground
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PressedBorderColor: =DataCardValue5_1.HoverBorderColor
-                SearchFields: =["DisplayName"]
-                SearchItems: =Choices(AppUsers.'Student Email',DataCardValue5_1.SearchText)
-                SelectMultiple: =false
-                Size: =21
-                Template: =ListItemTemplate.Person
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey6_1.Y + DataCardKey6_1.Height + 5
-                ZIndex: =2
-
-            ErrorMessage4_1 As label:
+            DataCardValue13 As label:
                 AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
+                DisplayMode: =Parent.DisplayMode
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =24
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Size: =21
+                Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue5_1.Y + DataCardValue5_1.Height
-                ZIndex: =3
-
-            StarVisible4_1 As label:
-                Align: =Align.Center
-                Height: =DataCardKey6_1.Height
-                Size: =21
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey6_1.Y
-                ZIndex: =4
+                Y: =DataCardKey17.Y + DataCardKey17.Height + 5
+                ZIndex: =2
 
         "'Parent Name_DataCard1_1' As typedDataCard.textualViewCard":
             BorderStyle: =BorderStyle.Solid
@@ -237,52 +164,69 @@
                 Y: =DataCardKey14.Y + DataCardKey14.Height + 5
                 ZIndex: =2
 
+        EMAIL_DataCard1 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="EMAIL"
+            Default: =ThisItem.EMAIL
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppUsers],DataSourceInfo.DisplayName,"EMAIL")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey16 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue9 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey16.Y + DataCardKey16.Height + 5
+                ZIndex: =2
+
     Button12_1 As button:
         BorderColor: =ColorFade(Button12_1.Fill, -15%)
         Fill: =RGBA(72, 161, 255, 1)
         Height: =70
         HoverBorderColor: =ColorFade(Button12_1.BorderColor, 20%)
-        OnSelect: =Office365Outlook.SendEmailV2(EmailAddress_1.Text,Subject_1.Text,Body_1.Text)
+        OnSelect: =Office365Outlook.SendEmailV2(EmailAddress.Text,Subject_1.Text,Body_1.Text)
         PressedBorderColor: =Button12_1.Fill
         PressedColor: =Button12_1.Fill
         PressedFill: =Button12_1.Color
         Size: =24
         Text: ="Send Email"
         Width: =280
-        X: =44
-        Y: =999
+        X: =169
+        Y: =1001
         ZIndex: =2
 
     Body_1 As text:
         Color: =RGBA(168, 0, 0, 1)
         Default: |-
-            ="Knowledge sharing that are relevent to 
+            ="Early intervention:
+            Knowledge sharing that are relevent to 
             this student?"
-            UpdateContext({SortDescending1: true});
-            ClearCollect(
-            colWellness,
-            DropColumns(
-            AddColumns(
-            GroupBy(
-            Filter(
-            'Wellness Challenge',
-            TeamName.Value = vMyTeam.Value
-            ),
-            "TeamNamePipe",
-            "NamePipe",
-            "GroupedTeams"
-            ),
-            "Sum of Steps",
-            Sum(
-            GroupedTeams,
-            Steps
-            )
-            ),
-            "GroupedTeams"
-            )
-            );
         Height: =240
         HintText: ="Email Contents "
+        Mode: =TextMode.MultiLine
         PressedBorderColor: =Body_1.HoverBorderColor
         PressedColor: =Body_1.Color
         PressedFill: =Body_1.Fill
@@ -293,8 +237,9 @@
         ZIndex: =3
 
     Subject_1 As text:
-        Default: ="Article, video or game"
+        Default: =
         Height: =70
+        HintText: ="Article, video or game"
         PressedBorderColor: =Subject_1.HoverBorderColor
         PressedColor: =Subject_1.Color
         PressedFill: =Subject_1.Fill
@@ -303,19 +248,4 @@
         X: =29
         Y: =583
         ZIndex: =4
-
-    Button13 As button:
-        BorderColor: =ColorFade(Button13.Fill, -15%)
-        Height: =70
-        HoverBorderColor: =ColorFade(Button13.BorderColor, 20%)
-        OnSelect: =Navigate('Knowledge sharing')
-        PressedBorderColor: =Button13.Fill
-        PressedColor: =Button13.Fill
-        PressedFill: =Button13.Color
-        Size: =12
-        Text: ="Or share to whole school?"
-        Width: =280
-        X: =337
-        Y: =999
-        ZIndex: =5
 

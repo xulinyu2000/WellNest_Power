@@ -182,7 +182,7 @@
         Height: =57
         HoverBorderColor: =ColorFade(Button12.BorderColor, 20%)
         OnSelect: |
-            =Office365Outlook.SendEmailV2(EmailAddress.Text,Subject.Text,Body.Text);Navigate('Email Success')
+            =Office365Outlook.SendEmailV2(EmailAddress.Text,Subject.Text,Body.Text);Navigate('Teacher Email Success')
         PressedBorderColor: =Button12.Fill
         PressedColor: =Button12.Fill
         PressedFill: =Button12.Color
