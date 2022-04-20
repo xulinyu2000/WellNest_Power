@@ -1,5 +1,6 @@
 # 🧠 WellNest
 https://github.com/xulinyu2000/WellNest_Power 
+**Please go to the link to see the README file in it's correct format**
 
 WellNest is a mobile application to facillitate connections between students, teachers, counsellors and parents. 
 
