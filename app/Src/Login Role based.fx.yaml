@@ -6,7 +6,7 @@
         Visible: =IsUserStudent
         Width: =526
         X: =65
-        Y: =272
+        Y: =319
         ZIndex: =4
 
         Button6 As button:
@@ -54,7 +54,7 @@
     Container6 As groupContainer.manualLayoutContainer:
         Height: =332
         Visible: |
-            =IsUserTeacher
+            =!IsUserTeacher
         Width: =526
         X: =65
         Y: =560
@@ -101,7 +101,7 @@
 
     Container8 As groupContainer.manualLayoutContainer:
         Height: =225
-        Visible: =IsUserAdmin
+        Visible: =!IsUserAdmin
         X: =52
         Y: =842
         ZIndex: =7
