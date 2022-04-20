@@ -19,13 +19,13 @@
         DisplayMode: =DisplayMode.Edit
         Fill: =RGBA(0, 0, 0, 0)
         HeadingFill: =RGBA(87, 196, 255, 1)
-        HeadingSize: =21
-        Height: =787
+        HeadingSize: =18
+        Height: =777
         Items: =Filter(checkin_3, Value(Rating) > 0)
-        Size: =21
+        Size: =18
         Width: =640
         X: =0
-        Y: =202
+        Y: =212
         ZIndex: =3
 
         Student_Name_Column4_3 As dataTableColumn.textualColumn:
@@ -120,7 +120,7 @@
 
     Label4 As label:
         Color: =RGBA(46, 45, 45, 1)
-        Height: =140
+        Height: =123
         Size: =15
         Text: |-
             ="Wellbeing: 1 (Unhappy) - 5 (Happy)
@@ -128,8 +128,8 @@
             Sleep Quality: 1 (Bad) - 5 (Good) 
             Stress Levels: 0 (No Stress) - 10 (Extremely Stressed)"
         Width: =583
-        X: =26
-        Y: =989
+        X: =28
+        Y: =996
         ZIndex: =4
 
     Label4_5 As label:

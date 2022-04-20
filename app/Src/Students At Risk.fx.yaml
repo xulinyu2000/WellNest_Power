@@ -19,10 +19,11 @@
         DisplayMode: =DisplayMode.Edit
         Fill: =RGBA(0, 0, 0, 0)
         HeadingFill: =RGBA(87, 196, 255, 1)
-        HeadingSize: =21
+        HeadingSize: =18
         Height: =838
         Items: =Filter(checkin_3, Value(Rating) > 0 && Class = LookUp(Class_Table, Teacher = Office365Users.MyProfile().Mail, Class))
-        Size: =21
+        Size: |
+            =18
         Width: =640
         X: =0
         Y: =202
@@ -45,7 +46,7 @@
         Face_Column2 As dataTableColumn.textualColumn:
             AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Face"
+            FieldDisplayName: ="Wellbeing"
             FieldName: ="Face"
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
@@ -124,7 +125,7 @@
             LayoutHeight: =Parent.Height
             Order: =8
             Text: =ThisItem.Word
-            Width: =96
+            Width: =94
             X: =0
             Y: =0
             ZIndex: =8

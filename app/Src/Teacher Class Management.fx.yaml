@@ -130,7 +130,7 @@
 
     RectQuickActionBar1_1 As rectangle:
         Fill: =RGBA(72, 161, 255, 1)
-        Height: =88
+        Height: =80
         Width: =Parent.Width
         Y: =113
         ZIndex: =5
@@ -149,10 +149,10 @@
 
     Label14_3 As label:
         Color: =RGBA(255, 255, 255, 1)
-        Height: =88
+        Height: =76
         OnSelect: =Navigate('Students At Risk')
         Size: =21
-        Text: ="View Students at risk"
+        Text: ="View Students at Risk"
         Underline: =true
         Width: =342
         X: =298

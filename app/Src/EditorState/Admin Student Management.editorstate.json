@@ -125,7 +125,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DashboardLogo_15",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -304,7 +304,14 @@
         "InputFill",
         "InvertedColor",
         "HeadingFont",
-        "HeadingSize",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "HeadingSize",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "HeadingFontWeight",
         {
           "AFDDataSourceName": "",
@@ -315,7 +322,14 @@
           "NameMapSourceSchema": "?"
         },
         "HeadingColor",
-        "Size",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Size",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -630,7 +644,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "Header_21",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -719,7 +733,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon4",
-      "ParentIndex": 0,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -854,7 +868,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "\"Text\"",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "Text",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -1210,7 +1224,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label4_5",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

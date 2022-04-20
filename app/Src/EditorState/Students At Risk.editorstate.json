@@ -515,7 +515,14 @@
         "InputFill",
         "InvertedColor",
         "HeadingFont",
-        "HeadingSize",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "21",
+          "InvariantPropertyName": "HeadingSize",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "HeadingFontWeight",
         {
           "AFDDataSourceName": "",
@@ -526,7 +533,14 @@
           "NameMapSourceSchema": "?"
         },
         "HeadingColor",
-        "Size",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "21",
+          "InvariantPropertyName": "Size",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -709,7 +723,14 @@
         "FieldName",
         "Order",
         "FieldVariantName",
-        "FieldDisplayName",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"Face\"",
+          "InvariantPropertyName": "FieldDisplayName",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "LayoutHeight",
         "X",
         "Y",
@@ -730,7 +751,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Face_Column2",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1492,7 +1513,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Physical_Activity_Column2",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1591,7 +1612,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Sleep_Column2",
-      "ParentIndex": 5,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1690,7 +1711,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Stress_Column2",
-      "ParentIndex": 2,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1795,7 +1816,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Student_Name_Column4_1",
-      "ParentIndex": 4,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1957,7 +1978,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Word_Column2",
-      "ParentIndex": 3,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
