@@ -118,15 +118,6 @@
             Y: =Parent.TemplateHeight - 1
             ZIndex: =5
 
-    LblAppName1_1 As label:
-        Height: =88
-        Size: =27
-        Text: ="Student List"
-        Width: =0
-        Wrap: =false
-        X: =20
-        ZIndex: =2
-
     IconRefresh1_1 As icon.Reload:
         AccessibleLabel: =IconRefresh1_1.Tooltip
         Height: =88
@@ -197,4 +188,31 @@
         Width: =Parent.Width
         Y: =TextSearchBox1_1.Y + TextSearchBox1_1.Height
         ZIndex: =8
+
+    Icon3 As icon.ArrowLeft:
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledFill: =Icon3.Fill
+        Height: =58
+        HoverBorderColor: =ColorFade(Icon3.BorderColor, 20%)
+        HoverColor: =ColorFade(Icon3.Color, 20%)
+        HoverFill: =Icon3.Fill
+        Icon: =Icon.ArrowLeft
+        PressedBorderColor: =ColorFade(Icon3.BorderColor, -20%)
+        PressedColor: =ColorFade(Icon3.Color, -20%)
+        PressedFill: =Icon3.Fill
+        Width: =46
+        X: =11
+        Y: =15
+        ZIndex: =9
+
+    Label10 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        Size: =21
+        Text: ="Student List"
+        Width: =560
+        X: =80
+        Y: =9
+        ZIndex: =10
 
