@@ -125,7 +125,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DashboardLogo_15",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -498,14 +498,7 @@
         "FieldName",
         "Order",
         "FieldVariantName",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "\"Face\"",
-          "InvariantPropertyName": "FieldDisplayName",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "FieldDisplayName",
         "LayoutHeight",
         "X",
         "Y",
@@ -522,11 +515,11 @@
       "IsDataControl": false,
       "IsFromScreenLayout": false,
       "IsGroupControl": false,
-      "IsLocked": false,
+      "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Face_Column1",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -637,7 +630,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "Header_21",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -726,7 +719,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon4",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -861,7 +854,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
+          "AutoRuleBindingString": "\"Text\"",
           "InvariantPropertyName": "Text",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -1192,14 +1185,7 @@
         "X",
         "Y",
         "Width",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Height",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Height",
         "DisplayMode",
         "ZIndex",
         "LineHeight",
@@ -1224,7 +1210,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label4_5",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1460,7 +1446,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Physical_Activity_Column1",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1559,7 +1545,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Sleep_Column1",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1658,7 +1644,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Stress_Column1",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1764,7 +1750,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Student_Name_Column4_3",
-      "ParentIndex": 0,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1863,7 +1849,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Word_Column3",
-      "ParentIndex": 5,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
