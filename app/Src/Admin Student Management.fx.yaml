@@ -144,3 +144,20 @@
         Y: =113
         ZIndex: =17
 
+    Icon4 As icon.ArrowLeft:
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledFill: =Icon4.Fill
+        Height: =54
+        HoverBorderColor: =ColorFade(Icon4.BorderColor, 20%)
+        HoverColor: =ColorFade(Icon4.Color, 20%)
+        HoverFill: =Icon4.Fill
+        Icon: =Icon.ArrowLeft
+        OnSelect: =Back()
+        PressedBorderColor: =ColorFade(Icon4.BorderColor, -20%)
+        PressedColor: =ColorFade(Icon4.Color, -20%)
+        PressedFill: =Icon4.Fill
+        Width: =52
+        X: =16
+        Y: =130
+        ZIndex: =18
+

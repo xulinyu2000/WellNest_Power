@@ -249,9 +249,9 @@
 
     TextEmailMessage1 As text:
         AccessibleLabel: ="Add a message"
-        Default: ="This is can send emails to everybody inside the org. Should we include Teachers when send knowledge to everybody?"
+        Default: =""
         Height: =584
-        HintText: ="Add a message"
+        HintText: ="Send a Social-emotional learning material to the teacher if his/her class general mood and score are low"
         Mode: =TextMode.MultiLine
         PressedBorderColor: =TextEmailMessage1.HoverBorderColor
         PressedColor: =TextEmailMessage1.Color
