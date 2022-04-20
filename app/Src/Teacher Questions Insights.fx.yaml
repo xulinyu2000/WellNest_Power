@@ -21,12 +21,6 @@
     Header_14 As Header:
         ZIndex: =3
 
-    TeachercompMenu_7 As TeachercompMenu:
-        BackgroundColor: =RGBA(237, 250, 255, 1)
-        NavigationItems: =NavTeacherView
-        Y: =1042
-        ZIndex: =4
-
     Label4_6 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
@@ -42,11 +36,11 @@
     PowerBI11 As powerbi:
         BorderColor: =RGBA(0, 0, 0, 0)
         DashboardId: ="230009de-7b1a-4ba8-9924-8d540d2544b4"
-        Height: =756
+        Height: =794
         TileUrl: |-
             ="https://app.powerbi.com/embed?dashboardId=230009de-7b1a-4ba8-9924-8d540d2544b4&tileId=6e06e556-09db-42d2-907a-0dcab0e8103b&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUFVU1RSQUxJQS1FQVNULUItUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
         WorkspaceId: ="__my-workspace"
-        Y: =215
+        Y: =184
         ZIndex: =6
 
     Button5_1 As button:
@@ -68,6 +62,6 @@
         Text: ="Back"
         Width: =146
         X: =247
-        Y: =971
+        Y: =1037
         ZIndex: =7
 
