@@ -24,6 +24,7 @@
 
             DataCardKey17 As label:
                 AutoHeight: =true
+                FontWeight: =FontWeight.Bold
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -46,6 +47,45 @@
                 Y: =DataCardKey17.Y + DataCardKey17.Height + 5
                 ZIndex: =2
 
+        EMAIL_DataCard1 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="EMAIL"
+            Default: =ThisItem.EMAIL
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@AppUsers],DataSourceInfo.DisplayName,"EMAIL")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey16 As label:
+                AutoHeight: =true
+                FontWeight: =FontWeight.Bold
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue9 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey16.Y + DataCardKey16.Height + 5
+                ZIndex: =2
+
         "'Parent Name_DataCard1_1' As typedDataCard.textualViewCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ParentName"
@@ -62,6 +102,7 @@
 
             DataCardKey7_1 As label:
                 AutoHeight: =true
+                FontWeight: =FontWeight.Bold
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -100,6 +141,7 @@
 
             DataCardKey15 As label:
                 AutoHeight: =true
+                FontWeight: =FontWeight.Bold
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -140,6 +182,7 @@
 
             DataCardKey14 As label:
                 AutoHeight: =true
+                FontWeight: =FontWeight.Bold
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -162,44 +205,6 @@
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey14.Y + DataCardKey14.Height + 5
-                ZIndex: =2
-
-        EMAIL_DataCard1 As typedDataCard.textualViewCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="EMAIL"
-            Default: =ThisItem.EMAIL
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@AppUsers],DataSourceInfo.DisplayName,"EMAIL")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =false
-            Width: =640
-            X: =0
-            Y: =1
-            ZIndex: =1
-
-            DataCardKey16 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue9 As label:
-                AutoHeight: =true
-                DisplayMode: =Parent.DisplayMode
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =21
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey16.Y + DataCardKey16.Height + 5
                 ZIndex: =2
 
     Button12_1 As button:
