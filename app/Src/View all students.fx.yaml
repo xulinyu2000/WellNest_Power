@@ -197,6 +197,7 @@
         HoverColor: =ColorFade(Icon3.Color, 20%)
         HoverFill: =Icon3.Fill
         Icon: =Icon.ArrowLeft
+        OnSelect: =Back()
         PressedBorderColor: =ColorFade(Icon3.BorderColor, -20%)
         PressedColor: =ColorFade(Icon3.Color, -20%)
         PressedFill: =Icon3.Fill

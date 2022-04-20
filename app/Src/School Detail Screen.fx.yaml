@@ -236,13 +236,12 @@
         ZIndex: =3
 
     Body_1 As text:
-        Color: =RGBA(168, 0, 0, 1)
-        Default: |-
+        Default: =""
+        Height: =280
+        HintText: |-
             ="Early intervention:
             Knowledge sharing that are relevent to 
             this student?"
-        Height: =280
-        HintText: ="Email Contents "
         Mode: =TextMode.MultiLine
         PressedBorderColor: =Body_1.HoverBorderColor
         PressedColor: =Body_1.Color
