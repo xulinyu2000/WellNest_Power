@@ -76,7 +76,7 @@
                 PressedColor: =Button4_1.Fill
                 PressedFill: =Button4_1.Color
                 Size: =24
-                Text: ="Daily quick update!"
+                Text: ="Weekly update!"
                 Width: =280
                 X: =40
                 Y: =167
@@ -173,7 +173,7 @@
     WeeklyButton_20 As button:
         BorderColor: =ColorFade(WeeklyButton_20.Fill, -15%)
         BorderThickness: =0
-        Fill: =RGBA(56, 123, 194, 1)
+        Fill: =RGBA(72, 161, 255, 1)
         Height: =53
         HoverBorderColor: =ColorFade(WeeklyButton_20.BorderColor, 20%)
         PressedBorderColor: =WeeklyButton_20.Fill
@@ -212,7 +212,7 @@
     WeeklyButton_21 As button:
         BorderColor: =ColorFade(WeeklyButton_21.Fill, -15%)
         BorderThickness: =0
-        Fill: =RGBA(72, 161, 255, 1)
+        Fill: =RGBA(51, 111, 176, 1)
         Height: =53
         HoverBorderColor: =ColorFade(WeeklyButton_21.BorderColor, 20%)
         OnSelect: =Navigate([@'Teacher Dashboard'], None)
