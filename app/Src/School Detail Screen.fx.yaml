@@ -1,12 +1,24 @@
 "'School Detail Screen' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
+    Rectangle3_1 As rectangle:
+        BorderStyle: =BorderStyle.None
+        DisabledFill: =Rectangle3_1.Fill
+        Fill: =RGBA(217, 242, 255, 1)
+        Height: =509
+        HoverFill: =Rectangle3_1.Fill
+        PressedFill: =Rectangle3_1.Fill
+        Width: =588
+        X: =29
+        Y: =52
+        ZIndex: =1
+
     FormViewer1_1 As formViewer:
         DataSource: =AppUsers
         Height: =628
         Item: =LookUp(AppUsers,ID = BrowseGallery1_1.Selected.ID)
         Width: =640
         Y: =40
-        ZIndex: =1
+        ZIndex: =2
 
         NAME_DataCard2 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
@@ -221,7 +233,7 @@
         Width: =280
         X: =169
         Y: =1001
-        ZIndex: =2
+        ZIndex: =3
 
     Body_1 As text:
         Color: =RGBA(168, 0, 0, 1)
@@ -229,7 +241,7 @@
             ="Early intervention:
             Knowledge sharing that are relevent to 
             this student?"
-        Height: =240
+        Height: =280
         HintText: ="Email Contents "
         Mode: =TextMode.MultiLine
         PressedBorderColor: =Body_1.HoverBorderColor
@@ -238,8 +250,8 @@
         Size: =16
         Width: =588
         X: =29
-        Y: =725
-        ZIndex: =3
+        Y: =685
+        ZIndex: =4
 
     Subject_1 As text:
         Default: =
@@ -249,8 +261,8 @@
         PressedColor: =Subject_1.Color
         PressedFill: =Subject_1.Fill
         Size: =21
-        Width: =560
+        Width: =588
         X: =29
         Y: =583
-        ZIndex: =4
+        ZIndex: =5
 
