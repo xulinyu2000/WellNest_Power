@@ -20,12 +20,12 @@
         Fill: =RGBA(0, 0, 0, 0)
         HeadingFill: =RGBA(87, 196, 255, 1)
         HeadingSize: =18
-        Height: =777
+        Height: =787
         Items: =Filter(checkin_3, Value(Rating) > 0)
         Size: =18
         Width: =640
         X: =0
-        Y: =212
+        Y: =202
         ZIndex: =3
 
         Student_Name_Column4_3 As dataTableColumn.textualColumn:
@@ -137,7 +137,7 @@
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(158, 223, 255, 1)
         FontWeight: =FontWeight.Bold
-        Height: =99
+        Height: =89
         Size: =21
         Text: ="Students at Risk"
         Width: =640
@@ -158,6 +158,6 @@
         PressedFill: =Icon4.Fill
         Width: =52
         X: =16
-        Y: =135
+        Y: =130
         ZIndex: =6
 
