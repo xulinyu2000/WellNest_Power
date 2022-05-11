@@ -30,6 +30,7 @@
         ZIndex: =3
 
         Student_Name_Column4_1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Name"
             FieldName: ="Student_Name"
@@ -38,7 +39,7 @@
             LayoutHeight: =Parent.Height
             Order: =2
             Text: =ThisItem.Student_Name
-            Width: =100
+            Width: =128
             X: =60
             Y: =0
             ZIndex: =2
@@ -53,7 +54,7 @@
             LayoutHeight: =Parent.Height
             Order: =4
             Text: =ThisItem.Face
-            Width: =80
+            Width: =122
             X: =0
             Y: =0
             ZIndex: =4
@@ -80,7 +81,7 @@
             LayoutHeight: =Parent.Height
             Order: =5
             Text: =ThisItem.Physical_Activity
-            Width: =100
+            Width: =92
             X: =0
             Y: =0
             ZIndex: =5
@@ -95,7 +96,7 @@
             LayoutHeight: =Parent.Height
             Order: =6
             Text: =ThisItem.Sleep
-            Width: =106
+            Width: =82
             X: =176
             Y: =0
             ZIndex: =6
