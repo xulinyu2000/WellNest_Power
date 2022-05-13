@@ -228,7 +228,7 @@
         ZIndex: =4
 
     Subject As text:
-        Default: =""
+        Default: ="Resources to support your child "
         Height: =62
         HintText: ="Email Subject"
         PressedBorderColor: =Subject.HoverBorderColor
@@ -239,4 +239,20 @@
         X: =23
         Y: =463
         ZIndex: =5
+
+    Icon5 As icon.BackArrow:
+        DisabledFill: =Icon5.Fill
+        Height: =44
+        HoverBorderColor: =ColorFade(Icon5.BorderColor, 20%)
+        HoverColor: =ColorFade(Icon5.Color, 20%)
+        HoverFill: =Icon5.Fill
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        PressedBorderColor: =ColorFade(Icon5.BorderColor, -20%)
+        PressedColor: =ColorFade(Icon5.Color, -20%)
+        PressedFill: =Icon5.Fill
+        Width: =44
+        X: =34
+        Y: =1077
+        ZIndex: =6
 

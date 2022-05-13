@@ -239,8 +239,8 @@
         Default: =""
         Height: =280
         HintText: |-
-            ="Early intervention:
-            Knowledge sharing that are relevent to this student."
+            ="Early intervention: 
+             Knowledge sharing that are relevent to this student."
         Mode: =TextMode.MultiLine
         PressedBorderColor: =Body_1.HoverBorderColor
         PressedColor: =Body_1.Color
@@ -263,4 +263,20 @@
         X: =29
         Y: =583
         ZIndex: =5
+
+    Icon7 As icon.BackArrow:
+        DisabledFill: =Icon7.Fill
+        Height: =44
+        HoverBorderColor: =ColorFade(Icon7.BorderColor, 20%)
+        HoverColor: =ColorFade(Icon7.Color, 20%)
+        HoverFill: =Icon7.Fill
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        PressedBorderColor: =ColorFade(Icon7.BorderColor, -20%)
+        PressedColor: =ColorFade(Icon7.Color, -20%)
+        PressedFill: =Icon7.Fill
+        Width: =44
+        X: =29
+        Y: =1014
+        ZIndex: =6
 
