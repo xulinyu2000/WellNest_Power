@@ -393,19 +393,3 @@
             Y: =Parent.TemplateHeight - 1
             ZIndex: =4
 
-    Icon7_1 As icon.BackArrow:
-        DisabledFill: =Icon7_1.Fill
-        Height: =44
-        HoverBorderColor: =ColorFade(Icon7_1.BorderColor, 20%)
-        HoverColor: =ColorFade(Icon7_1.Color, 20%)
-        HoverFill: =Icon7_1.Fill
-        Icon: =Icon.BackArrow
-        OnSelect: =Back()
-        PressedBorderColor: =ColorFade(Icon7_1.BorderColor, -20%)
-        PressedColor: =ColorFade(Icon7_1.Color, -20%)
-        PressedFill: =Icon7_1.Fill
-        Width: =44
-        X: =32
-        Y: =1055
-        ZIndex: =17
-
