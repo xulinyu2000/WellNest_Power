@@ -271,7 +271,7 @@
         HoverColor: =ColorFade(Icon7.Color, 20%)
         HoverFill: =Icon7.Fill
         Icon: =Icon.BackArrow
-        OnSelect: =Back()
+        OnSelect: =Navigate('School Management')
         PressedBorderColor: =ColorFade(Icon7.BorderColor, -20%)
         PressedColor: =ColorFade(Icon7.Color, -20%)
         PressedFill: =Icon7.Fill
